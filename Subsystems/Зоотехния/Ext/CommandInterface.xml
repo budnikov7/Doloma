@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<CommandsVisibility>
+		<Command name="Document.Взвешивание.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.ВетеринарныйВрач">false</xr:Value>
+				<xr:Value name="Role.ДоступКоВсемФермам">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Document.Выбраковка.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.ДоступКоВсемФермам">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Document.Выбытие.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.ДоступКоВсемФермам">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Document.ДобавлениеЖивотного.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.ВетеринарныйВрач">false</xr:Value>
+				<xr:Value name="Role.ДоступКоВсемФермам">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Document.КонтрольнаяДойка.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.ВетеринарныйВрач">false</xr:Value>
+				<xr:Value name="Role.ДоступКоВсемФермам">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Document.Отъём.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.ВетеринарныйВрач">false</xr:Value>
+				<xr:Value name="Role.ДоступКоВсемФермам">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Document.ПеремещениеЖивотных.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.ВетеринарныйВрач">false</xr:Value>
+				<xr:Value name="Role.ДоступКоВсемФермам">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Document.РождениеТеленка.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.ВетеринарныйВрач">false</xr:Value>
+				<xr:Value name="Role.ДоступКоВсемФермам">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Document.Взвешивание.StandardCommand.Create">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ВетеринарныйВрач">false</xr:Value>
+				<xr:Value name="Role.ДоступКоВсемФермам">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Document.Выбраковка.StandardCommand.Create">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ДоступКоВсемФермам">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Document.Выбытие.StandardCommand.Create">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ДоступКоВсемФермам">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Document.ДобавлениеЖивотного.StandardCommand.Create">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ВетеринарныйВрач">false</xr:Value>
+				<xr:Value name="Role.ДоступКоВсемФермам">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Document.КонтрольнаяДойка.StandardCommand.Create">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ВетеринарныйВрач">false</xr:Value>
+				<xr:Value name="Role.ДоступКоВсемФермам">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Document.Отъём.StandardCommand.Create">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ВетеринарныйВрач">false</xr:Value>
+				<xr:Value name="Role.ДоступКоВсемФермам">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Document.ПеремещениеЖивотных.StandardCommand.Create">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ВетеринарныйВрач">false</xr:Value>
+				<xr:Value name="Role.ДоступКоВсемФермам">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Document.РождениеТеленка.StandardCommand.Create">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ВетеринарныйВрач">false</xr:Value>
+				<xr:Value name="Role.ДоступКоВсемФермам">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Report.ВоспроизводствоОбщий.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.ВетеринарныйВрач">false</xr:Value>
+				<xr:Value name="Role.ДоступКоВсемФермам">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Report.ДиаграммаДнейВСухостое.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.ВетеринарныйВрач">false</xr:Value>
+				<xr:Value name="Role.ДоступКоВсемФермам">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Report.ДиаграммаЗапусков.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.ВетеринарныйВрач">false</xr:Value>
+				<xr:Value name="Role.ДоступКоВсемФермам">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Report.ОтчетПоВыбытию.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.ВетеринарныйВрач">false</xr:Value>
+				<xr:Value name="Role.ДоступКоВсемФермам">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Report.ОтчетПоОтъёму.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.ВетеринарныйВрач">false</xr:Value>
+				<xr:Value name="Role.ДоступКоВсемФермам">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Report.ПроцентКоровБольныхМаститом.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.ВетеринарныйВрач">false</xr:Value>
+				<xr:Value name="Role.ДоступКоВсемФермам">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Report.СписокОсеменённыхЖивотных.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.ВетеринарныйВрач">false</xr:Value>
+				<xr:Value name="Role.ДоступКоВсемФермам">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Report.СтатистикаПоОтёлам.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.ВетеринарныйВрач">false</xr:Value>
+				<xr:Value name="Role.ДоступКоВсемФермам">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Report.СтруктураСтадаВРазрезеЛактаций.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.ВетеринарныйВрач">false</xr:Value>
+				<xr:Value name="Role.ДоступКоВсемФермам">false</xr:Value>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsOrder>
+		<Command name="Document.Взвешивание.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.Выбраковка.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.Выбытие.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.ДобавлениеЖивотного.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.КонтрольнаяДойка.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.Отъём.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.ПеремещениеЖивотных.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.ПрисвоениеБирокХорриот.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.РождениеТеленка.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<GroupsOrder>
+		<Group>NavigationPanelOrdinary</Group>
+	</GroupsOrder>
+</CommandInterface>

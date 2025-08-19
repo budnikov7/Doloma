@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="СписокКомпоновщикНастроекПользовательскиеНастройки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа пользовательских настроек</v8:content>
+				</v8:item>
+			</Title>
+			<VerticalStretch>false</VerticalStretch>
+			<Group>Vertical</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="СписокКомпоновщикНастроекПользовательскиеНастройкиРасширеннаяПодсказка" id="2"/>
+		</UsualGroup>
+		<Table name="Список" id="3">
+			<Representation>List</Representation>
+			<CommandBarLocation>None</CommandBarLocation>
+			<DefaultItem>true</DefaultItem>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<InitialTreeView>ExpandTopLevel</InitialTreeView>
+			<EnableStartDrag>true</EnableStartDrag>
+			<DataPath>Список</DataPath>
+			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<UserSettingsGroup>СписокКомпоновщикНастроекПользовательскиеНастройки</UserSettingsGroup>
+			<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+			<ContextMenu name="СписокКонтекстноеМеню" id="4"/>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="5">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="6"/>
+			<SearchStringAddition name="СписокСтрокаПоиска" id="7">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="8"/>
+				<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="9"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокСостояниеПросмотра" id="10">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="11"/>
+				<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="12"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокУправлениеПоиском" id="13">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="14"/>
+				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="15"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="Период" id="16">
+					<DataPath>Список.Period</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="ПериодКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="18"/>
+				</LabelField>
+				<LabelField name="Регистратор" id="19">
+					<DataPath>Список.Recorder</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="РегистраторКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="РегистраторРасширеннаяПодсказка" id="21"/>
+				</LabelField>
+				<LabelField name="НомерСтроки" id="22">
+					<DataPath>Список.LineNumber</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="НомерСтрокиКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="НомерСтрокиРасширеннаяПодсказка" id="24"/>
+				</LabelField>
+				<LabelField name="Номенклатура" id="25">
+					<DataPath>Список.Номенклатура</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="НоменклатураКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="НоменклатураРасширеннаяПодсказка" id="27"/>
+				</LabelField>
+				<LabelField name="НоменклатураВидКорма" id="106">
+					<DataPath>Список.Номенклатура.ВидКорма</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="НоменклатураВидКормаКонтекстноеМеню" id="107"/>
+					<ExtendedTooltip name="НоменклатураВидКормаРасширеннаяПодсказка" id="108"/>
+				</LabelField>
+				<LabelField name="Цена" id="28">
+					<DataPath>~Список.Цена</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="ЦенаКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="ЦенаРасширеннаяПодсказка" id="30"/>
+				</LabelField>
+				<LabelField name="СухоеВещество" id="112">
+					<DataPath>Список.СухоеВещество</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="СухоеВеществоКонтекстноеМеню" id="113"/>
+					<ExtendedTooltip name="СухоеВеществоРасширеннаяПодсказка" id="114"/>
+				</LabelField>
+				<LabelField name="ОЭ" id="34">
+					<DataPath>Список.ОЭ</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="ОЭКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="ОЭРасширеннаяПодсказка" id="36"/>
+				</LabelField>
+				<LabelField name="РастворимыйСП" id="118">
+					<DataPath>Список.РастворимыйСП</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="РастворимыйСПКонтекстноеМеню" id="119"/>
+					<ExtendedTooltip name="РастворимыйСПРасширеннаяПодсказка" id="120"/>
+				</LabelField>
+				<LabelField name="РастворимыйВРубцеПротеин" id="133">
+					<DataPath>Список.РастворимыйВРубцеПротеин</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="РастворимыйВРубцеПротеинКонтекстноеМеню" id="134"/>
+					<ExtendedTooltip name="РастворимыйВРубцеПротеинРасширеннаяПодсказка" id="135"/>
+				</LabelField>
+				<LabelField name="НерастворимыйВРубцеПротеин" id="136">
+					<DataPath>Список.НерастворимыйВРубцеПротеин</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="НерастворимыйВРубцеПротеинКонтекстноеМеню" id="137"/>
+					<ExtendedTooltip name="НерастворимыйВРубцеПротеинРасширеннаяПодсказка" id="138"/>
+				</LabelField>
+				<LabelField name="XP" id="109">
+					<DataPath>Список.XP</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="XPКонтекстноеМеню" id="110"/>
+					<ExtendedTooltip name="XPРасширеннаяПодсказка" id="111"/>
+				</LabelField>
+				<LabelField name="nXp" id="40">
+					<DataPath>Список.nXp</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="nXpКонтекстноеМеню" id="41"/>
+					<ExtendedTooltip name="nXpРасширеннаяПодсказка" id="42"/>
+				</LabelField>
+				<LabelField name="RNB" id="43">
+					<DataPath>Список.RNB</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="RNBКонтекстноеМеню" id="44"/>
+					<ExtendedTooltip name="RNBРасширеннаяПодсказка" id="45"/>
+				</LabelField>
+				<LabelField name="СК" id="46">
+					<DataPath>Список.СК</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="СККонтекстноеМеню" id="47"/>
+					<ExtendedTooltip name="СКРасширеннаяПодсказка" id="48"/>
+				</LabelField>
+				<LabelField name="СЖ" id="49">
+					<DataPath>Список.СЖ</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="СЖКонтекстноеМеню" id="50"/>
+					<ExtendedTooltip name="СЖРасширеннаяПодсказка" id="51"/>
+				</LabelField>
+				<LabelField name="СЗ" id="52">
+					<DataPath>Список.СЗ</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="СЗКонтекстноеМеню" id="53"/>
+					<ExtendedTooltip name="СЗРасширеннаяПодсказка" id="54"/>
+				</LabelField>
+				<LabelField name="Крахмал" id="55">
+					<DataPath>Список.Крахмал</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="КрахмалКонтекстноеМеню" id="56"/>
+					<ExtendedTooltip name="КрахмалРасширеннаяПодсказка" id="57"/>
+				</LabelField>
+				<LabelField name="ТранзитныйКрахмал" id="115">
+					<DataPath>Список.ТранзитныйКрахмал</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="ТранзитныйКрахмалКонтекстноеМеню" id="116"/>
+					<ExtendedTooltip name="ТранзитныйКрахмалРасширеннаяПодсказка" id="117"/>
+				</LabelField>
+				<LabelField name="Сахар" id="58">
+					<DataPath>Список.Сахар</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="СахарКонтекстноеМеню" id="59"/>
+					<ExtendedTooltip name="СахарРасширеннаяПодсказка" id="60"/>
+				</LabelField>
+				<LabelField name="NDF" id="61">
+					<DataPath>Список.NDF</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="NDFКонтекстноеМеню" id="62"/>
+					<ExtendedTooltip name="NDFРасширеннаяПодсказка" id="63"/>
+				</LabelField>
+				<LabelField name="ADF" id="64">
+					<DataPath>Список.ADF</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="ADFКонтекстноеМеню" id="65"/>
+					<ExtendedTooltip name="ADFРасширеннаяПодсказка" id="66"/>
+				</LabelField>
+				<LabelField name="NEL" id="67">
+					<DataPath>Список.NEL</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="NELКонтекстноеМеню" id="68"/>
+					<ExtendedTooltip name="NELРасширеннаяПодсказка" id="69"/>
+				</LabelField>
+				<LabelField name="Ca" id="70">
+					<DataPath>Список.Ca</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="CaКонтекстноеМеню" id="71"/>
+					<ExtendedTooltip name="CaРасширеннаяПодсказка" id="72"/>
+				</LabelField>
+				<LabelField name="Na" id="73">
+					<DataPath>Список.Na</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="NaКонтекстноеМеню" id="74"/>
+					<ExtendedTooltip name="NaРасширеннаяПодсказка" id="75"/>
+				</LabelField>
+				<LabelField name="Mg" id="76">
+					<DataPath>Список.Mg</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="MgКонтекстноеМеню" id="77"/>
+					<ExtendedTooltip name="MgРасширеннаяПодсказка" id="78"/>
+				</LabelField>
+				<LabelField name="K" id="79">
+					<DataPath>Список.K</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="KКонтекстноеМеню" id="80"/>
+					<ExtendedTooltip name="KРасширеннаяПодсказка" id="81"/>
+				</LabelField>
+				<LabelField name="Cl" id="82">
+					<DataPath>Список.Cl</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="ClКонтекстноеМеню" id="83"/>
+					<ExtendedTooltip name="ClРасширеннаяПодсказка" id="84"/>
+				</LabelField>
+				<LabelField name="S" id="85">
+					<DataPath>Список.S</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="SКонтекстноеМеню" id="86"/>
+					<ExtendedTooltip name="SРасширеннаяПодсказка" id="87"/>
+				</LabelField>
+				<LabelField name="P" id="88">
+					<DataPath>Список.P</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="PКонтекстноеМеню" id="89"/>
+					<ExtendedTooltip name="PРасширеннаяПодсказка" id="90"/>
+				</LabelField>
+				<LabelField name="Структ" id="91">
+					<DataPath>Список.Структ</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="СтруктКонтекстноеМеню" id="92"/>
+					<ExtendedTooltip name="СтруктРасширеннаяПодсказка" id="93"/>
+				</LabelField>
+				<LabelField name="СтрКл" id="94">
+					<DataPath>Список.СтрКл</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="СтрКлКонтекстноеМеню" id="95"/>
+					<ExtendedTooltip name="СтрКлРасширеннаяПодсказка" id="96"/>
+				</LabelField>
+				<LabelField name="РаствСП" id="97">
+					<DataPath>~Список.РаствСП</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="РаствСПКонтекстноеМеню" id="98"/>
+					<ExtendedTooltip name="РаствСПРасширеннаяПодсказка" id="99"/>
+				</LabelField>
+				<LabelField name="UDP" id="100">
+					<DataPath>Список.UDP</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="UDPКонтекстноеМеню" id="101"/>
+					<ExtendedTooltip name="UDPРасширеннаяПодсказка" id="102"/>
+				</LabelField>
+				<LabelField name="ADL" id="103">
+					<DataPath>Список.ADL</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="ADLКонтекстноеМеню" id="104"/>
+					<ExtendedTooltip name="ADLРасширеннаяПодсказка" id="105"/>
+				</LabelField>
+				<LabelField name="ПереваримоеОрганическоеВещество" id="121">
+					<DataPath>Список.ПереваримоеОрганическоеВещество</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="ПереваримоеОрганическоеВеществоКонтекстноеМеню" id="122"/>
+					<ExtendedTooltip name="ПереваримоеОрганическоеВеществоРасширеннаяПодсказка" id="123"/>
+				</LabelField>
+				<LabelField name="УксуснаяКислота" id="124">
+					<DataPath>Список.УксуснаяКислота</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="УксуснаяКислотаКонтекстноеМеню" id="125"/>
+					<ExtendedTooltip name="УксуснаяКислотаРасширеннаяПодсказка" id="126"/>
+				</LabelField>
+				<LabelField name="МолочнаяКислота" id="127">
+					<DataPath>Список.МолочнаяКислота</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="МолочнаяКислотаКонтекстноеМеню" id="128"/>
+					<ExtendedTooltip name="МолочнаяКислотаРасширеннаяПодсказка" id="129"/>
+				</LabelField>
+				<LabelField name="pH" id="130">
+					<DataPath>Список.pH</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="pHКонтекстноеМеню" id="131"/>
+					<ExtendedTooltip name="pHРасширеннаяПодсказка" id="132"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>InformationRegister.ТаблицаПитательностиКормов</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+</Form>

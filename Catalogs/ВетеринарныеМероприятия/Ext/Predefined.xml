@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.20">
+	<Item id="857f4353-18fa-446b-99f3-1c4d06a49a0e">
+		<Name>ВакцинацияПротивЛептоспироза</Name>
+		<Code>000000001</Code>
+		<Description>Вакцинация против лептоспироза</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="d89331c1-e3d3-4ef2-befb-11dc920611da">
+		<Name>ВакцинацияПротивТрихофитии</Name>
+		<Code>000000002</Code>
+		<Description>Вакцинация против трихофитии</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="f044e353-8858-4fc9-a848-cfd59b96d3d1">
+		<Name>ОбезроживаниеДекорнуация</Name>
+		<Code>000000003</Code>
+		<Description>Обезроживание-декорнуация</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="6b316f54-7207-4594-b36e-2e215c201bb9">
+		<Name>ОбработкаНоворожденныхТёлокСКупированиемХвоста</Name>
+		<Code>000000004</Code>
+		<Description>Обработка новорожденных тёлок с купированием хвоста</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="15b15f42-1a22-4ee6-8441-3ce13d94c03d">
+		<Name>ПрофилактическаяОбрезкаКопытец</Name>
+		<Code>000000005</Code>
+		<Description>Профилактическая обрезка копытец</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="e408bb32-4c3e-4f04-894b-ae7f7a3055cf">
+		<Name>РевакцинацияПротивЛептоспироза</Name>
+		<Code>000000006</Code>
+		<Description>Ревакцинация против лептоспироза</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="9d14d25f-211a-48ba-b447-9e1a8ee97a82">
+		<Name>РевакцинацияПротивТрихофитии</Name>
+		<Code>000000007</Code>
+		<Description>Ревакцинация против трихофитии</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

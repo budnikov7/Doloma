@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.20">
+	<Item id="0b7f3837-89d4-4af1-a484-cf808196a637">
+		<Name>КрасноПёстраяГолштинская</Name>
+		<Code xsi:type="xs:decimal">49</Code>
+		<Description>Красно-пёстрая голштинская</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="fbc1edb8-5c9c-4f42-b1ff-afb46f1d443d">
+		<Name>ЧёрноПёстраяГолштинская</Name>
+		<Code xsi:type="xs:decimal">32</Code>
+		<Description>Чёрно-пёстрая голштинская</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

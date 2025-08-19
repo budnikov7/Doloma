@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.20">
+	<Item id="3106b4bc-5bf7-4d3d-a35a-2a8dbc4957ab">
+		<Name>Процент</Name>
+		<Code>000000009</Code>
+		<Description>%</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="ae75a991-d81c-414f-9d03-13a1e5468252">
+		<Name>Грамм</Name>
+		<Code>000000006</Code>
+		<Description>г</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="ebcd13b0-27a5-45b8-8500-5137f53e0945">
+		<Name>Килограмм</Name>
+		<Code>000000001</Code>
+		<Description>Кг</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="f8c3f2b0-4857-4367-afcb-725d6423f52c">
+		<Name>литр</Name>
+		<Code>000000003</Code>
+		<Description>Л</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="34be89cf-c0cf-4764-961c-7a1b2ef23adb">
+		<Name>МДж</Name>
+		<Code>000000007</Code>
+		<Description>МДж</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="2bd975f1-0942-4877-a791-647d61d23fc4">
+		<Name>мэкв</Name>
+		<Code>000000008</Code>
+		<Description>мэкв</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="74fd3bf3-4eaf-42e7-aef9-36d9a91347e7">
+		<Name>ТысячДоз</Name>
+		<Code>000000005</Code>
+		<Description>Тыс. доз</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="f4341792-de5e-4f0c-a43e-f2c13aff07d9">
+		<Name>Шприц</Name>
+		<Code>000000004</Code>
+		<Description>Шприц</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="1b4ca60b-7aba-413a-ba37-006730ce7cc0">
+		<Name>Штука</Name>
+		<Code>000000002</Code>
+		<Description>Шт</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

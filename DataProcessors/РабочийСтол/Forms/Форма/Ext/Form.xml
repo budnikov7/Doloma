@@ -1,0 +1,1217 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="ОбщаяГруппа" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Общая группа</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Общая группа</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<VerticalStretch>false</VerticalStretch>
+			<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+			<GroupVerticalAlign>Center</GroupVerticalAlign>
+			<Group>AlwaysHorizontal</Group>
+			<HorizontalAlign>Center</HorizontalAlign>
+			<Behavior>Usual</Behavior>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ОбщаяГруппаРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<UsualGroup name="Справочники" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Справочники</v8:content>
+						</v8:item>
+					</Title>
+					<TitleFont ref="style:NormalTextFont" height="14" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Справочники</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>30</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="СправочникиРасширеннаяПодсказка" id="4"/>
+					<ChildItems>
+						<UsualGroup name="ЖивотныеГруппа" id="17">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Животные</v8:content>
+								</v8:item>
+							</Title>
+							<TitleFont ref="style:NormalTextFont" height="14" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Животные группа</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Behavior>Usual</Behavior>
+							<ExtendedTooltip name="ЖивотныеГруппаРасширеннаяПодсказка" id="18"/>
+							<ChildItems>
+								<Button name="Животные" id="15">
+									<Type>UsualButton</Type>
+									<Representation>PictureAndText</Representation>
+									<HorizontalStretch>true</HorizontalStretch>
+									<CommandName>Form.Command.ОткрытьФормуСправочника</CommandName>
+									<TextColor>#000000</TextColor>
+									<BackColor>style:NavigationColor</BackColor>
+									<Font ref="style:NormalTextFont" height="12" bold="false" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+									<Picture>
+										<xr:Ref>CommonPicture.Картинка_Корова</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Животные в наличии</v8:content>
+										</v8:item>
+									</Title>
+									<Shape>Usual</Shape>
+									<ShapeRepresentation>WhenActive</ShapeRepresentation>
+									<ExtendedTooltip name="ЖивотныеРасширеннаяПодсказка" id="16"/>
+								</Button>
+								<Button name="БыкиПлеменные" id="13">
+									<Type>UsualButton</Type>
+									<Representation>PictureAndText</Representation>
+									<HorizontalStretch>true</HorizontalStretch>
+									<CommandName>Form.Command.ОткрытьФормуСправочника</CommandName>
+									<TextColor>#000000</TextColor>
+									<BackColor>style:NavigationColor</BackColor>
+									<BorderColor>style:ToolTipTextColor</BorderColor>
+									<Font ref="style:NormalTextFont" height="12" bold="false" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+									<Picture>
+										<xr:Ref>CommonPicture.Картинка_Бык</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Быки для осеменения</v8:content>
+										</v8:item>
+									</Title>
+									<Shape>Usual</Shape>
+									<ShapeRepresentation>WhenActive</ShapeRepresentation>
+									<ExtendedTooltip name="БыкиПлеменныеРасширеннаяПодсказка" id="14"/>
+								</Button>
+								<LabelDecoration name="Декорация1" id="51">
+									<ContextMenu name="Декорация1КонтекстноеМеню" id="52"/>
+									<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="53"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Параметры" id="19">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Параметры учета</v8:content>
+								</v8:item>
+							</Title>
+							<TitleFont ref="style:NormalTextFont" height="14" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Параметры</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Behavior>Usual</Behavior>
+							<ExtendedTooltip name="ПараметрыРасширеннаяПодсказка" id="20"/>
+							<ChildItems>
+								<Button name="Контрагенты" id="31">
+									<Type>UsualButton</Type>
+									<Representation>PictureAndText</Representation>
+									<HorizontalStretch>true</HorizontalStretch>
+									<CommandName>Form.Command.ОткрытьФормуСправочника</CommandName>
+									<TextColor>#000000</TextColor>
+									<BackColor>style:NavigationColor</BackColor>
+									<Font ref="style:NormalTextFont" height="12" bold="false" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+									<Picture>
+										<xr:Ref>0:0eda61ad-4a22-491a-a89b-dcd3330d6d7a</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Контрагенты</v8:content>
+										</v8:item>
+									</Title>
+									<Shape>Usual</Shape>
+									<ShapeRepresentation>WhenActive</ShapeRepresentation>
+									<ExtendedTooltip name="КонтрагентыРасширеннаяПодсказка" id="32"/>
+								</Button>
+								<LabelDecoration name="Декорация4" id="60">
+									<HorizontalStretch>true</HorizontalStretch>
+									<BorderColor>#000000</BorderColor>
+									<Border width="2">
+										<v8ui:style xsi:type="v8ui:ControlBorderType">Overline</v8ui:style>
+									</Border>
+									<ContextMenu name="Декорация4КонтекстноеМеню" id="61"/>
+									<ExtendedTooltip name="Декорация4РасширеннаяПодсказка" id="62"/>
+								</LabelDecoration>
+								<Button name="Фермы" id="47">
+									<Type>UsualButton</Type>
+									<Representation>PictureAndText</Representation>
+									<HorizontalStretch>true</HorizontalStretch>
+									<CommandName>Form.Command.ОткрытьФормуСправочника</CommandName>
+									<TextColor>#000000</TextColor>
+									<BackColor>style:NavigationColor</BackColor>
+									<Font ref="style:NormalTextFont" height="12" bold="false" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+									<Picture>
+										<xr:Ref>0:886b54b3-dbf3-4bd0-8718-d10ec9bd9246</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Фермы</v8:content>
+										</v8:item>
+									</Title>
+									<Shape>Usual</Shape>
+									<ShapeRepresentation>WhenActive</ShapeRepresentation>
+									<ExtendedTooltip name="ФермыРасширеннаяПодсказка" id="48"/>
+								</Button>
+								<Button name="Корпуса" id="33">
+									<Type>UsualButton</Type>
+									<Representation>PictureAndText</Representation>
+									<HorizontalStretch>true</HorizontalStretch>
+									<CommandName>Form.Command.ОткрытьФормуСправочника</CommandName>
+									<TextColor>#000000</TextColor>
+									<BackColor>style:NavigationColor</BackColor>
+									<Font ref="style:NormalTextFont" height="12" bold="false" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+									<Picture>
+										<xr:Ref>0:994c0185-1d93-4c85-8d9f-2a08902b6216</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Корпуса</v8:content>
+										</v8:item>
+									</Title>
+									<Shape>Usual</Shape>
+									<ShapeRepresentation>WhenActive</ShapeRepresentation>
+									<ExtendedTooltip name="КорпусаРасширеннаяПодсказка" id="34"/>
+								</Button>
+								<LabelDecoration name="Декорация2" id="54">
+									<HorizontalStretch>true</HorizontalStretch>
+									<BorderColor>#000000</BorderColor>
+									<Border width="2">
+										<v8ui:style xsi:type="v8ui:ControlBorderType">Overline</v8ui:style>
+									</Border>
+									<ContextMenu name="Декорация2КонтекстноеМеню" id="55"/>
+									<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="56"/>
+								</LabelDecoration>
+								<Button name="Сотрудники" id="43">
+									<Type>UsualButton</Type>
+									<Representation>PictureAndText</Representation>
+									<HorizontalStretch>true</HorizontalStretch>
+									<CommandName>Form.Command.ОткрытьФормуСправочника</CommandName>
+									<TextColor>#000000</TextColor>
+									<BackColor>style:NavigationColor</BackColor>
+									<Font ref="style:NormalTextFont" height="12" bold="false" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+									<Picture>
+										<xr:Ref>0:316808bc-02e0-4e0c-a963-f55cb9ed64dd</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сотрудники</v8:content>
+										</v8:item>
+									</Title>
+									<Shape>Usual</Shape>
+									<ShapeRepresentation>WhenActive</ShapeRepresentation>
+									<ExtendedTooltip name="СотрудникиРасширеннаяПодсказка" id="44"/>
+								</Button>
+								<Button name="Пользователи" id="39">
+									<Type>UsualButton</Type>
+									<Representation>PictureAndText</Representation>
+									<HorizontalStretch>true</HorizontalStretch>
+									<CommandName>Form.Command.ОткрытьФормуСправочника</CommandName>
+									<TextColor>#000000</TextColor>
+									<BackColor>style:NavigationColor</BackColor>
+									<Font ref="style:NormalTextFont" height="12" bold="false" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+									<Picture>
+										<xr:Ref>0:499ac423-622d-413f-93aa-4bc1b09f7949</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Пользователи</v8:content>
+										</v8:item>
+									</Title>
+									<Shape>Usual</Shape>
+									<ShapeRepresentation>WhenActive</ShapeRepresentation>
+									<ExtendedTooltip name="ПользователиРасширеннаяПодсказка" id="40"/>
+								</Button>
+								<Button name="Должности" id="27">
+									<Type>UsualButton</Type>
+									<Representation>PictureAndText</Representation>
+									<HorizontalStretch>true</HorizontalStretch>
+									<CommandName>Form.Command.ОткрытьФормуСправочника</CommandName>
+									<TextColor>#000000</TextColor>
+									<BackColor>style:NavigationColor</BackColor>
+									<Font ref="style:NormalTextFont" height="12" bold="false" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+									<Picture>
+										<xr:Ref>0:bb82c849-2a1c-4b1a-bc66-e8086af20542</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Должности</v8:content>
+										</v8:item>
+									</Title>
+									<Shape>Usual</Shape>
+									<ShapeRepresentation>WhenActive</ShapeRepresentation>
+									<ExtendedTooltip name="ДолжностиРасширеннаяПодсказка" id="28"/>
+								</Button>
+								<Button name="Номенклатура" id="191">
+									<Type>UsualButton</Type>
+									<Representation>PictureAndText</Representation>
+									<HorizontalStretch>true</HorizontalStretch>
+									<CommandName>Form.Command.ОткрытьФормуСправочника</CommandName>
+									<BackColor>style:NavigationColor</BackColor>
+									<Font height="12" kind="AutoFont"/>
+									<Picture>
+										<xr:Ref>0:7f33c234-d67d-41af-bdeb-af46692362dd</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Номенклатура</v8:content>
+										</v8:item>
+									</Title>
+									<ShapeRepresentation>WhenActive</ShapeRepresentation>
+									<ExtendedTooltip name="НоменклатураРасширеннаяПодсказка" id="192"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<LabelDecoration name="Декорация9" id="148">
+					<Width>4</Width>
+					<ContextMenu name="Декорация9КонтекстноеМеню" id="149"/>
+					<ExtendedTooltip name="Декорация9РасширеннаяПодсказка" id="150"/>
+				</LabelDecoration>
+				<PictureDecoration name="Декорация5" id="99">
+					<VerticalStretch>true</VerticalStretch>
+					<PictureSize>Stretch</PictureSize>
+					<Picture>
+						<xr:Ref>0:8e1b4fe2-9071-45d4-8235-3e8f8f673298</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ContextMenu name="Декорация5КонтекстноеМеню" id="100"/>
+					<ExtendedTooltip name="Декорация5РасширеннаяПодсказка" id="101"/>
+				</PictureDecoration>
+				<LabelDecoration name="Декорация8" id="145">
+					<Width>4</Width>
+					<ContextMenu name="Декорация8КонтекстноеМеню" id="146"/>
+					<ExtendedTooltip name="Декорация8РасширеннаяПодсказка" id="147"/>
+				</LabelDecoration>
+				<UsualGroup name="Документы" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Документы</v8:content>
+						</v8:item>
+					</Title>
+					<TitleFont ref="style:NormalTextFont" height="14" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Документы</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>AlwaysHorizontal</Group>
+					<Behavior>Usual</Behavior>
+					<ExtendedTooltip name="ДокументыРасширеннаяПодсказка" id="6"/>
+					<ChildItems>
+						<UsualGroup name="ПерваяКолонка" id="105">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Первая колонка</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Первая колонка</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Width>30</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Behavior>Usual</Behavior>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ПерваяКолонкаРасширеннаяПодсказка" id="106"/>
+							<ChildItems>
+								<Button name="ДобавлениеЖивотного" id="83">
+									<Type>UsualButton</Type>
+									<Representation>PictureAndText</Representation>
+									<HorizontalStretch>true</HorizontalStretch>
+									<CommandName>Form.Command.ОткрытьФормуДокумента</CommandName>
+									<TextColor>#000000</TextColor>
+									<BackColor>style:NavigationColor</BackColor>
+									<Font ref="style:NormalTextFont" height="12" kind="StyleItem"/>
+									<Picture>
+										<xr:Ref>0:b7650661-a2ff-4d63-85cd-58dcb6f76fad</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Ввод остатков (животные)</v8:content>
+										</v8:item>
+									</Title>
+									<ShapeRepresentation>WhenActive</ShapeRepresentation>
+									<ExtendedTooltip name="ДобавлениеЖивотногоРасширеннаяПодсказка" id="84"/>
+								</Button>
+								<LabelDecoration name="Декорация12" id="124">
+									<Width>5</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<BorderColor>#000000</BorderColor>
+									<Border width="2">
+										<v8ui:style xsi:type="v8ui:ControlBorderType">Overline</v8ui:style>
+									</Border>
+									<ContextMenu name="Декорация12КонтекстноеМеню" id="125"/>
+									<ExtendedTooltip name="Декорация12РасширеннаяПодсказка" id="126"/>
+								</LabelDecoration>
+								<Button name="ЖивотныеВОхоте" id="69">
+									<Type>UsualButton</Type>
+									<Representation>PictureAndText</Representation>
+									<HorizontalStretch>true</HorizontalStretch>
+									<CommandName>Form.Command.ОткрытьФормуДокумента</CommandName>
+									<TextColor>#000000</TextColor>
+									<BackColor>style:NavigationColor</BackColor>
+									<Font ref="style:NormalTextFont" height="12" kind="StyleItem"/>
+									<Picture>
+										<xr:Ref>0:b03aa771-54ff-4fc3-aac6-6cbe3b43de55</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Животные в охоте</v8:content>
+										</v8:item>
+									</Title>
+									<ShapeRepresentation>WhenActive</ShapeRepresentation>
+									<ExtendedTooltip name="ЖивотныеВОхотеРасширеннаяПодсказка" id="70"/>
+								</Button>
+								<Button name="Осеменение" id="91">
+									<Type>UsualButton</Type>
+									<Representation>PictureAndText</Representation>
+									<HorizontalStretch>true</HorizontalStretch>
+									<CommandName>Form.Command.ОткрытьФормуДокумента</CommandName>
+									<TextColor>#000000</TextColor>
+									<BackColor>style:NavigationColor</BackColor>
+									<Font ref="style:NormalTextFont" height="12" kind="StyleItem"/>
+									<Picture>
+										<xr:Ref>0:248356e1-cea0-44f5-b79f-c1df47dbcf36</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Осеменение</v8:content>
+										</v8:item>
+									</Title>
+									<ShapeRepresentation>WhenActive</ShapeRepresentation>
+									<ExtendedTooltip name="ОсеменениеРасширеннаяПодсказка" id="92"/>
+								</Button>
+								<Button name="УЗД" id="77">
+									<Type>UsualButton</Type>
+									<Representation>PictureAndText</Representation>
+									<HorizontalStretch>true</HorizontalStretch>
+									<CommandName>Form.Command.ОткрытьФормуДокумента</CommandName>
+									<TextColor>#000000</TextColor>
+									<BackColor>style:NavigationColor</BackColor>
+									<Font ref="style:NormalTextFont" height="12" kind="StyleItem"/>
+									<Picture>
+										<xr:Ref>0:0b324b7e-23fe-4081-9787-0913448bd7d4</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Диагностика стельности</v8:content>
+										</v8:item>
+									</Title>
+									<ShapeRepresentation>WhenActive</ShapeRepresentation>
+									<ExtendedTooltip name="УЗДРасширеннаяПодсказка" id="78"/>
+								</Button>
+								<LabelDecoration name="Декорация18" id="172">
+									<Width>5</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<BorderColor>#000000</BorderColor>
+									<Border width="2">
+										<v8ui:style xsi:type="v8ui:ControlBorderType">Overline</v8ui:style>
+									</Border>
+									<ContextMenu name="Декорация18КонтекстноеМеню" id="173"/>
+									<ExtendedTooltip name="Декорация18РасширеннаяПодсказка" id="174"/>
+								</LabelDecoration>
+								<Button name="РождениеТеленка" id="89">
+									<Type>UsualButton</Type>
+									<Representation>PictureAndText</Representation>
+									<HorizontalStretch>true</HorizontalStretch>
+									<CommandName>Form.Command.ОткрытьФормуДокумента</CommandName>
+									<TextColor>#000000</TextColor>
+									<BackColor>style:NavigationColor</BackColor>
+									<Font ref="style:NormalTextFont" height="12" kind="StyleItem"/>
+									<Picture>
+										<xr:Ref>0:ff2c74a9-193e-4e74-b95c-1f852f6da136</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Отёл / Рождение</v8:content>
+										</v8:item>
+									</Title>
+									<ShapeRepresentation>WhenActive</ShapeRepresentation>
+									<ExtendedTooltip name="РождениеТеленкаРасширеннаяПодсказка" id="90"/>
+								</Button>
+								<Button name="Отъём" id="87">
+									<Type>UsualButton</Type>
+									<Representation>PictureAndText</Representation>
+									<HorizontalStretch>true</HorizontalStretch>
+									<CommandName>Form.Command.ОткрытьФормуДокумента</CommandName>
+									<TextColor>#000000</TextColor>
+									<BackColor>style:NavigationColor</BackColor>
+									<Font ref="style:NormalTextFont" height="12" kind="StyleItem"/>
+									<Picture>
+										<xr:Ref>0:b03aa771-54ff-4fc3-aac6-6cbe3b43de55</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Отъём телят</v8:content>
+										</v8:item>
+									</Title>
+									<ShapeRepresentation>WhenActive</ShapeRepresentation>
+									<ExtendedTooltip name="ОтъёмРасширеннаяПодсказка" id="88"/>
+								</Button>
+								<Button name="Аборт" id="63">
+									<Type>UsualButton</Type>
+									<Representation>PictureAndText</Representation>
+									<HorizontalStretch>true</HorizontalStretch>
+									<CommandName>Form.Command.ОткрытьФормуДокумента</CommandName>
+									<TextColor>#000000</TextColor>
+									<BackColor>style:NavigationColor</BackColor>
+									<Font ref="style:NormalTextFont" height="12" kind="StyleItem"/>
+									<Picture>
+										<xr:Ref>0:fef55197-2b65-4376-bd3a-489ce620a5dd</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Аборт</v8:content>
+										</v8:item>
+									</Title>
+									<ShapeRepresentation>WhenActive</ShapeRepresentation>
+									<ExtendedTooltip name="АбортРасширеннаяПодсказка" id="64"/>
+								</Button>
+								<LabelDecoration name="Декорация13" id="175">
+									<Width>5</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<BorderColor>#000000</BorderColor>
+									<Border width="2">
+										<v8ui:style xsi:type="v8ui:ControlBorderType">Overline</v8ui:style>
+									</Border>
+									<ContextMenu name="Декорация13КонтекстноеМеню" id="176"/>
+									<ExtendedTooltip name="Декорация13РасширеннаяПодсказка" id="177"/>
+								</LabelDecoration>
+								<Button name="Взвешивание" id="65">
+									<Type>UsualButton</Type>
+									<Representation>PictureAndText</Representation>
+									<HorizontalStretch>true</HorizontalStretch>
+									<CommandName>Form.Command.ОткрытьФормуДокумента</CommandName>
+									<TextColor>#000000</TextColor>
+									<BackColor>style:NavigationColor</BackColor>
+									<Font ref="style:NormalTextFont" height="12" kind="StyleItem"/>
+									<Picture>
+										<xr:Ref>0:62738104-033a-4733-99fa-acea3a74c9e2</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Взвешивание</v8:content>
+										</v8:item>
+									</Title>
+									<ShapeRepresentation>WhenActive</ShapeRepresentation>
+									<ExtendedTooltip name="ВзвешиваниеРасширеннаяПодсказка" id="66"/>
+								</Button>
+								<Button name="КонтрольнаяДойка" id="93">
+									<Type>UsualButton</Type>
+									<HorizontalStretch>true</HorizontalStretch>
+									<CommandName>Form.Command.ОткрытьФормуДокумента</CommandName>
+									<TextColor>#000000</TextColor>
+									<BackColor>style:NavigationColor</BackColor>
+									<Font ref="style:NormalTextFont" height="12" kind="StyleItem"/>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Контрольная дойка</v8:content>
+										</v8:item>
+									</Title>
+									<ShapeRepresentation>WhenActive</ShapeRepresentation>
+									<ExtendedTooltip name="КонтрольнаяДойкаРасширеннаяПодсказка" id="94"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<LabelDecoration name="Декорация7" id="142">
+							<Width>2</Width>
+							<ContextMenu name="Декорация7КонтекстноеМеню" id="143"/>
+							<ExtendedTooltip name="Декорация7РасширеннаяПодсказка" id="144"/>
+						</LabelDecoration>
+						<UsualGroup name="ВтораяКолонка" id="107">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Вторая колонка</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Вторая колонка</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Width>30</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Behavior>Usual</Behavior>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ВтораяКолонкаРасширеннаяПодсказка" id="108"/>
+							<ChildItems>
+								<Button name="ПеремещениеЖивотных" id="81">
+									<Type>UsualButton</Type>
+									<Representation>PictureAndText</Representation>
+									<HorizontalStretch>true</HorizontalStretch>
+									<CommandName>Form.Command.ОткрытьФормуДокумента</CommandName>
+									<TextColor>#000000</TextColor>
+									<BackColor>style:NavigationColor</BackColor>
+									<Font ref="style:NormalTextFont" height="12" kind="StyleItem"/>
+									<Picture>
+										<xr:Ref>0:bf1b4e30-39af-4c43-bb7b-f4f9a0a53746</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Перемещение животных</v8:content>
+										</v8:item>
+									</Title>
+									<ShapeRepresentation>WhenActive</ShapeRepresentation>
+									<ExtendedTooltip name="ПеремещениеЖивотныхРасширеннаяПодсказка" id="82"/>
+								</Button>
+								<LabelDecoration name="Декорация15" id="184">
+									<Width>5</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<BorderColor>#000000</BorderColor>
+									<Border width="2">
+										<v8ui:style xsi:type="v8ui:ControlBorderType">Overline</v8ui:style>
+									</Border>
+									<ContextMenu name="Декорация15КонтекстноеМеню" id="185"/>
+									<ExtendedTooltip name="Декорация15РасширеннаяПодсказка" id="186"/>
+								</LabelDecoration>
+								<Button name="ИндексыБыков" id="95">
+									<Type>UsualButton</Type>
+									<Representation>PictureAndText</Representation>
+									<HorizontalStretch>true</HorizontalStretch>
+									<CommandName>Form.Command.ОткрытьФормуДокумента</CommandName>
+									<TextColor>#000000</TextColor>
+									<BackColor>style:NavigationColor</BackColor>
+									<Font ref="style:NormalTextFont" height="12" kind="StyleItem"/>
+									<Picture>
+										<xr:Ref>0:d9612619-4611-4ec5-b55e-e60d849269a4</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Индексы быков</v8:content>
+										</v8:item>
+									</Title>
+									<ShapeRepresentation>WhenActive</ShapeRepresentation>
+									<ExtendedTooltip name="ИндексыБыковРасширеннаяПодсказка" id="96"/>
+								</Button>
+								<LabelDecoration name="Декорация16" id="181">
+									<Width>5</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<BorderColor>#000000</BorderColor>
+									<Border width="2">
+										<v8ui:style xsi:type="v8ui:ControlBorderType">Overline</v8ui:style>
+									</Border>
+									<ContextMenu name="Декорация16КонтекстноеМеню" id="182"/>
+									<ExtendedTooltip name="Декорация16РасширеннаяПодсказка" id="183"/>
+								</LabelDecoration>
+								<Button name="ЖурналЛечения" id="97">
+									<Type>UsualButton</Type>
+									<Representation>PictureAndText</Representation>
+									<HorizontalStretch>true</HorizontalStretch>
+									<CommandName>Form.Command.ОткрытьФормуДокумента</CommandName>
+									<TextColor>#000000</TextColor>
+									<BackColor>style:NavigationColor</BackColor>
+									<Font ref="style:NormalTextFont" height="12" kind="StyleItem"/>
+									<Picture>
+										<xr:Ref>0:83be9ed0-951d-4a0b-8c5c-5720ba6065a9</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Лечечение животных</v8:content>
+										</v8:item>
+									</Title>
+									<ShapeRepresentation>WhenActive</ShapeRepresentation>
+									<ExtendedTooltip name="ЖурналЛеченияРасширеннаяПодсказка" id="98"/>
+								</Button>
+								<Button name="ОперацииЖивотным" id="204">
+									<Type>UsualButton</Type>
+									<HorizontalStretch>true</HorizontalStretch>
+									<CommandName>Form.Command.ОткрытьФормуДокумента</CommandName>
+									<TextColor>#000000</TextColor>
+									<BackColor>style:NavigationColor</BackColor>
+									<Font ref="style:NormalTextFont" height="12" kind="StyleItem"/>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Ветеринарные  мероприятия</v8:content>
+										</v8:item>
+									</Title>
+									<ShapeRepresentation>WhenActive</ShapeRepresentation>
+									<ExtendedTooltip name="ОперацииЖивотнымРасширеннаяПодсказка" id="205"/>
+								</Button>
+								<Button name="ПроизводственнаяСводка" id="73">
+									<Type>UsualButton</Type>
+									<HorizontalStretch>true</HorizontalStretch>
+									<CommandName>Form.Command.ОткрытьФормуДокумента</CommandName>
+									<TextColor>#000000</TextColor>
+									<BackColor>style:NavigationColor</BackColor>
+									<Font ref="style:NormalTextFont" height="12" kind="StyleItem"/>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Производственная сводка</v8:content>
+										</v8:item>
+									</Title>
+									<ShapeRepresentation>WhenActive</ShapeRepresentation>
+									<ExtendedTooltip name="ПроизводственнаяСводкаРасширеннаяПодсказка" id="74"/>
+								</Button>
+								<LabelDecoration name="Декорация17" id="195">
+									<Width>5</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<BorderColor>#000000</BorderColor>
+									<Border width="2">
+										<v8ui:style xsi:type="v8ui:ControlBorderType">Overline</v8ui:style>
+									</Border>
+									<ContextMenu name="Декорация17КонтекстноеМеню" id="196"/>
+									<ExtendedTooltip name="Декорация17РасширеннаяПодсказка" id="197"/>
+								</LabelDecoration>
+								<Button name="ПоступлениеТоваровУслуг" id="193">
+									<Type>UsualButton</Type>
+									<HorizontalStretch>true</HorizontalStretch>
+									<CommandName>Form.Command.ОткрытьФормуДокумента</CommandName>
+									<TextColor>#000000</TextColor>
+									<BackColor>style:NavigationColor</BackColor>
+									<Font height="12" kind="AutoFont"/>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Поступление товаров</v8:content>
+										</v8:item>
+									</Title>
+									<ShapeRepresentation>WhenActive</ShapeRepresentation>
+									<ExtendedTooltip name="ПоступлениеТоваровУслугРасширеннаяПодсказка" id="194"/>
+								</Button>
+								<Button name="РеализацияТоваровУслуг" id="189">
+									<Type>UsualButton</Type>
+									<Representation>PictureAndText</Representation>
+									<CommandName>Form.Command.ОткрытьФормуДокумента</CommandName>
+									<TextColor>#000000</TextColor>
+									<BackColor>style:NavigationColor</BackColor>
+									<Font height="12" kind="AutoFont"/>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Реализация товаров</v8:content>
+										</v8:item>
+									</Title>
+									<ShapeRepresentation>WhenActive</ShapeRepresentation>
+									<ExtendedTooltip name="РеализацияТоваровУслугРасширеннаяПодсказка" id="190"/>
+								</Button>
+								<Button name="ПеремещениеТоваров" id="198">
+									<Type>UsualButton</Type>
+									<HorizontalStretch>true</HorizontalStretch>
+									<CommandName>Form.Command.ОткрытьФормуДокумента</CommandName>
+									<TextColor>#000000</TextColor>
+									<BackColor>style:NavigationColor</BackColor>
+									<Font ref="style:NormalTextFont" height="12" kind="StyleItem"/>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Перемещение товаров</v8:content>
+										</v8:item>
+									</Title>
+									<ShapeRepresentation>WhenActive</ShapeRepresentation>
+									<ExtendedTooltip name="ПеремещениеТоваровРасширеннаяПодсказка" id="199"/>
+								</Button>
+								<Button name="СписаниеТоваров" id="200">
+									<Type>UsualButton</Type>
+									<HorizontalStretch>true</HorizontalStretch>
+									<CommandName>Form.Command.ОткрытьФормуДокумента</CommandName>
+									<TextColor>#000000</TextColor>
+									<BackColor>style:NavigationColor</BackColor>
+									<Font ref="style:NormalTextFont" height="12" kind="StyleItem"/>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Списание товаров</v8:content>
+										</v8:item>
+									</Title>
+									<ShapeRepresentation>WhenActive</ShapeRepresentation>
+									<ExtendedTooltip name="СписаниеТоваровРасширеннаяПодсказка" id="201"/>
+								</Button>
+								<LabelDecoration name="Декорация14" id="178">
+									<Width>5</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<BorderColor>#000000</BorderColor>
+									<Border width="2">
+										<v8ui:style xsi:type="v8ui:ControlBorderType">Overline</v8ui:style>
+									</Border>
+									<ContextMenu name="Декорация14КонтекстноеМеню" id="179"/>
+									<ExtendedTooltip name="Декорация14РасширеннаяПодсказка" id="180"/>
+								</LabelDecoration>
+								<Button name="Выбраковка" id="85">
+									<Type>UsualButton</Type>
+									<Representation>PictureAndText</Representation>
+									<HorizontalStretch>true</HorizontalStretch>
+									<CommandName>Form.Command.ОткрытьФормуДокумента</CommandName>
+									<TextColor>#000000</TextColor>
+									<BackColor>style:NavigationColor</BackColor>
+									<Font ref="style:NormalTextFont" height="12" kind="StyleItem"/>
+									<Picture>
+										<xr:Ref>0:a4fc973d-fc79-44dc-a44e-5a2119ed5bd5</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Выбраковка</v8:content>
+										</v8:item>
+									</Title>
+									<ShapeRepresentation>WhenActive</ShapeRepresentation>
+									<ExtendedTooltip name="ВыбраковкаРасширеннаяПодсказка" id="86"/>
+								</Button>
+								<Button name="Выбытие" id="67">
+									<Type>UsualButton</Type>
+									<Representation>PictureAndText</Representation>
+									<HorizontalStretch>true</HorizontalStretch>
+									<CommandName>Form.Command.ОткрытьФормуДокумента</CommandName>
+									<TextColor>#000000</TextColor>
+									<BackColor>style:NavigationColor</BackColor>
+									<Font ref="style:NormalTextFont" height="12" kind="StyleItem"/>
+									<Picture>
+										<xr:Ref>0:bea764f4-3727-49f4-bf77-569fa620f33e</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Выбытие</v8:content>
+										</v8:item>
+									</Title>
+									<ShapeRepresentation>WhenActive</ShapeRepresentation>
+									<ExtendedTooltip name="ВыбытиеРасширеннаяПодсказка" id="68"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Отчеты" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отчеты</v8:content>
+						</v8:item>
+					</Title>
+					<TitleFont ref="style:NormalTextFont" height="14" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отчеты</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<ExtendedTooltip name="ОтчетыРасширеннаяПодсказка" id="8"/>
+				</UsualGroup>
+				<LabelDecoration name="Декорация10" id="151">
+					<Width>4</Width>
+					<ContextMenu name="Декорация10КонтекстноеМеню" id="152"/>
+					<ExtendedTooltip name="Декорация10РасширеннаяПодсказка" id="153"/>
+				</LabelDecoration>
+				<PictureDecoration name="Декорация6" id="102">
+					<VerticalStretch>true</VerticalStretch>
+					<PictureSize>Stretch</PictureSize>
+					<Picture>
+						<xr:Ref>0:8e1b4fe2-9071-45d4-8235-3e8f8f673298</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ContextMenu name="Декорация6КонтекстноеМеню" id="103"/>
+					<ExtendedTooltip name="Декорация6РасширеннаяПодсказка" id="104"/>
+				</PictureDecoration>
+				<LabelDecoration name="Декорация11" id="154">
+					<Width>4</Width>
+					<ContextMenu name="Декорация11КонтекстноеМеню" id="155"/>
+					<ExtendedTooltip name="Декорация11РасширеннаяПодсказка" id="156"/>
+				</LabelDecoration>
+				<UsualGroup name="Прочее" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Прочее</v8:content>
+						</v8:item>
+					</Title>
+					<TitleFont ref="style:NormalTextFont" height="14" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Прочее</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>30</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<ExtendedTooltip name="ПрочееРасширеннаяПодсказка" id="10"/>
+					<ChildItems>
+						<UsualGroup name="СправочникиПрочие" id="49">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Прочие</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Справочники прочие</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="СправочникиПрочиеРасширеннаяПодсказка" id="50"/>
+							<ChildItems>
+								<Button name="ВидыСписанияСпермадоз" id="21">
+									<Type>UsualButton</Type>
+									<Representation>PictureAndText</Representation>
+									<HorizontalStretch>true</HorizontalStretch>
+									<CommandName>Form.Command.ОткрытьФормуСправочника</CommandName>
+									<TextColor>#000000</TextColor>
+									<BackColor>style:NavigationColor</BackColor>
+									<Font ref="style:NormalTextFont" height="12" bold="false" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+									<Picture>
+										<xr:Ref>0:7f33c234-d67d-41af-bdeb-af46692362dd</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Виды списания спермадоз</v8:content>
+										</v8:item>
+									</Title>
+									<Shape>Usual</Shape>
+									<ShapeRepresentation>WhenActive</ShapeRepresentation>
+									<ExtendedTooltip name="ВидыСписанияСпермадозРасширеннаяПодсказка" id="22"/>
+								</Button>
+								<Button name="ВозрастныеГруппы" id="23">
+									<Type>UsualButton</Type>
+									<Representation>PictureAndText</Representation>
+									<HorizontalStretch>true</HorizontalStretch>
+									<CommandName>Form.Command.ОткрытьФормуСправочника</CommandName>
+									<TextColor>#000000</TextColor>
+									<BackColor>style:NavigationColor</BackColor>
+									<Font ref="style:NormalTextFont" height="12" bold="false" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+									<Picture>
+										<xr:Ref>0:ebf3b646-daf3-42e6-8ed5-5febd6776b19</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Возрастные группы</v8:content>
+										</v8:item>
+									</Title>
+									<Shape>Usual</Shape>
+									<ShapeRepresentation>WhenActive</ShapeRepresentation>
+									<ExtendedTooltip name="ВозрастныеГруппыРасширеннаяПодсказка" id="24"/>
+								</Button>
+								<Button name="ПородыСкота" id="41">
+									<Type>UsualButton</Type>
+									<Representation>PictureAndText</Representation>
+									<HorizontalStretch>true</HorizontalStretch>
+									<CommandName>Form.Command.ОткрытьФормуСправочника</CommandName>
+									<TextColor>#000000</TextColor>
+									<BackColor>style:NavigationColor</BackColor>
+									<Font ref="style:NormalTextFont" height="12" bold="false" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+									<Picture>
+										<xr:Ref>0:7f33c234-d67d-41af-bdeb-af46692362dd</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Породы скота</v8:content>
+										</v8:item>
+									</Title>
+									<Shape>Usual</Shape>
+									<ShapeRepresentation>WhenActive</ShapeRepresentation>
+									<ExtendedTooltip name="ПородыСкотаРасширеннаяПодсказка" id="42"/>
+								</Button>
+								<Button name="СхемыЛечения" id="45">
+									<Type>UsualButton</Type>
+									<Representation>PictureAndText</Representation>
+									<HorizontalStretch>true</HorizontalStretch>
+									<CommandName>Form.Command.ОткрытьФормуСправочника</CommandName>
+									<TextColor>#000000</TextColor>
+									<BackColor>style:NavigationColor</BackColor>
+									<Font ref="style:NormalTextFont" height="12" bold="false" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+									<Picture>
+										<xr:Ref>0:97e485bd-c53d-4322-822d-51fec3d788fc</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Схемы лечения</v8:content>
+										</v8:item>
+									</Title>
+									<Shape>Usual</Shape>
+									<ShapeRepresentation>WhenActive</ShapeRepresentation>
+									<ExtendedTooltip name="СхемыЛеченияРасширеннаяПодсказка" id="46"/>
+								</Button>
+								<Button name="Заболевания" id="202">
+									<Type>UsualButton</Type>
+									<Representation>PictureAndText</Representation>
+									<HorizontalStretch>true</HorizontalStretch>
+									<CommandName>Form.Command.ОткрытьФормуСправочника</CommandName>
+									<TextColor>#000000</TextColor>
+									<BackColor>style:NavigationColor</BackColor>
+									<Font height="12" kind="AutoFont"/>
+									<Picture>
+										<xr:Ref>0:c44be7f6-5216-4ddf-a2e0-7ddc2458227b</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Заболевания</v8:content>
+										</v8:item>
+									</Title>
+									<ShapeRepresentation>WhenActive</ShapeRepresentation>
+									<ExtendedTooltip name="ЗаболеванияРасширеннаяПодсказка" id="203"/>
+								</Button>
+								<LabelDecoration name="Декорация3" id="57">
+									<HorizontalStretch>true</HorizontalStretch>
+									<BorderColor>#000000</BorderColor>
+									<Border width="2">
+										<v8ui:style xsi:type="v8ui:ControlBorderType">Overline</v8ui:style>
+									</Border>
+									<ContextMenu name="Декорация3КонтекстноеМеню" id="58"/>
+									<ExtendedTooltip name="Декорация3РасширеннаяПодсказка" id="59"/>
+								</LabelDecoration>
+								<Button name="ЕдиницыИзмерения" id="29">
+									<Type>UsualButton</Type>
+									<Representation>PictureAndText</Representation>
+									<HorizontalStretch>true</HorizontalStretch>
+									<CommandName>Form.Command.ОткрытьФормуСправочника</CommandName>
+									<TextColor>#000000</TextColor>
+									<BackColor>style:NavigationColor</BackColor>
+									<Font ref="style:NormalTextFont" height="12" bold="false" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+									<Picture>
+										<xr:Ref>0:07f71d77-d72a-474c-996d-1b27ef058d09</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Единицы</v8:content>
+										</v8:item>
+									</Title>
+									<Shape>Usual</Shape>
+									<ShapeRepresentation>WhenActive</ShapeRepresentation>
+									<ExtendedTooltip name="ЕдиницыИзмеренияРасширеннаяПодсказка" id="30"/>
+								</Button>
+								<LabelDecoration name="Декорация19" id="206">
+									<HorizontalStretch>true</HorizontalStretch>
+									<BorderColor>#000000</BorderColor>
+									<Border width="2">
+										<v8ui:style xsi:type="v8ui:ControlBorderType">Overline</v8ui:style>
+									</Border>
+									<ContextMenu name="Декорация19КонтекстноеМеню" id="207"/>
+									<ExtendedTooltip name="Декорация19РасширеннаяПодсказка" id="208"/>
+								</LabelDecoration>
+								<Button name="ПроцентКоровБольныхМаститом" id="209">
+									<Type>UsualButton</Type>
+									<HorizontalStretch>true</HorizontalStretch>
+									<CommandName>Form.Command.ОткрытьОтчет</CommandName>
+									<TextColor>#000000</TextColor>
+									<BackColor>style:NavigationColor</BackColor>
+									<Font ref="style:NormalTextFont" height="12" kind="StyleItem"/>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Процент коров больных маститом</v8:content>
+										</v8:item>
+									</Title>
+									<ShapeRepresentation>WhenActive</ShapeRepresentation>
+									<ExtendedTooltip name="ПроцентКоровБольныхМаститомРасширеннаяПодсказка" id="210"/>
+								</Button>
+								<Button name="ГрафикОтеловЗапусков" id="213">
+									<Type>UsualButton</Type>
+									<HorizontalStretch>true</HorizontalStretch>
+									<CommandName>Form.Command.ОткрытьОтчет</CommandName>
+									<TextColor>#000000</TextColor>
+									<BackColor>style:NavigationColor</BackColor>
+									<Font ref="style:NormalTextFont" height="12" kind="StyleItem"/>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>График отелов и запусков</v8:content>
+										</v8:item>
+									</Title>
+									<ShapeRepresentation>WhenActive</ShapeRepresentation>
+									<ExtendedTooltip name="ГрафикОтеловЗапусковРасширеннаяПодсказка" id="214"/>
+								</Button>
+								<Button name="ОтчетКонтрольнаяДойка" id="215">
+									<Type>UsualButton</Type>
+									<HorizontalStretch>true</HorizontalStretch>
+									<CommandName>Form.Command.ОткрытьОтчет</CommandName>
+									<TextColor>#000000</TextColor>
+									<BackColor>style:NavigationColor</BackColor>
+									<Font height="12" kind="AutoFont"/>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Контрольная дойка</v8:content>
+										</v8:item>
+									</Title>
+									<ShapeRepresentation>WhenActive</ShapeRepresentation>
+									<ExtendedTooltip name="ОтчетКонтрольнаяДойкаРасширеннаяПодсказка" id="216"/>
+								</Button>
+								<Button name="ТоварыНаСкладах" id="217">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ОткрытьОтчет</CommandName>
+									<TextColor>#000000</TextColor>
+									<BackColor>style:NavigationColor</BackColor>
+									<Font height="12" kind="AutoFont"/>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Товары на складах</v8:content>
+										</v8:item>
+									</Title>
+									<ShapeRepresentation>WhenActive</ShapeRepresentation>
+									<ExtendedTooltip name="ТоварыНаСкладахРасширеннаяПодсказка" id="218"/>
+								</Button>
+								<Button name="ВзаиморасчетыСКлиентами" id="211">
+									<Type>UsualButton</Type>
+									<HorizontalStretch>true</HorizontalStretch>
+									<CommandName>Form.Command.ОткрытьОтчет</CommandName>
+									<TextColor>#000000</TextColor>
+									<BackColor>style:NavigationColor</BackColor>
+									<Font ref="style:NormalTextFont" height="12" kind="StyleItem"/>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Взаиморасчеты с клиентами</v8:content>
+										</v8:item>
+									</Title>
+									<ShapeRepresentation>WhenActive</ShapeRepresentation>
+									<ExtendedTooltip name="ВзаиморасчетыСКлиентамиРасширеннаяПодсказка" id="212"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.РабочийСтол</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОткрытьФормуСправочника" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть форму справочника</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть форму справочника</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьФормуСправочника</Action>
+		</Command>
+		<Command name="ОткрытьФормуДокумента" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть форму документа</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть форму документа</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьФормуДокумента</Action>
+		</Command>
+		<Command name="ОткрытьОтчет" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть отчет</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть отчет</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьОтчет</Action>
+		</Command>
+	</Commands>
+</Form>

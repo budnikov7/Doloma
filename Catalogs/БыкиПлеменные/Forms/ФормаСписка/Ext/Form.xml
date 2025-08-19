@@ -1,0 +1,1260 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ПоказыватьАрхив" id="55">
+				<Type>CommandBarButton</Type>
+				<Check>true</Check>
+				<CommandName>Form.Command.ПоказыватьАрхив</CommandName>
+				<ExtendedTooltip name="ПоказыватьАрхивРасширеннаяПодсказка" id="56"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="СписокКомпоновщикНастроекПользовательскиеНастройки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа пользовательских настроек</v8:content>
+				</v8:item>
+			</Title>
+			<VerticalStretch>false</VerticalStretch>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="СписокКомпоновщикНастроекПользовательскиеНастройкиРасширеннаяПодсказка" id="2"/>
+		</UsualGroup>
+		<Table name="Список" id="3">
+			<Representation>List</Representation>
+			<CommandBarLocation>None</CommandBarLocation>
+			<DefaultItem>true</DefaultItem>
+			<HeaderHeight>2</HeaderHeight>
+			<Footer>true</Footer>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<InitialTreeView>ExpandTopLevel</InitialTreeView>
+			<EnableStartDrag>true</EnableStartDrag>
+			<DataPath>Список</DataPath>
+			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<UserSettingsGroup>СписокКомпоновщикНастроекПользовательскиеНастройки</UserSettingsGroup>
+			<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+			<ContextMenu name="СписокКонтекстноеМеню" id="4"/>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="5">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="6"/>
+			<SearchStringAddition name="СписокСтрокаПоиска" id="7">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="8"/>
+				<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="9"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокСостояниеПросмотра" id="10">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="11"/>
+				<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="12"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокУправлениеПоиском" id="13">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="14"/>
+				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="15"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="КодСемени" id="57">
+					<DataPath>Список.КодСемени</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="КодСемениКонтекстноеМеню" id="58"/>
+					<ExtendedTooltip name="КодСемениРасширеннаяПодсказка" id="59"/>
+				</LabelField>
+				<LabelField name="Код" id="19">
+					<DataPath>Список.Код</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<FixingInTable>Left</FixingInTable>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>1</MaxWidth>
+					<ContextMenu name="КодКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="21"/>
+				</LabelField>
+				<LabelField name="СсылкаДатаРождения" id="49">
+					<DataPath>Список.Ссылка.ДатаРождения</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<FixingInTable>Left</FixingInTable>
+					<ContextMenu name="СсылкаДатаРожденияКонтекстноеМеню" id="50"/>
+					<ExtendedTooltip name="СсылкаДатаРожденияРасширеннаяПодсказка" id="51"/>
+				</LabelField>
+				<LabelField name="Наименование" id="16">
+					<DataPath>Список.Наименование</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<FixingInTable>Left</FixingInTable>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="18"/>
+				</LabelField>
+				<InputField name="Кличка" id="28">
+					<DataPath>Список.Кличка</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>2</MaxWidth>
+					<ContextMenu name="КличкаКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="КличкаРасширеннаяПодсказка" id="30"/>
+				</InputField>
+				<LabelField name="ПолнаяКличка" id="297">
+					<DataPath>Список.ПолнаяКличка</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="ПолнаяКличкаКонтекстноеМеню" id="298"/>
+					<ExtendedTooltip name="ПолнаяКличкаРасширеннаяПодсказка" id="299"/>
+				</LabelField>
+				<CheckBoxField name="НеРаботает" id="34">
+					<DataPath>Список.НеРаботает</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<FixingInTable>Right</FixingInTable>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="НеРаботаетКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="НеРаботаетРасширеннаяПодсказка" id="36"/>
+				</CheckBoxField>
+				<InputField name="TPI" id="60">
+					<DataPath>Список.TPI</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<FooterDataPath>ИтогTPI</FooterDataPath>
+					<ContextMenu name="TPIКонтекстноеМеню" id="61"/>
+					<ExtendedTooltip name="TPIРасширеннаяПодсказка" id="62"/>
+				</InputField>
+				<LabelField name="NM" id="63">
+					<DataPath>Список.NM</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<FooterDataPath>ИтогNM</FooterDataPath>
+					<ContextMenu name="NMКонтекстноеМеню" id="64"/>
+					<ExtendedTooltip name="NMРасширеннаяПодсказка" id="65"/>
+				</LabelField>
+				<LabelField name="Молоко" id="66">
+					<DataPath>Список.Молоко</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<FooterDataPath>ИтогМолоко</FooterDataPath>
+					<ContextMenu name="МолокоКонтекстноеМеню" id="67"/>
+					<ExtendedTooltip name="МолокоРасширеннаяПодсказка" id="68"/>
+				</LabelField>
+				<LabelField name="PL" id="69">
+					<DataPath>Список.PL</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<FooterDataPath>ИтогPL</FooterDataPath>
+					<ContextMenu name="PLКонтекстноеМеню" id="70"/>
+					<ExtendedTooltip name="PLРасширеннаяПодсказка" id="71"/>
+				</LabelField>
+				<LabelField name="CCR" id="72">
+					<DataPath>Список.CCR</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<FooterDataPath>ИтогCCR</FooterDataPath>
+					<ContextMenu name="CCRКонтекстноеМеню" id="73"/>
+					<ExtendedTooltip name="CCRРасширеннаяПодсказка" id="74"/>
+				</LabelField>
+				<LabelField name="HCR" id="75">
+					<DataPath>Список.HCR</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<FooterDataPath>ИтогHCR</FooterDataPath>
+					<ContextMenu name="HCRКонтекстноеМеню" id="76"/>
+					<ExtendedTooltip name="HCRРасширеннаяПодсказка" id="77"/>
+				</LabelField>
+				<LabelField name="CM" id="78">
+					<DataPath>Список.CM</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="CMКонтекстноеМеню" id="79"/>
+					<ExtendedTooltip name="CMРасширеннаяПодсказка" id="80"/>
+				</LabelField>
+				<LabelField name="FM" id="81">
+					<DataPath>Список.FM</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="FMКонтекстноеМеню" id="82"/>
+					<ExtendedTooltip name="FMРасширеннаяПодсказка" id="83"/>
+				</LabelField>
+				<LabelField name="GM" id="84">
+					<DataPath>Список.GM</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="GMКонтекстноеМеню" id="85"/>
+					<ExtendedTooltip name="GMРасширеннаяПодсказка" id="86"/>
+				</LabelField>
+				<LabelField name="Белок" id="87">
+					<DataPath>Список.Белок</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="БелокКонтекстноеМеню" id="88"/>
+					<ExtendedTooltip name="БелокРасширеннаяПодсказка" id="89"/>
+				</LabelField>
+				<LabelField name="Prot" id="90">
+					<DataPath>Список.Prot</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="ProtКонтекстноеМеню" id="91"/>
+					<ExtendedTooltip name="ProtРасширеннаяПодсказка" id="92"/>
+				</LabelField>
+				<LabelField name="Жир" id="93">
+					<DataPath>Список.Жир</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="ЖирКонтекстноеМеню" id="94"/>
+					<ExtendedTooltip name="ЖирРасширеннаяПодсказка" id="95"/>
+				</LabelField>
+				<LabelField name="ЖирПроцент" id="96">
+					<DataPath>Список.ЖирПроцент</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="ЖирПроцентКонтекстноеМеню" id="97"/>
+					<ExtendedTooltip name="ЖирПроцентРасширеннаяПодсказка" id="98"/>
+				</LabelField>
+				<LabelField name="CFP" id="99">
+					<DataPath>Список.CFP</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="CFPКонтекстноеМеню" id="100"/>
+					<ExtendedTooltip name="CFPРасширеннаяПодсказка" id="101"/>
+				</LabelField>
+				<LabelField name="FE" id="102">
+					<DataPath>Список.FE</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="FEКонтекстноеМеню" id="103"/>
+					<ExtendedTooltip name="FEРасширеннаяПодсказка" id="104"/>
+				</LabelField>
+				<LabelField name="FeedSaved" id="105">
+					<DataPath>Список.FeedSaved</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="FeedSavedКонтекстноеМеню" id="106"/>
+					<ExtendedTooltip name="FeedSavedРасширеннаяПодсказка" id="107"/>
+				</LabelField>
+				<LabelField name="Prel" id="108">
+					<DataPath>Список.Prel</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="PrelКонтекстноеМеню" id="109"/>
+					<ExtendedTooltip name="PrelРасширеннаяПодсказка" id="110"/>
+				</LabelField>
+				<LabelField name="CLIV" id="111">
+					<DataPath>Список.CLIV</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="CLIVКонтекстноеМеню" id="112"/>
+					<ExtendedTooltip name="CLIVРасширеннаяПодсказка" id="113"/>
+				</LabelField>
+				<LabelField name="HLIV" id="114">
+					<DataPath>Список.HLIV</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="HLIVКонтекстноеМеню" id="115"/>
+					<ExtendedTooltip name="HLIVРасширеннаяПодсказка" id="116"/>
+				</LabelField>
+				<LabelField name="DPR" id="117">
+					<DataPath>Список.DPR</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="DPRКонтекстноеМеню" id="118"/>
+					<ExtendedTooltip name="DPRРасширеннаяПодсказка" id="119"/>
+				</LabelField>
+				<LabelField name="SCS" id="120">
+					<DataPath>Список.SCS</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="SCSКонтекстноеМеню" id="121"/>
+					<ExtendedTooltip name="SCSРасширеннаяПодсказка" id="122"/>
+				</LabelField>
+				<LabelField name="SCE" id="123">
+					<DataPath>Список.SCE</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="SCEКонтекстноеМеню" id="124"/>
+					<ExtendedTooltip name="SCEРасширеннаяПодсказка" id="125"/>
+				</LabelField>
+				<LabelField name="SCERel" id="129">
+					<DataPath>Список.SCERel</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="SCERelКонтекстноеМеню" id="130"/>
+					<ExtendedTooltip name="SCERelРасширеннаяПодсказка" id="131"/>
+				</LabelField>
+				<LabelField name="SCEObs" id="126">
+					<DataPath>Список.SCEObs</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="SCEObsКонтекстноеМеню" id="127"/>
+					<ExtendedTooltip name="SCEObsРасширеннаяПодсказка" id="128"/>
+				</LabelField>
+				<LabelField name="DCE" id="132">
+					<DataPath>Список.DCE</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="DCEКонтекстноеМеню" id="133"/>
+					<ExtendedTooltip name="DCEРасширеннаяПодсказка" id="134"/>
+				</LabelField>
+				<LabelField name="SSD" id="135">
+					<DataPath>Список.SSD</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="SSDКонтекстноеМеню" id="136"/>
+					<ExtendedTooltip name="SSDРасширеннаяПодсказка" id="137"/>
+				</LabelField>
+				<LabelField name="DSB" id="138">
+					<DataPath>Список.DSB</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="DSBКонтекстноеМеню" id="139"/>
+					<ExtendedTooltip name="DSBРасширеннаяПодсказка" id="140"/>
+				</LabelField>
+				<LabelField name="EFC" id="141">
+					<DataPath>Список.EFC</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="EFCКонтекстноеМеню" id="142"/>
+					<ExtendedTooltip name="EFCРасширеннаяПодсказка" id="143"/>
+				</LabelField>
+				<LabelField name="GL" id="144">
+					<DataPath>Список.GL</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="GLКонтекстноеМеню" id="145"/>
+					<ExtendedTooltip name="GLРасширеннаяПодсказка" id="146"/>
+				</LabelField>
+				<LabelField name="MAST" id="147">
+					<DataPath>Список.MAST</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="MASTКонтекстноеМеню" id="148"/>
+					<ExtendedTooltip name="MASTРасширеннаяПодсказка" id="149"/>
+				</LabelField>
+				<LabelField name="KET" id="150">
+					<DataPath>Список.KET</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="KETКонтекстноеМеню" id="151"/>
+					<ExtendedTooltip name="KETРасширеннаяПодсказка" id="152"/>
+				</LabelField>
+				<LabelField name="RP" id="153">
+					<DataPath>Список.RP</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="RPКонтекстноеМеню" id="154"/>
+					<ExtendedTooltip name="RPРасширеннаяПодсказка" id="155"/>
+				</LabelField>
+				<LabelField name="MET" id="156">
+					<DataPath>Список.MET</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="METКонтекстноеМеню" id="157"/>
+					<ExtendedTooltip name="METРасширеннаяПодсказка" id="158"/>
+				</LabelField>
+				<LabelField name="DA" id="159">
+					<DataPath>Список.DA</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="DAКонтекстноеМеню" id="160"/>
+					<ExtendedTooltip name="DAРасширеннаяПодсказка" id="161"/>
+				</LabelField>
+				<LabelField name="MF" id="162">
+					<DataPath>Список.MF</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="MFКонтекстноеМеню" id="163"/>
+					<ExtendedTooltip name="MFРасширеннаяПодсказка" id="164"/>
+				</LabelField>
+				<LabelField name="MS" id="165">
+					<DataPath>Список.MS</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="MSКонтекстноеМеню" id="166"/>
+					<ExtendedTooltip name="MSРасширеннаяПодсказка" id="167"/>
+				</LabelField>
+				<LabelField name="DWP" id="168">
+					<DataPath>Список.DWP</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="DWPКонтекстноеМеню" id="169"/>
+					<ExtendedTooltip name="DWPРасширеннаяПодсказка" id="170"/>
+				</LabelField>
+				<LabelField name="WT" id="171">
+					<DataPath>Список.WT</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="WTКонтекстноеМеню" id="172"/>
+					<ExtendedTooltip name="WTРасширеннаяПодсказка" id="173"/>
+				</LabelField>
+				<LabelField name="CW" id="174">
+					<DataPath>Список.CW</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="CWКонтекстноеМеню" id="175"/>
+					<ExtendedTooltip name="CWРасширеннаяПодсказка" id="176"/>
+				</LabelField>
+				<InputField name="PTAT" id="177">
+					<DataPath>Список.PTAT</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="PTATКонтекстноеМеню" id="178"/>
+					<ExtendedTooltip name="PTATРасширеннаяПодсказка" id="179"/>
+				</InputField>
+				<LabelField name="UDC" id="180">
+					<DataPath>Список.UDC</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="UDCКонтекстноеМеню" id="181"/>
+					<ExtendedTooltip name="UDCРасширеннаяПодсказка" id="182"/>
+				</LabelField>
+				<LabelField name="FLC" id="183">
+					<DataPath>Список.FLC</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="FLCКонтекстноеМеню" id="184"/>
+					<ExtendedTooltip name="FLCРасширеннаяПодсказка" id="185"/>
+				</LabelField>
+				<LabelField name="BC" id="186">
+					<DataPath>Список.BC</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="BCКонтекстноеМеню" id="187"/>
+					<ExtendedTooltip name="BCРасширеннаяПодсказка" id="188"/>
+				</LabelField>
+				<LabelField name="DC" id="189">
+					<DataPath>Список.DC</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="DCКонтекстноеМеню" id="190"/>
+					<ExtendedTooltip name="DCРасширеннаяПодсказка" id="191"/>
+				</LabelField>
+				<LabelField name="Trel" id="192">
+					<DataPath>Список.Trel</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="TrelКонтекстноеМеню" id="193"/>
+					<ExtendedTooltip name="TrelРасширеннаяПодсказка" id="194"/>
+				</LabelField>
+				<LabelField name="Телосложение" id="195">
+					<DataPath>Список.Телосложение</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="ТелосложениеКонтекстноеМеню" id="196"/>
+					<ExtendedTooltip name="ТелосложениеРасширеннаяПодсказка" id="197"/>
+				</LabelField>
+				<LabelField name="Сила" id="198">
+					<DataPath>Список.Сила</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="СилаКонтекстноеМеню" id="199"/>
+					<ExtendedTooltip name="СилаРасширеннаяПодсказка" id="200"/>
+				</LabelField>
+				<LabelField name="ГлубинаТела" id="201">
+					<DataPath>Список.ГлубинаТела</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="ГлубинаТелаКонтекстноеМеню" id="202"/>
+					<ExtendedTooltip name="ГлубинаТелаРасширеннаяПодсказка" id="203"/>
+				</LabelField>
+				<LabelField name="МолочнаяФорма" id="204">
+					<DataPath>Список.МолочнаяФорма</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="МолочнаяФормаКонтекстноеМеню" id="205"/>
+					<ExtendedTooltip name="МолочнаяФормаРасширеннаяПодсказка" id="206"/>
+				</LabelField>
+				<LabelField name="УголКрестца" id="207">
+					<DataPath>Список.УголКрестца</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="УголКрестцаКонтекстноеМеню" id="208"/>
+					<ExtendedTooltip name="УголКрестцаРасширеннаяПодсказка" id="209"/>
+				</LabelField>
+				<LabelField name="ШиринаТазовыхСвязок" id="210">
+					<DataPath>Список.ШиринаТазовыхСвязок</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="ШиринаТазовыхСвязокКонтекстноеМеню" id="211"/>
+					<ExtendedTooltip name="ШиринаТазовыхСвязокРасширеннаяПодсказка" id="212"/>
+				</LabelField>
+				<LabelField name="RLSV" id="216">
+					<DataPath>Список.RLSV</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="RLSVКонтекстноеМеню" id="217"/>
+					<ExtendedTooltip name="RLSVРасширеннаяПодсказка" id="218"/>
+				</LabelField>
+				<LabelField name="RLRV" id="213">
+					<DataPath>Список.RLRV</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="RLRVКонтекстноеМеню" id="214"/>
+					<ExtendedTooltip name="RLRVРасширеннаяПодсказка" id="215"/>
+				</LabelField>
+				<LabelField name="УголКопыта" id="219">
+					<DataPath>Список.УголКопыта</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="УголКопытаКонтекстноеМеню" id="220"/>
+					<ExtendedTooltip name="УголКопытаРасширеннаяПодсказка" id="221"/>
+				</LabelField>
+				<LabelField name="FLS" id="222">
+					<DataPath>Список.FLS</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="FLSКонтекстноеМеню" id="223"/>
+					<ExtendedTooltip name="FLSРасширеннаяПодсказка" id="224"/>
+				</LabelField>
+				<LabelField name="ПерПрикВым" id="225">
+					<DataPath>Список.ПерПрикВым</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="ПерПрикВымКонтекстноеМеню" id="226"/>
+					<ExtendedTooltip name="ПерПрикВымРасширеннаяПодсказка" id="227"/>
+				</LabelField>
+				<LabelField name="RUdderHeight" id="228">
+					<DataPath>Список.RUdderHeight</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="RUdderHeightКонтекстноеМеню" id="229"/>
+					<ExtendedTooltip name="RUdderHeightРасширеннаяПодсказка" id="230"/>
+				</LabelField>
+				<LabelField name="ШиринаЗаднейЧастиВымени" id="231">
+					<DataPath>Список.ШиринаЗаднейЧастиВымени</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="ШиринаЗаднейЧастиВымениКонтекстноеМеню" id="232"/>
+					<ExtendedTooltip name="ШиринаЗаднейЧастиВымениРасширеннаяПодсказка" id="233"/>
+				</LabelField>
+				<LabelField name="РасщеплениеВымени" id="234">
+					<DataPath>Список.РасщеплениеВымени</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="РасщеплениеВымениКонтекстноеМеню" id="235"/>
+					<ExtendedTooltip name="РасщеплениеВымениРасширеннаяПодсказка" id="236"/>
+				</LabelField>
+				<LabelField name="ГлубинаВымени" id="237">
+					<DataPath>Список.ГлубинаВымени</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="ГлубинаВымениКонтекстноеМеню" id="238"/>
+					<ExtendedTooltip name="ГлубинаВымениРасширеннаяПодсказка" id="239"/>
+				</LabelField>
+				<LabelField name="FTP" id="240">
+					<DataPath>Список.FTP</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="FTPКонтекстноеМеню" id="241"/>
+					<ExtendedTooltip name="FTPРасширеннаяПодсказка" id="242"/>
+				</LabelField>
+				<InputField name="RTP" id="243">
+					<DataPath>Список.RTP</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="RTPКонтекстноеМеню" id="244"/>
+					<ExtendedTooltip name="RTPРасширеннаяПодсказка" id="245"/>
+				</InputField>
+				<LabelField name="ДлинаСосков" id="246">
+					<DataPath>Список.ДлинаСосков</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="ДлинаСосковКонтекстноеМеню" id="247"/>
+					<ExtendedTooltip name="ДлинаСосковРасширеннаяПодсказка" id="248"/>
+				</LabelField>
+				<LabelField name="aAa" id="249">
+					<DataPath>Список.aAa</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="aAaКонтекстноеМеню" id="250"/>
+					<ExtendedTooltip name="aAaРасширеннаяПодсказка" id="251"/>
+				</LabelField>
+				<LabelField name="DMS" id="252">
+					<DataPath>Список.DMS</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="DMSКонтекстноеМеню" id="253"/>
+					<ExtendedTooltip name="DMSРасширеннаяПодсказка" id="254"/>
+				</LabelField>
+				<LabelField name="КаппаКазеин" id="255">
+					<DataPath>Список.КаппаКазеин</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="КаппаКазеинКонтекстноеМеню" id="256"/>
+					<ExtendedTooltip name="КаппаКазеинРасширеннаяПодсказка" id="257"/>
+				</LabelField>
+				<LabelField name="БетаКазеин" id="258">
+					<DataPath>Список.БетаКазеин</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="БетаКазеинКонтекстноеМеню" id="259"/>
+					<ExtendedTooltip name="БетаКазеинРасширеннаяПодсказка" id="260"/>
+				</LabelField>
+				<LabelField name="BLACT" id="261">
+					<DataPath>Список.BLACT</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="BLACTКонтекстноеМеню" id="262"/>
+					<ExtendedTooltip name="BLACTРасширеннаяПодсказка" id="263"/>
+				</LabelField>
+				<LabelField name="GeneticCodes" id="264">
+					<DataPath>Список.GeneticCodes</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="GeneticCodesКонтекстноеМеню" id="265"/>
+					<ExtendedTooltip name="GeneticCodesРасширеннаяПодсказка" id="266"/>
+				</LabelField>
+				<LabelField name="Haplotypes" id="267">
+					<DataPath>Список.Haplotypes</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="HaplotypesКонтекстноеМеню" id="268"/>
+					<ExtendedTooltip name="HaplotypesРасширеннаяПодсказка" id="269"/>
+				</LabelField>
+				<LabelField name="RHA" id="270">
+					<DataPath>Список.RHA</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="RHAКонтекстноеМеню" id="271"/>
+					<ExtendedTooltip name="RHAРасширеннаяПодсказка" id="272"/>
+				</LabelField>
+				<LabelField name="EFI" id="273">
+					<DataPath>Список.EFI</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="EFIКонтекстноеМеню" id="274"/>
+					<ExtendedTooltip name="EFIРасширеннаяПодсказка" id="275"/>
+				</LabelField>
+				<LabelField name="ADV" id="276">
+					<DataPath>Список.ADV</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="ADVКонтекстноеМеню" id="277"/>
+					<ExtendedTooltip name="ADVРасширеннаяПодсказка" id="278"/>
+				</LabelField>
+				<LabelField name="GS" id="279">
+					<DataPath>Список.GS</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="GSКонтекстноеМеню" id="280"/>
+					<ExtendedTooltip name="GSРасширеннаяПодсказка" id="281"/>
+				</LabelField>
+				<LabelField name="FS" id="282">
+					<DataPath>Список.FS</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="FSКонтекстноеМеню" id="283"/>
+					<ExtendedTooltip name="FSРасширеннаяПодсказка" id="284"/>
+				</LabelField>
+				<LabelField name="_511" id="285">
+					<DataPath>Список._511</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="_511КонтекстноеМеню" id="286"/>
+					<ExtendedTooltip name="_511РасширеннаяПодсказка" id="287"/>
+				</LabelField>
+				<LabelField name="EDGE" id="288">
+					<DataPath>Список.EDGE</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="EDGEКонтекстноеМеню" id="289"/>
+					<ExtendedTooltip name="EDGEРасширеннаяПодсказка" id="290"/>
+				</LabelField>
+				<LabelField name="CP" id="291">
+					<DataPath>Список.CP</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="CPКонтекстноеМеню" id="292"/>
+					<ExtendedTooltip name="CPРасширеннаяПодсказка" id="293"/>
+				</LabelField>
+				<LabelField name="CP511" id="294">
+					<DataPath>Список.CP511</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="CP511КонтекстноеМеню" id="295"/>
+					<ExtendedTooltip name="CP511РасширеннаяПодсказка" id="296"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	СправочникБыкиПлеменные.Ссылка КАК Ссылка,
+	СправочникБыкиПлеменные.ПометкаУдаления КАК ПометкаУдаления,
+	СправочникБыкиПлеменные.Код КАК Код,
+	СправочникБыкиПлеменные.Наименование КАК Наименование,
+	СправочникБыкиПлеменные.КодСемени КАК КодСемени,
+	СправочникБыкиПлеменные.Кличка КАК Кличка,
+	СправочникБыкиПлеменные.Порода КАК Порода,
+	СправочникБыкиПлеменные.НеРаботает КАК НеРаботает,
+	СправочникБыкиПлеменные.Архивное КАК Архивное,
+	СправочникБыкиПлеменные.КличкаНаЛатинице КАК КличкаНаЛатинице,
+	СправочникБыкиПлеменные.ДатаРождения КАК ДатаРождения,
+	СправочникБыкиПлеменные.Предопределенный КАК Предопределенный,
+	СправочникБыкиПлеменные.ИмяПредопределенныхДанных КАК ИмяПредопределенныхДанных,
+	ИндексыБыковСрезПоследних.TPI КАК TPI,
+	ИндексыБыковСрезПоследних.NM КАК NM,
+	ИндексыБыковСрезПоследних.Молоко КАК Молоко,
+	ИндексыБыковСрезПоследних.PL КАК PL,
+	ИндексыБыковСрезПоследних.CCR КАК CCR,
+	ИндексыБыковСрезПоследних.HCR КАК HCR,
+	ИндексыБыковСрезПоследних.CM КАК CM,
+	ИндексыБыковСрезПоследних.FM КАК FM,
+	ИндексыБыковСрезПоследних.GM КАК GM,
+	ИндексыБыковСрезПоследних.Белок КАК Белок,
+	ИндексыБыковСрезПоследних.Prot КАК Prot,
+	ИндексыБыковСрезПоследних.Жир КАК Жир,
+	ИндексыБыковСрезПоследних.ЖирПроцент КАК ЖирПроцент,
+	ИндексыБыковСрезПоследних.CFP КАК CFP,
+	ИндексыБыковСрезПоследних.FE КАК FE,
+	ИндексыБыковСрезПоследних.FeedSaved КАК FeedSaved,
+	ИндексыБыковСрезПоследних.Prel КАК Prel,
+	ИндексыБыковСрезПоследних.CLIV КАК CLIV,
+	ИндексыБыковСрезПоследних.HLIV КАК HLIV,
+	ИндексыБыковСрезПоследних.DPR КАК DPR,
+	ИндексыБыковСрезПоследних.SCS КАК SCS,
+	ИндексыБыковСрезПоследних.SCE КАК SCE,
+	ИндексыБыковСрезПоследних.SCERel КАК SCERel,
+	ИндексыБыковСрезПоследних.SCEObs КАК SCEObs,
+	ИндексыБыковСрезПоследних.DCE КАК DCE,
+	ИндексыБыковСрезПоследних.SSD КАК SSD,
+	ИндексыБыковСрезПоследних.DSB КАК DSB,
+	ИндексыБыковСрезПоследних.EFC КАК EFC,
+	ИндексыБыковСрезПоследних.GL КАК GL,
+	ИндексыБыковСрезПоследних.MAST КАК MAST,
+	ИндексыБыковСрезПоследних.KET КАК KET,
+	ИндексыБыковСрезПоследних.RP КАК RP,
+	ИндексыБыковСрезПоследних.MET КАК MET,
+	ИндексыБыковСрезПоследних.DA КАК DA,
+	ИндексыБыковСрезПоследних.MF КАК MF,
+	ИндексыБыковСрезПоследних.MS КАК MS,
+	ИндексыБыковСрезПоследних.DWP КАК DWP,
+	ИндексыБыковСрезПоследних.WT КАК WT,
+	ИндексыБыковСрезПоследних.CW КАК CW,
+	ИндексыБыковСрезПоследних.PTAT КАК PTAT,
+	ИндексыБыковСрезПоследних.UDC КАК UDC,
+	ИндексыБыковСрезПоследних.FLC КАК FLC,
+	ИндексыБыковСрезПоследних.BC КАК BC,
+	ИндексыБыковСрезПоследних.DC КАК DC,
+	ИндексыБыковСрезПоследних.Trel КАК Trel,
+	ИндексыБыковСрезПоследних.Телосложение КАК Телосложение,
+	ИндексыБыковСрезПоследних.Сила КАК Сила,
+	ИндексыБыковСрезПоследних.ГлубинаТела КАК ГлубинаТела,
+	ИндексыБыковСрезПоследних.МолочнаяФорма КАК МолочнаяФорма,
+	ИндексыБыковСрезПоследних.УголКрестца КАК УголКрестца,
+	ИндексыБыковСрезПоследних.ШиринаТазовыхСвязок КАК ШиринаТазовыхСвязок,
+	ИндексыБыковСрезПоследних.RLSV КАК RLSV,
+	ИндексыБыковСрезПоследних.RLRV КАК RLRV,
+	ИндексыБыковСрезПоследних.УголКопыта КАК УголКопыта,
+	ИндексыБыковСрезПоследних.FLS КАК FLS,
+	ИндексыБыковСрезПоследних.ПерПрикВым КАК ПерПрикВым,
+	ИндексыБыковСрезПоследних.RUdderHeight КАК RUdderHeight,
+	ИндексыБыковСрезПоследних.ШиринаЗаднейЧастиВымени КАК ШиринаЗаднейЧастиВымени,
+	ИндексыБыковСрезПоследних.РасщеплениеВымени КАК РасщеплениеВымени,
+	ИндексыБыковСрезПоследних.ГлубинаВымени КАК ГлубинаВымени,
+	ИндексыБыковСрезПоследних.FTP КАК FTP,
+	ИндексыБыковСрезПоследних.RTP КАК RTP,
+	ИндексыБыковСрезПоследних.ДлинаСосков КАК ДлинаСосков,
+	ИндексыБыковСрезПоследних.aAa КАК aAa,
+	ИндексыБыковСрезПоследних.DMS КАК DMS,
+	ИндексыБыковСрезПоследних.КаппаКазеин КАК КаппаКазеин,
+	ИндексыБыковСрезПоследних.БетаКазеин КАК БетаКазеин,
+	ИндексыБыковСрезПоследних.BLACT КАК BLACT,
+	ИндексыБыковСрезПоследних.GeneticCodes КАК GeneticCodes,
+	ИндексыБыковСрезПоследних.Haplotypes КАК Haplotypes,
+	ИндексыБыковСрезПоследних.RHA КАК RHA,
+	ИндексыБыковСрезПоследних.EFI КАК EFI,
+	ИндексыБыковСрезПоследних.ADV КАК ADV,
+	ИндексыБыковСрезПоследних.GS КАК GS,
+	ИндексыБыковСрезПоследних.FS КАК FS,
+	ИндексыБыковСрезПоследних._511 КАК _511,
+	ИндексыБыковСрезПоследних.EDGE КАК EDGE,
+	ИндексыБыковСрезПоследних.CP КАК CP,
+	ИндексыБыковСрезПоследних.CP511 КАК CP511,
+	СправочникБыкиПлеменные.ПолнаяКличка КАК ПолнаяКличка
+ИЗ
+	Справочник.БыкиПлеменные КАК СправочникБыкиПлеменные
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ИндексыБыков.СрезПоследних КАК ИндексыБыковСрезПоследних
+		ПО СправочникБыкиПлеменные.Ссылка = ИндексыБыковСрезПоследних.Бык</QueryText>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПородаСкота</dcssch:dataPath>
+					<dcssch:field>ПородаСкота</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Бык</dcssch:dataPath>
+					<dcssch:field>Бык</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ИмяПредопределенныхДанных</dcssch:dataPath>
+					<dcssch:field>ИмяПредопределенныхДанных</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Ссылка</dcssch:dataPath>
+					<dcssch:field>Ссылка</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПометкаУдаления</dcssch:dataPath>
+					<dcssch:field>ПометкаУдаления</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Код</dcssch:dataPath>
+					<dcssch:field>Код</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Наименование</dcssch:dataPath>
+					<dcssch:field>Наименование</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Кличка</dcssch:dataPath>
+					<dcssch:field>Кличка</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>НеРаботает</dcssch:dataPath>
+					<dcssch:field>НеРаботает</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Архивное</dcssch:dataPath>
+					<dcssch:field>Архивное</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>PL</dcssch:dataPath>
+					<dcssch:field>PL</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КличкаНаЛатинице</dcssch:dataPath>
+					<dcssch:field>КличкаНаЛатинице</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>БетаКазеин</dcssch:dataPath>
+					<dcssch:field>БетаКазеин</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДатаРождения</dcssch:dataPath>
+					<dcssch:field>ДатаРождения</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Предопределенный</dcssch:dataPath>
+					<dcssch:field>Предопределенный</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>TPI</dcssch:dataPath>
+					<dcssch:field>TPI</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>NM</dcssch:dataPath>
+					<dcssch:field>NM</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Молоко</dcssch:dataPath>
+					<dcssch:field>Молоко</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>CCR</dcssch:dataPath>
+					<dcssch:field>CCR</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>HCR</dcssch:dataPath>
+					<dcssch:field>HCR</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>MET</dcssch:dataPath>
+					<dcssch:field>MET</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>GeneticCodes</dcssch:dataPath>
+					<dcssch:field>GeneticCodes</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>PTAT</dcssch:dataPath>
+					<dcssch:field>PTAT</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>SCS</dcssch:dataPath>
+					<dcssch:field>SCS</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>EDGE</dcssch:dataPath>
+					<dcssch:field>EDGE</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>DPR</dcssch:dataPath>
+					<dcssch:field>DPR</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>CLIV</dcssch:dataPath>
+					<dcssch:field>CLIV</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>CW</dcssch:dataPath>
+					<dcssch:field>CW</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Телосложение</dcssch:dataPath>
+					<dcssch:field>Телосложение</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>BC</dcssch:dataPath>
+					<dcssch:field>BC</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>WT</dcssch:dataPath>
+					<dcssch:field>WT</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>DWP</dcssch:dataPath>
+					<dcssch:field>DWP</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>MF</dcssch:dataPath>
+					<dcssch:field>MF</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>МолочнаяФорма</dcssch:dataPath>
+					<dcssch:field>МолочнаяФорма</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ГлубинаТела</dcssch:dataPath>
+					<dcssch:field>ГлубинаТела</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>CM</dcssch:dataPath>
+					<dcssch:field>CM</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>FM</dcssch:dataPath>
+					<dcssch:field>FM</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>GM</dcssch:dataPath>
+					<dcssch:field>GM</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>DA</dcssch:dataPath>
+					<dcssch:field>DA</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Белок</dcssch:dataPath>
+					<dcssch:field>Белок</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Prot</dcssch:dataPath>
+					<dcssch:field>Prot</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Жир</dcssch:dataPath>
+					<dcssch:field>Жир</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ЖирПроцент</dcssch:dataPath>
+					<dcssch:field>ЖирПроцент</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>CFP</dcssch:dataPath>
+					<dcssch:field>CFP</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>FE</dcssch:dataPath>
+					<dcssch:field>FE</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КаппаКазеин</dcssch:dataPath>
+					<dcssch:field>КаппаКазеин</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Trel</dcssch:dataPath>
+					<dcssch:field>Trel</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ШиринаТазовыхСвязок</dcssch:dataPath>
+					<dcssch:field>ШиринаТазовыхСвязок</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>FeedSaved</dcssch:dataPath>
+					<dcssch:field>FeedSaved</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>DC</dcssch:dataPath>
+					<dcssch:field>DC</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Prel</dcssch:dataPath>
+					<dcssch:field>Prel</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>HLIV</dcssch:dataPath>
+					<dcssch:field>HLIV</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>SCE</dcssch:dataPath>
+					<dcssch:field>SCE</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>SCERel</dcssch:dataPath>
+					<dcssch:field>SCERel</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>SCEObs</dcssch:dataPath>
+					<dcssch:field>SCEObs</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>DCE</dcssch:dataPath>
+					<dcssch:field>DCE</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>EFC</dcssch:dataPath>
+					<dcssch:field>EFC</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>SSD</dcssch:dataPath>
+					<dcssch:field>SSD</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>DSB</dcssch:dataPath>
+					<dcssch:field>DSB</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>GL</dcssch:dataPath>
+					<dcssch:field>GL</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>MAST</dcssch:dataPath>
+					<dcssch:field>MAST</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>KET</dcssch:dataPath>
+					<dcssch:field>KET</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>RP</dcssch:dataPath>
+					<dcssch:field>RP</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>MS</dcssch:dataPath>
+					<dcssch:field>MS</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>UDC</dcssch:dataPath>
+					<dcssch:field>UDC</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>FLC</dcssch:dataPath>
+					<dcssch:field>FLC</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Сила</dcssch:dataPath>
+					<dcssch:field>Сила</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>УголКрестца</dcssch:dataPath>
+					<dcssch:field>УголКрестца</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>RHA</dcssch:dataPath>
+					<dcssch:field>RHA</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>RLSV</dcssch:dataPath>
+					<dcssch:field>RLSV</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>RLRV</dcssch:dataPath>
+					<dcssch:field>RLRV</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>УголКопыта</dcssch:dataPath>
+					<dcssch:field>УголКопыта</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>FLS</dcssch:dataPath>
+					<dcssch:field>FLS</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПерПрикВым</dcssch:dataPath>
+					<dcssch:field>ПерПрикВым</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>RUdderHeight</dcssch:dataPath>
+					<dcssch:field>RUdderHeight</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ШиринаЗаднейЧастиВымени</dcssch:dataPath>
+					<dcssch:field>ШиринаЗаднейЧастиВымени</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>РасщеплениеВымени</dcssch:dataPath>
+					<dcssch:field>РасщеплениеВымени</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ГлубинаВымени</dcssch:dataPath>
+					<dcssch:field>ГлубинаВымени</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>FTP</dcssch:dataPath>
+					<dcssch:field>FTP</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>RTP</dcssch:dataPath>
+					<dcssch:field>RTP</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДлинаСосков</dcssch:dataPath>
+					<dcssch:field>ДлинаСосков</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>aAa</dcssch:dataPath>
+					<dcssch:field>aAa</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>DMS</dcssch:dataPath>
+					<dcssch:field>DMS</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>BLACT</dcssch:dataPath>
+					<dcssch:field>BLACT</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Haplotypes</dcssch:dataPath>
+					<dcssch:field>Haplotypes</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>EFI</dcssch:dataPath>
+					<dcssch:field>EFI</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ADV</dcssch:dataPath>
+					<dcssch:field>ADV</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>GS</dcssch:dataPath>
+					<dcssch:field>GS</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>FS</dcssch:dataPath>
+					<dcssch:field>FS</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>_511</dcssch:dataPath>
+					<dcssch:field>_511</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>CP</dcssch:dataPath>
+					<dcssch:field>CP</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>CP511</dcssch:dataPath>
+					<dcssch:field>CP511</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПолнаяКличка</dcssch:dataPath>
+					<dcssch:field>ПолнаяКличка</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КодСемени</dcssch:dataPath>
+					<dcssch:field>КодСемени</dcssch:field>
+				</Field>
+				<Parameter>
+					<dcssch:name>Период</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Период</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</dcssch:valueType>
+					<dcssch:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcssch:value>
+					<dcssch:useRestriction>false</dcssch:useRestriction>
+				</Parameter>
+				<MainTable>Catalog.БыкиПлеменные</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Предопределенный</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+							<dcsset:viewMode>Inaccessible</dcsset:viewMode>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ИтогTPI" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Итог TPI</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИтогNM" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Итог NM</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИтогМолоко" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Итог молоко</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИтогCCR" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Итог CCR</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИтогHCR" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Итог HCR</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИтогPL" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Итог PL</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПоказыватьАрхив" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показывать архив</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показывать архив</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоказыватьАрхив</Action>
+		</Command>
+	</Commands>
+</Form>

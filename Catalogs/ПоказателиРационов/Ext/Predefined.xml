@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.20">
+	<Item id="8306b460-35ff-4aea-85f4-7d679dedd815">
+		<Name>ADF</Name>
+		<Code>000000017</Code>
+		<Description>ADF</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="1fa4abd3-1f9e-45cc-800d-1b90b46c85d2">
+		<Name>ADL</Name>
+		<Code>000000018</Code>
+		<Description>ADL</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="5c0c12c3-cdea-464d-ad3b-a8180c86de45">
+		<Name>Ca</Name>
+		<Code>000000025</Code>
+		<Description>Ca</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="571a6e20-bcd9-4c04-8bd6-c15aec3ce5d4">
+		<Name>Ca_P</Name>
+		<Code>000000026</Code>
+		<Description>Ca:P</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="f341fb61-e591-48f1-872b-7766e6b46a0e">
+		<Name>Cl</Name>
+		<Code>000000023</Code>
+		<Description>Cl</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="e651e25f-7282-45fd-ab21-2b94910a7ce4">
+		<Name>DCAD</Name>
+		<Code>000000019</Code>
+		<Description>DCAD</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="25f197d0-7f73-40f7-97d6-a34191c82d0e">
+		<Name>K</Name>
+		<Code>000000021</Code>
+		<Description>K</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="4bfaad7f-62ca-4e45-a687-0d329d4d5279">
+		<Name>Mg</Name>
+		<Code>000000020</Code>
+		<Description>Mg</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="5517affb-583a-46eb-9c07-6109d4f9e12b">
+		<Name>Na</Name>
+		<Code>000000027</Code>
+		<Description>Na</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="74347020-7dee-4904-a6f3-77ab203ea9b7">
+		<Name>NDF</Name>
+		<Code>000000015</Code>
+		<Description>NDF</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="ae1a8437-9417-4a15-8338-0cef7ed2c947">
+		<Name>NDF_ОК</Name>
+		<Code>000000016</Code>
+		<Description>NDF-ОК</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="be1f7c9d-2a54-4bb9-aa69-e29ce13b24a0">
+		<Name>P</Name>
+		<Code>000000022</Code>
+		<Description>P</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="09e3df88-9a79-4cd1-90a4-aeb801496901">
+		<Name>RNB</Name>
+		<Code>000000004</Code>
+		<Description>RNB</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="ddc70c1b-6c2f-407f-a7ce-d953b00b5256">
+		<Name>S</Name>
+		<Code>000000024</Code>
+		<Description>S</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="36021c79-31d3-40c6-855f-7becabde600a">
+		<Name>XP</Name>
+		<Code>000000007</Code>
+		<Description>XP (СП)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="a5a5361c-e03c-4c17-b526-8e0f8020f520">
+		<Name>Влажность</Name>
+		<Code>000000003</Code>
+		<Description>Влажность</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="db12d81f-a816-4ed3-8856-e78b0b7208e4">
+		<Name>Крахмал</Name>
+		<Code>000000009</Code>
+		<Description>Крахмал</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="82cb186c-f8f7-4018-af72-6d59295cd4f3">
+		<Name>НерастворимыйВРубцеПротеин</Name>
+		<Code>000000030</Code>
+		<Description>Нерастворимый в рубце протеин</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="fca33670-a281-41c1-9eab-dd206914435d">
+		<Name>РастворимыйВРубцеПротеин</Name>
+		<Code>000000029</Code>
+		<Description>Растворимый в рубце протеин</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="fb8ad0f3-dd84-4fc5-9310-783e03cbae2d">
+		<Name>РастворимыйСП</Name>
+		<Code>000000008</Code>
+		<Description>Растворимый СП% в XP (СП)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="2d82410b-928e-458d-874a-98637a342784">
+		<Name>Сахар</Name>
+		<Code>000000011</Code>
+		<Description>Сахар</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="0ad2d786-c29d-4d91-a213-7b14c935dca1">
+		<Name>СВВОК</Name>
+		<Code>000000002</Code>
+		<Description>СВ в ОК</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="19f9236a-1cc9-4275-8c82-6f1ffd6afab9">
+		<Name>СЖ</Name>
+		<Code>000000012</Code>
+		<Description>СЖ (CL)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="913119e9-bb39-481e-a54a-654bfa88e2c1">
+		<Name>СЗ</Name>
+		<Code>000000013</Code>
+		<Description>СЗ</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="8aad883d-88e8-4eee-9a01-e2f9dc11a904">
+		<Name>СК</Name>
+		<Code>000000014</Code>
+		<Description>СК</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="8aa23294-1ad3-4ce2-b000-debd55e4b6c7">
+		<Name>СухоеВещество</Name>
+		<Code>000000001</Code>
+		<Description>Сухое вещество</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="e71b775a-fd91-4b52-86ff-53c71b200c0f">
+		<Name>ТранзитныйКрахмал</Name>
+		<Code>000000010</Code>
+		<Description>Транзитный крахмал</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="6cd8d337-022b-420e-9e59-6f3edb3ee09d">
+		<Name>Цена</Name>
+		<Code>000000028</Code>
+		<Description>Цена</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="3614db6b-d01e-47de-b137-0381e4687366">
+		<Name>NEL</Name>
+		<Code>000000006</Code>
+		<Description>ЧЭЛ (NEL)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="587489db-f517-46cb-bf4b-c6c67b899dfd">
+		<Name>NELНаКгСВ</Name>
+		<Code>000000005</Code>
+		<Description>ЧЭЛ (NEL) /кг СВ</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

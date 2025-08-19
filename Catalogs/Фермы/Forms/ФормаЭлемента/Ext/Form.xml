@@ -1,0 +1,394 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Общая" id="78">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Общая</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Общая</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>false</HorizontalStretch>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ОбщаяРасширеннаяПодсказка" id="79"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаНаименование" id="113">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа наименование</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа наименование</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаНаименованиеРасширеннаяПодсказка" id="114"/>
+					<ChildItems>
+						<InputField name="Наименование" id="4">
+							<DataPath>Объект.Description</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Название фермы</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+							<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+						</InputField>
+						<InputField name="Хозяйство" id="115">
+							<DataPath>Объект.Хозяйство</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ХозяйствоКонтекстноеМеню" id="116"/>
+							<ExtendedTooltip name="ХозяйствоРасширеннаяПодсказка" id="117"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ДополнительныеДанные" id="46">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительные данные</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительные данные</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>AlwaysHorizontal</Group>
+					<Behavior>Usual</Behavior>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ДополнительныеДанныеРасширеннаяПодсказка" id="47"/>
+					<ChildItems>
+						<UsualGroup name="КорпусаПоУмолчанию" id="42">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Корпуса по умолчанию</v8:content>
+								</v8:item>
+							</Title>
+							<TitleTextColor>#4E4E4E</TitleTextColor>
+							<TitleFont ref="style:NormalTextFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Корпуса по умолчанию</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Behavior>Usual</Behavior>
+							<ExtendedTooltip name="КорпусаПоУмолчаниюРасширеннаяПодсказка" id="43"/>
+							<ChildItems>
+								<InputField name="КорпусДляНоворожденныхТелок" id="10">
+									<DataPath>Объект.КорпусДляНоворожденныхТелок</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Новорожденные телки</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<ContextMenu name="КорпусДляНоворожденныхТелокКонтекстноеМеню" id="11"/>
+									<ExtendedTooltip name="КорпусДляНоворожденныхТелокРасширеннаяПодсказка" id="12"/>
+								</InputField>
+								<InputField name="КорпусДляНоворожденныхБычков" id="13">
+									<DataPath>Объект.КорпусДляНоворожденныхБычков</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Новорожденные бычки</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<ContextMenu name="КорпусДляНоворожденныхБычковКонтекстноеМеню" id="14"/>
+									<ExtendedTooltip name="КорпусДляНоворожденныхБычковРасширеннаяПодсказка" id="15"/>
+								</InputField>
+								<InputField name="КорпусДляОтела" id="34">
+									<DataPath>Объект.КорпусДляОтела</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Место отелов</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<ContextMenu name="КорпусДляОтелаКонтекстноеМеню" id="35"/>
+									<ExtendedTooltip name="КорпусДляОтелаРасширеннаяПодсказка" id="36"/>
+								</InputField>
+								<InputField name="КорпусДляСухостоя" id="25">
+									<DataPath>Объект.КорпусДляСухостоя</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Корпус для запуска коров</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<ContextMenu name="КорпусДляСухостояКонтекстноеМеню" id="26"/>
+									<ExtendedTooltip name="КорпусДляСухостояРасширеннаяПодсказка" id="27"/>
+								</InputField>
+								<InputField name="КорпусДляСухостояНетелей" id="31">
+									<DataPath>Объект.КорпусДляСухостояНетелей</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Перевод нетелей в сухостой</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Left</TitleLocation>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<ContextMenu name="КорпусДляСухостояНетелейКонтекстноеМеню" id="32"/>
+									<ExtendedTooltip name="КорпусДляСухостояНетелейРасширеннаяПодсказка" id="33"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ПрефиксГруппа" id="44">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дополнительно</v8:content>
+								</v8:item>
+							</Title>
+							<TitleTextColor>#4E4E4E</TitleTextColor>
+							<TitleFont ref="style:NormalTextFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Префикс группа</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
+							<ExtendedTooltip name="ПрефиксГруппаРасширеннаяПодсказка" id="45"/>
+							<ChildItems>
+								<UsualGroup name="ДополнительноЛевоГруппа" id="71">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дополнительно лево группа</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дополнительно лево группа</v8:content>
+										</v8:item>
+									</ToolTip>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ДополнительноЛевоГруппаРасширеннаяПодсказка" id="72"/>
+									<ChildItems>
+										<CheckBoxField name="АвтонумерацияЖивотного" id="98">
+											<DataPath>Объект.АвтонумерацияЖивотного</DataPath>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="АвтонумерацияЖивотногоКонтекстноеМеню" id="99"/>
+											<ExtendedTooltip name="АвтонумерацияЖивотногоРасширеннаяПодсказка" id="100"/>
+											<Events>
+												<Event name="OnChange">АвтонумерацияЖивотногоПриИзменении</Event>
+											</Events>
+										</CheckBoxField>
+										<InputField name="ПрефиксНомераЖивотного" id="16">
+											<DataPath>Объект.ПрефиксНомераЖивотного</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<HorizontalStretch>true</HorizontalStretch>
+											<ContextMenu name="ПрефиксНомераЖивотногоКонтекстноеМеню" id="17"/>
+											<ExtendedTooltip name="ПрефиксНомераЖивотногоРасширеннаяПодсказка" id="18"/>
+										</InputField>
+										<InputField name="ДлинаКодаЖивотного" id="39">
+											<DataPath>Объект.ДлинаКодаЖивотного</DataPath>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<HorizontalStretch>true</HorizontalStretch>
+											<ContextMenu name="ДлинаКодаЖивотногоКонтекстноеМеню" id="40"/>
+											<ExtendedTooltip name="ДлинаКодаЖивотногоРасширеннаяПодсказка" id="41"/>
+										</InputField>
+										<InputField name="ДнейСтельностиТелки" id="19">
+											<DataPath>Объект.ДнейСтельностиТелки</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<HorizontalStretch>true</HorizontalStretch>
+											<ContextMenu name="ДнейСтельностиТелкиКонтекстноеМеню" id="20"/>
+											<ExtendedTooltip name="ДнейСтельностиТелкиРасширеннаяПодсказка" id="21"/>
+										</InputField>
+										<InputField name="ДнейСтельностиКоровы" id="22">
+											<DataPath>Объект.ДнейСтельностиКоровы</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<HorizontalStretch>true</HorizontalStretch>
+											<ContextMenu name="ДнейСтельностиКоровыКонтекстноеМеню" id="23"/>
+											<ExtendedTooltip name="ДнейСтельностиКоровыРасширеннаяПодсказка" id="24"/>
+										</InputField>
+										<InputField name="ДнейЗапуска" id="54">
+											<DataPath>Объект.ДнейЗапуска</DataPath>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<HorizontalStretch>true</HorizontalStretch>
+											<ContextMenu name="ДнейЗапускаКонтекстноеМеню" id="55"/>
+											<ExtendedTooltip name="ДнейЗапускаРасширеннаяПодсказка" id="56"/>
+										</InputField>
+										<InputField name="ДнейПереводаВСухостой" id="57">
+											<DataPath>Объект.ДнейПереводаВСухостой</DataPath>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<HorizontalStretch>true</HorizontalStretch>
+											<ContextMenu name="ДнейПереводаВСухостойКонтекстноеМеню" id="58"/>
+											<ExtendedTooltip name="ДнейПереводаВСухостойРасширеннаяПодсказка" id="59"/>
+										</InputField>
+										<CheckBoxField name="ВыбраковыватьЖивотныхПослеАборта" id="101">
+											<DataPath>Объект.ВыбраковыватьЖивотныхПослеАборта</DataPath>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ВыбраковыватьЖивотныхПослеАбортаКонтекстноеМеню" id="102"/>
+											<ExtendedTooltip name="ВыбраковыватьЖивотныхПослеАбортаРасширеннаяПодсказка" id="103"/>
+										</CheckBoxField>
+										<InputField name="БуквенныйКодСтраны" id="107">
+											<DataPath>Объект.БуквенныйКодСтраны</DataPath>
+											<ContextMenu name="БуквенныйКодСтраныКонтекстноеМеню" id="108"/>
+											<ExtendedTooltip name="БуквенныйКодСтраныРасширеннаяПодсказка" id="109"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ДополнительноПравоГруппа" id="73">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дополнительно право группа</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дополнительно право группа</v8:content>
+										</v8:item>
+									</ToolTip>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ДополнительноПравоГруппаРасширеннаяПодсказка" id="74"/>
+									<ChildItems>
+										<InputField name="ПроцентКормодней" id="51">
+											<DataPath>Объект.ПроцентКормодней</DataPath>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<HorizontalStretch>true</HorizontalStretch>
+											<ChoiceButton>false</ChoiceButton>
+											<ContextMenu name="ПроцентКормоднейКонтекстноеМеню" id="52"/>
+											<ExtendedTooltip name="ПроцентКормоднейРасширеннаяПодсказка" id="53"/>
+										</InputField>
+										<InputField name="ПериодДобровольногоОжидания" id="60">
+											<DataPath>Объект.ПериодДобровольногоОжиданияКоров</DataPath>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<HorizontalStretch>true</HorizontalStretch>
+											<ContextMenu name="ПериодДобровольногоОжиданияКонтекстноеМеню" id="61"/>
+											<ExtendedTooltip name="ПериодДобровольногоОжиданияРасширеннаяПодсказка" id="62"/>
+										</InputField>
+										<InputField name="ПериодДобровольногоОжиданияТёлок" id="104">
+											<DataPath>Объект.ПериодДобровольногоОжиданияТёлок</DataPath>
+											<ContextMenu name="ПериодДобровольногоОжиданияТёлокКонтекстноеМеню" id="105"/>
+											<ExtendedTooltip name="ПериодДобровольногоОжиданияТёлокРасширеннаяПодсказка" id="106"/>
+										</InputField>
+										<InputField name="АбортДнейОт" id="75">
+											<DataPath>1/0:d04ae260-5059-4907-a7e3-cad2caa5b326</DataPath>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<HorizontalStretch>true</HorizontalStretch>
+											<ContextMenu name="АбортДнейОтКонтекстноеМеню" id="76"/>
+											<ExtendedTooltip name="АбортДнейОтРасширеннаяПодсказка" id="77"/>
+										</InputField>
+										<InputField name="АборДнейОт" id="80">
+											<DataPath>1/0:8b237a3b-eab9-4533-bf10-1d411d8c7cf5</DataPath>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<HorizontalStretch>true</HorizontalStretch>
+											<ContextMenu name="АборДнейОтКонтекстноеМеню" id="81"/>
+											<ExtendedTooltip name="АборДнейОтРасширеннаяПодсказка" id="82"/>
+										</InputField>
+										<InputField name="ПоловойЦикл" id="83">
+											<DataPath>1/0:2da6447b-9e28-49c3-99a6-096f2aec638d</DataPath>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<HorizontalStretch>true</HorizontalStretch>
+											<ContextMenu name="ПоловойЦиклКонтекстноеМеню" id="84"/>
+											<ExtendedTooltip name="ПоловойЦиклРасширеннаяПодсказка" id="85"/>
+										</InputField>
+										<InputField name="СчитатьМертворожденнымДнейОт" id="86">
+											<DataPath>1/0:1fc2c6bb-8ec6-44e8-a19f-3385af66750d</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Мертворожденный дней от</v8:content>
+												</v8:item>
+											</Title>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<HorizontalStretch>true</HorizontalStretch>
+											<ContextMenu name="СчитатьМертворожденнымДнейОтКонтекстноеМеню" id="87"/>
+											<ExtendedTooltip name="СчитатьМертворожденнымДнейОтРасширеннаяПодсказка" id="88"/>
+										</InputField>
+										<InputField name="ЭмбриональнаяСмертностьДо" id="89">
+											<DataPath>1/0:d943d3d5-ce42-450d-ba9f-aab26f1bf76d</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Эмбириональная смерть до</v8:content>
+												</v8:item>
+											</Title>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<HorizontalStretch>true</HorizontalStretch>
+											<ContextMenu name="ЭмбриональнаяСмертностьДоКонтекстноеМеню" id="90"/>
+											<ExtendedTooltip name="ЭмбриональнаяСмертностьДоРасширеннаяПодсказка" id="91"/>
+										</InputField>
+										<InputField name="ОтъёмДней" id="92">
+											<DataPath>Объект.ОтъемДней</DataPath>
+											<HorizontalStretch>true</HorizontalStretch>
+											<ContextMenu name="ОтъёмДнейКонтекстноеМеню" id="93"/>
+											<ExtendedTooltip name="ОтъёмДнейРасширеннаяПодсказка" id="94"/>
+										</InputField>
+										<InputField name="РемонтСтада" id="110">
+											<DataPath>Объект.РемонтСтада</DataPath>
+											<ContextMenu name="РемонтСтадаКонтекстноеМеню" id="111"/>
+											<ExtendedTooltip name="РемонтСтадаРасширеннаяПодсказка" id="112"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Фермы</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

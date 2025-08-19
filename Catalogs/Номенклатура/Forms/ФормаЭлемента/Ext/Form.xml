@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Popup name="ФормаГруппаПерейти" id="105">
+				<UserVisible>
+					<xr:Common>true</xr:Common>
+					<xr:Value name="Role.ВетеринарныйВрач">false</xr:Value>
+					<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+					<xr:Value name="Role.Пользователь">false</xr:Value>
+					<xr:Value name="Role.УдалениеЖивотных">false</xr:Value>
+					<xr:Value name="Role.Кладовщик">false</xr:Value>
+					<xr:Value name="Role.ГлавныйЗоотехник">false</xr:Value>
+					<xr:Value name="Role.ДоступКоВсемФермам">false</xr:Value>
+				</UserVisible>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Перейти</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Форма группа перейти</v8:content>
+					</v8:item>
+				</ToolTip>
+				<ExtendedTooltip name="ФормаГруппаПерейтиРасширеннаяПодсказка" id="106"/>
+				<ChildItems>
+					<Button name="ФормаТаблицаПитательности" id="107">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ТаблицаПитательности</CommandName>
+						<ExtendedTooltip name="ФормаТаблицаПитательностиРасширеннаяПодсказка" id="108"/>
+					</Button>
+				</ChildItems>
+			</Popup>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ОсновныеДанные" id="83">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основные данные</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основные данные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ОсновныеДанныеРасширеннаяПодсказка" id="84"/>
+			<ChildItems>
+				<InputField name="Наименование" id="4">
+					<DataPath>Объект.Description</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+				</InputField>
+				<UsualGroup name="ГруппаОсновныеРеквизиты" id="94">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа основные реквизиты</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа основные реквизиты</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаОсновныеРеквизитыРасширеннаяПодсказка" id="95"/>
+					<ChildItems>
+						<InputField name="ВидНоменклатуры" id="85">
+							<DataPath>Объект.ВидНоменклатуры</DataPath>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<ContextMenu name="ВидНоменклатурыКонтекстноеМеню" id="86"/>
+							<ExtendedTooltip name="ВидНоменклатурыРасширеннаяПодсказка" id="87"/>
+						</InputField>
+						<InputField name="ТипНоменклатуры" id="102">
+							<DataPath>Объект.ТипНоменклатуры</DataPath>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<ContextMenu name="ТипНоменклатурыКонтекстноеМеню" id="103"/>
+							<ExtendedTooltip name="ТипНоменклатурыРасширеннаяПодсказка" id="104"/>
+							<Events>
+								<Event name="OnChange">ТипНоменклатурыПриИзменении</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ДополнительныеДанныеГруппа" id="44">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительные данные группа</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительные данные группа</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>true</HorizontalStretch>
+					<Group>AlwaysHorizontal</Group>
+					<Behavior>Usual</Behavior>
+					<ShowTitle>false</ShowTitle>
+					<ThroughAlign>Use</ThroughAlign>
+					<ExtendedTooltip name="ДополнительныеДанныеГруппаРасширеннаяПодсказка" id="45"/>
+					<ChildItems>
+						<InputField name="ТипСемени" id="32">
+							<DataPath>Объект.ТипСемени</DataPath>
+							<Visible>false</Visible>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="ТипСемениКонтекстноеМеню" id="33"/>
+							<ExtendedTooltip name="ТипСемениРасширеннаяПодсказка" id="34"/>
+							<Events>
+								<Event name="OnChange">ТипСемениПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="Бык" id="35">
+							<DataPath>Объект.Бык</DataPath>
+							<Visible>false</Visible>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="БыкКонтекстноеМеню" id="36"/>
+							<ExtendedTooltip name="БыкРасширеннаяПодсказка" id="37"/>
+							<Events>
+								<Event name="OnChange">БыкПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="ВидКорма" id="99">
+							<DataPath>Объект.ВидКорма</DataPath>
+							<Visible>false</Visible>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<ContextMenu name="ВидКормаКонтекстноеМеню" id="100"/>
+							<ExtendedTooltip name="ВидКормаРасширеннаяПодсказка" id="101"/>
+						</InputField>
+						<InputField name="ГруппаКорма" id="109">
+							<DataPath>Объект.ГруппаКорма</DataPath>
+							<Visible>false</Visible>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ГруппаКормаКонтекстноеМеню" id="110"/>
+							<ExtendedTooltip name="ГруппаКормаРасширеннаяПодсказка" id="111"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<Table name="ЕдиницыИзмерения" id="48">
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>Объект.ЕдиницыИзмерения</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ЕдиницыИзмеренияКонтекстноеМеню" id="49"/>
+					<AutoCommandBar name="ЕдиницыИзмеренияКоманднаяПанель" id="50">
+						<ChildItems>
+							<Button name="ЕдиницыИзмеренияОсновнаяЕдиницаИзмерения" id="73">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ОсновнаяЕдиницаИзмерения</CommandName>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Основная единица</v8:content>
+									</v8:item>
+								</Title>
+								<ExtendedTooltip name="ЕдиницыИзмеренияОсновнаяЕдиницаИзмеренияРасширеннаяПодсказка" id="74"/>
+							</Button>
+						</ChildItems>
+					</AutoCommandBar>
+					<ExtendedTooltip name="ЕдиницыИзмеренияРасширеннаяПодсказка" id="51"/>
+					<SearchStringAddition name="ЕдиницыИзмеренияСтрокаПоиска" id="52">
+						<AdditionSource>
+							<Item>ЕдиницыИзмерения</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ЕдиницыИзмеренияСтрокаПоискаКонтекстноеМеню" id="53"/>
+						<ExtendedTooltip name="ЕдиницыИзмеренияСтрокаПоискаРасширеннаяПодсказка" id="54"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ЕдиницыИзмеренияСостояниеПросмотра" id="55">
+						<AdditionSource>
+							<Item>ЕдиницыИзмерения</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ЕдиницыИзмеренияСостояниеПросмотраКонтекстноеМеню" id="56"/>
+						<ExtendedTooltip name="ЕдиницыИзмеренияСостояниеПросмотраРасширеннаяПодсказка" id="57"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ЕдиницыИзмеренияУправлениеПоиском" id="58">
+						<AdditionSource>
+							<Item>ЕдиницыИзмерения</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ЕдиницыИзмеренияУправлениеПоискомКонтекстноеМеню" id="59"/>
+						<ExtendedTooltip name="ЕдиницыИзмеренияУправлениеПоискомРасширеннаяПодсказка" id="60"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="OnEditEnd">ЕдиницыИзмеренияПриОкончанииРедактирования</Event>
+						<Event name="BeforeAddRow">ЕдиницыИзмеренияПередНачаломДобавления</Event>
+						<Event name="OnActivateRow">ЕдиницыИзмеренияПриАктивизацииСтроки</Event>
+						<Event name="OnStartEdit">ЕдиницыИзмеренияПриНачалеРедактирования</Event>
+					</Events>
+					<ChildItems>
+						<InputField name="ЕдиницыИзмеренияЕдиницаИзмерения" id="64">
+							<DataPath>Объект.ЕдиницыИзмерения.ЕдиницаИзмерения</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ЕдиницыИзмеренияЕдиницаИзмеренияКонтекстноеМеню" id="65"/>
+							<ExtendedTooltip name="ЕдиницыИзмеренияЕдиницаИзмеренияРасширеннаяПодсказка" id="66"/>
+						</InputField>
+						<InputField name="ЕдиницыИзмеренияКоэффициент" id="70">
+							<DataPath>Объект.ЕдиницыИзмерения.Коэффициент</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ЕдиницыИзмеренияКоэффициентКонтекстноеМеню" id="71"/>
+							<ExtendedTooltip name="ЕдиницыИзмеренияКоэффициентРасширеннаяПодсказка" id="72"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+				<InputField name="СтавкаНДС" id="96">
+					<DataPath>Объект.СтавкаНДС</DataPath>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<ContextMenu name="СтавкаНДСКонтекстноеМеню" id="97"/>
+					<ExtendedTooltip name="СтавкаНДСРасширеннаяПодсказка" id="98"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Номенклатура</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОсновнаяЕдиницаИзмерения" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основная единица измерения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основная единица измерения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОсновнаяЕдиницаИзмерения</Action>
+		</Command>
+		<Command name="ТаблицаПитательности" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица питательности</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица питательности</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ТаблицаПитательности</Action>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,1071 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="ChoiceProcessing">ОбработкаВыбора</Event>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="FillCheckProcessingAtServer">ОбработкаПроверкиЗаполненияНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Шапка" id="60">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ШапкаРасширеннаяПодсказка" id="61"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаДанных" id="62">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа данных</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа данных</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>20</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<VerticalStretch>true</VerticalStretch>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаДанныхРасширеннаяПодсказка" id="63"/>
+					<ChildItems>
+						<InputField name="ВидЗаболевания" id="321">
+							<DataPath>Объект.ВидЗаболевания</DataPath>
+							<DefaultItem>true</DefaultItem>
+							<TitleLocation>Top</TitleLocation>
+							<ContextMenu name="ВидЗаболеванияКонтекстноеМеню" id="322"/>
+							<ExtendedTooltip name="ВидЗаболеванияРасширеннаяПодсказка" id="323"/>
+							<Events>
+								<Event name="OnChange">ВидЗаболеванияПриИзменении</Event>
+								<Event name="ChoiceProcessing">ВидЗаболеванияОбработкаВыбора</Event>
+							</Events>
+						</InputField>
+						<InputField name="Номер" id="66">
+							<DataPath>Объект.Number</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Номер</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="НомерКонтекстноеМеню" id="67"/>
+							<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="68"/>
+						</InputField>
+						<InputField name="Дата" id="69">
+							<DataPath>Объект.Date</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дата</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="ДатаКонтекстноеМеню" id="70"/>
+							<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="71"/>
+							<Events>
+								<Event name="OnChange">ДатаПриИзменении</Event>
+								<Event name="AutoComplete">ДатаАвтоПодбор</Event>
+								<Event name="StartChoice">ДатаНачалоВыбора</Event>
+							</Events>
+						</InputField>
+						<InputField name="Ферма" id="74">
+							<DataPath>Объект.Ферма</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="ФермаКонтекстноеМеню" id="75"/>
+							<ExtendedTooltip name="ФермаРасширеннаяПодсказка" id="76"/>
+							<Events>
+								<Event name="OnChange">ФермаПриИзменении</Event>
+								<Event name="ChoiceProcessing">ФермаОбработкаВыбора</Event>
+							</Events>
+						</InputField>
+						<InputField name="Склад" id="304">
+							<DataPath>Объект.Склад</DataPath>
+							<ContextMenu name="СкладКонтекстноеМеню" id="305"/>
+							<ExtendedTooltip name="СкладРасширеннаяПодсказка" id="306"/>
+						</InputField>
+						<InputField name="ЛечащийВрач" id="10">
+							<DataPath>Объект.ЛечащийВрач</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Вет. врач</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ЛечащийВрачКонтекстноеМеню" id="11"/>
+							<ExtendedTooltip name="ЛечащийВрачРасширеннаяПодсказка" id="12"/>
+						</InputField>
+						<InputField name="Комментарий" id="80">
+							<DataPath>Объект.Комментарий</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<Height>3</Height>
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>false</VerticalStretch>
+							<MultiLine>true</MultiLine>
+							<ContextMenu name="КомментарийКонтекстноеМеню" id="81"/>
+							<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="82"/>
+						</InputField>
+						<UsualGroup name="ГруппаАвтора" id="83">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа автора</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа автора</v8:content>
+								</v8:item>
+							</ToolTip>
+							<VerticalStretch>true</VerticalStretch>
+							<GroupVerticalAlign>Bottom</GroupVerticalAlign>
+							<VerticalAlign>Bottom</VerticalAlign>
+							<Behavior>Usual</Behavior>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаАвтораРасширеннаяПодсказка" id="84"/>
+							<ChildItems>
+								<InputField name="Автор" id="85">
+									<DataPath>Объект.Автор</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Автор</v8:content>
+										</v8:item>
+									</Title>
+									<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+									<GroupVerticalAlign>Bottom</GroupVerticalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="АвторКонтекстноеМеню" id="86"/>
+									<ExtendedTooltip name="АвторРасширеннаяПодсказка" id="87"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаДанныхТаблиц" id="246">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа данных таблиц</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа данных таблиц</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Behavior>Usual</Behavior>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаДанныхТаблицРасширеннаяПодсказка" id="247"/>
+					<ChildItems>
+						<Pages name="ГруппаДанныхТаблицСтраницы" id="130">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа данных таблиц страницы</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа данных таблиц страницы</v8:content>
+								</v8:item>
+							</ToolTip>
+							<PagesRepresentation>TabsOnTop</PagesRepresentation>
+							<ExtendedTooltip name="ГруппаДанныхТаблицСтраницыРасширеннаяПодсказка" id="131"/>
+							<ChildItems>
+								<Page name="ЖивотныеНаЛеченииГруппа" id="163">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Животные на лечении</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Животные на лечении группа</v8:content>
+										</v8:item>
+									</ToolTip>
+									<TitleDataPath>Объект.ЖивотныеНаЛечении.RowsCount</TitleDataPath>
+									<ExtendedTooltip name="ЖивотныеНаЛеченииГруппаРасширеннаяПодсказка" id="164"/>
+									<ChildItems>
+										<UsualGroup name="ГруппаВыборБолезни" id="324">
+											<Visible>false</Visible>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content> </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Выбор болезни</v8:content>
+												</v8:item>
+											</ToolTip>
+											<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+											<Behavior>PopUp</Behavior>
+											<ExtendedTooltip name="ГруппаВыборБолезниРасширеннаяПодсказка" id="325"/>
+											<ChildItems>
+												<Table name="ТаблицаБолезней" id="326">
+													<Representation>List</Representation>
+													<TitleLocation>Top</TitleLocation>
+													<CommandBarLocation>None</CommandBarLocation>
+													<ChangeRowSet>false</ChangeRowSet>
+													<ChangeRowOrder>false</ChangeRowOrder>
+													<Width>70</Width>
+													<MaxWidth>80</MaxWidth>
+													<ChoiceMode>true</ChoiceMode>
+													<AutoInsertNewRow>true</AutoInsertNewRow>
+													<HorizontalStretch>false</HorizontalStretch>
+													<VerticalStretch>false</VerticalStretch>
+													<EnableStartDrag>true</EnableStartDrag>
+													<EnableDrag>true</EnableDrag>
+													<DataPath>ТаблицаБолезней</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Выбор заболевания</v8:content>
+														</v8:item>
+													</Title>
+													<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+													<CurrentRowUse>Choice</CurrentRowUse>
+													<RowFilter xsi:nil="true"/>
+													<ContextMenu name="ТаблицаБолезнейКонтекстноеМеню" id="327"/>
+													<AutoCommandBar name="ТаблицаБолезнейКоманднаяПанель" id="328">
+														<Autofill>false</Autofill>
+													</AutoCommandBar>
+													<ExtendedTooltip name="ТаблицаБолезнейРасширеннаяПодсказка" id="329"/>
+													<SearchStringAddition name="ТаблицаБолезнейСтрокаПоиска" id="330">
+														<AdditionSource>
+															<Item>ТаблицаБолезней</Item>
+															<Type>SearchStringRepresentation</Type>
+														</AdditionSource>
+														<ContextMenu name="ТаблицаБолезнейСтрокаПоискаКонтекстноеМеню" id="331"/>
+														<ExtendedTooltip name="ТаблицаБолезнейСтрокаПоискаРасширеннаяПодсказка" id="332"/>
+													</SearchStringAddition>
+													<ViewStatusAddition name="ТаблицаБолезнейСостояниеПросмотра" id="333">
+														<AdditionSource>
+															<Item>ТаблицаБолезней</Item>
+															<Type>ViewStatusRepresentation</Type>
+														</AdditionSource>
+														<ContextMenu name="ТаблицаБолезнейСостояниеПросмотраКонтекстноеМеню" id="334"/>
+														<ExtendedTooltip name="ТаблицаБолезнейСостояниеПросмотраРасширеннаяПодсказка" id="335"/>
+													</ViewStatusAddition>
+													<SearchControlAddition name="ТаблицаБолезнейУправлениеПоиском" id="336">
+														<AdditionSource>
+															<Item>ТаблицаБолезней</Item>
+															<Type>SearchControl</Type>
+														</AdditionSource>
+														<ContextMenu name="ТаблицаБолезнейУправлениеПоискомКонтекстноеМеню" id="337"/>
+														<ExtendedTooltip name="ТаблицаБолезнейУправлениеПоискомРасширеннаяПодсказка" id="338"/>
+													</SearchControlAddition>
+													<Events>
+														<Event name="Selection">ТаблицаБолезнейВыбор</Event>
+													</Events>
+													<ChildItems>
+														<InputField name="ТаблицаБолезнейЗаболевание" id="339">
+															<DataPath>ТаблицаБолезней.Заболевание</DataPath>
+															<TitleBackColor>style:NavigationColor</TitleBackColor>
+															<EditMode>EnterOnInput</EditMode>
+															<Width>30</Width>
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<MaxWidth>10</MaxWidth>
+															<HorizontalStretch>false</HorizontalStretch>
+															<ContextMenu name="ТаблицаБолезнейЗаболеваниеКонтекстноеМеню" id="340"/>
+															<ExtendedTooltip name="ТаблицаБолезнейЗаболеваниеРасширеннаяПодсказка" id="341"/>
+														</InputField>
+														<InputField name="ТаблицаБолезнейНачалоЛечения" id="342">
+															<DataPath>ТаблицаБолезней.НачалоЛечения</DataPath>
+															<TitleBackColor>style:NavigationColor</TitleBackColor>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ТаблицаБолезнейНачалоЛеченияКонтекстноеМеню" id="343"/>
+															<ExtendedTooltip name="ТаблицаБолезнейНачалоЛеченияРасширеннаяПодсказка" id="344"/>
+														</InputField>
+														<InputField name="ТаблицаБолезнейДнейБолезни" id="345">
+															<DataPath>ТаблицаБолезней.ДнейБолезни</DataPath>
+															<TitleBackColor>style:NavigationColor</TitleBackColor>
+															<EditMode>EnterOnInput</EditMode>
+															<Width>30</Width>
+															<MaxWidth>30</MaxWidth>
+															<HorizontalStretch>false</HorizontalStretch>
+															<ContextMenu name="ТаблицаБолезнейДнейБолезниКонтекстноеМеню" id="346"/>
+															<ExtendedTooltip name="ТаблицаБолезнейДнейБолезниРасширеннаяПодсказка" id="347"/>
+														</InputField>
+														<InputField name="ТаблицаБолезнейСтатусБолезни" id="348">
+															<DataPath>ТаблицаБолезней.СтатусБолезни</DataPath>
+															<Visible>false</Visible>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ТаблицаБолезнейСтатусБолезниКонтекстноеМеню" id="349"/>
+															<ExtendedTooltip name="ТаблицаБолезнейСтатусБолезниРасширеннаяПодсказка" id="350"/>
+														</InputField>
+														<InputField name="ТаблицаБолезнейСхемаЛечения" id="351">
+															<DataPath>ТаблицаБолезней.СхемаЛечения</DataPath>
+															<Visible>false</Visible>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ТаблицаБолезнейСхемаЛеченияКонтекстноеМеню" id="352"/>
+															<ExtendedTooltip name="ТаблицаБолезнейСхемаЛеченияРасширеннаяПодсказка" id="353"/>
+														</InputField>
+														<InputField name="ТаблицаБолезнейМаститБольнаяЧасть" id="357">
+															<DataPath>ТаблицаБолезней.МаститБольнаяЧасть</DataPath>
+															<Visible>false</Visible>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ТаблицаБолезнейМаститБольнаяЧастьКонтекстноеМеню" id="358"/>
+															<ExtendedTooltip name="ТаблицаБолезнейМаститБольнаяЧастьРасширеннаяПодсказка" id="359"/>
+														</InputField>
+													</ChildItems>
+												</Table>
+											</ChildItems>
+										</UsualGroup>
+										<Table name="ЖивотныеНаЛечении" id="132">
+											<AutoInsertNewRow>true</AutoInsertNewRow>
+											<EnableStartDrag>true</EnableStartDrag>
+											<EnableDrag>true</EnableDrag>
+											<DataPath>Объект.ЖивотныеНаЛечении</DataPath>
+											<RowFilter xsi:nil="true"/>
+											<ContextMenu name="ЖивотныеНаЛеченииКонтекстноеМеню" id="133">
+												<ChildItems>
+													<Button name="ЖивотныеНаЛеченииСостояниеПросмотраКонтекстноеМенюПеренестиЖивотноеНаПроверку" id="225">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.Command.ПеренестиЖивотноеНаПроверку</CommandName>
+														<ExtendedTooltip name="ЖивотныеНаЛеченииСостояниеПросмотраКонтекстноеМенюПеренестиЖивотноеНаПроверкуРасширеннаяПодсказка" id="226"/>
+													</Button>
+													<Button name="ЖивотныеНаЛеченииКонтекстноеМенюПеренестиЖивотноеВСтадо" id="240">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.Command.ПеренестиЖивотноеВСтадо</CommandName>
+														<ExtendedTooltip name="ЖивотныеНаЛеченииКонтекстноеМенюПеренестиЖивотноеВСтадоРасширеннаяПодсказка" id="241"/>
+													</Button>
+												</ChildItems>
+											</ContextMenu>
+											<AutoCommandBar name="ЖивотныеНаЛеченииКоманднаяПанель" id="134">
+												<ChildItems>
+													<Button name="ЖивотныеНаЛеченииПеренестиЖивотноеНаПроверку" id="236">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.Command.ПеренестиЖивотноеНаПроверку</CommandName>
+														<BackColor>style:NavigationColor</BackColor>
+														<Title>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Перевести на проверку</v8:content>
+															</v8:item>
+														</Title>
+														<ExtendedTooltip name="ЖивотныеНаЛеченииПеренестиЖивотноеНаПроверкуРасширеннаяПодсказка" id="237"/>
+													</Button>
+													<Button name="ЖивотныеНаЛеченииПеренестиЖивотноеВСтадо" id="238">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.Command.ПеренестиЖивотноеВСтадо</CommandName>
+														<BackColor>style:NavigationColor</BackColor>
+														<Title>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Возврат в стадо</v8:content>
+															</v8:item>
+														</Title>
+														<ExtendedTooltip name="ЖивотныеНаЛеченииПеренестиЖивотноеВСтадоРасширеннаяПодсказка" id="239"/>
+													</Button>
+												</ChildItems>
+											</AutoCommandBar>
+											<ExtendedTooltip name="ЖивотныеНаЛеченииРасширеннаяПодсказка" id="135"/>
+											<SearchStringAddition name="ЖивотныеНаЛеченииСтрокаПоиска" id="136">
+												<AdditionSource>
+													<Item>ЖивотныеНаЛечении</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ЖивотныеНаЛеченииСтрокаПоискаКонтекстноеМеню" id="137"/>
+												<ExtendedTooltip name="ЖивотныеНаЛеченииСтрокаПоискаРасширеннаяПодсказка" id="138"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="ЖивотныеНаЛеченииСостояниеПросмотра" id="139">
+												<AdditionSource>
+													<Item>ЖивотныеНаЛечении</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ЖивотныеНаЛеченииСостояниеПросмотраКонтекстноеМеню" id="140">
+													<Autofill>false</Autofill>
+												</ContextMenu>
+												<ExtendedTooltip name="ЖивотныеНаЛеченииСостояниеПросмотраРасширеннаяПодсказка" id="141"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="ЖивотныеНаЛеченииУправлениеПоиском" id="142">
+												<AdditionSource>
+													<Item>ЖивотныеНаЛечении</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="ЖивотныеНаЛеченииУправлениеПоискомКонтекстноеМеню" id="143"/>
+												<ExtendedTooltip name="ЖивотныеНаЛеченииУправлениеПоискомРасширеннаяПодсказка" id="144"/>
+											</SearchControlAddition>
+											<Events>
+												<Event name="OnActivateRow">ЖивотныеНаЛеченииПриАктивизацииСтроки</Event>
+												<Event name="OnChange">ЖивотныеНаЛеченииПриИзменении</Event>
+											</Events>
+											<ChildItems>
+												<LabelField name="ЖивотныеНаЛеченииНомерСтроки" id="145">
+													<DataPath>Объект.ЖивотныеНаЛечении.LineNumber</DataPath>
+													<TitleBackColor>style:NavigationColor</TitleBackColor>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ЖивотныеНаЛеченииНомерСтрокиКонтекстноеМеню" id="146"/>
+													<ExtendedTooltip name="ЖивотныеНаЛеченииНомерСтрокиРасширеннаяПодсказка" id="147"/>
+												</LabelField>
+												<InputField name="ЖивотныеНаЛеченииЖивотные" id="148">
+													<DataPath>Объект.ЖивотныеНаЛечении.Животное</DataPath>
+													<TitleBackColor>style:NavigationColor</TitleBackColor>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ЖивотныеНаЛеченииЖивотныеКонтекстноеМеню" id="149"/>
+													<ExtendedTooltip name="ЖивотныеНаЛеченииЖивотныеРасширеннаяПодсказка" id="150"/>
+													<Events>
+														<Event name="OnChange">ЖивотныеНаЛеченииЖивотныеПриИзменении</Event>
+														<Event name="AutoComplete">ЖивотныеНаЛеченииЖивотныеАвтоПодбор</Event>
+														<Event name="StartChoice">ЖивотныеНаЛеченииЖивотныеНачалоВыбора</Event>
+													</Events>
+												</InputField>
+												<InputField name="ЖивотныеНаЛеченииНачалоЛечения" id="171">
+													<DataPath>Объект.ЖивотныеНаЛечении.НачалоЛечения</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<TitleBackColor>style:NavigationColor</TitleBackColor>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ЖивотныеНаЛеченииНачалоЛеченияКонтекстноеМеню" id="172"/>
+													<ExtendedTooltip name="ЖивотныеНаЛеченииНачалоЛеченияРасширеннаяПодсказка" id="173"/>
+												</InputField>
+												<InputField name="ЖивотныеНаЛеченииЗаболевание" id="151">
+													<DataPath>Объект.ЖивотныеНаЛечении.Заболевание</DataPath>
+													<TitleBackColor>style:NavigationColor</TitleBackColor>
+													<EditMode>EnterOnInput</EditMode>
+													<ClearButton>true</ClearButton>
+													<ContextMenu name="ЖивотныеНаЛеченииЗаболеваниеКонтекстноеМеню" id="152"/>
+													<ExtendedTooltip name="ЖивотныеНаЛеченииЗаболеваниеРасширеннаяПодсказка" id="153"/>
+													<Events>
+														<Event name="OnChange">ЖивотныеНаЛеченииЗаболеваниеПриИзменении</Event>
+														<Event name="AutoComplete">ЖивотныеНаЛеченииЗаболеваниеАвтоПодбор</Event>
+														<Event name="StartChoice">ЖивотныеНаЛеченииЗаболеваниеНачалоВыбора</Event>
+														<Event name="ChoiceProcessing">ЖивотныеНаЛеченииЗаболеваниеОбработкаВыбора</Event>
+													</Events>
+												</InputField>
+												<InputField name="ЖивотныеНаЛеченииБольнойУчасток" id="168">
+													<DataPath>Объект.ЖивотныеНаЛечении.БольнойУчасток</DataPath>
+													<TitleBackColor>style:NavigationColor</TitleBackColor>
+													<EditMode>EnterOnInput</EditMode>
+													<ChoiceButton>true</ChoiceButton>
+													<TextEdit>false</TextEdit>
+													<ContextMenu name="ЖивотныеНаЛеченииБольнойУчастокКонтекстноеМеню" id="169"/>
+													<ExtendedTooltip name="ЖивотныеНаЛеченииБольнойУчастокРасширеннаяПодсказка" id="170"/>
+													<Events>
+														<Event name="StartChoice">ЖивотныеНаЛеченииБольнойУчастокНачалоВыбора</Event>
+													</Events>
+												</InputField>
+												<InputField name="ЖивотныеНаЛеченииДнейБолезни" id="174">
+													<DataPath>Объект.ЖивотныеНаЛечении.ДнейБолезни</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<TitleBackColor>style:NavigationColor</TitleBackColor>
+													<ContextMenu name="ЖивотныеНаЛеченииДнейБолезниКонтекстноеМеню" id="175"/>
+													<ExtendedTooltip name="ЖивотныеНаЛеченииДнейБолезниРасширеннаяПодсказка" id="176"/>
+												</InputField>
+												<InputField name="ЖивотныеНаЛеченииПримечание" id="160">
+													<DataPath>Объект.ЖивотныеНаЛечении.Примечание</DataPath>
+													<TitleBackColor>style:NavigationColor</TitleBackColor>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ЖивотныеНаЛеченииПримечаниеКонтекстноеМеню" id="161"/>
+													<ExtendedTooltip name="ЖивотныеНаЛеченииПримечаниеРасширеннаяПодсказка" id="162"/>
+												</InputField>
+												<InputField name="ЖивотныеНаЛеченииМаститБольнаяЧасть" id="233">
+													<DataPath>Объект.ЖивотныеНаЛечении.МаститБольнаяЧасть</DataPath>
+													<Visible>false</Visible>
+													<TitleBackColor>style:NavigationColor</TitleBackColor>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ЖивотныеНаЛеченииМаститБольнаяЧастьКонтекстноеМеню" id="234"/>
+													<ExtendedTooltip name="ЖивотныеНаЛеченииМаститБольнаяЧастьРасширеннаяПодсказка" id="235"/>
+												</InputField>
+												<InputField name="ЖивотныеНаЛеченииМаститБольнаяЧасть1" id="309">
+													<DataPath>Объект.ЖивотныеНаЛечении.МаститБольнаяЧасть</DataPath>
+													<Visible>false</Visible>
+													<TitleBackColor>style:NavigationColor</TitleBackColor>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ЖивотныеНаЛеченииМаститБольнаяЧасть1КонтекстноеМеню" id="310"/>
+													<ExtendedTooltip name="ЖивотныеНаЛеченииМаститБольнаяЧасть1РасширеннаяПодсказка" id="311"/>
+												</InputField>
+												<LabelField name="ЖивотныеНаЛеченииСписокПрепаратовПолеСвязи" id="363">
+													<DataPath>Объект.ЖивотныеНаЛечении.СписокПрепаратовПолеСвязи</DataPath>
+													<UserVisible>
+														<xr:Common>false</xr:Common>
+													</UserVisible>
+													<TitleBackColor>style:NavigationColor</TitleBackColor>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ЖивотныеНаЛеченииСписокПрепаратовПолеСвязиКонтекстноеМеню" id="364"/>
+													<ExtendedTooltip name="ЖивотныеНаЛеченииСписокПрепаратовПолеСвязиРасширеннаяПодсказка" id="365"/>
+												</LabelField>
+											</ChildItems>
+										</Table>
+										<Pages name="ПрепаратыСтраницы" id="273">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Препараты страницы</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Препараты страницы</v8:content>
+												</v8:item>
+											</ToolTip>
+											<PagesRepresentation>TabsOnTop</PagesRepresentation>
+											<ExtendedTooltip name="ПрепаратыСтраницыРасширеннаяПодсказка" id="274"/>
+											<ChildItems>
+												<Page name="ПрепаратыСтраницыДополнительные" id="275">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Дополнительные препараты</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Препараты страницы дополнительные</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>HorizontalIfPossible</Group>
+													<ExtendedTooltip name="ПрепаратыСтраницыДополнительныеРасширеннаяПодсказка" id="276"/>
+													<ChildItems>
+														<Table name="СписокИспользованныхПрепаратов" id="248">
+															<Height>4</Height>
+															<AutoMaxHeight>false</AutoMaxHeight>
+															<HeightControlVariant>UseHeightInTableRows</HeightControlVariant>
+															<AutoInsertNewRow>true</AutoInsertNewRow>
+															<EnableStartDrag>true</EnableStartDrag>
+															<EnableDrag>true</EnableDrag>
+															<DataPath>Объект.СписокИспользованныхПрепаратов</DataPath>
+															<RowFilter xsi:nil="true"/>
+															<ContextMenu name="СписокИспользованныхПрепаратовКонтекстноеМеню" id="249"/>
+															<AutoCommandBar name="СписокИспользованныхПрепаратовКоманднаяПанель" id="250"/>
+															<ExtendedTooltip name="СписокИспользованныхПрепаратовРасширеннаяПодсказка" id="251"/>
+															<SearchStringAddition name="СписокИспользованныхПрепаратовСтрокаПоиска" id="252">
+																<AdditionSource>
+																	<Item>СписокИспользованныхПрепаратов</Item>
+																	<Type>SearchStringRepresentation</Type>
+																</AdditionSource>
+																<ContextMenu name="СписокИспользованныхПрепаратовСтрокаПоискаКонтекстноеМеню" id="253"/>
+																<ExtendedTooltip name="СписокИспользованныхПрепаратовСтрокаПоискаРасширеннаяПодсказка" id="254"/>
+															</SearchStringAddition>
+															<ViewStatusAddition name="СписокИспользованныхПрепаратовСостояниеПросмотра" id="255">
+																<AdditionSource>
+																	<Item>СписокИспользованныхПрепаратов</Item>
+																	<Type>ViewStatusRepresentation</Type>
+																</AdditionSource>
+																<ContextMenu name="СписокИспользованныхПрепаратовСостояниеПросмотраКонтекстноеМеню" id="256"/>
+																<ExtendedTooltip name="СписокИспользованныхПрепаратовСостояниеПросмотраРасширеннаяПодсказка" id="257"/>
+															</ViewStatusAddition>
+															<SearchControlAddition name="СписокИспользованныхПрепаратовУправлениеПоиском" id="258">
+																<AdditionSource>
+																	<Item>СписокИспользованныхПрепаратов</Item>
+																	<Type>SearchControl</Type>
+																</AdditionSource>
+																<ContextMenu name="СписокИспользованныхПрепаратовУправлениеПоискомКонтекстноеМеню" id="259"/>
+																<ExtendedTooltip name="СписокИспользованныхПрепаратовУправлениеПоискомРасширеннаяПодсказка" id="260"/>
+															</SearchControlAddition>
+															<Events>
+																<Event name="OnChange">СписокИспользованныхПрепаратовПриИзменении</Event>
+															</Events>
+															<ChildItems>
+																<InputField name="СписокИспользованныхПрепаратовПрепарат" id="312">
+																	<DataPath>Объект.СписокИспользованныхПрепаратов.Препарат</DataPath>
+																	<TitleBackColor>style:NavigationColor</TitleBackColor>
+																	<EditMode>EnterOnInput</EditMode>
+																	<ContextMenu name="СписокИспользованныхПрепаратовПрепаратКонтекстноеМеню" id="313"/>
+																	<ExtendedTooltip name="СписокИспользованныхПрепаратовПрепаратРасширеннаяПодсказка" id="314"/>
+																	<Events>
+																		<Event name="OnChange">СписокИспользованныхПрепаратовПрепаратПриИзменении</Event>
+																	</Events>
+																</InputField>
+																<InputField name="СписокИспользованныхПрепаратовКоличество" id="267">
+																	<DataPath>Объект.СписокИспользованныхПрепаратов.Количество</DataPath>
+																	<TitleBackColor>style:NavigationColor</TitleBackColor>
+																	<EditMode>EnterOnInput</EditMode>
+																	<ContextMenu name="СписокИспользованныхПрепаратовКоличествоКонтекстноеМеню" id="268"/>
+																	<ExtendedTooltip name="СписокИспользованныхПрепаратовКоличествоРасширеннаяПодсказка" id="269"/>
+																</InputField>
+																<InputField name="СписокИспользованныхПрепаратовЕдиницаИзмерения" id="315">
+																	<DataPath>Объект.СписокИспользованныхПрепаратов.ЕдиницаИзмерения</DataPath>
+																	<TitleBackColor>style:NavigationColor</TitleBackColor>
+																	<EditMode>EnterOnInput</EditMode>
+																	<ContextMenu name="СписокИспользованныхПрепаратовЕдиницаИзмеренияКонтекстноеМеню" id="316"/>
+																	<ExtendedTooltip name="СписокИспользованныхПрепаратовЕдиницаИзмеренияРасширеннаяПодсказка" id="317"/>
+																</InputField>
+															</ChildItems>
+														</Table>
+													</ChildItems>
+												</Page>
+											</ChildItems>
+										</Pages>
+									</ChildItems>
+								</Page>
+								<Page name="ЖивотныеОжидание" id="177">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Животные на проверке</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Животные ожидание</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>HorizontalIfPossible</Group>
+									<TitleDataPath>Объект.ЖивотныеОжидающие.RowsCount</TitleDataPath>
+									<ExtendedTooltip name="ЖивотныеОжиданиеРасширеннаяПодсказка" id="178"/>
+									<ChildItems>
+										<Table name="ЖивотныеОжидающие" id="179">
+											<AutoInsertNewRow>true</AutoInsertNewRow>
+											<EnableStartDrag>true</EnableStartDrag>
+											<EnableDrag>true</EnableDrag>
+											<DataPath>Объект.ЖивотныеОжидающие</DataPath>
+											<RowFilter xsi:nil="true"/>
+											<ContextMenu name="ЖивотныеОжидающиеКонтекстноеМеню" id="180">
+												<ChildItems>
+													<Button name="ЖивотныеОжидающиеКонтекстноеМенюПеренестиЖивотноеВСтадоСПроверки" id="244">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.Command.ПеренестиЖивотноеВСтадоСПроверки</CommandName>
+														<ExtendedTooltip name="ЖивотныеОжидающиеКонтекстноеМенюПеренестиЖивотноеВСтадоСПроверкиРасширеннаяПодсказка" id="245"/>
+													</Button>
+												</ChildItems>
+											</ContextMenu>
+											<AutoCommandBar name="ЖивотныеОжидающиеКоманднаяПанель" id="181">
+												<Autofill>false</Autofill>
+												<ChildItems>
+													<Button name="ЖивотныеОжидающиеПеренестиЖивотноеВСтадоСПроверки" id="242">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.Command.ПеренестиЖивотноеВСтадоСПроверки</CommandName>
+														<BackColor>style:NavigationColor</BackColor>
+														<ExtendedTooltip name="ЖивотныеОжидающиеПеренестиЖивотноеВСтадоСПроверкиРасширеннаяПодсказка" id="243"/>
+													</Button>
+												</ChildItems>
+											</AutoCommandBar>
+											<ExtendedTooltip name="ЖивотныеОжидающиеРасширеннаяПодсказка" id="182"/>
+											<SearchStringAddition name="ЖивотныеОжидающиеСтрокаПоиска" id="183">
+												<AdditionSource>
+													<Item>ЖивотныеОжидающие</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ЖивотныеОжидающиеСтрокаПоискаКонтекстноеМеню" id="184"/>
+												<ExtendedTooltip name="ЖивотныеОжидающиеСтрокаПоискаРасширеннаяПодсказка" id="185"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="ЖивотныеОжидающиеСостояниеПросмотра" id="186">
+												<AdditionSource>
+													<Item>ЖивотныеОжидающие</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ЖивотныеОжидающиеСостояниеПросмотраКонтекстноеМеню" id="187"/>
+												<ExtendedTooltip name="ЖивотныеОжидающиеСостояниеПросмотраРасширеннаяПодсказка" id="188"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="ЖивотныеОжидающиеУправлениеПоиском" id="189">
+												<AdditionSource>
+													<Item>ЖивотныеОжидающие</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="ЖивотныеОжидающиеУправлениеПоискомКонтекстноеМеню" id="190"/>
+												<ExtendedTooltip name="ЖивотныеОжидающиеУправлениеПоискомРасширеннаяПодсказка" id="191"/>
+											</SearchControlAddition>
+											<Events>
+												<Event name="BeforeAddRow">ЖивотныеОжидающиеПередНачаломДобавления</Event>
+												<Event name="BeforeDeleteRow">ЖивотныеОжидающиеПередУдалением</Event>
+											</Events>
+											<ChildItems>
+												<LabelField name="ЖивотныеОжидающиеНомерСтроки" id="192">
+													<DataPath>Объект.ЖивотныеОжидающие.LineNumber</DataPath>
+													<TitleBackColor>style:NavigationColor</TitleBackColor>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ЖивотныеОжидающиеНомерСтрокиКонтекстноеМеню" id="193"/>
+													<ExtendedTooltip name="ЖивотныеОжидающиеНомерСтрокиРасширеннаяПодсказка" id="194"/>
+												</LabelField>
+												<InputField name="ЖивотныеОжидающиеЖивотное" id="195">
+													<DataPath>Объект.ЖивотныеОжидающие.Животное</DataPath>
+													<TitleBackColor>style:NavigationColor</TitleBackColor>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ЖивотныеОжидающиеЖивотноеКонтекстноеМеню" id="196"/>
+													<ExtendedTooltip name="ЖивотныеОжидающиеЖивотноеРасширеннаяПодсказка" id="197"/>
+												</InputField>
+												<InputField name="ЖивотныеОжидающиеДатаНачалоОжидания" id="198">
+													<DataPath>Объект.ЖивотныеОжидающие.НачалоЛечения</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Дата перевода</v8:content>
+														</v8:item>
+													</Title>
+													<TitleBackColor>style:NavigationColor</TitleBackColor>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ЖивотныеОжидающиеДатаНачалоОжиданияКонтекстноеМеню" id="199"/>
+													<ExtendedTooltip name="ЖивотныеОжидающиеДатаНачалоОжиданияРасширеннаяПодсказка" id="200"/>
+												</InputField>
+												<InputField name="ЖивотныеОжидающиеДнейОжидания" id="201">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Дней</v8:content>
+														</v8:item>
+													</Title>
+													<TitleBackColor>style:NavigationColor</TitleBackColor>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ЖивотныеОжидающиеДнейОжиданияКонтекстноеМеню" id="202"/>
+													<ExtendedTooltip name="ЖивотныеОжидающиеДнейОжиданияРасширеннаяПодсказка" id="203"/>
+												</InputField>
+											</ChildItems>
+										</Table>
+									</ChildItems>
+								</Page>
+								<Page name="ЖивотныеСтадо" id="204">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Возврат в стадо</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Животные стадо</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>HorizontalIfPossible</Group>
+									<TitleDataPath>Объект.ЖивотныеВСтадо.RowsCount</TitleDataPath>
+									<ExtendedTooltip name="ЖивотныеСтадоРасширеннаяПодсказка" id="205"/>
+									<ChildItems>
+										<Table name="ЖивотныеВСтадо" id="206">
+											<AutoInsertNewRow>true</AutoInsertNewRow>
+											<EnableStartDrag>true</EnableStartDrag>
+											<EnableDrag>true</EnableDrag>
+											<DataPath>Объект.ЖивотныеВСтадо</DataPath>
+											<RowFilter xsi:nil="true"/>
+											<ContextMenu name="ЖивотныеВСтадоКонтекстноеМеню" id="207"/>
+											<AutoCommandBar name="ЖивотныеВСтадоКоманднаяПанель" id="208">
+												<Autofill>false</Autofill>
+											</AutoCommandBar>
+											<ExtendedTooltip name="ЖивотныеВСтадоРасширеннаяПодсказка" id="209"/>
+											<SearchStringAddition name="ЖивотныеВСтадоСтрокаПоиска" id="210">
+												<AdditionSource>
+													<Item>ЖивотныеВСтадо</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ЖивотныеВСтадоСтрокаПоискаКонтекстноеМеню" id="211"/>
+												<ExtendedTooltip name="ЖивотныеВСтадоСтрокаПоискаРасширеннаяПодсказка" id="212"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="ЖивотныеВСтадоСостояниеПросмотра" id="213">
+												<AdditionSource>
+													<Item>ЖивотныеВСтадо</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ЖивотныеВСтадоСостояниеПросмотраКонтекстноеМеню" id="214"/>
+												<ExtendedTooltip name="ЖивотныеВСтадоСостояниеПросмотраРасширеннаяПодсказка" id="215"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="ЖивотныеВСтадоУправлениеПоиском" id="216">
+												<AdditionSource>
+													<Item>ЖивотныеВСтадо</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="ЖивотныеВСтадоУправлениеПоискомКонтекстноеМеню" id="217"/>
+												<ExtendedTooltip name="ЖивотныеВСтадоУправлениеПоискомРасширеннаяПодсказка" id="218"/>
+											</SearchControlAddition>
+											<Events>
+												<Event name="BeforeAddRow">ЖивотныеВСтадоПередНачаломДобавления</Event>
+											</Events>
+											<ChildItems>
+												<LabelField name="ЖивотныеВСтадоНомерСтроки" id="219">
+													<DataPath>Объект.ЖивотныеВСтадо.LineNumber</DataPath>
+													<TitleBackColor>style:NavigationColor</TitleBackColor>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ЖивотныеВСтадоНомерСтрокиКонтекстноеМеню" id="220"/>
+													<ExtendedTooltip name="ЖивотныеВСтадоНомерСтрокиРасширеннаяПодсказка" id="221"/>
+												</LabelField>
+												<InputField name="ЖивотныеВСтадоЖивотное" id="222">
+													<DataPath>Объект.ЖивотныеВСтадо.Животное</DataPath>
+													<TitleBackColor>style:NavigationColor</TitleBackColor>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ЖивотныеВСтадоЖивотноеКонтекстноеМеню" id="223"/>
+													<ExtendedTooltip name="ЖивотныеВСтадоЖивотноеРасширеннаяПодсказка" id="224"/>
+												</InputField>
+												<InputField name="ЖивотныеВСтадоЗаболевание" id="360">
+													<DataPath>Объект.ЖивотныеВСтадо.Заболевание</DataPath>
+													<TitleBackColor>style:NavigationColor</TitleBackColor>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ЖивотныеВСтадоЗаболеваниеКонтекстноеМеню" id="361"/>
+													<ExtendedTooltip name="ЖивотныеВСтадоЗаболеваниеРасширеннаяПодсказка" id="362"/>
+												</InputField>
+											</ChildItems>
+										</Table>
+									</ChildItems>
+								</Page>
+							</ChildItems>
+						</Pages>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.ЖурналЛечения</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+			<Columns>
+				<AdditionalColumns table="Объект.ЖивотныеНаЛечении">
+					<Column name="СписокПрепаратовПредставление" id="1">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Список препаратов представление</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>3</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="БольнойУчасток" id="2">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Больной участок</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>12</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="ДнейБолезни" id="3">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Дней болезни</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:decimal</v8:Type>
+							<v8:NumberQualifiers>
+								<v8:Digits>10</v8:Digits>
+								<v8:FractionDigits>0</v8:FractionDigits>
+								<v8:AllowedSign>Any</v8:AllowedSign>
+							</v8:NumberQualifiers>
+						</Type>
+					</Column>
+				</AdditionalColumns>
+			</Columns>
+		</Attribute>
+		<Attribute name="ТаблицаБолезней" id="3">
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Заболевание" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заболевание</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Заболевания</v8:Type>
+					</Type>
+				</Column>
+				<Column name="СтатусБолезни" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статус болезни</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.ПериодыЗаболеваний</v8:Type>
+					</Type>
+				</Column>
+				<Column name="СхемаЛечения" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Схема лечения</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.СхемыЛечения</v8:Type>
+					</Type>
+				</Column>
+				<Column name="СписокПрепаратовПолеСвязи" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Список препаратов поле связи</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8:UUID</v8:Type>
+					</Type>
+				</Column>
+				<Column name="МаститБольнаяЧасть" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Мастит больная часть</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>4</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="НачалоЛечения" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Начало лечения</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДнейБолезни" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дней болезни</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>4</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПеренестиЖивотноеНаПроверку" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перенести животное на проверку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перенести животное на проверку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПеренестиЖивотноеНаПроверку</Action>
+		</Command>
+		<Command name="ПеренестиЖивотноеВСтадо" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перенести животное в стадо</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перенести животное в стадо</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПеренестиЖивотноеВСтадо</Action>
+		</Command>
+		<Command name="ПеренестиЖивотноеВСтадоСПроверки" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перенести животное в стадо</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перенести животное в стадо с проверки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПеренестиЖивотноеВСтадоСПроверки</Action>
+		</Command>
+		<Command name="ЗаполнитьПоСхеме" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить по схеме</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить по схеме</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьПоСхеме</Action>
+		</Command>
+	</Commands>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>AccumulationRegister.ТоварыНаСкладах.StandardCommand.OpenByRecorder</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+			</Item>
+		</NavigationPanel>
+	</CommandInterface>
+</Form>

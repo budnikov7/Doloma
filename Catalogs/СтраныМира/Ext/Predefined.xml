@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.20">
+	<Item id="23b514c1-1060-4a82-81e8-a73df13e4679">
+		<Name>Болгария</Name>
+		<Code xsi:type="xs:decimal">18</Code>
+		<Description>Болгария</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="efa51b1d-6e0b-4c7a-ad8c-3d0b2121edd8">
+		<Name>Германия</Name>
+		<Code xsi:type="xs:decimal">30</Code>
+		<Description>Германия</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="aa64b564-6f2a-45ae-8345-70c87207ae73">
+		<Name>Италия</Name>
+		<Code xsi:type="xs:decimal">42</Code>
+		<Description>Италия</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="10873d3f-9143-4d2b-b71c-c748d8cc61c9">
+		<Name>Канада</Name>
+		<Code xsi:type="xs:decimal">25</Code>
+		<Description>Канада</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="91119762-3be6-494c-90bc-c8eabea55236">
+		<Name>Нидерланды</Name>
+		<Code xsi:type="xs:decimal">23</Code>
+		<Description>Нидерланды</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="ba0d7122-0007-4c64-9806-bab2d5846763">
+		<Name>Россия</Name>
+		<Code xsi:type="xs:decimal">1</Code>
+		<Description>Россия</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="371e2e17-c6be-4eb9-bef8-e6793b84457c">
+		<Name>США</Name>
+		<Code xsi:type="xs:decimal">27</Code>
+		<Description>США</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="097b4615-d5ec-45da-9851-4891719e9fd9">
+		<Name>Франция</Name>
+		<Code xsi:type="xs:decimal">29</Code>
+		<Description>Франция</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

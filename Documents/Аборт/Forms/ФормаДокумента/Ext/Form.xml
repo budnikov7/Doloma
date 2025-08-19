@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаОбщаяКомандаСтруктураПодчиненности" id="83">
+				<Type>CommandBarButton</Type>
+				<CommandName>CommonCommand.СтруктураПодчиненности</CommandName>
+				<BackColor>style:NavigationColor</BackColor>
+				<ExtendedTooltip name="ФормаОбщаяКомандаСтруктураПодчиненностиРасширеннаяПодсказка" id="84"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="ChoiceProcessing">ОбработкаВыбора</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ОбщаяГруппа" id="57">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Общая группа</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Общая группа</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ОбщаяГруппаРасширеннаяПодсказка" id="58"/>
+			<ChildItems>
+				<UsualGroup name="ОсновныеДаннные" id="59">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основные даннные</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основные даннные</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>20</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<VerticalStretch>true</VerticalStretch>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ОсновныеДаннныеРасширеннаяПодсказка" id="60"/>
+					<ChildItems>
+						<UsualGroup name="ДанныеГруппа" id="61">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Основные данные</v8:content>
+								</v8:item>
+							</Title>
+							<TitleFont ref="style:NormalTextFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Данные группа</v8:content>
+								</v8:item>
+							</ToolTip>
+							<VerticalStretch>false</VerticalStretch>
+							<Behavior>Usual</Behavior>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ДанныеГруппаРасширеннаяПодсказка" id="62"/>
+							<ChildItems>
+								<InputField name="Номер" id="63">
+									<DataPath>Объект.Number</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="НомерКонтекстноеМеню" id="64"/>
+									<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="65"/>
+								</InputField>
+								<InputField name="Дата" id="66">
+									<DataPath>Объект.Date</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дата</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="ДатаКонтекстноеМеню" id="67"/>
+									<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="68"/>
+								</InputField>
+								<InputField name="Ферма" id="69">
+									<DataPath>Объект.Ферма</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Ферма</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="ФермаКонтекстноеМеню" id="70"/>
+									<ExtendedTooltip name="ФермаРасширеннаяПодсказка" id="71"/>
+								</InputField>
+								<InputField name="Корпус" id="72">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Корпус</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="КорпусКонтекстноеМеню" id="73"/>
+									<ExtendedTooltip name="КорпусРасширеннаяПодсказка" id="74"/>
+								</InputField>
+								<InputField name="Комментарий" id="75">
+									<DataPath>Объект.Комментарий</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<Height>3</Height>
+									<HorizontalStretch>true</HorizontalStretch>
+									<MultiLine>true</MultiLine>
+									<ContextMenu name="КомментарийКонтекстноеМеню" id="76"/>
+									<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="77"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="Ответственный" id="78">
+							<DataPath>Объект.Автор</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Автор</v8:content>
+								</v8:item>
+							</Title>
+							<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+							<GroupVerticalAlign>Bottom</GroupVerticalAlign>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="ОтветственныйКонтекстноеМеню" id="79"/>
+							<ExtendedTooltip name="ОтветственныйРасширеннаяПодсказка" id="80"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ТаблицаЖивотных" id="81">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Таблица животных</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Таблица животных</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Behavior>Usual</Behavior>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ТаблицаЖивотныхРасширеннаяПодсказка" id="82"/>
+					<ChildItems>
+						<Table name="Животные" id="22">
+							<Representation>List</Representation>
+							<HeaderHeight>2</HeaderHeight>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.Животные</DataPath>
+							<BackColor>style:TableHeaderBackColor</BackColor>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ЖивотныеКонтекстноеМеню" id="23"/>
+							<AutoCommandBar name="ЖивотныеКоманднаяПанель" id="24"/>
+							<ExtendedTooltip name="ЖивотныеРасширеннаяПодсказка" id="25"/>
+							<SearchStringAddition name="ЖивотныеСтрокаПоиска" id="26">
+								<AdditionSource>
+									<Item>Животные</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ЖивотныеСтрокаПоискаКонтекстноеМеню" id="27"/>
+								<ExtendedTooltip name="ЖивотныеСтрокаПоискаРасширеннаяПодсказка" id="28"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ЖивотныеСостояниеПросмотра" id="29">
+								<AdditionSource>
+									<Item>Животные</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ЖивотныеСостояниеПросмотраКонтекстноеМеню" id="30"/>
+								<ExtendedTooltip name="ЖивотныеСостояниеПросмотраРасширеннаяПодсказка" id="31"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ЖивотныеУправлениеПоиском" id="32">
+								<AdditionSource>
+									<Item>Животные</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ЖивотныеУправлениеПоискомКонтекстноеМеню" id="33"/>
+								<ExtendedTooltip name="ЖивотныеУправлениеПоискомРасширеннаяПодсказка" id="34"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ЖивотныеНомерСтроки" id="35">
+									<DataPath>Объект.Животные.LineNumber</DataPath>
+									<TitleBackColor>style:NavigationColor</TitleBackColor>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ЖивотныеНомерСтрокиКонтекстноеМеню" id="36"/>
+									<ExtendedTooltip name="ЖивотныеНомерСтрокиРасширеннаяПодсказка" id="37"/>
+								</LabelField>
+								<InputField name="ЖивотныеМать" id="38">
+									<DataPath>Объект.Животные.Мать</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Животное</v8:content>
+										</v8:item>
+									</Title>
+									<TitleBackColor>style:NavigationColor</TitleBackColor>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ЖивотныеМатьКонтекстноеМеню" id="39"/>
+									<ExtendedTooltip name="ЖивотныеМатьРасширеннаяПодсказка" id="40"/>
+									<Events>
+										<Event name="OnChange">ЖивотныеМатьПриИзменении</Event>
+										<Event name="AutoComplete">ЖивотныеМатьАвтоПодбор</Event>
+										<Event name="StartChoice">ЖивотныеМатьНачалоВыбора</Event>
+									</Events>
+								</InputField>
+								<InputField name="ЖивотныеТипПрекращенияСтельности" id="41">
+									<DataPath>Объект.Животные.ТипПрекращенияСтельности</DataPath>
+									<TitleBackColor>style:NavigationColor</TitleBackColor>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ЖивотныеТипПрекращенияСтельностиКонтекстноеМеню" id="42"/>
+									<ExtendedTooltip name="ЖивотныеТипПрекращенияСтельностиРасширеннаяПодсказка" id="43"/>
+								</InputField>
+								<InputField name="ЖивотныеОсеменатор" id="44">
+									<DataPath>Объект.Животные.Осеменатор</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<TitleBackColor>style:NavigationColor</TitleBackColor>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ЖивотныеОсеменаторКонтекстноеМеню" id="45"/>
+									<ExtendedTooltip name="ЖивотныеОсеменаторРасширеннаяПодсказка" id="46"/>
+								</InputField>
+								<CheckBoxField name="ЖивотныеОткрытьЛактацию" id="50">
+									<DataPath>Объект.Животные.ОткрытьЛактацию</DataPath>
+									<TitleBackColor>style:NavigationColor</TitleBackColor>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ЖивотныеОткрытьЛактациюКонтекстноеМеню" id="51"/>
+									<ExtendedTooltip name="ЖивотныеОткрытьЛактациюРасширеннаяПодсказка" id="52"/>
+								</CheckBoxField>
+								<InputField name="ЖивотныеПримечание" id="47">
+									<DataPath>Объект.Животные.Примечание</DataPath>
+									<TitleBackColor>style:NavigationColor</TitleBackColor>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ЖивотныеПримечаниеКонтекстноеМеню" id="48"/>
+									<ExtendedTooltip name="ЖивотныеПримечаниеРасширеннаяПодсказка" id="49"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.Аборт</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>InformationRegister.Аборты.StandardCommand.OpenByRecorder</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>InformationRegister.СостояниеЖивотных.StandardCommand.OpenByRecorder</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</NavigationPanel>
+	</CommandInterface>
+</Form>

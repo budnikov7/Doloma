@@ -1,0 +1,501 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="ChoiceProcessing">ОбработкаВыбора</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="FillCheckProcessingAtServer">ОбработкаПроверкиЗаполненияНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Шапка" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ШапкаРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаДанных" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа данных</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа данных</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>22</Width>
+					<HorizontalStretch>true</HorizontalStretch>
+					<VerticalStretch>true</VerticalStretch>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаДанныхРасширеннаяПодсказка" id="4"/>
+					<ChildItems>
+						<InputField name="ВидМероприятия" id="179">
+							<DataPath>Объект.ВидМероприятия</DataPath>
+							<TitleLocation>Top</TitleLocation>
+							<ContextMenu name="ВидМероприятияКонтекстноеМеню" id="180"/>
+							<ExtendedTooltip name="ВидМероприятияРасширеннаяПодсказка" id="181"/>
+							<Events>
+								<Event name="OnChange">ВидМероприятияПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="Номер" id="7">
+							<DataPath>Объект.Number</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Номер</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="НомерКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="9"/>
+						</InputField>
+						<InputField name="Дата" id="10">
+							<DataPath>Объект.Date</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дата</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="ДатаКонтекстноеМеню" id="11"/>
+							<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="12"/>
+							<Events>
+								<Event name="OnChange">ДатаПриИзменении</Event>
+								<Event name="AutoComplete">ДатаАвтоПодбор</Event>
+							</Events>
+						</InputField>
+						<InputField name="Ферма" id="15">
+							<DataPath>Объект.Ферма</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="ФермаКонтекстноеМеню" id="16"/>
+							<ExtendedTooltip name="ФермаРасширеннаяПодсказка" id="17"/>
+							<Events>
+								<Event name="OnChange">ФермаПриИзменении</Event>
+								<Event name="ChoiceProcessing">ФермаОбработкаВыбора</Event>
+							</Events>
+						</InputField>
+						<InputField name="Корпус" id="18">
+							<DataPath>Объект.Корпус</DataPath>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Списать спермодозы со скалада</v8:content>
+								</v8:item>
+							</ToolTip>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="КорпусКонтекстноеМеню" id="19"/>
+							<ExtendedTooltip name="КорпусРасширеннаяПодсказка" id="20"/>
+						</InputField>
+						<InputField name="Склад" id="21">
+							<DataPath>Объект.Склад</DataPath>
+							<ContextMenu name="СкладКонтекстноеМеню" id="22"/>
+							<ExtendedTooltip name="СкладРасширеннаяПодсказка" id="23"/>
+						</InputField>
+						<InputField name="ЛечащийВрач" id="24">
+							<DataPath>Объект.ЛечащийВрач</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Врач</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ЛечащийВрачКонтекстноеМеню" id="25"/>
+							<ExtendedTooltip name="ЛечащийВрачРасширеннаяПодсказка" id="26"/>
+						</InputField>
+						<InputField name="ПроводимоеМероприятие" id="182">
+							<DataPath>Объект.ПроводимоеМероприятие</DataPath>
+							<TitleLocation>Top</TitleLocation>
+							<ContextMenu name="ПроводимоеМероприятиеКонтекстноеМеню" id="183"/>
+							<ExtendedTooltip name="ПроводимоеМероприятиеРасширеннаяПодсказка" id="184"/>
+						</InputField>
+						<InputField name="Комментарий" id="27">
+							<DataPath>Объект.Комментарий</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<Height>3</Height>
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>false</VerticalStretch>
+							<MultiLine>true</MultiLine>
+							<ContextMenu name="КомментарийКонтекстноеМеню" id="28"/>
+							<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="29"/>
+						</InputField>
+						<UsualGroup name="ГруппаАвтора" id="30">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа автора</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа автора</v8:content>
+								</v8:item>
+							</ToolTip>
+							<VerticalStretch>true</VerticalStretch>
+							<GroupVerticalAlign>Bottom</GroupVerticalAlign>
+							<VerticalAlign>Bottom</VerticalAlign>
+							<Behavior>Usual</Behavior>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаАвтораРасширеннаяПодсказка" id="31"/>
+							<ChildItems>
+								<InputField name="Автор" id="32">
+									<DataPath>Объект.Автор</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Автор</v8:content>
+										</v8:item>
+									</Title>
+									<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+									<GroupVerticalAlign>Bottom</GroupVerticalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="АвторКонтекстноеМеню" id="33"/>
+									<ExtendedTooltip name="АвторРасширеннаяПодсказка" id="34"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаДанныхТаблиц" id="35">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа данных таблиц</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа данных таблиц</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаДанныхТаблицРасширеннаяПодсказка" id="36"/>
+					<ChildItems>
+						<UsualGroup name="ЖивотныеНаЛеченииГруппа" id="39">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Животные на лечении</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Животные на лечении группа</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ЖивотныеНаЛеченииГруппаРасширеннаяПодсказка" id="40"/>
+							<ChildItems>
+								<Table name="ЖивотныеНаЛечении" id="41">
+									<Footer>true</Footer>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>Объект.ЖивотныеНаЛечении</DataPath>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="ЖивотныеНаЛеченииКонтекстноеМеню" id="42">
+										<ChildItems>
+											<Button name="ЖивотныеНаЛеченииСостояниеПросмотраКонтекстноеМенюПеренестиЖивотноеНаПроверку" id="89">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.Отобрать</CommandName>
+												<ExtendedTooltip name="ЖивотныеНаЛеченииСостояниеПросмотраКонтекстноеМенюПеренестиЖивотноеНаПроверкуРасширеннаяПодсказка" id="90"/>
+											</Button>
+											<Button name="ЖивотныеНаЛеченииКонтекстноеМенюПеренестиЖивотноеВСтадо" id="91">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ЗаполнитьПоШаблону</CommandName>
+												<ExtendedTooltip name="ЖивотныеНаЛеченииКонтекстноеМенюПеренестиЖивотноеВСтадоРасширеннаяПодсказка" id="92"/>
+											</Button>
+										</ChildItems>
+									</ContextMenu>
+									<AutoCommandBar name="ЖивотныеНаЛеченииКоманднаяПанель" id="43">
+										<ChildItems>
+											<Button name="Отобрать" id="185">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.Отобрать</CommandName>
+												<BackColor>style:NavigationColor</BackColor>
+												<ExtendedTooltip name="ОтобратьРасширеннаяПодсказка" id="186"/>
+											</Button>
+										</ChildItems>
+									</AutoCommandBar>
+									<ExtendedTooltip name="ЖивотныеНаЛеченииРасширеннаяПодсказка" id="44"/>
+									<SearchStringAddition name="ЖивотныеНаЛеченииСтрокаПоиска" id="45">
+										<AdditionSource>
+											<Item>ЖивотныеНаЛечении</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ЖивотныеНаЛеченииСтрокаПоискаКонтекстноеМеню" id="46"/>
+										<ExtendedTooltip name="ЖивотныеНаЛеченииСтрокаПоискаРасширеннаяПодсказка" id="47"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ЖивотныеНаЛеченииСостояниеПросмотра" id="48">
+										<AdditionSource>
+											<Item>ЖивотныеНаЛечении</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ЖивотныеНаЛеченииСостояниеПросмотраКонтекстноеМеню" id="49">
+											<Autofill>false</Autofill>
+										</ContextMenu>
+										<ExtendedTooltip name="ЖивотныеНаЛеченииСостояниеПросмотраРасширеннаяПодсказка" id="50"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ЖивотныеНаЛеченииУправлениеПоиском" id="51">
+										<AdditionSource>
+											<Item>ЖивотныеНаЛечении</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ЖивотныеНаЛеченииУправлениеПоискомКонтекстноеМеню" id="52"/>
+										<ExtendedTooltip name="ЖивотныеНаЛеченииУправлениеПоискомРасширеннаяПодсказка" id="53"/>
+									</SearchControlAddition>
+									<Events>
+										<Event name="OnActivateRow">ЖивотныеНаЛеченииПриАктивизацииСтроки</Event>
+										<Event name="OnChange">ЖивотныеНаЛеченииПриИзменении</Event>
+									</Events>
+									<ChildItems>
+										<ColumnGroup name="ГруппаМастит" id="69">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Мастит</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа мастит</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Horizontal</Group>
+											<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+											<ExtendedTooltip name="ГруппаМаститРасширеннаяПодсказка" id="70"/>
+										</ColumnGroup>
+										<LabelField name="ЖивотныеНаЛеченииНомерСтроки" id="149">
+											<DataPath>Объект.ЖивотныеНаЛечении.LineNumber</DataPath>
+											<TitleBackColor>style:NavigationColor</TitleBackColor>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ЖивотныеНаЛеченииНомерСтрокиКонтекстноеМеню" id="150"/>
+											<ExtendedTooltip name="ЖивотныеНаЛеченииНомерСтрокиРасширеннаяПодсказка" id="151"/>
+										</LabelField>
+										<InputField name="ЖивотныеНаЛеченииЖивотное" id="152">
+											<DataPath>Объект.ЖивотныеНаЛечении.Животное</DataPath>
+											<TitleBackColor>style:NavigationColor</TitleBackColor>
+											<EditMode>EnterOnInput</EditMode>
+											<FooterDataPath>Объект.ЖивотныеНаЛечении.RowsCount</FooterDataPath>
+											<ContextMenu name="ЖивотныеНаЛеченииЖивотноеКонтекстноеМеню" id="153"/>
+											<ExtendedTooltip name="ЖивотныеНаЛеченииЖивотноеРасширеннаяПодсказка" id="154"/>
+											<Events>
+												<Event name="OnChange">ЖивотныеНаЛеченииЖивотноеПриИзменении</Event>
+												<Event name="AutoComplete">ЖивотныеНаЛеченииЖивотноеАвтоПодбор</Event>
+												<Event name="StartChoice">ЖивотныеНаЛеченииЖивотноеНачалоВыбора</Event>
+											</Events>
+										</InputField>
+										<InputField name="ЖивотныеНаЛеченииЗаболевание" id="155">
+											<DataPath>Объект.ЖивотныеНаЛечении.Заболевание</DataPath>
+											<TitleBackColor>style:NavigationColor</TitleBackColor>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ЖивотныеНаЛеченииЗаболеваниеКонтекстноеМеню" id="156"/>
+											<ExtendedTooltip name="ЖивотныеНаЛеченииЗаболеваниеРасширеннаяПодсказка" id="157"/>
+										</InputField>
+										<LabelField name="ЖивотныеНаЛеченииСписокПрепаратовПолеСвязи" id="161">
+											<DataPath>Объект.ЖивотныеНаЛечении.ПолеСвязи</DataPath>
+											<Visible>false</Visible>
+											<TitleBackColor>style:NavigationColor</TitleBackColor>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ЖивотныеНаЛеченииСписокПрепаратовПолеСвязиКонтекстноеМеню" id="162"/>
+											<ExtendedTooltip name="ЖивотныеНаЛеченииСписокПрепаратовПолеСвязиРасширеннаяПодсказка" id="163"/>
+										</LabelField>
+										<InputField name="ЖивотныеНаЛеченииПримечание" id="158">
+											<DataPath>Объект.ЖивотныеНаЛечении.Примечание</DataPath>
+											<TitleBackColor>style:NavigationColor</TitleBackColor>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ЖивотныеНаЛеченииПримечаниеКонтекстноеМеню" id="159"/>
+											<ExtendedTooltip name="ЖивотныеНаЛеченииПримечаниеРасширеннаяПодсказка" id="160"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+								<Table name="СписокИспользованныхПрепаратов" id="101">
+									<Height>4</Height>
+									<AutoMaxHeight>false</AutoMaxHeight>
+									<HeightControlVariant>UseHeightInTableRows</HeightControlVariant>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>Объект.СписокИспользованныхПрепаратов</DataPath>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="СписокИспользованныхПрепаратовКонтекстноеМеню" id="102"/>
+									<AutoCommandBar name="СписокИспользованныхПрепаратовКоманднаяПанель" id="103">
+										<ChildItems>
+											<Button name="ПрепаратыЗаполнитьПоШаблону" id="187">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ЗаполнитьПоШаблону</CommandName>
+												<ExtendedTooltip name="ПрепаратыЗаполнитьПоШаблонуРасширеннаяПодсказка" id="188"/>
+											</Button>
+										</ChildItems>
+									</AutoCommandBar>
+									<ExtendedTooltip name="СписокИспользованныхПрепаратовРасширеннаяПодсказка" id="104"/>
+									<SearchStringAddition name="СписокИспользованныхПрепаратовСтрокаПоиска" id="105">
+										<AdditionSource>
+											<Item>СписокИспользованныхПрепаратов</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="СписокИспользованныхПрепаратовСтрокаПоискаКонтекстноеМеню" id="106"/>
+										<ExtendedTooltip name="СписокИспользованныхПрепаратовСтрокаПоискаРасширеннаяПодсказка" id="107"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="СписокИспользованныхПрепаратовСостояниеПросмотра" id="108">
+										<AdditionSource>
+											<Item>СписокИспользованныхПрепаратов</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="СписокИспользованныхПрепаратовСостояниеПросмотраКонтекстноеМеню" id="109"/>
+										<ExtendedTooltip name="СписокИспользованныхПрепаратовСостояниеПросмотраРасширеннаяПодсказка" id="110"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="СписокИспользованныхПрепаратовУправлениеПоиском" id="111">
+										<AdditionSource>
+											<Item>СписокИспользованныхПрепаратов</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="СписокИспользованныхПрепаратовУправлениеПоискомКонтекстноеМеню" id="112"/>
+										<ExtendedTooltip name="СписокИспользованныхПрепаратовУправлениеПоискомРасширеннаяПодсказка" id="113"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<LabelField name="СписокИспользованныхПрепаратовНомерСтроки" id="164">
+											<DataPath>Объект.СписокИспользованныхПрепаратов.LineNumber</DataPath>
+											<TitleBackColor>style:NavigationColor</TitleBackColor>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="СписокИспользованныхПрепаратовНомерСтрокиКонтекстноеМеню" id="165"/>
+											<ExtendedTooltip name="СписокИспользованныхПрепаратовНомерСтрокиРасширеннаяПодсказка" id="166"/>
+										</LabelField>
+										<InputField name="СписокИспользованныхПрепаратовПрепарат" id="167">
+											<DataPath>Объект.СписокИспользованныхПрепаратов.Препарат</DataPath>
+											<TitleBackColor>style:NavigationColor</TitleBackColor>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="СписокИспользованныхПрепаратовПрепаратКонтекстноеМеню" id="168"/>
+											<ExtendedTooltip name="СписокИспользованныхПрепаратовПрепаратРасширеннаяПодсказка" id="169"/>
+											<Events>
+												<Event name="OnChange">СписокИспользованныхПрепаратовПрепаратПриИзменении</Event>
+											</Events>
+										</InputField>
+										<InputField name="СписокИспользованныхПрепаратовКоличество" id="170">
+											<DataPath>Объект.СписокИспользованныхПрепаратов.Количество</DataPath>
+											<TitleBackColor>style:NavigationColor</TitleBackColor>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="СписокИспользованныхПрепаратовКоличествоКонтекстноеМеню" id="171"/>
+											<ExtendedTooltip name="СписокИспользованныхПрепаратовКоличествоРасширеннаяПодсказка" id="172"/>
+										</InputField>
+										<LabelField name="СписокИспользованныхПрепаратовПолеСвязи" id="173">
+											<DataPath>Объект.СписокИспользованныхПрепаратов.ПолеСвязи</DataPath>
+											<Visible>false</Visible>
+											<TitleBackColor>style:NavigationColor</TitleBackColor>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="СписокИспользованныхПрепаратовПолеСвязиКонтекстноеМеню" id="174"/>
+											<ExtendedTooltip name="СписокИспользованныхПрепаратовПолеСвязиРасширеннаяПодсказка" id="175"/>
+										</LabelField>
+										<InputField name="СписокИспользованныхПрепаратовЕдиницаИзмерения" id="176">
+											<DataPath>Объект.СписокИспользованныхПрепаратов.ЕдиницаИзмерения</DataPath>
+											<TitleBackColor>style:NavigationColor</TitleBackColor>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="СписокИспользованныхПрепаратовЕдиницаИзмеренияКонтекстноеМеню" id="177"/>
+											<ExtendedTooltip name="СписокИспользованныхПрепаратовЕдиницаИзмеренияРасширеннаяПодсказка" id="178"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.ОперацииЖивотным</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Отобрать" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отобрать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отобрать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Отобрать</Action>
+		</Command>
+		<Command name="ЗаполнитьПоШаблону" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить по шаблону</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить по шаблону</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьПоШаблону</Action>
+		</Command>
+	</Commands>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>AccumulationRegister.ТоварыНаСкладах.StandardCommand.OpenByRecorder</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+			</Item>
+		</NavigationPanel>
+	</CommandInterface>
+</Form>

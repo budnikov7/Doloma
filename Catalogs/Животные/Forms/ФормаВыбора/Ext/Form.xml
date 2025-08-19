@@ -1,0 +1,718 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаКомандОтборов" id="87">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа команд отборов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа команд отборов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаКомандОтборовРасширеннаяПодсказка" id="88"/>
+			<ChildItems>
+				<CommandBar name="Отборы" id="100">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отборы</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отборы</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ExtendedTooltip name="ОтборыРасширеннаяПодсказка" id="101"/>
+					<ChildItems>
+						<Button name="ПоказыватьАрхив" id="83">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Command.ПоказыватьАрхив</CommandName>
+							<ExtendedTooltip name="ПоказыватьАрхивРасширеннаяПодсказка" id="84"/>
+						</Button>
+						<Button name="ПоказыватьБычков" id="85">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Command.ПоказыватьБычков</CommandName>
+							<ExtendedTooltip name="ПоказыватьБычковРасширеннаяПодсказка" id="86"/>
+						</Button>
+					</ChildItems>
+				</CommandBar>
+				<CommandBar name="КоманднаяПанельСписок" id="98">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Командная панель список</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Командная панель список</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>false</HorizontalStretch>
+					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+					<CommandSource>Item.Список</CommandSource>
+					<ExtendedTooltip name="КоманднаяПанельСписокРасширеннаяПодсказка" id="99"/>
+				</CommandBar>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="Список" id="3">
+			<Representation>List</Representation>
+			<CommandBarLocation>None</CommandBarLocation>
+			<DefaultItem>true</DefaultItem>
+			<ChoiceMode>true</ChoiceMode>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<InitialTreeView>ExpandTopLevel</InitialTreeView>
+			<EnableStartDrag>true</EnableStartDrag>
+			<DataPath>Список</DataPath>
+			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<UserSettingsGroup>1:02023637-7868-4a5f-8576-835a76e0c9ba</UserSettingsGroup>
+			<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+			<ContextMenu name="СписокКонтекстноеМеню" id="4"/>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="5">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="6"/>
+			<SearchStringAddition name="СписокСтрокаПоиска" id="7">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="8"/>
+				<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="9"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокСостояниеПросмотра" id="10">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="11"/>
+				<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="12"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокУправлениеПоиском" id="13">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="14"/>
+				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="15"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="BeforeAddRow">СписокПередНачаломДобавления</Event>
+			</Events>
+			<ChildItems>
+				<LabelField name="Код" id="19">
+					<DataPath>Список.Код</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="КодКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="21"/>
+				</LabelField>
+				<LabelField name="Ферма" id="25">
+					<DataPath>Список.Ферма</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="ФермаКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="ФермаРасширеннаяПодсказка" id="27"/>
+				</LabelField>
+				<LabelField name="Корпус" id="57">
+					<DataPath>Список.Корпус</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Корпус</v8:content>
+						</v8:item>
+					</Title>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="КорпусКонтекстноеМеню" id="58"/>
+					<ExtendedTooltip name="КорпусРасширеннаяПодсказка" id="59"/>
+				</LabelField>
+				<LabelField name="Наименование" id="16">
+					<DataPath>Список.Наименование</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="18"/>
+				</LabelField>
+				<LabelField name="ПроизводственнаяГруппа" id="28">
+					<DataPath>Список.ПроизводственнаяГруппа</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="ПроизводственнаяГруппаКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="ПроизводственнаяГруппаРасширеннаяПодсказка" id="30"/>
+				</LabelField>
+				<LabelField name="Состояние" id="31">
+					<DataPath>Список.Состояние</DataPath>
+					<UserVisible>
+						<xr:Common>true</xr:Common>
+						<xr:Value name="Role.ВетеринарныйВрач">false</xr:Value>
+						<xr:Value name="Role.ДоступКоВсемФермам">false</xr:Value>
+					</UserVisible>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="СостояниеКонтекстноеМеню" id="32"/>
+					<ExtendedTooltip name="СостояниеРасширеннаяПодсказка" id="33"/>
+				</LabelField>
+				<LabelField name="Отелов" id="22">
+					<DataPath>Список.Отелов</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<ContextMenu name="ОтеловКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="ОтеловРасширеннаяПодсказка" id="24"/>
+				</LabelField>
+				<ColumnGroup name="ДополнительныеДанные" id="34">
+					<Visible>false</Visible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительные данные</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительные данные</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ДополнительныеДанныеРасширеннаяПодсказка" id="35"/>
+					<ChildItems>
+						<CheckBoxField name="Архив" id="36">
+							<DataPath>Список.Архив</DataPath>
+							<TitleBackColor>style:NavigationColor</TitleBackColor>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="АрхивКонтекстноеМеню" id="37"/>
+							<ExtendedTooltip name="АрхивРасширеннаяПодсказка" id="38"/>
+						</CheckBoxField>
+						<LabelField name="Бирка" id="39">
+							<DataPath>Список.Бирка</DataPath>
+							<TitleBackColor>style:NavigationColor</TitleBackColor>
+							<ContextMenu name="БиркаКонтекстноеМеню" id="40"/>
+							<ExtendedTooltip name="БиркаРасширеннаяПодсказка" id="41"/>
+						</LabelField>
+						<CheckBoxField name="Брак" id="42">
+							<DataPath>Список.Брак</DataPath>
+							<TitleBackColor>style:NavigationColor</TitleBackColor>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="БракКонтекстноеМеню" id="43"/>
+							<ExtendedTooltip name="БракРасширеннаяПодсказка" id="44"/>
+						</CheckBoxField>
+						<LabelField name="ВесПриРождении" id="45">
+							<DataPath>Список.ВесПриРождении</DataPath>
+							<TitleBackColor>style:NavigationColor</TitleBackColor>
+							<ContextMenu name="ВесПриРожденииКонтекстноеМеню" id="46"/>
+							<ExtendedTooltip name="ВесПриРожденииРасширеннаяПодсказка" id="47"/>
+						</LabelField>
+						<LabelField name="ДатаВыбытия" id="48">
+							<DataPath>Список.ДатаВыбытия</DataPath>
+							<TitleBackColor>style:NavigationColor</TitleBackColor>
+							<ContextMenu name="ДатаВыбытияКонтекстноеМеню" id="49"/>
+							<ExtendedTooltip name="ДатаВыбытияРасширеннаяПодсказка" id="50"/>
+						</LabelField>
+						<LabelField name="ДатаРождения" id="51">
+							<DataPath>Список.ДатаРождения</DataPath>
+							<TitleBackColor>style:NavigationColor</TitleBackColor>
+							<ContextMenu name="ДатаРожденияКонтекстноеМеню" id="52"/>
+							<ExtendedTooltip name="ДатаРожденияРасширеннаяПодсказка" id="53"/>
+						</LabelField>
+						<LabelField name="Кличка" id="54">
+							<DataPath>Список.Кличка</DataPath>
+							<TitleBackColor>style:NavigationColor</TitleBackColor>
+							<ContextMenu name="КличкаКонтекстноеМеню" id="55"/>
+							<ExtendedTooltip name="КличкаРасширеннаяПодсказка" id="56"/>
+						</LabelField>
+						<LabelField name="Мать" id="60">
+							<DataPath>Список.Мать</DataPath>
+							<TitleBackColor>style:NavigationColor</TitleBackColor>
+							<ContextMenu name="МатьКонтекстноеМеню" id="61"/>
+							<ExtendedTooltip name="МатьРасширеннаяПодсказка" id="62"/>
+						</LabelField>
+						<LabelField name="Статус" id="78">
+							<DataPath>~Список.Статус</DataPath>
+							<TitleBackColor>style:NavigationColor</TitleBackColor>
+							<ContextMenu name="СтатусКонтекстноеМеню" id="79"/>
+							<ExtendedTooltip name="СтатусРасширеннаяПодсказка" id="80"/>
+						</LabelField>
+						<LabelField name="МестоРождения" id="63">
+							<DataPath>Список.МестоРождения</DataPath>
+							<TitleBackColor>style:NavigationColor</TitleBackColor>
+							<ContextMenu name="МестоРожденияКонтекстноеМеню" id="64"/>
+							<ExtendedTooltip name="МестоРожденияРасширеннаяПодсказка" id="65"/>
+						</LabelField>
+						<LabelField name="Осеменений" id="66">
+							<DataPath>Список.Осеменений</DataPath>
+							<TitleBackColor>style:NavigationColor</TitleBackColor>
+							<ContextMenu name="ОсемененийКонтекстноеМеню" id="67"/>
+							<ExtendedTooltip name="ОсемененийРасширеннаяПодсказка" id="68"/>
+						</LabelField>
+						<LabelField name="Пол" id="75">
+							<DataPath>Список.Пол</DataPath>
+							<TitleBackColor>style:NavigationColor</TitleBackColor>
+							<ContextMenu name="ПолКонтекстноеМеню" id="76"/>
+							<ExtendedTooltip name="ПолРасширеннаяПодсказка" id="77"/>
+						</LabelField>
+						<LabelField name="Отец" id="69">
+							<DataPath>Список.Отец</DataPath>
+							<TitleBackColor>style:NavigationColor</TitleBackColor>
+							<ContextMenu name="ОтецКонтекстноеМеню" id="70"/>
+							<ExtendedTooltip name="ОтецРасширеннаяПодсказка" id="71"/>
+						</LabelField>
+					</ChildItems>
+				</ColumnGroup>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	СправочникЖивотные.Ссылка КАК Ссылка,
+	СправочникЖивотные.ПометкаУдаления КАК ПометкаУдаления,
+	СправочникЖивотные.Код КАК Код,
+	СправочникЖивотные.Наименование КАК Наименование,
+	СправочникЖивотные.Кличка КАК Кличка,
+	СправочникЖивотные.Бирка КАК Бирка,
+	СправочникЖивотные.Предопределенный КАК Предопределенный,
+	СправочникЖивотные.ИмяПредопределенныхДанных КАК ИмяПредопределенныхДанных,
+	ИнформацияОРожденииЖивотного.ДатаРождения КАК ДатаРождения,
+	ИнформацияОРожденииЖивотного.Пол КАК Пол,
+	ИнформацияОРожденииЖивотного.Вес КАК ВесПриРождении,
+	ВЫБОР
+		КОГДА ИнформацияОРожденииЖивотного.Пол = ЗНАЧЕНИЕ(Перечисление.ПолЖивотного.Корова)
+			ТОГДА ВЫБОР
+					КОГДА КоличествоОтелов.Количество &gt; 0
+						ТОГДА "Корова"
+					ИНАЧЕ "Телка"
+				КОНЕЦ
+		ИНАЧЕ ВЫБОР
+				КОГДА ИнформацияОРожденииЖивотного.Пол = ЗНАЧЕНИЕ(Перечисление.ПолЖивотного.Бык)
+					ТОГДА "Бык"
+				ИНАЧЕ ""
+			КОНЕЦ
+	КОНЕЦ КАК ПроизводственнаяГруппа,
+	ВЫРАЗИТЬ(NULL КАК СТРОКА(100)) КАК Возраст,
+	РазмещениеЖивотного.Корпус КАК Корпус,
+	РазмещениеЖивотного.Ферма КАК Ферма,
+	КоличествоОтелов.Количество КАК Отелов,
+	ВЫБОР
+		КОГДА АктуальностьЖивотного.НеАктуально &gt; 0
+			ТОГДА ИСТИНА
+		ИНАЧЕ ЛОЖЬ
+	КОНЕЦ КАК Архив,
+	ВЫБОР
+		КОГДА АктуальностьЖивотного.НеАктуально &gt; 0
+			ТОГДА АктуальностьЖивотного.ДатаВыбытия
+		ИНАЧЕ ДАТАВРЕМЯ(1, 1, 1)
+	КОНЕЦ КАК ДатаВыбытия,
+	РодителиЖивотного.Отец КАК Отец,
+	РодителиЖивотного.Мать КАК Мать,
+	РодителиЖивотного.TPI КАК TPI,
+	РодителиЖивотного.NM КАК NM,
+	РодителиЖивотного.PL КАК PL,
+	РодителиЖивотного.Молоко КАК Молоко,
+	РодителиЖивотного.CCR КАК CCR,
+	РодителиЖивотного.HCR КАК HCR,
+	ВЫБОР
+		КОГДА ДанныеОБракеЖивотных.Браковано &gt; 0
+			ТОГДА ИСТИНА
+		ИНАЧЕ ЛОЖЬ
+	КОНЕЦ КАК Брак,
+	МестоРожденияЖивотного.Ферма КАК МестоРождения,
+	ПредположениеОтела.ДатаПредполагаемогоОтёла КАК ДатаПредполагаемогоОтела,
+	РАЗНОСТЬДАТ(ОсемененияСрезПоследних.Период, &amp;ТекущаяДата, ДЕНЬ) КАК ДойныхДней,
+	ВложенныйЗапрос.Состояние КАК Состояние,
+	КоличествоОсемененийПослеОтелаАборта.Количество КАК Осеменений, 
+	ВЫБОР КОГДА ЕСТЬNULL(ПериодыБолезнейЖивотныхСрезПоследних.Заболевание, 9) = 9 ТОГДА 
+		"Здоровая"
+	ИНАЧЕ
+		"Больная"
+	КОНЕЦ КАК ВетСтатус,  
+	ТаблицаОсеменения.Период КАК ДатаПоследнегоОсеменения,
+	ТаблицаОсеменения.Бык КАК БыкПоследнегоОсеменения, 
+	ВЫБОР
+		КОГДА ИнформацияОРожденииЖивотного.Пол = ЗНАЧЕНИЕ(Перечисление.ПолЖивотного.Корова)
+			ТОГДА ВЫБОР
+					КОГДА КоличествоОтелов.Количество &gt; 0
+						ТОГДА 0
+					ИНАЧЕ Взвешивания.Вес
+				КОНЕЦ
+		ИНАЧЕ ВЫБОР
+				КОГДА ИнформацияОРожденииЖивотного.Пол = ЗНАЧЕНИЕ(Перечисление.ПолЖивотного.Бык)
+					ТОГДА 0
+				ИНАЧЕ 0
+			КОНЕЦ
+	КОНЕЦ КАК ТекущийВес  
+ИЗ                                                  
+	Справочник.Животные КАК СправочникЖивотные
+		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			СостояниеЖивотныхСрезПоследних.Животное КАК Животное,
+			СостояниеЖивотныхСрезПоследних.СостояниеЖивотного КАК Состояние
+		ИЗ
+			РегистрСведений.СостояниеЖивотных.СрезПоследних КАК СостояниеЖивотныхСрезПоследних) КАК ВложенныйЗапрос
+		ПО СправочникЖивотные.Ссылка = ВложенныйЗапрос.Животное
+		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			МАКСИМУМ(ПредположениеОтела.Период) КАК Период,
+			ПредположениеОтела.Животное КАК Животное,
+			ПредположениеОтела.ДатаПредполагаемогоОтёла КАК ДатаПредполагаемогоОтёла
+		ИЗ
+			РегистрСведений.ДатаПредполагаемогоОтёла.СрезПоследних(, ) КАК ПредположениеОтела
+		
+		СГРУППИРОВАТЬ ПО
+			ПредположениеОтела.Животное,
+			ПредположениеОтела.ДатаПредполагаемогоОтёла) КАК ПредположениеОтела
+		ПО СправочникЖивотные.Ссылка = ПредположениеОтела.Животное
+		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			МАКСИМУМ(ОсемененияСрезПоследних.Период) КАК Период,
+			ОсемененияСрезПоследних.Мать КАК Животное
+		ИЗ
+			РегистрСведений.Отелы.СрезПоследних(, ) КАК ОсемененияСрезПоследних
+		
+		СГРУППИРОВАТЬ ПО
+			ОсемененияСрезПоследних.Мать) КАК ОсемененияСрезПоследних
+		ПО СправочникЖивотные.Ссылка = ОсемененияСрезПоследних.Животное
+		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			ЕСТЬNULL(КОЛИЧЕСТВО(1), 0) КАК Количество,
+			ИмяВложенногоЗапроса.Мать КАК Мать
+		ИЗ
+			РегистрСведений.Осеменения КАК Осеменения
+				ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+					ЕСТЬNULL(МАКСИМУМ(ИмяВложенногоЗапроса.Период), ДАТАВРЕМЯ(1, 1, 1)) КАК Период,
+					ИмяВложенногоЗапроса.Мать КАК Мать
+				ИЗ
+					(ВЫБРАТЬ
+						ДАТАВРЕМЯ(1, 1, 1) КАК Период,
+						Животные.Ссылка КАК Мать
+					ИЗ
+						Справочник.Животные КАК Животные
+					
+					ОБЪЕДИНИТЬ ВСЕ
+					
+					ВЫБРАТЬ
+						ЕСТЬNULL(МАКСИМУМ(ОсемененияСрезПоследних.Период), ДАТАВРЕМЯ(1, 1, 1)),
+						ОсемененияСрезПоследних.Мать
+					ИЗ
+						РегистрСведений.Отелы.СрезПоследних(, ) КАК ОсемененияСрезПоследних
+					
+					СГРУППИРОВАТЬ ПО
+						ОсемененияСрезПоследних.Мать
+					
+					ОБЪЕДИНИТЬ ВСЕ
+					
+					ВЫБРАТЬ
+						ЕСТЬNULL(МАКСИМУМ(АбортыСрезПоследних.Период), ДАТАВРЕМЯ(1, 1, 1)),
+						АбортыСрезПоследних.Мать
+					ИЗ
+						РегистрСведений.Аборты.СрезПоследних(, ) КАК АбортыСрезПоследних
+					ГДЕ
+						АбортыСрезПоследних.ОткрытьЛактацию
+					
+					СГРУППИРОВАТЬ ПО
+						АбортыСрезПоследних.Мать) КАК ИмяВложенногоЗапроса
+				
+				СГРУППИРОВАТЬ ПО
+					ИмяВложенногоЗапроса.Мать) КАК ИмяВложенногоЗапроса
+				ПО Осеменения.Животное = ИмяВложенногоЗапроса.Мать
+					И Осеменения.Период &gt; ИмяВложенногоЗапроса.Период
+		
+		СГРУППИРОВАТЬ ПО
+			ИмяВложенногоЗапроса.Мать) КАК КоличествоОсемененийПослеОтелаАборта
+		ПО СправочникЖивотные.Ссылка = КоличествоОсемененийПослеОтелаАборта.Мать
+		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			КОЛИЧЕСТВО(ВложенныйЗапрос.Количество) КАК Количество,
+			ВложенныйЗапрос.Мать КАК Мать
+		ИЗ
+			(ВЫБРАТЬ
+				Отелы.Регистратор КАК Количество,
+				Отелы.Мать КАК Мать,
+				Отелы.УИД КАК УИД
+			ИЗ
+				РегистрСведений.Отелы КАК Отелы
+			
+			СГРУППИРОВАТЬ ПО
+				Отелы.Регистратор,
+				Отелы.Мать,
+				Отелы.УИД) КАК ВложенныйЗапрос
+		
+		СГРУППИРОВАТЬ ПО
+			ВложенныйЗапрос.Мать) КАК КоличествоОтелов
+		ПО СправочникЖивотные.Ссылка = КоличествоОтелов.Мать
+		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			РазмещениеЖивотныхСрезПоследних.Корпус КАК Корпус,
+			РазмещениеЖивотныхСрезПоследних.Ферма КАК Ферма,
+			РазмещениеЖивотныхСрезПоследних.Животное КАК Животное
+		ИЗ
+			РегистрСведений.РазмещениеЖивотных.СрезПоследних(, ) КАК РазмещениеЖивотныхСрезПоследних) КАК РазмещениеЖивотного
+		ПО СправочникЖивотные.Ссылка = РазмещениеЖивотного.Животное
+		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			РазмещениеЖивотныхСрезПервых.Ферма КАК Ферма,
+			РазмещениеЖивотныхСрезПервых.Животное КАК Животное
+		ИЗ
+			РегистрСведений.РазмещениеЖивотных.СрезПервых(, ) КАК РазмещениеЖивотныхСрезПервых) КАК МестоРожденияЖивотного
+		ПО СправочникЖивотные.Ссылка = МестоРожденияЖивотного.Животное
+		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			ИнформацияОРожденииСрезПоследних.Вес КАК Вес,
+			ИнформацияОРожденииСрезПоследних.Пол КАК Пол,
+			ИнформацияОРожденииСрезПоследних.Период КАК ДатаРождения,
+			ИнформацияОРожденииСрезПоследних.Животное КАК Животное
+		ИЗ
+			РегистрСведений.ИнформацияОРождении.СрезПоследних(, ) КАК ИнформацияОРожденииСрезПоследних) КАК ИнформацияОРожденииЖивотного
+		ПО СправочникЖивотные.Ссылка = ИнформацияОРожденииЖивотного.Животное
+		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			КОЛИЧЕСТВО(1) КАК НеАктуально,
+			ВыбытияСрезПоследних.Период КАК ДатаВыбытия,
+			ВыбытияСрезПоследних.Животное КАК Животное
+		ИЗ
+			РегистрСведений.Выбытия.СрезПоследних(, ) КАК ВыбытияСрезПоследних
+		
+		СГРУППИРОВАТЬ ПО
+			ВыбытияСрезПоследних.Период,
+			ВыбытияСрезПоследних.Животное) КАК АктуальностьЖивотного
+		ПО СправочникЖивотные.Ссылка = АктуальностьЖивотного.Животное
+		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			КОЛИЧЕСТВО(1) КАК Браковано,
+			ВыбраковкаЖивотныхСрезПоследних.Животное КАК Животное
+		ИЗ
+			РегистрСведений.ВыбраковкаЖивотных.СрезПоследних(, ) КАК ВыбраковкаЖивотныхСрезПоследних
+		
+		СГРУППИРОВАТЬ ПО
+			ВыбраковкаЖивотныхСрезПоследних.Животное) КАК ДанныеОБракеЖивотных
+		ПО СправочникЖивотные.Ссылка = ДанныеОБракеЖивотных.Животное
+		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			РодителиЖивотныхСрезПоследних.Мать КАК Мать,
+			РодителиЖивотныхСрезПоследних.Отец КАК Отец,
+			РодителиЖивотныхСрезПоследних.Животное КАК Животное,
+			ИндексыБыков.TPI КАК TPI,
+			ИндексыБыков.NM КАК NM,
+			ИндексыБыков.PL КАК PL,
+			ИндексыБыков.Молоко КАК Молоко,
+			ИндексыБыков.CCR КАК CCR,
+			ИндексыБыков.HCR КАК HCR,
+			ИндексыБыков.Бык КАК Бык
+		ИЗ
+			РегистрСведений.РодителиЖивотных.СрезПоследних(, ) КАК РодителиЖивотныхСрезПоследних
+				ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+					ИндексыБыковСрезПоследних.TPI КАК TPI,
+					ИндексыБыковСрезПоследних.NM КАК NM,
+					ИндексыБыковСрезПоследних.PL КАК PL,
+					ИндексыБыковСрезПоследних.Молоко КАК Молоко,
+					ИндексыБыковСрезПоследних.CCR КАК CCR,
+					ИндексыБыковСрезПоследних.HCR КАК HCR,
+					ИндексыБыковСрезПоследних.Бык КАК Бык
+				ИЗ
+					РегистрСведений.ИндексыБыков.СрезПоследних КАК ИндексыБыковСрезПоследних) КАК ИндексыБыков
+				ПО РодителиЖивотныхСрезПоследних.Отец = ИндексыБыков.Бык) КАК РодителиЖивотного
+		ПО СправочникЖивотные.Ссылка = РодителиЖивотного.Животное
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ПериодыБолезнейЖивотных.СрезПоследних() КАК ПериодыБолезнейЖивотныхСрезПоследних
+		ПО СправочникЖивотные.Ссылка = ПериодыБолезнейЖивотныхСрезПоследних.Животное 
+	    
+	    ЛЕВОЕ СОЕДИНЕНИЕ (
+	    	ВЫБРАТЬ ПЕРВЫЕ 1
+	    		ТаблицаОсеменения.Период КАК Период,
+	    		ТаблицаОсеменения.Семя.Бык КАК Бык, 
+	    		ТаблицаОсеменения.Животное КАК Животное
+	    	ИЗ
+	    		РегистрСведений.Осеменения.СрезПоследних КАК ТаблицаОсеменения
+	    	УПОРЯДОЧИТЬ ПО 
+	    		Период УБЫВ 
+	    
+	    
+	    ) КАК ТаблицаОсеменения
+		ПО (СправочникЖивотные.Ссылка = ТаблицаОсеменения.Животное)
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.Взвешивания.СрезПоследних КАК Взвешивания
+		ПО (СправочникЖивотные.Ссылка = Взвешивания.Животное)		
+СГРУППИРОВАТЬ ПО
+	СправочникЖивотные.Ссылка,
+	СправочникЖивотные.ПометкаУдаления,
+	СправочникЖивотные.Код,
+	СправочникЖивотные.Наименование,
+	СправочникЖивотные.Кличка,
+	ИнформацияОРожденииЖивотного.ДатаРождения,
+	ИнформацияОРожденииЖивотного.Пол,
+	РазмещениеЖивотного.Корпус,
+	ВЫБОР
+		КОГДА ИнформацияОРожденииЖивотного.Пол = ЗНАЧЕНИЕ(Перечисление.ПолЖивотного.Корова)
+			ТОГДА ВЫБОР
+					КОГДА КоличествоОтелов.Количество &gt; 0
+						ТОГДА "Телка"
+					ИНАЧЕ "Корова"
+				КОНЕЦ
+		ИНАЧЕ ВЫБОР
+				КОГДА ИнформацияОРожденииЖивотного.Пол = ЗНАЧЕНИЕ(Перечисление.ПолЖивотного.Бык)
+					ТОГДА "Бык"
+				ИНАЧЕ ""
+			КОНЕЦ
+	КОНЕЦ,
+	КоличествоОтелов.Количество,
+	ИнформацияОРожденииЖивотного.Вес,
+	ВЫБОР
+		КОГДА АктуальностьЖивотного.НеАктуально &gt; 0
+			ТОГДА ИСТИНА
+		ИНАЧЕ ЛОЖЬ
+	КОНЕЦ,
+	СправочникЖивотные.Бирка,
+	РодителиЖивотного.Отец,
+	ВЫБОР
+		КОГДА АктуальностьЖивотного.НеАктуально &gt; 0
+			ТОГДА АктуальностьЖивотного.ДатаВыбытия
+		ИНАЧЕ ДАТАВРЕМЯ(1, 1, 1)
+	КОНЕЦ,
+	ВЫБОР
+		КОГДА ДанныеОБракеЖивотных.Браковано &gt; 0
+			ТОГДА ИСТИНА
+		ИНАЧЕ ЛОЖЬ
+	КОНЕЦ,
+	РазмещениеЖивотного.Ферма,
+	РодителиЖивотного.Мать,
+	МестоРожденияЖивотного.Ферма,
+	СправочникЖивотные.Предопределенный,
+	СправочникЖивотные.ИмяПредопределенныхДанных,
+	ПредположениеОтела.ДатаПредполагаемогоОтёла,
+	РАЗНОСТЬДАТ(ОсемененияСрезПоследних.Период, &amp;ТекущаяДата, ДЕНЬ),
+	ВложенныйЗапрос.Состояние,
+	КоличествоОсемененийПослеОтелаАборта.Количество,
+	РодителиЖивотного.TPI,
+	РодителиЖивотного.NM,
+	РодителиЖивотного.PL,
+	РодителиЖивотного.Молоко,
+	РодителиЖивотного.CCR,
+	РодителиЖивотного.HCR, 
+	ВЫРАЗИТЬ(NULL КАК СТРОКА(100)), 
+	ВЫБОР КОГДА ЕСТЬNULL(ПериодыБолезнейЖивотныхСрезПоследних.Заболевание, 9) = 9 ТОГДА 
+		"Здоровая"
+	ИНАЧЕ
+		"Больная"
+	КОНЕЦ,	
+	ТаблицаОсеменения.Период,
+	ТаблицаОсеменения.Бык, 
+	ВЫБОР
+		КОГДА ИнформацияОРожденииЖивотного.Пол = ЗНАЧЕНИЕ(Перечисление.ПолЖивотного.Корова)
+			ТОГДА ВЫБОР
+					КОГДА КоличествоОтелов.Количество &gt; 0
+						ТОГДА 0
+					ИНАЧЕ Взвешивания.Вес
+				КОНЕЦ
+		ИНАЧЕ ВЫБОР
+				КОГДА ИнформацияОРожденииЖивотного.Пол = ЗНАЧЕНИЕ(Перечисление.ПолЖивотного.Бык)
+					ТОГДА 0
+				ИНАЧЕ 0
+			КОНЕЦ
+	КОНЕЦ</QueryText>
+				<MainTable>Catalog.Животные</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="Ферма" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ферма</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Фермы</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="НеобходимоОповестить" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Необходимо оповестить</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Корпус" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Корпус</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Корпуса</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПоказыватьАрхив" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показывать архив</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показывать архив</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоказыватьАрхив</Action>
+		</Command>
+		<Command name="ПоказыватьБычков" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показывать бычков</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показывать бычков</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоказыватьБычков</Action>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.20">
+	<Item id="300acfad-e1ca-4ac7-96ec-aac6942bb5de">
+		<Name>ВисБэкАйдиал1013415</Name>
+		<Code xsi:type="xs:decimal">656</Code>
+		<Description>Вис Бэк Айдиал 1013415</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="09428698-4b11-4f4c-bacf-5dfe9190639f">
+		<Name>МонтвикЧифтейн95679</Name>
+		<Code xsi:type="xs:decimal">660</Code>
+		<Description>Монтвик Чифтейн 95679</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="be6b9c1b-cbdb-47bd-934b-f009408ccdef">
+		<Name>ПабстГовернер</Name>
+		<Code xsi:type="xs:decimal">705</Code>
+		<Description>Пабст Говернер</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="fd7ae7ff-6dc7-425e-8da7-a72b43dee565">
+		<Name>РефлекшнСоверинг198998</Name>
+		<Code xsi:type="xs:decimal">661</Code>
+		<Description>Рефлекшн Соверинг 198998</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="cfe55c8e-cf5f-4829-9fb0-434ee4ba0ec9">
+		<Name>РозейфСитейшн267150</Name>
+		<Code xsi:type="xs:decimal">662</Code>
+		<Description>Розейф Ситейшн 267150</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

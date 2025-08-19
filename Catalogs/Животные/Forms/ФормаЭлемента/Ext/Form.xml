@@ -1,0 +1,1703 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ОбщаяГруппа" id="185">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Общая группа</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Общая группа</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ОбщаяГруппаРасширеннаяПодсказка" id="186"/>
+			<ChildItems>
+				<Pages name="ОбщиеДанныеСтраниц" id="276">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Общие данные страниц</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Общие данные страниц</v8:content>
+						</v8:item>
+					</ToolTip>
+					<PagesRepresentation>TabsOnTop</PagesRepresentation>
+					<ExtendedTooltip name="ОбщиеДанныеСтраницРасширеннаяПодсказка" id="277"/>
+					<ChildItems>
+						<Page name="КраткиеДанные" id="278">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Основные данные</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Краткие данные</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="КраткиеДанныеРасширеннаяПодсказка" id="279"/>
+							<ChildItems>
+								<UsualGroup name="НаименованиеГруппа" id="195">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Наименование группа</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Наименование группа</v8:content>
+										</v8:item>
+									</ToolTip>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="НаименованиеГруппаРасширеннаяПодсказка" id="196"/>
+									<ChildItems>
+										<LabelDecoration name="ЖивотноеВАрхивеНадпись" id="215">
+											<Visible>false</Visible>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<Height>2</Height>
+											<HorizontalStretch>true</HorizontalStretch>
+											<TextColor>#E04829</TextColor>
+											<Font ref="style:NormalTextFont" height="16" kind="StyleItem"/>
+											<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+											<GroupVerticalAlign>Center</GroupVerticalAlign>
+											<HorizontalAlign>Center</HorizontalAlign>
+											<VerticalAlign>Center</VerticalAlign>
+											<ContextMenu name="ЖивотноеВАрхивеНадписьКонтекстноеМеню" id="216"/>
+											<ExtendedTooltip name="ЖивотноеВАрхивеНадписьРасширеннаяПодсказка" id="217"/>
+										</LabelDecoration>
+										<InputField name="Кличка" id="7">
+											<DataPath>Объект.Кличка</DataPath>
+											<TitleLocation>Left</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<HorizontalStretch>true</HorizontalStretch>
+											<ContextMenu name="КличкаКонтекстноеМеню" id="8"/>
+											<ExtendedTooltip name="КличкаРасширеннаяПодсказка" id="9"/>
+											<Events>
+												<Event name="OnChange">КличкаПриИзменении</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ОбщиеДанныеОЖивотном" id="187">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Общие данные о животном</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Общие данные о животном</v8:content>
+										</v8:item>
+									</ToolTip>
+									<HorizontalStretch>true</HorizontalStretch>
+									<VerticalStretch>true</VerticalStretch>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ОбщиеДанныеОЖивотномРасширеннаяПодсказка" id="188"/>
+									<ChildItems>
+										<UsualGroup name="СведнияОЖивотномГруппа" id="197">
+											<TitleFont ref="style:NormalTextFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Сведния о животном группа</v8:content>
+												</v8:item>
+											</ToolTip>
+											<HorizontalStretch>true</HorizontalStretch>
+											<Group>AlwaysHorizontal</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="СведнияОЖивотномГруппаРасширеннаяПодсказка" id="198"/>
+											<ChildItems>
+												<UsualGroup name="ПерваяКолонкаСведения" id="199">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Информация о животном</v8:content>
+														</v8:item>
+													</Title>
+													<TitleFont ref="style:NormalTextFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Первая колонка сведения</v8:content>
+														</v8:item>
+													</ToolTip>
+													<HorizontalStretch>true</HorizontalStretch>
+													<Behavior>Usual</Behavior>
+													<ExtendedTooltip name="ПерваяКолонкаСведенияРасширеннаяПодсказка" id="200"/>
+													<ChildItems>
+														<InputField name="Бирка" id="40">
+															<DataPath>Объект.Бирка</DataPath>
+															<ReadOnly>true</ReadOnly>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Бирка</v8:content>
+																</v8:item>
+															</Title>
+															<TitleLocation>Left</TitleLocation>
+															<EditMode>EnterOnInput</EditMode>
+															<Width>10</Width>
+															<HorizontalStretch>true</HorizontalStretch>
+															<EditFormat>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>ЧЦ=; ЧГ=</v8:content>
+																</v8:item>
+															</EditFormat>
+															<TextEdit>false</TextEdit>
+															<ContextMenu name="БиркаКонтекстноеМеню" id="41"/>
+															<ExtendedTooltip name="БиркаРасширеннаяПодсказка" id="42"/>
+															<Events>
+																<Event name="OnChange">БиркаПриИзменении</Event>
+															</Events>
+														</InputField>
+														<InputField name="БиркаХорриот" id="309">
+															<DataPath>Объект.БиркаХорриот</DataPath>
+															<ReadOnly>true</ReadOnly>
+															<ContextMenu name="БиркаХорриотКонтекстноеМеню" id="310"/>
+															<ExtendedTooltip name="БиркаХорриотРасширеннаяПодсказка" id="311"/>
+														</InputField>
+														<InputField name="Код" id="1">
+															<DataPath>Объект.Code</DataPath>
+															<ReadOnly>true</ReadOnly>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Номер</v8:content>
+																</v8:item>
+															</Title>
+															<TitleLocation>Left</TitleLocation>
+															<EditMode>EnterOnInput</EditMode>
+															<HorizontalStretch>true</HorizontalStretch>
+															<EditFormat>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>ЧГ=</v8:content>
+																</v8:item>
+															</EditFormat>
+															<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+															<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+														</InputField>
+														<InputField name="ПроизводственнаяГруппа" id="223">
+															<DataPath>ДополнительныйПараметр_ПроизводственнаяГруппа</DataPath>
+															<ReadOnly>true</ReadOnly>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="ПроизводственнаяГруппаКонтекстноеМеню" id="224"/>
+															<ExtendedTooltip name="ПроизводственнаяГруппаРасширеннаяПодсказка" id="225"/>
+														</InputField>
+														<InputField name="Статус" id="28">
+															<DataPath>ДополнительныйПараметр_Статус</DataPath>
+															<ReadOnly>true</ReadOnly>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="СтатусКонтекстноеМеню" id="29"/>
+															<ExtendedTooltip name="СтатусРасширеннаяПодсказка" id="30"/>
+															<Events>
+																<Event name="OnChange">СтатусПриИзменении</Event>
+															</Events>
+														</InputField>
+														<InputField name="ВетСтатус" id="232">
+															<DataPath>ДополнительныйПараметр_ВетСтатус</DataPath>
+															<ReadOnly>true</ReadOnly>
+															<HorizontalStretch>true</HorizontalStretch>
+															<ContextMenu name="ВетСтатусКонтекстноеМеню" id="233"/>
+															<ExtendedTooltip name="ВетСтатусРасширеннаяПодсказка" id="234"/>
+														</InputField>
+														<InputField name="Пол" id="13">
+															<DataPath>ДополнительныйПараметр_Пол</DataPath>
+															<ReadOnly>true</ReadOnly>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ПолКонтекстноеМеню" id="14"/>
+															<ExtendedTooltip name="ПолРасширеннаяПодсказка" id="15"/>
+														</InputField>
+														<InputField name="ДатаВыбытия" id="49">
+															<DataPath>ДополнительныйПараметр_ДатаВыбытия</DataPath>
+															<ReadOnly>true</ReadOnly>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Дата выбытия</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<HorizontalStretch>true</HorizontalStretch>
+															<ContextMenu name="ДатаВыбытияКонтекстноеМеню" id="50"/>
+															<ExtendedTooltip name="ДатаВыбытияРасширеннаяПодсказка" id="51"/>
+														</InputField>
+														<LabelDecoration name="МестонахождениеНадпись" id="203">
+															<TextColor>#8F8F66</TextColor>
+															<Font ref="style:NormalTextFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Местонахождение </v8:content>
+																</v8:item>
+															</Title>
+															<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+															<HorizontalAlign>Center</HorizontalAlign>
+															<ContextMenu name="МестонахождениеНадписьКонтекстноеМеню" id="204"/>
+															<ExtendedTooltip name="МестонахождениеНадписьРасширеннаяПодсказка" id="205"/>
+														</LabelDecoration>
+														<InputField name="Ферма" id="55">
+															<DataPath>ДополнительныйПараметр_Ферма</DataPath>
+															<ReadOnly>true</ReadOnly>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Ферма</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="ФермаКонтекстноеМеню" id="56"/>
+															<ExtendedTooltip name="ФермаРасширеннаяПодсказка" id="57"/>
+															<Events>
+																<Event name="OnChange">ФермаПриИзменении</Event>
+															</Events>
+														</InputField>
+														<InputField name="Корпус" id="90">
+															<DataPath>ДополнительныйПараметр_Корпус</DataPath>
+															<ReadOnly>true</ReadOnly>
+															<OpenButton>true</OpenButton>
+															<ContextMenu name="КорпусКонтекстноеМеню" id="91"/>
+															<ExtendedTooltip name="КорпусРасширеннаяПодсказка" id="92"/>
+														</InputField>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="ДанныеОРождении" id="189">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Данные о рождении</v8:content>
+														</v8:item>
+													</Title>
+													<TitleFont ref="style:NormalTextFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Данные о рождении</v8:content>
+														</v8:item>
+													</ToolTip>
+													<HorizontalStretch>true</HorizontalStretch>
+													<Group>Vertical</Group>
+													<Behavior>Usual</Behavior>
+													<CollapsedRepresentationTitle>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Показать данные о рождении</v8:content>
+														</v8:item>
+													</CollapsedRepresentationTitle>
+													<Collapsed>true</Collapsed>
+													<ControlRepresentation>Picture</ControlRepresentation>
+													<Representation>NormalSeparation</Representation>
+													<ExtendedTooltip name="ДанныеОРожденииРасширеннаяПодсказка" id="190"/>
+													<ChildItems>
+														<InputField name="ДатаРождения" id="10">
+															<DataPath>ДополнительныйПараметр_ДатаРождения</DataPath>
+															<ReadOnly>true</ReadOnly>
+															<EditMode>EnterOnInput</EditMode>
+															<HorizontalStretch>true</HorizontalStretch>
+															<ContextMenu name="ДатаРожденияКонтекстноеМеню" id="11"/>
+															<ExtendedTooltip name="ДатаРожденияРасширеннаяПодсказка" id="12"/>
+														</InputField>
+														<InputField name="МестоРождения" id="103">
+															<DataPath>ДополнительныйПараметр_МестоРождения</DataPath>
+															<ReadOnly>true</ReadOnly>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Место рождения</v8:content>
+																</v8:item>
+															</Title>
+															<MaxWidth>25</MaxWidth>
+															<HorizontalStretch>true</HorizontalStretch>
+															<ContextMenu name="МестоРожденияКонтекстноеМеню" id="104"/>
+															<ExtendedTooltip name="МестоРожденияРасширеннаяПодсказка" id="105"/>
+														</InputField>
+														<InputField name="ВесПриРождении" id="31">
+															<DataPath>ДополнительныйПараметр_Вес</DataPath>
+															<ReadOnly>true</ReadOnly>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Вес при рождении, кг</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<HorizontalStretch>true</HorizontalStretch>
+															<ContextMenu name="ВесПриРожденииКонтекстноеМеню" id="32"/>
+															<ExtendedTooltip name="ВесПриРожденииРасширеннаяПодсказка" id="33"/>
+														</InputField>
+														<InputField name="Мать" id="69">
+															<DataPath>ДополнительныйПараметр_Мать</DataPath>
+															<ReadOnly>true</ReadOnly>
+															<ContextMenu name="МатьКонтекстноеМеню" id="70"/>
+															<ExtendedTooltip name="МатьРасширеннаяПодсказка" id="71"/>
+														</InputField>
+														<InputField name="Отец" id="46">
+															<DataPath>ДополнительныйПараметр_Отец</DataPath>
+															<ReadOnly>true</ReadOnly>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОтецКонтекстноеМеню" id="47"/>
+															<ExtendedTooltip name="ОтецРасширеннаяПодсказка" id="48"/>
+														</InputField>
+														<UsualGroup name="ПоказателиОтца" id="81">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Показатели отца:</v8:content>
+																</v8:item>
+															</Title>
+															<TitleFont ref="style:NormalTextFont" height="12" kind="StyleItem"/>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Показатели отца</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Width>50</Width>
+															<Group>AlwaysHorizontal</Group>
+															<Behavior>Usual</Behavior>
+															<Representation>None</Representation>
+															<ExtendedTooltip name="ПоказателиОтцаРасширеннаяПодсказка" id="82"/>
+															<ChildItems>
+																<InputField name="ОтецTPI" id="162">
+																	<ReadOnly>true</ReadOnly>
+																	<HorizontalStretch>true</HorizontalStretch>
+																	<ContextMenu name="ОтецTPIКонтекстноеМеню" id="163"/>
+																	<ExtendedTooltip name="ОтецTPIРасширеннаяПодсказка" id="164"/>
+																</InputField>
+																<InputField name="ОтецNM" id="165">
+																	<ReadOnly>true</ReadOnly>
+																	<HorizontalStretch>true</HorizontalStretch>
+																	<ContextMenu name="ОтецNMКонтекстноеМеню" id="166"/>
+																	<ExtendedTooltip name="ОтецNMРасширеннаяПодсказка" id="167"/>
+																</InputField>
+																<InputField name="ОтецМолоко" id="171">
+																	<ReadOnly>true</ReadOnly>
+																	<HorizontalStretch>true</HorizontalStretch>
+																	<ContextMenu name="ОтецМолокоКонтекстноеМеню" id="172"/>
+																	<ExtendedTooltip name="ОтецМолокоРасширеннаяПодсказка" id="173"/>
+																</InputField>
+															</ChildItems>
+														</UsualGroup>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="ВтораяКолонкаСведения" id="201">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Показатели коровы</v8:content>
+														</v8:item>
+													</Title>
+													<TitleFont ref="style:NormalTextFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Вторая колонка сведения</v8:content>
+														</v8:item>
+													</ToolTip>
+													<HorizontalStretch>true</HorizontalStretch>
+													<Behavior>Usual</Behavior>
+													<ExtendedTooltip name="ВтораяКолонкаСведенияРасширеннаяПодсказка" id="202"/>
+													<ChildItems>
+														<InputField name="ДойныхДней" id="176">
+															<DataPath>ДополнительныйПараметр_ДойныхДней</DataPath>
+															<ReadOnly>true</ReadOnly>
+															<HorizontalStretch>true</HorizontalStretch>
+															<ContextMenu name="ДойныхДнейКонтекстноеМеню" id="177"/>
+															<ExtendedTooltip name="ДойныхДнейРасширеннаяПодсказка" id="178"/>
+														</InputField>
+														<InputField name="ДатаПоследнегоОтела" id="259">
+															<DataPath>ДополнительныйПараметр_ДатаПоследнегоОтела</DataPath>
+															<ReadOnly>true</ReadOnly>
+															<HorizontalAlign>Right</HorizontalAlign>
+															<HorizontalStretch>true</HorizontalStretch>
+															<ContextMenu name="ДатаПоследнегоОтелаКонтекстноеМеню" id="260"/>
+															<ExtendedTooltip name="ДатаПоследнегоОтелаРасширеннаяПодсказка" id="261"/>
+														</InputField>
+														<InputField name="ДополнительныйПараметр_МежотёльныйПериод" id="280">
+															<DataPath>ДополнительныйПараметр_МежотёльныйПериод</DataPath>
+															<ReadOnly>true</ReadOnly>
+															<HorizontalStretch>true</HorizontalStretch>
+															<ContextMenu name="ДополнительныйПараметр_МежотёльныйПериодКонтекстноеМеню" id="281"/>
+															<ExtendedTooltip name="ДополнительныйПараметр_МежотёльныйПериодРасширеннаяПодсказка" id="282"/>
+														</InputField>
+														<InputField name="ДатаПредполагаемогоОтёла" id="179">
+															<DataPath>ДополнительныйПараметр_ДатаПредполагаемогоОтела</DataPath>
+															<ReadOnly>true</ReadOnly>
+															<HorizontalAlign>Right</HorizontalAlign>
+															<HorizontalStretch>true</HorizontalStretch>
+															<ContextMenu name="ДатаПредполагаемогоОтёлаКонтекстноеМеню" id="180"/>
+															<ExtendedTooltip name="ДатаПредполагаемогоОтёлаРасширеннаяПодсказка" id="181"/>
+														</InputField>
+														<InputField name="ДнейДоЗапуска" id="262">
+															<DataPath>ДополнительныйПараметр_ДнейДоЗапуска</DataPath>
+															<ReadOnly>true</ReadOnly>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Дней до запуска</v8:content>
+																</v8:item>
+															</Title>
+															<HorizontalStretch>true</HorizontalStretch>
+															<ContextMenu name="ДнейДоЗапускаКонтекстноеМеню" id="263"/>
+															<ExtendedTooltip name="ДнейДоЗапускаРасширеннаяПодсказка" id="264"/>
+														</InputField>
+														<InputField name="ДополнительныйПараметр_ДатаПоследнегоОсеменения" id="265">
+															<DataPath>ДополнительныйПараметр_ДатаПоследнегоОсеменения</DataPath>
+															<ReadOnly>true</ReadOnly>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Дата последнего осеменения</v8:content>
+																</v8:item>
+															</Title>
+															<HorizontalAlign>Right</HorizontalAlign>
+															<HorizontalStretch>true</HorizontalStretch>
+															<ContextMenu name="ДополнительныйПараметр_ДатаПоследнегоОсемененияКонтекстноеМеню" id="266"/>
+															<ExtendedTooltip name="ДополнительныйПараметр_ДатаПоследнегоОсемененияРасширеннаяПодсказка" id="267"/>
+														</InputField>
+														<InputField name="ДополнительныйПараметр_ПоследнийБыкОсеменения" id="268">
+															<DataPath>ДополнительныйПараметр_ПоследнийБыкОсеменения</DataPath>
+															<ReadOnly>true</ReadOnly>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Последний бык осеменения</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="ДополнительныйПараметр_ПоследнийБыкОсемененияКонтекстноеМеню" id="269"/>
+															<ExtendedTooltip name="ДополнительныйПараметр_ПоследнийБыкОсемененияРасширеннаяПодсказка" id="270"/>
+														</InputField>
+														<InputField name="Осеменений" id="182">
+															<DataPath>ДополнительныйПараметр_Осеменений</DataPath>
+															<ReadOnly>true</ReadOnly>
+															<Width>10</Width>
+															<HorizontalStretch>true</HorizontalStretch>
+															<ContextMenu name="ОсемененийКонтекстноеМеню" id="183"/>
+															<ExtendedTooltip name="ОсемененийРасширеннаяПодсказка" id="184"/>
+														</InputField>
+														<InputField name="Отелов" id="25">
+															<DataPath>ДополнительныйПараметр_Отелов</DataPath>
+															<ReadOnly>true</ReadOnly>
+															<EditMode>EnterOnInput</EditMode>
+															<Width>10</Width>
+															<HorizontalStretch>true</HorizontalStretch>
+															<ContextMenu name="ОтеловКонтекстноеМеню" id="26"/>
+															<ExtendedTooltip name="ОтеловРасширеннаяПодсказка" id="27"/>
+															<Events>
+																<Event name="OnChange">ОтеловПриИзменении</Event>
+															</Events>
+														</InputField>
+														<InputField name="МолокоЗаЛактации" id="43">
+															<DataPath>ДополнительныйПараметр_МолокоЗаЛактации</DataPath>
+															<ReadOnly>true</ReadOnly>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Продуктивность</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<HorizontalStretch>true</HorizontalStretch>
+															<ContextMenu name="МолокоЗаЛактацииКонтекстноеМеню" id="44"/>
+															<ExtendedTooltip name="МолокоЗаЛактацииРасширеннаяПодсказка" id="45"/>
+														</InputField>
+														<InputField name="ДополнительныйПараметр_ВесЖивотного" id="271">
+															<DataPath>ДополнительныйПараметр_ВесЖивотного</DataPath>
+															<ReadOnly>true</ReadOnly>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Вес животного</v8:content>
+																</v8:item>
+															</Title>
+															<HorizontalStretch>true</HorizontalStretch>
+															<ContextMenu name="ДополнительныйПараметр_ВесЖивотногоКонтекстноеМеню" id="272"/>
+															<ExtendedTooltip name="ДополнительныйПараметр_ВесЖивотногоРасширеннаяПодсказка" id="273"/>
+														</InputField>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</Page>
+						<Page name="ИсторияЖивотногоГруппа" id="114">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Общие документы</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>История животного группа</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ИсторияЖивотногоГруппаРасширеннаяПодсказка" id="115"/>
+							<ChildItems>
+								<Table name="ИсторияЖивотногоДокументы" id="118">
+									<UseAlternationRowColor>true</UseAlternationRowColor>
+									<EnableStartDrag>true</EnableStartDrag>
+									<DataPath>ИсторияЖивотного</DataPath>
+									<RowPictureDataPath>~ИсторияЖивотного.DefaultPicture</RowPictureDataPath>
+									<AutoRefresh>false</AutoRefresh>
+									<AutoRefreshPeriod>60</AutoRefreshPeriod>
+									<Period>
+										<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+										<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+										<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+									</Period>
+									<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+									<RestoreCurrentRow>false</RestoreCurrentRow>
+									<TopLevelParent xsi:nil="true"/>
+									<ShowRoot>true</ShowRoot>
+									<AllowRootChoice>false</AllowRootChoice>
+									<UpdateOnDataChange>Auto</UpdateOnDataChange>
+									<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+									<ContextMenu name="ИсторияЖивотногоДокументыКонтекстноеМеню" id="119"/>
+									<AutoCommandBar name="ИсторияЖивотногоДокументыКоманднаяПанель" id="120">
+										<Autofill>false</Autofill>
+									</AutoCommandBar>
+									<ExtendedTooltip name="ИсторияЖивотногоДокументыРасширеннаяПодсказка" id="121"/>
+									<SearchStringAddition name="ИсторияЖивотногоДокументыСтрокаПоиска" id="122">
+										<AdditionSource>
+											<Item>ИсторияЖивотногоДокументы</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ИсторияЖивотногоДокументыСтрокаПоискаКонтекстноеМеню" id="123"/>
+										<ExtendedTooltip name="ИсторияЖивотногоДокументыСтрокаПоискаРасширеннаяПодсказка" id="124"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ИсторияЖивотногоДокументыСостояниеПросмотра" id="125">
+										<AdditionSource>
+											<Item>ИсторияЖивотногоДокументы</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ИсторияЖивотногоДокументыСостояниеПросмотраКонтекстноеМеню" id="126"/>
+										<ExtendedTooltip name="ИсторияЖивотногоДокументыСостояниеПросмотраРасширеннаяПодсказка" id="127"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ИсторияЖивотногоДокументыУправлениеПоиском" id="128">
+										<AdditionSource>
+											<Item>ИсторияЖивотногоДокументы</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ИсторияЖивотногоДокументыУправлениеПоискомКонтекстноеМеню" id="129"/>
+										<ExtendedTooltip name="ИсторияЖивотногоДокументыУправлениеПоискомРасширеннаяПодсказка" id="130"/>
+									</SearchControlAddition>
+									<Events>
+										<Event name="Selection">ИсторияЖивотногоДокументыВыбор</Event>
+									</Events>
+									<ChildItems>
+										<LabelField name="ЗооДокументыДата" id="131">
+											<DataPath>ИсторияЖивотного.Дата</DataPath>
+											<TitleBackColor>style:NavigationColor</TitleBackColor>
+											<ContextMenu name="ЗооДокументыДатаКонтекстноеМеню" id="132"/>
+											<ExtendedTooltip name="ЗооДокументыДатаРасширеннаяПодсказка" id="133"/>
+										</LabelField>
+										<LabelField name="ИсторияЖивотногоДокументыСобытие" id="226">
+											<DataPath>ИсторияЖивотного.Событие</DataPath>
+											<TitleBackColor>style:NavigationColor</TitleBackColor>
+											<ContextMenu name="ИсторияЖивотногоДокументыСобытиеКонтекстноеМеню" id="227"/>
+											<ExtendedTooltip name="ИсторияЖивотногоДокументыСобытиеРасширеннаяПодсказка" id="228"/>
+										</LabelField>
+										<LabelField name="ИсторияЖивотногоДокументыСсылка" id="229">
+											<DataPath>ИсторияЖивотного.Ссылка</DataPath>
+											<Enabled>false</Enabled>
+											<ReadOnly>true</ReadOnly>
+											<TitleBackColor>style:NavigationColor</TitleBackColor>
+											<ContextMenu name="ИсторияЖивотногоДокументыСсылкаКонтекстноеМеню" id="230"/>
+											<ExtendedTooltip name="ИсторияЖивотногоДокументыСсылкаРасширеннаяПодсказка" id="231"/>
+										</LabelField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</Page>
+						<Page name="ВетеринарныеДокументыСтраница" id="116">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Ветеринарные документы</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Ветеринарные документы страница</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ВетеринарныеДокументыСтраницаРасширеннаяПодсказка" id="117"/>
+							<ChildItems>
+								<Table name="ВетДокументы" id="140">
+									<UseAlternationRowColor>true</UseAlternationRowColor>
+									<EnableStartDrag>true</EnableStartDrag>
+									<DataPath>ВетеринарныеДокументы</DataPath>
+									<RowPictureDataPath>~ВетеринарныеДокументы.DefaultPicture</RowPictureDataPath>
+									<AutoRefresh>false</AutoRefresh>
+									<AutoRefreshPeriod>60</AutoRefreshPeriod>
+									<Period>
+										<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+										<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+										<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+									</Period>
+									<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+									<RestoreCurrentRow>false</RestoreCurrentRow>
+									<TopLevelParent xsi:nil="true"/>
+									<ShowRoot>true</ShowRoot>
+									<AllowRootChoice>false</AllowRootChoice>
+									<UpdateOnDataChange>Auto</UpdateOnDataChange>
+									<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+									<ContextMenu name="ВетДокументыКонтекстноеМеню" id="141"/>
+									<AutoCommandBar name="ВетДокументыКоманднаяПанель" id="142">
+										<Autofill>false</Autofill>
+									</AutoCommandBar>
+									<ExtendedTooltip name="ВетДокументыРасширеннаяПодсказка" id="143"/>
+									<SearchStringAddition name="ВетДокументыСтрокаПоиска" id="144">
+										<Enabled>false</Enabled>
+										<AdditionSource>
+											<Item>ВетДокументы</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ВетДокументыСтрокаПоискаКонтекстноеМеню" id="145"/>
+										<ExtendedTooltip name="ВетДокументыСтрокаПоискаРасширеннаяПодсказка" id="146"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ВетДокументыСостояниеПросмотра" id="147">
+										<Enabled>false</Enabled>
+										<AdditionSource>
+											<Item>ВетДокументы</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ВетДокументыСостояниеПросмотраКонтекстноеМеню" id="148"/>
+										<ExtendedTooltip name="ВетДокументыСостояниеПросмотраРасширеннаяПодсказка" id="149"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ВетДокументыУправлениеПоиском" id="150">
+										<Enabled>false</Enabled>
+										<AdditionSource>
+											<Item>ВетДокументы</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ВетДокументыУправлениеПоискомКонтекстноеМеню" id="151"/>
+										<ExtendedTooltip name="ВетДокументыУправлениеПоискомРасширеннаяПодсказка" id="152"/>
+									</SearchControlAddition>
+									<Events>
+										<Event name="Selection">ВетДокументыВыбор</Event>
+									</Events>
+									<ChildItems>
+										<LabelField name="ВетДокументыЗаболевание" id="241">
+											<DataPath>ВетеринарныеДокументы.Заболевание</DataPath>
+											<TitleBackColor>style:NavigationColor</TitleBackColor>
+											<ContextMenu name="ВетДокументыЗаболеваниеКонтекстноеМеню" id="242"/>
+											<ExtendedTooltip name="ВетДокументыЗаболеваниеРасширеннаяПодсказка" id="243"/>
+										</LabelField>
+										<LabelField name="ВетДокументыДатаНачалаЛечения" id="238">
+											<DataPath>ВетеринарныеДокументы.ДатаНачалаЛечения</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Период</v8:content>
+												</v8:item>
+											</Title>
+											<TitleBackColor>style:NavigationColor</TitleBackColor>
+											<ContextMenu name="ВетДокументыДатаНачалаЛеченияКонтекстноеМеню" id="239"/>
+											<ExtendedTooltip name="ВетДокументыДатаНачалаЛеченияРасширеннаяПодсказка" id="240"/>
+										</LabelField>
+										<LabelField name="ВетДокументыСтатусБолезни" id="250">
+											<DataPath>ВетеринарныеДокументы.СтатусБолезни</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Статус боезни</v8:content>
+												</v8:item>
+											</Title>
+											<TitleBackColor>style:NavigationColor</TitleBackColor>
+											<ContextMenu name="ВетДокументыСтатусБолезниКонтекстноеМеню" id="251"/>
+											<ExtendedTooltip name="ВетДокументыСтатусБолезниРасширеннаяПодсказка" id="252"/>
+										</LabelField>
+										<LabelField name="ВетДокументыСхемаЛечения" id="253">
+											<DataPath>ВетеринарныеДокументы.СхемаЛечения</DataPath>
+											<TitleBackColor>style:NavigationColor</TitleBackColor>
+											<ContextMenu name="ВетДокументыСхемаЛеченияКонтекстноеМеню" id="254"/>
+											<ExtendedTooltip name="ВетДокументыСхемаЛеченияРасширеннаяПодсказка" id="255"/>
+										</LabelField>
+										<LabelField name="ВетДокументыРегистратор" id="256">
+											<DataPath>ВетеринарныеДокументы.Регистратор</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Документ</v8:content>
+												</v8:item>
+											</Title>
+											<TitleBackColor>style:NavigationColor</TitleBackColor>
+											<ContextMenu name="ВетДокументыРегистраторКонтекстноеМеню" id="257"/>
+											<ExtendedTooltip name="ВетДокументыРегистраторРасширеннаяПодсказка" id="258"/>
+										</LabelField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</Page>
+						<Page name="ГруппаРодословная" id="283">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Родословная</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа родословная</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ГруппаРодословнаяРасширеннаяПодсказка" id="284"/>
+							<ChildItems>
+								<Table name="ДеревоРодственныхСвязей" id="285">
+									<Representation>Tree</Representation>
+									<CommandBarLocation>None</CommandBarLocation>
+									<ChangeRowSet>false</ChangeRowSet>
+									<ChangeRowOrder>false</ChangeRowOrder>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<InitialListView>Beginning</InitialListView>
+									<InitialTreeView>ExpandAllLevels</InitialTreeView>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>ДеревоРодственныхСвязей</DataPath>
+									<CommandSet>
+										<ExcludedCommand>Add</ExcludedCommand>
+										<ExcludedCommand>CancelSearch</ExcludedCommand>
+										<ExcludedCommand>Change</ExcludedCommand>
+										<ExcludedCommand>Copy</ExcludedCommand>
+										<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+										<ExcludedCommand>Delete</ExcludedCommand>
+										<ExcludedCommand>EndEdit</ExcludedCommand>
+										<ExcludedCommand>Find</ExcludedCommand>
+										<ExcludedCommand>FindByCurrentValue</ExcludedCommand>
+										<ExcludedCommand>HierarchicalList</ExcludedCommand>
+										<ExcludedCommand>List</ExcludedCommand>
+										<ExcludedCommand>MoveDown</ExcludedCommand>
+										<ExcludedCommand>MoveUp</ExcludedCommand>
+										<ExcludedCommand>OutputList</ExcludedCommand>
+										<ExcludedCommand>SearchEverywhere</ExcludedCommand>
+										<ExcludedCommand>SearchHistory</ExcludedCommand>
+										<ExcludedCommand>SelectAll</ExcludedCommand>
+										<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+										<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+										<ExcludedCommand>SortListAsc</ExcludedCommand>
+										<ExcludedCommand>SortListDesc</ExcludedCommand>
+										<ExcludedCommand>Tree</ExcludedCommand>
+									</CommandSet>
+									<ContextMenu name="ДеревоРодственныхСвязейКонтекстноеМеню" id="286"/>
+									<AutoCommandBar name="ДеревоРодственныхСвязейКоманднаяПанель" id="287"/>
+									<ExtendedTooltip name="ДеревоРодственныхСвязейРасширеннаяПодсказка" id="288"/>
+									<SearchStringAddition name="ДеревоРодственныхСвязейСтрокаПоиска" id="289">
+										<AdditionSource>
+											<Item>ДеревоРодственныхСвязей</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ДеревоРодственныхСвязейСтрокаПоискаКонтекстноеМеню" id="290"/>
+										<ExtendedTooltip name="ДеревоРодственныхСвязейСтрокаПоискаРасширеннаяПодсказка" id="291"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ДеревоРодственныхСвязейСостояниеПросмотра" id="292">
+										<AdditionSource>
+											<Item>ДеревоРодственныхСвязей</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ДеревоРодственныхСвязейСостояниеПросмотраКонтекстноеМеню" id="293"/>
+										<ExtendedTooltip name="ДеревоРодственныхСвязейСостояниеПросмотраРасширеннаяПодсказка" id="294"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ДеревоРодственныхСвязейУправлениеПоиском" id="295">
+										<AdditionSource>
+											<Item>ДеревоРодственныхСвязей</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ДеревоРодственныхСвязейУправлениеПоискомКонтекстноеМеню" id="296"/>
+										<ExtendedTooltip name="ДеревоРодственныхСвязейУправлениеПоискомРасширеннаяПодсказка" id="297"/>
+									</SearchControlAddition>
+									<Events>
+										<Event name="OnStartEdit">ДеревоРодственныхСвязейПриНачалеРедактирования</Event>
+									</Events>
+									<ChildItems>
+										<ColumnGroup name="ДеревоРодственныхСвязейГруппа" id="307">
+											<EnableContentChange>true</EnableContentChange>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Дерево родственных связей группа</v8:content>
+												</v8:item>
+											</Title>
+											<Group>InCell</Group>
+											<ExtendedTooltip name="ДеревоРодственныхСвязейГруппаРасширеннаяПодсказка" id="308"/>
+											<ChildItems>
+												<InputField name="ДеревоРодственныхСвязейТипСвязи" id="301">
+													<DataPath>ДеревоРодственныхСвязей.ТипСвязи</DataPath>
+													<TitleBackColor>style:NavigationColor</TitleBackColor>
+													<EditMode>EnterOnInput</EditMode>
+													<Width>10</Width>
+													<HorizontalStretch>false</HorizontalStretch>
+													<TextEdit>false</TextEdit>
+													<ContextMenu name="ДеревоРодственныхСвязейТипСвязиКонтекстноеМеню" id="302"/>
+													<ExtendedTooltip name="ДеревоРодственныхСвязейТипСвязиРасширеннаяПодсказка" id="303"/>
+												</InputField>
+												<InputField name="ДеревоРодственныхСвязейПредок" id="298">
+													<DataPath>ДеревоРодственныхСвязей.Предок</DataPath>
+													<TitleBackColor>style:NavigationColor</TitleBackColor>
+													<EditMode>EnterOnInput</EditMode>
+													<TextEdit>false</TextEdit>
+													<ContextMenu name="ДеревоРодственныхСвязейПредокКонтекстноеМеню" id="299"/>
+													<ExtendedTooltip name="ДеревоРодственныхСвязейПредокРасширеннаяПодсказка" id="300"/>
+												</InputField>
+											</ChildItems>
+										</ColumnGroup>
+									</ChildItems>
+								</Table>
+								<InputField name="Родословная" id="304">
+									<DataPath>Объект.Родословная</DataPath>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<ContextMenu name="РодословнаяКонтекстноеМеню" id="305"/>
+									<ExtendedTooltip name="РодословнаяРасширеннаяПодсказка" id="306"/>
+									<Events>
+										<Event name="OnChange">РодословнаяПриИзменении</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</Page>
+					</ChildItems>
+				</Pages>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Животные</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ИсторияЖивотного" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>История животного</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	"Прерывание стельности" КАК Событие,
+	Аборты.Регистратор КАК Ссылка,
+	Аборты.Период КАК Дата,
+	1 КАК Приоритет
+ИЗ
+	РегистрСведений.Аборты КАК Аборты
+ГДЕ
+	Аборты.Мать = &amp;Животное
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	"Ввод животного",
+	ДобавлениеЖивотногоЖивотные.Ссылка,
+	ДобавлениеЖивотногоЖивотные.Ссылка.Дата,
+	1
+ИЗ
+	Документ.ДобавлениеЖивотного.Животные КАК ДобавлениеЖивотногоЖивотные
+ГДЕ
+	ДобавлениеЖивотногоЖивотные.Животное = &amp;Животное
+	И ДобавлениеЖивотногоЖивотные.Ссылка.Проведен
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	"Взвешивание животного",
+	ВзвешиваниеЖивотные.Ссылка,
+	ВзвешиваниеЖивотные.Ссылка.Дата,
+	1
+ИЗ
+	Документ.Взвешивание.Животные КАК ВзвешиваниеЖивотные
+ГДЕ
+	ВзвешиваниеЖивотные.Животное = &amp;Животное
+	И ВзвешиваниеЖивотные.Ссылка.Проведен
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	"Отъем теленка",
+	ОтъёмЖивотные.Ссылка,
+	ОтъёмЖивотные.Ссылка.Дата,
+	1
+ИЗ
+	Документ.Отъём.Животные КАК ОтъёмЖивотные
+ГДЕ
+	ОтъёмЖивотные.Животное = &amp;Животное
+	И ОтъёмЖивотные.Ссылка.Проведен
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	"Выбытие животного - Падеж",
+	ВыбытиеПадеж.Ссылка,
+	ВыбытиеПадеж.Ссылка.Дата,
+	1
+ИЗ
+	Документ.Выбытие.Падеж КАК ВыбытиеПадеж
+ГДЕ
+	ВыбытиеПадеж.Животное = &amp;Животное
+	И ВыбытиеПадеж.Ссылка.Проведен
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	"Выбытие животного - Забой",
+	ВыбытиеЗабой.Ссылка,
+	ВыбытиеЗабой.Ссылка.Дата,
+	1
+ИЗ
+	Документ.Выбытие.Забой КАК ВыбытиеЗабой
+ГДЕ
+	ВыбытиеЗабой.Животное = &amp;Животное
+	И ВыбытиеЗабой.Ссылка.Проведен
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	"Выбытие животного - Реализация откорма",
+	ВыбытиеРеализацияОткорма.Ссылка,
+	ВыбытиеРеализацияОткорма.Ссылка.Дата,
+	1
+ИЗ
+	Документ.Выбытие.РеализацияОткорма КАК ВыбытиеРеализацияОткорма
+ГДЕ
+	ВыбытиеРеализацияОткорма.Животное = &amp;Животное
+	И ВыбытиеРеализацияОткорма.Ссылка.Проведен
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	"Выбытие животного - Реализация племенного поголовья",
+	ВыбытиеРеализацияПлеменногоПоголовья.Ссылка,
+	ВыбытиеРеализацияПлеменногоПоголовья.Ссылка.Дата,
+	1
+ИЗ
+	Документ.Выбытие.РеализацияПлеменногоПоголовья КАК ВыбытиеРеализацияПлеменногоПоголовья
+ГДЕ
+	ВыбытиеРеализацияПлеменногоПоголовья.Животное = &amp;Животное
+	И ВыбытиеРеализацияПлеменногоПоголовья.Ссылка.Проведен
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	"Выбытие животного - Продажа населению",
+	ВыбытиеПродажаНаселению.Ссылка,
+	ВыбытиеПродажаНаселению.Ссылка.Дата,
+	1
+ИЗ
+	Документ.Выбытие.ПродажаНаселению КАК ВыбытиеПродажаНаселению
+ГДЕ
+	ВыбытиеПродажаНаселению.Животное = &amp;Животное
+	И ВыбытиеПродажаНаселению.Ссылка.Проведен
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ВЫБОР
+		КОГДА РождениеТеленкаЖивотные.Теленок = &amp;Животное
+			ТОГДА "Рождение теленка"
+		ИНАЧЕ "Отел животного"
+	КОНЕЦ,
+	РождениеТеленкаЖивотные.Ссылка,
+	РождениеТеленкаЖивотные.Ссылка.Дата,
+	1
+ИЗ
+	Документ.РождениеТеленка.Животные КАК РождениеТеленкаЖивотные
+ГДЕ
+	(РождениеТеленкаЖивотные.Мать = &amp;Животное
+			ИЛИ РождениеТеленкаЖивотные.Теленок = &amp;Животное)
+	И РождениеТеленкаЖивотные.Ссылка.Проведен
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	"Запуск",
+	ПеремещениеЖивотныхЖивотныеЗапуск.Ссылка,
+	ПеремещениеЖивотныхЖивотныеЗапуск.Ссылка.Дата,
+	1
+ИЗ
+	Документ.ПеремещениеЖивотных.ЖивотныеЗапуск КАК ПеремещениеЖивотныхЖивотныеЗапуск
+ГДЕ
+	ПеремещениеЖивотныхЖивотныеЗапуск.Животное = &amp;Животное
+	И ПеремещениеЖивотныхЖивотныеЗапуск.Ссылка.Проведен
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	"Перемещение между корпусами",
+	ПеремещениеЖивотныхЖивотныеМеждуКорпусами.Ссылка,
+	ПеремещениеЖивотныхЖивотныеМеждуКорпусами.Ссылка.Дата,
+	1
+ИЗ
+	Документ.ПеремещениеЖивотных.ЖивотныеМеждуКорпусами КАК ПеремещениеЖивотныхЖивотныеМеждуКорпусами
+ГДЕ
+	ПеремещениеЖивотныхЖивотныеМеждуКорпусами.Животное = &amp;Животное
+	И ПеремещениеЖивотныхЖивотныеМеждуКорпусами.Ссылка.Проведен
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	"Перемещение между корпусами",
+	РазмещениеЖивотных.Регистратор,
+	РазмещениеЖивотных.Период,
+	1
+ИЗ
+	РегистрСведений.РазмещениеЖивотных КАК РазмещениеЖивотных
+ГДЕ
+	РазмещениеЖивотных.Животное = &amp;Животное
+	И РазмещениеЖивотных.Регистратор ССЫЛКА Документ.Отъём
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	"Перемещение между корпусами",
+	РазмещениеЖивотных.Регистратор,
+	РазмещениеЖивотных.Период,
+	1
+ИЗ
+	РегистрСведений.РазмещениеЖивотных КАК РазмещениеЖивотных
+ГДЕ
+	РазмещениеЖивотных.Животное = &amp;Животное
+	И РазмещениеЖивотных.Регистратор ССЫЛКА Документ.РождениеТеленка
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	"Перемещение между фермами",
+	ПеремещениеЖивотныхЖивотныеМеждуФермами.Ссылка,
+	ПеремещениеЖивотныхЖивотныеМеждуФермами.Ссылка.Дата,
+	1
+ИЗ
+	Документ.ПеремещениеЖивотных.ЖивотныеМеждуФермами КАК ПеремещениеЖивотныхЖивотныеМеждуФермами
+ГДЕ
+	ПеремещениеЖивотныхЖивотныеМеждуФермами.Животное = &amp;Животное
+	И ПеремещениеЖивотныхЖивотныеМеждуФермами.Ссылка.Проведен
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	"Контрольная дойка",
+	КонтрольнаяДойкаЖивотные.Ссылка,
+	КонтрольнаяДойкаЖивотные.Ссылка.Дата,
+	1
+ИЗ
+	Документ.КонтрольнаяДойка.Животные КАК КонтрольнаяДойкаЖивотные
+ГДЕ
+	КонтрольнаяДойкаЖивотные.Животное = &amp;Животное
+	И КонтрольнаяДойкаЖивотные.Ссылка.Проведен
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	"Выбраковка животного",
+	ВыбраковкаЖивотных.Регистратор,
+	ВыбраковкаЖивотных.Период,
+	1
+ИЗ
+	РегистрСведений.ВыбраковкаЖивотных КАК ВыбраковкаЖивотных
+ГДЕ
+	ВыбраковкаЖивотных.Животное = &amp;Животное
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	"Синхронизация половой охоты",
+	СинхронизацияПоловойОхотыЖивотные.Ссылка,
+	СинхронизацияПоловойОхотыЖивотные.Ссылка.Дата,
+	1
+ИЗ
+	Документ.СинхронизацияПоловойОхоты.Животные КАК СинхронизацияПоловойОхотыЖивотные
+ГДЕ
+	СинхронизацияПоловойОхотыЖивотные.Животное = &amp;Животное
+	И СинхронизацияПоловойОхотыЖивотные.Ссылка.Проведен
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	"Осеменение животного",
+	ОсеменениеЖивотные.Ссылка,
+	ОсеменениеЖивотные.Ссылка.Дата,
+	1
+ИЗ
+	Документ.Осеменение.Животные КАК ОсеменениеЖивотные
+ГДЕ
+	ОсеменениеЖивотные.Животное = &amp;Животное
+	И ОсеменениеЖивотные.Ссылка.Проведен
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	"УЗИ животного",
+	УЗДЖивотные.Ссылка,
+	УЗДЖивотные.Ссылка.Дата,
+	0
+ИЗ
+	Документ.УЗД.Животные КАК УЗДЖивотные
+ГДЕ
+	УЗДЖивотные.Животное = &amp;Животное
+	И УЗДЖивотные.Ссылка.Проведен
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	"Охота у животных",
+	ОхотаУЖивотных.Регистратор,
+	ОхотаУЖивотных.Период,
+	1
+ИЗ
+	РегистрСведений.ОхотаУЖивотных КАК ОхотаУЖивотных
+ГДЕ
+	ОхотаУЖивотных.Животное = &amp;Животное</QueryText>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Дата</dcssch:dataPath>
+					<dcssch:field>Дата</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Событие</dcssch:dataPath>
+					<dcssch:field>Событие</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Событие</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Приоритет</dcssch:dataPath>
+					<dcssch:field>Приоритет</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Приоритет</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Ссылка</dcssch:dataPath>
+					<dcssch:field>Ссылка</dcssch:field>
+				</Field>
+				<Parameter>
+					<dcssch:name>Животное</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Животное</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>cfg:CatalogRef.Животные</v8:Type>
+					</dcssch:valueType>
+					<dcssch:value xsi:nil="true"/>
+					<dcssch:useRestriction>true</dcssch:useRestriction>
+				</Parameter>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:dataParameters/>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Дата</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Приоритет</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ВетеринарныеДокументы" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ветеринарные документы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	ПериодыБолезнейЖивотных.Заболевание КАК Заболевание,
+	ПериодыБолезнейЖивотных.СхемаЛечения КАК СхемаЛечения,
+	ПериодыБолезнейЖивотных.МаститБольнаяЧасть КАК МаститБольнаяЧасть,
+	ПериодыБолезнейЖивотных.Период КАК ДатаНачалаЛечения,
+	ПериодыБолезнейЖивотных.СтатусБолезни КАК СтатусБолезни,
+	ПериодыБолезнейЖивотных.Регистратор КАК Регистратор
+ИЗ
+	РегистрСведений.ПериодыБолезнейЖивотных КАК ПериодыБолезнейЖивотных
+ГДЕ
+	ПериодыБолезнейЖивотных.Животное = &amp;Животное</QueryText>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ДополнительныйПараметр_ДойныхДней" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дойных дней</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДополнительныйПараметр_ДатаПредполагаемогоОтела" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата предполагаемого отела</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДополнительныйПараметр_Осеменений" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Осеменений</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДополнительныйПараметр_Отелов" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отелов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДополнительныйПараметр_Корпус" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Корпус</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДополнительныйПараметр_МестоРождения" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дополнительный параметр место рождения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Фермы</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ДополнительныйПараметр_Ферма" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ферма</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Фермы</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ДополнительныйПараметр_ДатаРождения" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата рождения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДополнительныйПараметр_Пол" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пол</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.ПолЖивотного</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ДополнительныйПараметр_Вес" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вес</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДополнительныйПараметр_Отец" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отец</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.БыкиПлеменные</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ДополнительныйПараметр_Мать" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Мать</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Животные</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ДополнительныйПараметр_ДатаВыбытия" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дополнительный параметр дата выбытия</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДополнительныйПараметр_Статус" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статус</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.СтатусЖивотного</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ДополнительныйПараметр_ПроизводственнаяГруппа" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Производственная группа</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДополнительныйПараметр_ВетСтатус" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вет статус</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>10</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДополнительныйПараметр_ДатаПоследнегоОтела" id="21">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата последнего отела</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДополнительныйПараметр_МолокоЗаЛактации" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дополнительный параметр молоко за лактации</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДополнительныйПараметр_ДнейДоЗапуска" id="23">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дополнительный параметр дней до запуска</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДополнительныйПараметр_ДатаПоследнегоОсеменения" id="24">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дополнительный параметр дата последнего осеменения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДополнительныйПараметр_ПоследнийБыкОсеменения" id="25">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дополнительный параметр последний бык осеменения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.БыкиПлеменные</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ДополнительныйПараметр_ВесЖивотного" id="26">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дополнительный параметр вес животного</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДополнительныйПараметр_МежотёльныйПериод" id="27">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Межотёльный период</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДеревоРодственныхСвязей" id="28">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дерево родственных связей</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ПоказыватьРодословную</Item>
+			</FunctionalOptions>
+			<Columns>
+				<Column name="Предок" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Предок</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.РодословнаяЖивотных</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ТипСвязи" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип связи</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>15</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Зоотехния" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Зоотехния</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Зоотехния</v8:content>
+				</v8:item>
+			</ToolTip>
+		</Command>
+		<Command name="Ветеринария" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ветеринария</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ветеринария</v8:content>
+				</v8:item>
+			</ToolTip>
+		</Command>
+	</Commands>
+</Form>

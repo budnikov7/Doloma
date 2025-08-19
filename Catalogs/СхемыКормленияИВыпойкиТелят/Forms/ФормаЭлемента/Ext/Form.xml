@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаПечать" id="64">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Печать</CommandName>
+				<ExtendedTooltip name="ФормаПечатьРасширеннаяПодсказка" id="65"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаЗаголовок" id="53">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа заголовок</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа заголовок</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаЗаголовокРасширеннаяПодсказка" id="54"/>
+			<ChildItems>
+				<InputField name="Наименование" id="4">
+					<DataPath>Объект.Description</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>64</Width>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+				</InputField>
+				<InputField name="Код" id="1">
+					<DataPath>Объект.Code</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="ГруппаСтраницы" id="55">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="56"/>
+			<ChildItems>
+				<Page name="СтраницаСхема" id="57">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Схема</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница схема</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаСхемаРасширеннаяПодсказка" id="58"/>
+					<ChildItems>
+						<Table name="Схема" id="7">
+							<Representation>List</Representation>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<Footer>true</Footer>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.Схема</DataPath>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="СхемаКонтекстноеМеню" id="8"/>
+							<AutoCommandBar name="СхемаКоманднаяПанель" id="9"/>
+							<ExtendedTooltip name="СхемаРасширеннаяПодсказка" id="10"/>
+							<SearchStringAddition name="СхемаСтрокаПоиска" id="11">
+								<AdditionSource>
+									<Item>Схема</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СхемаСтрокаПоискаКонтекстноеМеню" id="12"/>
+								<ExtendedTooltip name="СхемаСтрокаПоискаРасширеннаяПодсказка" id="13"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СхемаСостояниеПросмотра" id="14">
+								<AdditionSource>
+									<Item>Схема</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СхемаСостояниеПросмотраКонтекстноеМеню" id="15"/>
+								<ExtendedTooltip name="СхемаСостояниеПросмотраРасширеннаяПодсказка" id="16"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СхемаУправлениеПоиском" id="17">
+								<AdditionSource>
+									<Item>Схема</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СхемаУправлениеПоискомКонтекстноеМеню" id="18"/>
+								<ExtendedTooltip name="СхемаУправлениеПоискомРасширеннаяПодсказка" id="19"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnChange">СхемаПриИзменении</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="СхемаНомерСтроки" id="20">
+									<DataPath>Объект.Схема.LineNumber</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Неделя</v8:content>
+										</v8:item>
+									</Title>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СхемаНомерСтрокиКонтекстноеМеню" id="21"/>
+									<ExtendedTooltip name="СхемаНомерСтрокиРасширеннаяПодсказка" id="22"/>
+								</LabelField>
+								<InputField name="СхемаДниСодержания" id="32">
+									<DataPath>Объект.Схема.ДниСодержания</DataPath>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>15</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="СхемаДниСодержанияКонтекстноеМеню" id="33"/>
+									<ExtendedTooltip name="СхемаДниСодержанияРасширеннаяПодсказка" id="34"/>
+								</InputField>
+								<InputField name="СхемаМолокоВДень" id="50">
+									<DataPath>Объект.Схема.МолокоВДень</DataPath>
+									<ContextMenu name="СхемаМолокоВДеньКонтекстноеМеню" id="51"/>
+									<ExtendedTooltip name="СхемаМолокоВДеньРасширеннаяПодсказка" id="52"/>
+									<Events>
+										<Event name="OnChange">СхемаМолокоВДеньПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="СхемаМолоко" id="35">
+									<DataPath>Объект.Схема.Молоко</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Молоко за период</v8:content>
+										</v8:item>
+									</Title>
+									<FooterDataPath>Объект.Схема.TotalМолоко</FooterDataPath>
+									<ContextMenu name="СхемаМолокоКонтекстноеМеню" id="36"/>
+									<ExtendedTooltip name="СхемаМолокоРасширеннаяПодсказка" id="37"/>
+								</InputField>
+								<InputField name="СхемаСтартернаяСмесьВДень" id="38">
+									<DataPath>Объект.Схема.СтартернаяСмесьВДень</DataPath>
+									<ContextMenu name="СхемаСтартернаяСмесьВДеньКонтекстноеМеню" id="39"/>
+									<ExtendedTooltip name="СхемаСтартернаяСмесьВДеньРасширеннаяПодсказка" id="40"/>
+									<Events>
+										<Event name="OnChange">СхемаСтартернаяСмесьВДеньПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="СхемаСтартернаяСмесь" id="41">
+									<DataPath>Объект.Схема.СтартернаяСмесь</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Стартерная смесь за период</v8:content>
+										</v8:item>
+									</Title>
+									<FooterDataPath>Объект.Схема.TotalСтартернаяСмесь</FooterDataPath>
+									<ContextMenu name="СхемаСтартернаяСмесьКонтекстноеМеню" id="42"/>
+									<ExtendedTooltip name="СхемаСтартернаяСмесьРасширеннаяПодсказка" id="43"/>
+								</InputField>
+								<InputField name="СхемаПСРВДень" id="44">
+									<DataPath>Объект.Схема.ПСРВДень</DataPath>
+									<ContextMenu name="СхемаПСРВДеньКонтекстноеМеню" id="45"/>
+									<ExtendedTooltip name="СхемаПСРВДеньРасширеннаяПодсказка" id="46"/>
+									<Events>
+										<Event name="OnChange">СхемаПСРВДеньПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="СхемаПСР" id="47">
+									<DataPath>Объект.Схема.ПСР</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ПСР за период</v8:content>
+										</v8:item>
+									</Title>
+									<FooterDataPath>Объект.Схема.TotalПСР</FooterDataPath>
+									<ContextMenu name="СхемаПСРКонтекстноеМеню" id="48"/>
+									<ExtendedTooltip name="СхемаПСРРасширеннаяПодсказка" id="49"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаОписаниеСхемы" id="59">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Описание схемы</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница описание схемы</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаОписаниеСхемыРасширеннаяПодсказка" id="60"/>
+					<ChildItems>
+						<CommandBar name="ГруппаКомандОписанияСхемы" id="66">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа команд описания схемы</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа команд описания схемы</v8:content>
+								</v8:item>
+							</ToolTip>
+							<CommandSource>Item.ОписаниеСхемы</CommandSource>
+							<ExtendedTooltip name="ГруппаКомандОписанияСхемыРасширеннаяПодсказка" id="67"/>
+						</CommandBar>
+						<SpreadSheetDocumentField name="ОписаниеСхемы" id="61">
+							<DataPath>ОписаниеСхемы</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<Edit>true</Edit>
+							<ContextMenu name="ОписаниеСхемыКонтекстноеМеню" id="62"/>
+							<ExtendedTooltip name="ОписаниеСхемыРасширеннаяПодсказка" id="63"/>
+						</SpreadSheetDocumentField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.СхемыКормленияИВыпойкиТелят</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<Columns>
+				<AdditionalColumns table="Объект.Схема">
+					<Column name="ДниСодержания" id="1">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Дни содержания</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+				</AdditionalColumns>
+			</Columns>
+		</Attribute>
+		<Attribute name="ОписаниеСхемы" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Описание схемы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Печать" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Печать</Action>
+		</Command>
+	</Commands>
+</Form>

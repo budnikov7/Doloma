@@ -1,0 +1,668 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="ChoiceProcessing">ОбработкаВыбора</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ОбщаяГруппа" id="57">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Общая группа</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Общая группа</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ОбщаяГруппаРасширеннаяПодсказка" id="58"/>
+			<ChildItems>
+				<UsualGroup name="ОсновныеДаннные" id="59">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основные даннные</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основные даннные</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>20</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<VerticalStretch>true</VerticalStretch>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ОсновныеДаннныеРасширеннаяПодсказка" id="60"/>
+					<ChildItems>
+						<UsualGroup name="ДанныеГруппа" id="61">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Основные данные</v8:content>
+								</v8:item>
+							</Title>
+							<TitleFont ref="style:NormalTextFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Данные группа</v8:content>
+								</v8:item>
+							</ToolTip>
+							<VerticalStretch>false</VerticalStretch>
+							<Behavior>Usual</Behavior>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ДанныеГруппаРасширеннаяПодсказка" id="62"/>
+							<ChildItems>
+								<InputField name="Номер" id="63">
+									<DataPath>Объект.Number</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="НомерКонтекстноеМеню" id="64"/>
+									<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="65"/>
+								</InputField>
+								<InputField name="Дата" id="66">
+									<DataPath>Объект.Date</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дата</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="ДатаКонтекстноеМеню" id="67"/>
+									<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="68"/>
+									<Events>
+										<Event name="OnChange">ДатаПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="Ферма" id="69">
+									<DataPath>Объект.Ферма</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Ферма</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="ФермаКонтекстноеМеню" id="70"/>
+									<ExtendedTooltip name="ФермаРасширеннаяПодсказка" id="71"/>
+								</InputField>
+								<InputField name="Покупатель" id="245">
+									<DataPath>Объект.Покупатель</DataPath>
+									<ContextMenu name="ПокупательКонтекстноеМеню" id="246"/>
+									<ExtendedTooltip name="ПокупательРасширеннаяПодсказка" id="247"/>
+								</InputField>
+								<InputField name="Комментарий" id="75">
+									<DataPath>Объект.Комментарий</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<Height>3</Height>
+									<HorizontalStretch>true</HorizontalStretch>
+									<MultiLine>true</MultiLine>
+									<ContextMenu name="КомментарийКонтекстноеМеню" id="76"/>
+									<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="77"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="Ответственный" id="78">
+							<DataPath>Объект.Автор</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Автор</v8:content>
+								</v8:item>
+							</Title>
+							<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+							<GroupVerticalAlign>Bottom</GroupVerticalAlign>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="ОтветственныйКонтекстноеМеню" id="79"/>
+							<ExtendedTooltip name="ОтветственныйРасширеннаяПодсказка" id="80"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<Pages name="ТаблицаЖивотных" id="81">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Таблица животных</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Таблица животных</v8:content>
+						</v8:item>
+					</ToolTip>
+					<PagesRepresentation>TabsOnTop</PagesRepresentation>
+					<ExtendedTooltip name="ТаблицаЖивотныхРасширеннаяПодсказка" id="82"/>
+					<Events>
+						<Event name="OnCurrentPageChange">ТаблицаЖивотныхПриСменеСтраницы</Event>
+					</Events>
+					<ChildItems>
+						<Page name="ПадежГруппа" id="83">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Падёж</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Падеж группа</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ПадежГруппаРасширеннаяПодсказка" id="84"/>
+							<ChildItems>
+								<Table name="Падеж" id="93">
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>Объект.Падеж</DataPath>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="ПадежКонтекстноеМеню" id="94"/>
+									<AutoCommandBar name="ПадежКоманднаяПанель" id="95"/>
+									<ExtendedTooltip name="ПадежРасширеннаяПодсказка" id="96"/>
+									<SearchStringAddition name="ПадежСтрокаПоиска" id="97">
+										<AdditionSource>
+											<Item>Падеж</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ПадежСтрокаПоискаКонтекстноеМеню" id="98"/>
+										<ExtendedTooltip name="ПадежСтрокаПоискаРасширеннаяПодсказка" id="99"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ПадежСостояниеПросмотра" id="100">
+										<AdditionSource>
+											<Item>Падеж</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ПадежСостояниеПросмотраКонтекстноеМеню" id="101"/>
+										<ExtendedTooltip name="ПадежСостояниеПросмотраРасширеннаяПодсказка" id="102"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ПадежУправлениеПоиском" id="103">
+										<AdditionSource>
+											<Item>Падеж</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ПадежУправлениеПоискомКонтекстноеМеню" id="104"/>
+										<ExtendedTooltip name="ПадежУправлениеПоискомРасширеннаяПодсказка" id="105"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<LabelField name="ПадежНомерСтроки" id="106">
+											<DataPath>Объект.Падеж.LineNumber</DataPath>
+											<TitleBackColor>style:NavigationColor</TitleBackColor>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ПадежНомерСтрокиКонтекстноеМеню" id="107"/>
+											<ExtendedTooltip name="ПадежНомерСтрокиРасширеннаяПодсказка" id="108"/>
+										</LabelField>
+										<InputField name="ПадежЖивотное" id="109">
+											<DataPath>Объект.Падеж.Животное</DataPath>
+											<TitleBackColor>style:NavigationColor</TitleBackColor>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ПадежЖивотноеКонтекстноеМеню" id="110"/>
+											<ExtendedTooltip name="ПадежЖивотноеРасширеннаяПодсказка" id="111"/>
+											<Events>
+												<Event name="OnChange">ПадежЖивотноеПриИзменении</Event>
+												<Event name="AutoComplete">ПадежЖивотноеАвтоПодбор</Event>
+												<Event name="StartChoice">ПадежЖивотноеНачалоВыбора</Event>
+											</Events>
+										</InputField>
+										<InputField name="ПадежВес" id="112">
+											<DataPath>Объект.Падеж.Вес</DataPath>
+											<TitleBackColor>style:NavigationColor</TitleBackColor>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ПадежВесКонтекстноеМеню" id="113"/>
+											<ExtendedTooltip name="ПадежВесРасширеннаяПодсказка" id="114"/>
+										</InputField>
+										<InputField name="ПадежДиагноз" id="115">
+											<DataPath>Объект.Падеж.Диагноз</DataPath>
+											<TitleBackColor>style:NavigationColor</TitleBackColor>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ПадежДиагнозКонтекстноеМеню" id="116"/>
+											<ExtendedTooltip name="ПадежДиагнозРасширеннаяПодсказка" id="117"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</Page>
+						<Page name="ВынужденныйЗабойГруппа" id="85">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Вынужденный забой</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Вынужденный забой группа</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ВынужденныйЗабойГруппаРасширеннаяПодсказка" id="86"/>
+							<ChildItems>
+								<Table name="Забой" id="118">
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>Объект.Забой</DataPath>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="ЗабойКонтекстноеМеню" id="119"/>
+									<AutoCommandBar name="ЗабойКоманднаяПанель" id="120"/>
+									<ExtendedTooltip name="ЗабойРасширеннаяПодсказка" id="121"/>
+									<SearchStringAddition name="ЗабойСтрокаПоиска" id="122">
+										<AdditionSource>
+											<Item>Забой</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ЗабойСтрокаПоискаКонтекстноеМеню" id="123"/>
+										<ExtendedTooltip name="ЗабойСтрокаПоискаРасширеннаяПодсказка" id="124"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ЗабойСостояниеПросмотра" id="125">
+										<AdditionSource>
+											<Item>Забой</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ЗабойСостояниеПросмотраКонтекстноеМеню" id="126"/>
+										<ExtendedTooltip name="ЗабойСостояниеПросмотраРасширеннаяПодсказка" id="127"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ЗабойУправлениеПоиском" id="128">
+										<AdditionSource>
+											<Item>Забой</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ЗабойУправлениеПоискомКонтекстноеМеню" id="129"/>
+										<ExtendedTooltip name="ЗабойУправлениеПоискомРасширеннаяПодсказка" id="130"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<LabelField name="ЗабойНомерСтроки" id="131">
+											<DataPath>Объект.Забой.LineNumber</DataPath>
+											<TitleBackColor>style:NavigationColor</TitleBackColor>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ЗабойНомерСтрокиКонтекстноеМеню" id="132"/>
+											<ExtendedTooltip name="ЗабойНомерСтрокиРасширеннаяПодсказка" id="133"/>
+										</LabelField>
+										<InputField name="ЗабойЖивотное" id="134">
+											<DataPath>Объект.Забой.Животное</DataPath>
+											<TitleBackColor>style:NavigationColor</TitleBackColor>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ЗабойЖивотноеКонтекстноеМеню" id="135"/>
+											<ExtendedTooltip name="ЗабойЖивотноеРасширеннаяПодсказка" id="136"/>
+											<Events>
+												<Event name="OnChange">ЗабойЖивотноеПриИзменении</Event>
+												<Event name="AutoComplete">ЗабойЖивотноеАвтоПодбор</Event>
+												<Event name="StartChoice">ЗабойЖивотноеНачалоВыбора</Event>
+											</Events>
+										</InputField>
+										<InputField name="ЗабойВес" id="137">
+											<DataPath>Объект.Забой.Вес</DataPath>
+											<TitleBackColor>style:NavigationColor</TitleBackColor>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ЗабойВесКонтекстноеМеню" id="138"/>
+											<ExtendedTooltip name="ЗабойВесРасширеннаяПодсказка" id="139"/>
+										</InputField>
+										<InputField name="ЗабойДиагноз" id="140">
+											<DataPath>Объект.Забой.Диагноз</DataPath>
+											<TitleBackColor>style:NavigationColor</TitleBackColor>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ЗабойДиагнозКонтекстноеМеню" id="141"/>
+											<ExtendedTooltip name="ЗабойДиагнозРасширеннаяПодсказка" id="142"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</Page>
+						<Page name="РеализацияОткормаГруппа" id="87">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Реализация откорма</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Реализация откорма группа</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="РеализацияОткормаГруппаРасширеннаяПодсказка" id="88"/>
+							<ChildItems>
+								<Table name="РеализацияОткорма" id="143">
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>Объект.РеализацияОткорма</DataPath>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="РеализацияОткормаКонтекстноеМеню" id="144"/>
+									<AutoCommandBar name="РеализацияОткормаКоманднаяПанель" id="145"/>
+									<ExtendedTooltip name="РеализацияОткормаРасширеннаяПодсказка" id="146"/>
+									<SearchStringAddition name="РеализацияОткормаСтрокаПоиска" id="147">
+										<AdditionSource>
+											<Item>РеализацияОткорма</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="РеализацияОткормаСтрокаПоискаКонтекстноеМеню" id="148"/>
+										<ExtendedTooltip name="РеализацияОткормаСтрокаПоискаРасширеннаяПодсказка" id="149"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="РеализацияОткормаСостояниеПросмотра" id="150">
+										<AdditionSource>
+											<Item>РеализацияОткорма</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="РеализацияОткормаСостояниеПросмотраКонтекстноеМеню" id="151"/>
+										<ExtendedTooltip name="РеализацияОткормаСостояниеПросмотраРасширеннаяПодсказка" id="152"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="РеализацияОткормаУправлениеПоиском" id="153">
+										<AdditionSource>
+											<Item>РеализацияОткорма</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="РеализацияОткормаУправлениеПоискомКонтекстноеМеню" id="154"/>
+										<ExtendedTooltip name="РеализацияОткормаУправлениеПоискомРасширеннаяПодсказка" id="155"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<LabelField name="РеализацияОткормаНомерСтроки" id="156">
+											<DataPath>Объект.РеализацияОткорма.LineNumber</DataPath>
+											<TitleBackColor>style:NavigationColor</TitleBackColor>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="РеализацияОткормаНомерСтрокиКонтекстноеМеню" id="157"/>
+											<ExtendedTooltip name="РеализацияОткормаНомерСтрокиРасширеннаяПодсказка" id="158"/>
+										</LabelField>
+										<InputField name="РеализацияОткормаЖивотное" id="159">
+											<DataPath>Объект.РеализацияОткорма.Животное</DataPath>
+											<TitleBackColor>style:NavigationColor</TitleBackColor>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="РеализацияОткормаЖивотноеКонтекстноеМеню" id="160"/>
+											<ExtendedTooltip name="РеализацияОткормаЖивотноеРасширеннаяПодсказка" id="161"/>
+											<Events>
+												<Event name="OnChange">РеализацияОткормаЖивотноеПриИзменении</Event>
+												<Event name="AutoComplete">РеализацияОткормаЖивотноеАвтоПодбор</Event>
+												<Event name="StartChoice">РеализацияОткормаЖивотноеНачалоВыбора</Event>
+											</Events>
+										</InputField>
+										<InputField name="РеализацияОткормаВес" id="162">
+											<DataPath>Объект.РеализацияОткорма.Вес</DataPath>
+											<TitleBackColor>style:NavigationColor</TitleBackColor>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="РеализацияОткормаВесКонтекстноеМеню" id="163"/>
+											<ExtendedTooltip name="РеализацияОткормаВесРасширеннаяПодсказка" id="164"/>
+										</InputField>
+										<InputField name="РеализацияОткормаЦена" id="165">
+											<DataPath>Объект.РеализацияОткорма.Цена</DataPath>
+											<TitleBackColor>style:NavigationColor</TitleBackColor>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="РеализацияОткормаЦенаКонтекстноеМеню" id="166"/>
+											<ExtendedTooltip name="РеализацияОткормаЦенаРасширеннаяПодсказка" id="167"/>
+										</InputField>
+										<InputField name="РеализацияОткормаСтоимость" id="168">
+											<DataPath>Объект.РеализацияОткорма.Стоимость</DataPath>
+											<TitleBackColor>style:NavigationColor</TitleBackColor>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="РеализацияОткормаСтоимостьКонтекстноеМеню" id="169"/>
+											<ExtendedTooltip name="РеализацияОткормаСтоимостьРасширеннаяПодсказка" id="170"/>
+										</InputField>
+										<InputField name="РеализацияОткормаПокупатель" id="171">
+											<DataPath>1/0:bef58adf-7723-4870-8e4c-9cfd94f1c287/0:775bfb20-4a62-4fc9-aa1b-5c9908515c31</DataPath>
+											<TitleBackColor>style:NavigationColor</TitleBackColor>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="РеализацияОткормаПокупательКонтекстноеМеню" id="172"/>
+											<ExtendedTooltip name="РеализацияОткормаПокупательРасширеннаяПодсказка" id="173"/>
+										</InputField>
+										<InputField name="РеализацияОткормаПричинаВыбытия" id="174">
+											<DataPath>Объект.РеализацияОткорма.ПричинаВыбытия</DataPath>
+											<TitleBackColor>style:NavigationColor</TitleBackColor>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="РеализацияОткормаПричинаВыбытияКонтекстноеМеню" id="175"/>
+											<ExtendedTooltip name="РеализацияОткормаПричинаВыбытияРасширеннаяПодсказка" id="176"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</Page>
+						<Page name="РеализацияПлеменногоПоголовьяГруппа" id="89">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Реализация племенного поголовья</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Реализация племенного поголовья группа</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="РеализацияПлеменногоПоголовьяГруппаРасширеннаяПодсказка" id="90"/>
+							<ChildItems>
+								<Table name="РеализацияПлеменногоПоголовья" id="177">
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>Объект.РеализацияПлеменногоПоголовья</DataPath>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="РеализацияПлеменногоПоголовьяКонтекстноеМеню" id="178"/>
+									<AutoCommandBar name="РеализацияПлеменногоПоголовьяКоманднаяПанель" id="179"/>
+									<ExtendedTooltip name="РеализацияПлеменногоПоголовьяРасширеннаяПодсказка" id="180"/>
+									<SearchStringAddition name="РеализацияПлеменногоПоголовьяСтрокаПоиска" id="181">
+										<AdditionSource>
+											<Item>РеализацияПлеменногоПоголовья</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="РеализацияПлеменногоПоголовьяСтрокаПоискаКонтекстноеМеню" id="182"/>
+										<ExtendedTooltip name="РеализацияПлеменногоПоголовьяСтрокаПоискаРасширеннаяПодсказка" id="183"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="РеализацияПлеменногоПоголовьяСостояниеПросмотра" id="184">
+										<AdditionSource>
+											<Item>РеализацияПлеменногоПоголовья</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="РеализацияПлеменногоПоголовьяСостояниеПросмотраКонтекстноеМеню" id="185"/>
+										<ExtendedTooltip name="РеализацияПлеменногоПоголовьяСостояниеПросмотраРасширеннаяПодсказка" id="186"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="РеализацияПлеменногоПоголовьяУправлениеПоиском" id="187">
+										<AdditionSource>
+											<Item>РеализацияПлеменногоПоголовья</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="РеализацияПлеменногоПоголовьяУправлениеПоискомКонтекстноеМеню" id="188"/>
+										<ExtendedTooltip name="РеализацияПлеменногоПоголовьяУправлениеПоискомРасширеннаяПодсказка" id="189"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<LabelField name="РеализацияПлеменногоПоголовьяНомерСтроки" id="190">
+											<DataPath>Объект.РеализацияПлеменногоПоголовья.LineNumber</DataPath>
+											<TitleBackColor>style:NavigationColor</TitleBackColor>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="РеализацияПлеменногоПоголовьяНомерСтрокиКонтекстноеМеню" id="191"/>
+											<ExtendedTooltip name="РеализацияПлеменногоПоголовьяНомерСтрокиРасширеннаяПодсказка" id="192"/>
+										</LabelField>
+										<InputField name="РеализацияПлеменногоПоголовьяЖивотное" id="193">
+											<DataPath>Объект.РеализацияПлеменногоПоголовья.Животное</DataPath>
+											<TitleBackColor>style:NavigationColor</TitleBackColor>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="РеализацияПлеменногоПоголовьяЖивотноеКонтекстноеМеню" id="194"/>
+											<ExtendedTooltip name="РеализацияПлеменногоПоголовьяЖивотноеРасширеннаяПодсказка" id="195"/>
+											<Events>
+												<Event name="AutoComplete">РеализацияПлеменногоПоголовьяЖивотноеАвтоПодбор</Event>
+												<Event name="StartChoice">РеализацияПлеменногоПоголовьяЖивотноеНачалоВыбора</Event>
+											</Events>
+										</InputField>
+										<InputField name="РеализацияПлеменногоПоголовьяВес" id="196">
+											<DataPath>Объект.РеализацияПлеменногоПоголовья.Вес</DataPath>
+											<TitleBackColor>style:NavigationColor</TitleBackColor>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="РеализацияПлеменногоПоголовьяВесКонтекстноеМеню" id="197"/>
+											<ExtendedTooltip name="РеализацияПлеменногоПоголовьяВесРасширеннаяПодсказка" id="198"/>
+										</InputField>
+										<InputField name="РеализацияПлеменногоПоголовьяЦена" id="199">
+											<DataPath>Объект.РеализацияПлеменногоПоголовья.Цена</DataPath>
+											<TitleBackColor>style:NavigationColor</TitleBackColor>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="РеализацияПлеменногоПоголовьяЦенаКонтекстноеМеню" id="200"/>
+											<ExtendedTooltip name="РеализацияПлеменногоПоголовьяЦенаРасширеннаяПодсказка" id="201"/>
+										</InputField>
+										<InputField name="РеализацияПлеменногоПоголовьяСтоимость" id="202">
+											<DataPath>Объект.РеализацияПлеменногоПоголовья.Стоимость</DataPath>
+											<TitleBackColor>style:NavigationColor</TitleBackColor>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="РеализацияПлеменногоПоголовьяСтоимостьКонтекстноеМеню" id="203"/>
+											<ExtendedTooltip name="РеализацияПлеменногоПоголовьяСтоимостьРасширеннаяПодсказка" id="204"/>
+										</InputField>
+										<InputField name="РеализацияПлеменногоПоголовьяПокупатель" id="205">
+											<DataPath>1/0:3ac98f4e-b88c-485a-9a8f-ffebf1510a9c/0:6b08ad1e-9146-453d-9a68-b2709427975f</DataPath>
+											<TitleBackColor>style:NavigationColor</TitleBackColor>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="РеализацияПлеменногоПоголовьяПокупательКонтекстноеМеню" id="206"/>
+											<ExtendedTooltip name="РеализацияПлеменногоПоголовьяПокупательРасширеннаяПодсказка" id="207"/>
+										</InputField>
+										<InputField name="РеализацияПлеменногоПоголовьяПричинаВыбытия" id="208">
+											<DataPath>Объект.РеализацияПлеменногоПоголовья.ПричинаВыбытия</DataPath>
+											<TitleBackColor>style:NavigationColor</TitleBackColor>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="РеализацияПлеменногоПоголовьяПричинаВыбытияКонтекстноеМеню" id="209"/>
+											<ExtendedTooltip name="РеализацияПлеменногоПоголовьяПричинаВыбытияРасширеннаяПодсказка" id="210"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</Page>
+						<Page name="ПродажаНаселениюГруппа" id="91">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Продажа населению</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Продажа населению группа</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ПродажаНаселениюГруппаРасширеннаяПодсказка" id="92"/>
+							<ChildItems>
+								<Table name="ПродажаНаселению" id="211">
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>Объект.ПродажаНаселению</DataPath>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="ПродажаНаселениюКонтекстноеМеню" id="212"/>
+									<AutoCommandBar name="ПродажаНаселениюКоманднаяПанель" id="213"/>
+									<ExtendedTooltip name="ПродажаНаселениюРасширеннаяПодсказка" id="214"/>
+									<SearchStringAddition name="ПродажаНаселениюСтрокаПоиска" id="215">
+										<AdditionSource>
+											<Item>ПродажаНаселению</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ПродажаНаселениюСтрокаПоискаКонтекстноеМеню" id="216"/>
+										<ExtendedTooltip name="ПродажаНаселениюСтрокаПоискаРасширеннаяПодсказка" id="217"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ПродажаНаселениюСостояниеПросмотра" id="218">
+										<AdditionSource>
+											<Item>ПродажаНаселению</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ПродажаНаселениюСостояниеПросмотраКонтекстноеМеню" id="219"/>
+										<ExtendedTooltip name="ПродажаНаселениюСостояниеПросмотраРасширеннаяПодсказка" id="220"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ПродажаНаселениюУправлениеПоиском" id="221">
+										<AdditionSource>
+											<Item>ПродажаНаселению</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ПродажаНаселениюУправлениеПоискомКонтекстноеМеню" id="222"/>
+										<ExtendedTooltip name="ПродажаНаселениюУправлениеПоискомРасширеннаяПодсказка" id="223"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<LabelField name="ПродажаНаселениюНомерСтроки" id="224">
+											<DataPath>Объект.ПродажаНаселению.LineNumber</DataPath>
+											<TitleBackColor>style:NavigationColor</TitleBackColor>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ПродажаНаселениюНомерСтрокиКонтекстноеМеню" id="225"/>
+											<ExtendedTooltip name="ПродажаНаселениюНомерСтрокиРасширеннаяПодсказка" id="226"/>
+										</LabelField>
+										<InputField name="ПродажаНаселениюЖивотное" id="227">
+											<DataPath>Объект.ПродажаНаселению.Животное</DataPath>
+											<TitleBackColor>style:NavigationColor</TitleBackColor>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ПродажаНаселениюЖивотноеКонтекстноеМеню" id="228"/>
+											<ExtendedTooltip name="ПродажаНаселениюЖивотноеРасширеннаяПодсказка" id="229"/>
+											<Events>
+												<Event name="AutoComplete">ПродажаНаселениюЖивотноеАвтоПодбор</Event>
+												<Event name="StartChoice">ПродажаНаселениюЖивотноеНачалоВыбора</Event>
+											</Events>
+										</InputField>
+										<InputField name="ПродажаНаселениюВес" id="230">
+											<DataPath>Объект.ПродажаНаселению.Вес</DataPath>
+											<TitleBackColor>style:NavigationColor</TitleBackColor>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ПродажаНаселениюВесКонтекстноеМеню" id="231"/>
+											<ExtendedTooltip name="ПродажаНаселениюВесРасширеннаяПодсказка" id="232"/>
+										</InputField>
+										<InputField name="ПродажаНаселениюЦена" id="233">
+											<DataPath>Объект.ПродажаНаселению.Цена</DataPath>
+											<TitleBackColor>style:NavigationColor</TitleBackColor>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ПродажаНаселениюЦенаКонтекстноеМеню" id="234"/>
+											<ExtendedTooltip name="ПродажаНаселениюЦенаРасширеннаяПодсказка" id="235"/>
+										</InputField>
+										<InputField name="ПродажаНаселениюСтоимость" id="236">
+											<DataPath>Объект.ПродажаНаселению.Стоимость</DataPath>
+											<TitleBackColor>style:NavigationColor</TitleBackColor>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ПродажаНаселениюСтоимостьКонтекстноеМеню" id="237"/>
+											<ExtendedTooltip name="ПродажаНаселениюСтоимостьРасширеннаяПодсказка" id="238"/>
+										</InputField>
+										<InputField name="ПродажаНаселениюПокупатель" id="239">
+											<DataPath>1/0:7c1fdd72-f016-40b0-90f1-147f24385dc2/0:0e02e0d6-cc48-4d54-92ff-53ed575fe3c6</DataPath>
+											<TitleBackColor>style:NavigationColor</TitleBackColor>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ПродажаНаселениюПокупательКонтекстноеМеню" id="240"/>
+											<ExtendedTooltip name="ПродажаНаселениюПокупательРасширеннаяПодсказка" id="241"/>
+										</InputField>
+										<InputField name="ПродажаНаселениюПричинаВыбытия" id="242">
+											<DataPath>Объект.ПродажаНаселению.ПричинаВыбытия</DataPath>
+											<TitleBackColor>style:NavigationColor</TitleBackColor>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ПродажаНаселениюПричинаВыбытияКонтекстноеМеню" id="243"/>
+											<ExtendedTooltip name="ПродажаНаселениюПричинаВыбытияРасширеннаяПодсказка" id="244"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</Page>
+					</ChildItems>
+				</Pages>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.Выбытие</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>
