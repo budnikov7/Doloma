@@ -177,8 +177,8 @@
 		</Metadata>
 		<Metadata name="Catalog.КорпусаКормления.Form.ФормаСписка" id="bf3d8091-8734-4efd-b197-bce612a99518" configVersion="58a14bad838f09478cfaebbb0c0799f200000000"/>
 		<Metadata name="Catalog.КорпусаКормления.Form.ФормаСписка.Form" id="bf3d8091-8734-4efd-b197-bce612a99518.0" configVersion="3b4b83f8010a63469e0339aa703b9fca00000000"/>
-		<Metadata name="Catalog.КорпусаКормления.Form.ФормаЭлемента" id="25428aa6-9bce-4003-937d-929e015e167a" configVersion="3be2b43b7c9ce3499fa50d6e76c651b000000000"/>
-		<Metadata name="Catalog.КорпусаКормления.Form.ФормаЭлемента.Form" id="25428aa6-9bce-4003-937d-929e015e167a.0" configVersion="505db0e5be043b4d9298d0d7481106ea00000000"/>
+		<Metadata name="Catalog.КорпусаКормления.Form.ФормаЭлемента" id="25428aa6-9bce-4003-937d-929e015e167a" configVersion="d54637e76d519147a11b13b451c77ebf00000000"/>
+		<Metadata name="Catalog.КорпусаКормления.Form.ФормаЭлемента.Form" id="25428aa6-9bce-4003-937d-929e015e167a.0" configVersion="5bcfc909aaa7ca46904fd8bf734d12a400000000"/>
 		<Metadata name="Catalog.Линии" id="f8bd1686-9f71-4480-bb91-8a706ebf736f" configVersion="b249979cc9da904c830a9acc4636e9a500000000"/>
 		<Metadata name="Catalog.Линии.Predefined" id="f8bd1686-9f71-4480-bb91-8a706ebf736f.1c" configVersion="a9bb8cc42f0ca24f87c6324577e6d5b100000000"/>
 		<Metadata name="Catalog.Масти" id="629dd738-69d5-468d-9e51-10c7cadfd90b" configVersion="d36cbfbfccd73146bce02bb44b32761000000000"/>
