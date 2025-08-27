@@ -301,9 +301,9 @@
 			<Role>Пользователь</Role>
 			<Role>УдалениеЖивотных</Role>
 			<CommonTemplate>МакетЗаполненияПроизводственнаяСводка</CommonTemplate>
-			<CommonModule>ОбменДанными</CommonModule>
 			<CommonModule>ВзаимодействиеКлиент</CommonModule>
 			<CommonModule>ДанныеЖивотных</CommonModule>
+			<CommonModule>ОбменДанными</CommonModule>
 			<CommonModule>ОбновлениеИнформационнойБазы</CommonModule>
 			<CommonModule>ОбработкаТабличнойЧастиВызовСервера</CommonModule>
 			<CommonModule>ОбработкаТабличнойЧастиКлиент</CommonModule>
