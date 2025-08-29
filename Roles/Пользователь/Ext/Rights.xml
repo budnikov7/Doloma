@@ -1726,7 +1726,7 @@
 		</right>
 	</object>
 	<object>
-		<name>Configuration.УправлениеСтадом</name>
+		<name>Configuration.УправлениеФермой</name>
 		<right>
 			<name>Administration</name>
 			<value>false</value>

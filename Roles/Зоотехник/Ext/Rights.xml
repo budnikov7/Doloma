@@ -217,7 +217,7 @@
 		</right>
 	</object>
 	<object>
-		<name>Configuration.УправлениеСтадом</name>
+		<name>Configuration.УправлениеФермой</name>
 		<right>
 			<name>MainWindowModeNormal</name>
 			<value>true</value>

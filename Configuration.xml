@@ -32,11 +32,11 @@
 			</xr:ContainedObject>
 		</InternalInfo>
 		<Properties>
-			<Name>УправлениеСтадом</Name>
+			<Name>УправлениеФермой</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Управление стадом  (0.02)</v8:content>
+					<v8:content>Управление фермой</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -234,7 +234,7 @@
 			<MobileApplicationURLs/>
 			<AllowedIncomingShareRequestTypes/>
 			<MainClientApplicationWindowMode>Normal</MainClientApplicationWindowMode>
-			<DefaultInterface>Interface.Общий</DefaultInterface>
+			<DefaultInterface/>
 			<DefaultStyle>Style.СтильDoloma</DefaultStyle>
 			<DefaultLanguage>Language.Русский</DefaultLanguage>
 			<BriefInformation/>

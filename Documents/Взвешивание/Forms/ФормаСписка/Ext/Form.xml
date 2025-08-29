@@ -91,12 +91,6 @@
 					<ContextMenu name="ФермаКонтекстноеМеню" id="23"/>
 					<ExtendedTooltip name="ФермаРасширеннаяПодсказка" id="24"/>
 				</LabelField>
-				<LabelField name="Корпус" id="25">
-					<DataPath>~Список.Корпус</DataPath>
-					<TitleBackColor>style:NavigationColor</TitleBackColor>
-					<ContextMenu name="КорпусКонтекстноеМеню" id="26"/>
-					<ExtendedTooltip name="КорпусРасширеннаяПодсказка" id="27"/>
-				</LabelField>
 				<LabelField name="Комментарий" id="28">
 					<DataPath>Список.Комментарий</DataPath>
 					<TitleBackColor>style:NavigationColor</TitleBackColor>

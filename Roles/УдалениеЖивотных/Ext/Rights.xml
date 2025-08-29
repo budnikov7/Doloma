@@ -118,7 +118,7 @@
 		</right>
 	</object>
 	<object>
-		<name>Configuration.УправлениеСтадом</name>
+		<name>Configuration.УправлениеФермой</name>
 		<right>
 			<name>ThinClient</name>
 			<value>true</value>
