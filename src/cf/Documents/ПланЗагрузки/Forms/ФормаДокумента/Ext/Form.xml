@@ -1,0 +1,840 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="ChoiceProcessing">ОбработкаВыбора</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаНомерДата" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа номер дата</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа номер дата</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаНомерДатаРасширеннаяПодсказка" id="11"/>
+			<ChildItems>
+				<InputField name="Номер" id="1">
+					<DataPath>Объект.Number</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="Дата" id="4">
+					<DataPath>Объект.Date</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>от</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаРеквизитыШапки" id="214">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа реквизиты шапки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа реквизиты шапки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаРеквизитыШапкиРасширеннаяПодсказка" id="215"/>
+			<ChildItems>
+				<InputField name="Ферма" id="7">
+					<DataPath>Объект.Ферма</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ФермаКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="ФермаРасширеннаяПодсказка" id="9"/>
+				</InputField>
+				<InputField name="Склад" id="216">
+					<DataPath>Объект.Склад</DataPath>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<ContextMenu name="СкладКонтекстноеМеню" id="217"/>
+					<ExtendedTooltip name="СкладРасширеннаяПодсказка" id="218"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<CommandBar name="ГруппаРаздачиКоманды" id="161">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа раздачи команды</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа раздачи команды</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаРаздачиКомандыРасширеннаяПодсказка" id="162"/>
+			<ChildItems>
+				<Button name="ДобавитьРаздачу" id="163">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.Command.ДобавитьРаздачу</CommandName>
+					<ExtendedTooltip name="ДобавитьРаздачуРасширеннаяПодсказка" id="164"/>
+				</Button>
+				<Button name="ЗаполнитьКормораздатчик" id="227">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.Command.ЗаполнитьКормораздатчик</CommandName>
+					<ExtendedTooltip name="ЗаполнитьКормораздатчикРасширеннаяПодсказка" id="228"/>
+				</Button>
+				<Popup name="Печать" id="231">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Печать</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Печать</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ПечатьРасширеннаяПодсказка" id="232"/>
+					<ChildItems>
+						<Button name="ФормаПоказатьКорма" id="219">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Command.ПоказатьКорма</CommandName>
+							<ExtendedTooltip name="ФормаПоказатьКормаРасширеннаяПодсказка" id="220"/>
+						</Button>
+						<Button name="ПотребностьВМК" id="229">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Command.ПотребностьВМК</CommandName>
+							<ExtendedTooltip name="ПотребностьВМКРасширеннаяПодсказка" id="230"/>
+						</Button>
+						<Button name="ПланРаздачи" id="246">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Command.ПланРаздачи</CommandName>
+							<ExtendedTooltip name="ПланРаздачиРасширеннаяПодсказка" id="247"/>
+						</Button>
+					</ChildItems>
+				</Popup>
+				<Button name="ДобавитьКорпусВРаздачу" id="165">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.Command.ДобавитьКорпусВРаздачу</CommandName>
+					<ExtendedTooltip name="ДобавитьКорпусВРаздачуРасширеннаяПодсказка" id="166"/>
+				</Button>
+				<Button name="ПерезаполнитьКорпуса" id="233">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.Command.ПерезаполнитьКорпуса</CommandName>
+					<ExtendedTooltip name="ПерезаполнитьКорпусаРасширеннаяПодсказка" id="234"/>
+				</Button>
+				<Popup name="ГруппаЗаменить" id="237">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заменить</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа заменить</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Picture>
+						<xr:Ref>StdPicture.Replace</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="ГруппаЗаменитьРасширеннаяПодсказка" id="238"/>
+					<ChildItems>
+						<Button name="ЗаменитьРацион" id="235">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Command.ЗаменитьРацион</CommandName>
+							<ExtendedTooltip name="ЗаменитьРационРасширеннаяПодсказка" id="236"/>
+						</Button>
+						<Button name="ЗменитьКормораздатчик" id="239">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Command.ЗаменитьКормораздатчик</CommandName>
+							<ExtendedTooltip name="ЗменитьКормораздатчикРасширеннаяПодсказка" id="240"/>
+						</Button>
+						<Button name="ЗаменитьТракториста" id="241">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Command.ЗаменитьТракториста</CommandName>
+							<ExtendedTooltip name="ЗаменитьТрактористаРасширеннаяПодсказка" id="242"/>
+						</Button>
+					</ChildItems>
+				</Popup>
+			</ChildItems>
+		</CommandBar>
+		<UsualGroup name="ГруппаРаздачи" id="143">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа раздачи</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа раздачи</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаРаздачиРасширеннаяПодсказка" id="144"/>
+			<ChildItems>
+				<Table name="Раздачи" id="167">
+					<CommandBarLocation>None</CommandBarLocation>
+					<VerticalScrollBar>DontUse</VerticalScrollBar>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>Объект.Раздачи</DataPath>
+					<CommandSet>
+						<ExcludedCommand>Add</ExcludedCommand>
+						<ExcludedCommand>CancelSearch</ExcludedCommand>
+						<ExcludedCommand>Change</ExcludedCommand>
+						<ExcludedCommand>Copy</ExcludedCommand>
+						<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+						<ExcludedCommand>EndEdit</ExcludedCommand>
+						<ExcludedCommand>Find</ExcludedCommand>
+						<ExcludedCommand>FindByCurrentValue</ExcludedCommand>
+						<ExcludedCommand>OutputList</ExcludedCommand>
+						<ExcludedCommand>SearchEverywhere</ExcludedCommand>
+						<ExcludedCommand>SelectAll</ExcludedCommand>
+						<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+						<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+						<ExcludedCommand>SortListAsc</ExcludedCommand>
+						<ExcludedCommand>SortListDesc</ExcludedCommand>
+					</CommandSet>
+					<SearchStringLocation>None</SearchStringLocation>
+					<ViewStatusLocation>None</ViewStatusLocation>
+					<SearchControlLocation>None</SearchControlLocation>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="РаздачиКонтекстноеМеню" id="168"/>
+					<AutoCommandBar name="РаздачиКоманднаяПанель" id="169"/>
+					<ExtendedTooltip name="РаздачиРасширеннаяПодсказка" id="170"/>
+					<SearchStringAddition name="РаздачиСтрокаПоиска" id="171">
+						<AdditionSource>
+							<Item>Раздачи</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="РаздачиСтрокаПоискаКонтекстноеМеню" id="172"/>
+						<ExtendedTooltip name="РаздачиСтрокаПоискаРасширеннаяПодсказка" id="173"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="РаздачиСостояниеПросмотра" id="174">
+						<AdditionSource>
+							<Item>Раздачи</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="РаздачиСостояниеПросмотраКонтекстноеМеню" id="175"/>
+						<ExtendedTooltip name="РаздачиСостояниеПросмотраРасширеннаяПодсказка" id="176"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="РаздачиУправлениеПоиском" id="177">
+						<AdditionSource>
+							<Item>Раздачи</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="РаздачиУправлениеПоискомКонтекстноеМеню" id="178"/>
+						<ExtendedTooltip name="РаздачиУправлениеПоискомРасширеннаяПодсказка" id="179"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="BeforeDeleteRow">РаздачиПередУдалением</Event>
+						<Event name="OnActivateRow">НомераРаздачПриАктивизацииСтроки</Event>
+					</Events>
+					<ChildItems>
+						<ColumnGroup name="РаздачиГруппаРаздача" id="208">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Раздачи группа раздача</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Раздачи группа раздача</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="РаздачиГруппаРаздачаРасширеннаяПодсказка" id="209"/>
+							<ChildItems>
+								<LabelField name="РаздачиНомерСтроки" id="180">
+									<DataPath>Объект.Раздачи.LineNumber</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Раздача</v8:content>
+										</v8:item>
+									</Title>
+									<TitleBackColor>style:NavigationColor</TitleBackColor>
+									<HorizontalAlign>Left</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>5</Width>
+									<ContextMenu name="РаздачиНомерСтрокиКонтекстноеМеню" id="181"/>
+									<ExtendedTooltip name="РаздачиНомерСтрокиРасширеннаяПодсказка" id="182"/>
+								</LabelField>
+								<InputField name="РаздачиМассаРаздачи" id="243">
+									<DataPath>Объект.Раздачи.МассаРаздачи</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<TitleBackColor>style:NavigationColor</TitleBackColor>
+									<HorizontalAlign>Left</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="РаздачиМассаРаздачиКонтекстноеМеню" id="244"/>
+									<ExtendedTooltip name="РаздачиМассаРаздачиРасширеннаяПодсказка" id="245"/>
+								</InputField>
+								<InputField name="РаздачиЗаполненностьМиксера" id="201">
+									<DataPath>Объект.Раздачи.ЗаполненностьМиксера</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<TitleBackColor>style:NavigationColor</TitleBackColor>
+									<HorizontalAlign>Left</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>5</Width>
+									<ContextMenu name="РаздачиЗаполненностьМиксераКонтекстноеМеню" id="202"/>
+									<ExtendedTooltip name="РаздачиЗаполненностьМиксераРасширеннаяПодсказка" id="203"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+						<ColumnGroup name="РаздачиГруппаРацион" id="204">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Раздачи группа рацион</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Раздачи группа рацион</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="РаздачиГруппаРационРасширеннаяПодсказка" id="205"/>
+							<ChildItems>
+								<InputField name="РаздачиРацион" id="183">
+									<DataPath>Объект.Раздачи.Рацион</DataPath>
+									<TitleBackColor>style:NavigationColor</TitleBackColor>
+									<HorizontalAlign>Left</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>5</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="РаздачиРационКонтекстноеМеню" id="184"/>
+									<ExtendedTooltip name="РаздачиРационРасширеннаяПодсказка" id="185"/>
+									<Events>
+										<Event name="OnChange">РаздачиРационПриИзменении</Event>
+									</Events>
+								</InputField>
+								<LabelField name="РаздачиРационВес" id="186">
+									<DataPath>Объект.Раздачи.Рацион.Вес</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Вес рациона, кг</v8:content>
+										</v8:item>
+									</Title>
+									<TitleBackColor>style:NavigationColor</TitleBackColor>
+									<HorizontalAlign>Left</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="РаздачиРационВесКонтекстноеМеню" id="187"/>
+									<ExtendedTooltip name="РаздачиРационВесРасширеннаяПодсказка" id="188"/>
+								</LabelField>
+								<LabelField name="РаздачиРационСуммаСВ" id="189">
+									<DataPath>Объект.Раздачи.Рацион.СуммаСВ</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>СВ рациона, кг</v8:content>
+										</v8:item>
+									</Title>
+									<TitleBackColor>style:NavigationColor</TitleBackColor>
+									<HorizontalAlign>Left</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<Format>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ЧДЦ=2; ЧС=3</v8:content>
+										</v8:item>
+									</Format>
+									<ContextMenu name="РаздачиРационСуммаСВКонтекстноеМеню" id="190"/>
+									<ExtendedTooltip name="РаздачиРационСуммаСВРасширеннаяПодсказка" id="191"/>
+								</LabelField>
+							</ChildItems>
+						</ColumnGroup>
+						<ColumnGroup name="РаздачиГруппаКормораздатчик" id="206">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Раздачи группа кормораздатчик</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Раздачи группа кормораздатчик</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ExtendedTooltip name="РаздачиГруппаКормораздатчикРасширеннаяПодсказка" id="207"/>
+							<ChildItems>
+								<InputField name="РаздачиКормораздатчик" id="192">
+									<DataPath>Объект.Раздачи.Кормораздатчик</DataPath>
+									<TitleBackColor>style:NavigationColor</TitleBackColor>
+									<HorizontalAlign>Left</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>5</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="РаздачиКормораздатчикКонтекстноеМеню" id="193"/>
+									<ExtendedTooltip name="РаздачиКормораздатчикРасширеннаяПодсказка" id="194"/>
+								</InputField>
+								<LabelField name="РаздачиКормораздатчикМаксимальнаяЗагрузка" id="195">
+									<DataPath>Объект.Раздачи.Кормораздатчик.МаксимальнаяЗагрузка</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<TitleBackColor>style:NavigationColor</TitleBackColor>
+									<HorizontalAlign>Left</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>5</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="РаздачиКормораздатчикМаксимальнаяЗагрузкаКонтекстноеМеню" id="196"/>
+									<ExtendedTooltip name="РаздачиКормораздатчикМаксимальнаяЗагрузкаРасширеннаяПодсказка" id="197"/>
+								</LabelField>
+								<InputField name="РаздачиТракторист" id="198">
+									<DataPath>Объект.Раздачи.Тракторист</DataPath>
+									<TitleBackColor>style:NavigationColor</TitleBackColor>
+									<HorizontalAlign>Left</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>5</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="РаздачиТрактористКонтекстноеМеню" id="199"/>
+									<ExtendedTooltip name="РаздачиТрактористРасширеннаяПодсказка" id="200"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+					</ChildItems>
+				</Table>
+				<Table name="Корпуса" id="79">
+					<CommandBarLocation>None</CommandBarLocation>
+					<Width>60</Width>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>Объект.Корпуса</DataPath>
+					<CommandSet>
+						<ExcludedCommand>Add</ExcludedCommand>
+						<ExcludedCommand>CancelSearch</ExcludedCommand>
+						<ExcludedCommand>Change</ExcludedCommand>
+						<ExcludedCommand>Copy</ExcludedCommand>
+						<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+						<ExcludedCommand>EndEdit</ExcludedCommand>
+						<ExcludedCommand>Find</ExcludedCommand>
+						<ExcludedCommand>FindByCurrentValue</ExcludedCommand>
+						<ExcludedCommand>OutputList</ExcludedCommand>
+						<ExcludedCommand>SearchEverywhere</ExcludedCommand>
+						<ExcludedCommand>SelectAll</ExcludedCommand>
+						<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+						<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+						<ExcludedCommand>SortListAsc</ExcludedCommand>
+						<ExcludedCommand>SortListDesc</ExcludedCommand>
+					</CommandSet>
+					<SearchStringLocation>None</SearchStringLocation>
+					<ViewStatusLocation>None</ViewStatusLocation>
+					<SearchControlLocation>None</SearchControlLocation>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="КорпусаКонтекстноеМеню" id="80"/>
+					<AutoCommandBar name="КорпусаКоманднаяПанель" id="81"/>
+					<ExtendedTooltip name="КорпусаРасширеннаяПодсказка" id="82"/>
+					<SearchStringAddition name="КорпусаСтрокаПоиска" id="83">
+						<AdditionSource>
+							<Item>Корпуса</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="КорпусаСтрокаПоискаКонтекстноеМеню" id="84"/>
+						<ExtendedTooltip name="КорпусаСтрокаПоискаРасширеннаяПодсказка" id="85"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="КорпусаСостояниеПросмотра" id="86">
+						<AdditionSource>
+							<Item>Корпуса</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="КорпусаСостояниеПросмотраКонтекстноеМеню" id="87"/>
+						<ExtendedTooltip name="КорпусаСостояниеПросмотраРасширеннаяПодсказка" id="88"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="КорпусаУправлениеПоиском" id="89">
+						<AdditionSource>
+							<Item>Корпуса</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="КорпусаУправлениеПоискомКонтекстноеМеню" id="90"/>
+						<ExtendedTooltip name="КорпусаУправлениеПоискомРасширеннаяПодсказка" id="91"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="OnChange">КорпусаПриИзменении</Event>
+					</Events>
+					<ChildItems>
+						<InputField name="КорпусаКорпусКормления" id="98">
+							<DataPath>Объект.Корпуса.КорпусКормления</DataPath>
+							<TitleBackColor>style:NavigationColor</TitleBackColor>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>15</Width>
+							<ContextMenu name="КорпусаКорпусКормленияКонтекстноеМеню" id="99"/>
+							<ExtendedTooltip name="КорпусаКорпусКормленияРасширеннаяПодсказка" id="100"/>
+							<Events>
+								<Event name="OnChange">КорпусаКорпусКормленияПриИзменении</Event>
+							</Events>
+						</InputField>
+						<ColumnGroup name="КорпусаГруппаКорпус" id="221">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Корпуса группа корпус</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Корпуса группа корпус</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="КорпусаГруппаКорпусРасширеннаяПодсказка" id="222"/>
+							<ChildItems>
+								<InputField name="КорпусаКоличествоГолов" id="110">
+									<DataPath>Объект.Корпуса.КоличествоГолов</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<TitleBackColor>style:NavigationColor</TitleBackColor>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="КорпусаКоличествоГоловКонтекстноеМеню" id="111"/>
+									<ExtendedTooltip name="КорпусаКоличествоГоловРасширеннаяПодсказка" id="112"/>
+								</InputField>
+								<InputField name="КорпусаСВ" id="113">
+									<DataPath>Объект.Корпуса.СВ</DataPath>
+									<UserVisible>
+										<xr:Common>false</xr:Common>
+									</UserVisible>
+									<ReadOnly>true</ReadOnly>
+									<TitleBackColor>style:NavigationColor</TitleBackColor>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="КорпусаСВКонтекстноеМеню" id="114"/>
+									<ExtendedTooltip name="КорпусаСВРасширеннаяПодсказка" id="115"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+						<ColumnGroup name="КорпусаГруппаПроцент" id="223">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Корпуса группа процент</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Корпуса группа процент</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="КорпусаГруппаПроцентРасширеннаяПодсказка" id="224"/>
+							<ChildItems>
+								<InputField name="КорпусаПроцентСуточногоКормления" id="116">
+									<DataPath>Объект.Корпуса.ПроцентСуточногоКормления</DataPath>
+									<TitleBackColor>style:NavigationColor</TitleBackColor>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="КорпусаПроцентСуточногоКормленияКонтекстноеМеню" id="117"/>
+									<ExtendedTooltip name="КорпусаПроцентСуточногоКормленияРасширеннаяПодсказка" id="118"/>
+								</InputField>
+								<InputField name="КорпусаКоэффициентКормления" id="119">
+									<DataPath>Объект.Корпуса.КоэффициентКормления</DataPath>
+									<UserVisible>
+										<xr:Common>false</xr:Common>
+									</UserVisible>
+									<ReadOnly>true</ReadOnly>
+									<TitleBackColor>style:NavigationColor</TitleBackColor>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="КорпусаКоэффициентКормленияКонтекстноеМеню" id="120"/>
+									<ExtendedTooltip name="КорпусаКоэффициентКормленияРасширеннаяПодсказка" id="121"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+						<ColumnGroup name="КорпусаГруппаМасса" id="225">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Корпуса группа масса</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Корпуса группа масса</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="КорпусаГруппаМассаРасширеннаяПодсказка" id="226"/>
+							<ChildItems>
+								<InputField name="КорпусаМассаРаздачи" id="122">
+									<DataPath>Объект.Корпуса.МассаРаздачи</DataPath>
+									<TitleBackColor>style:NavigationColor</TitleBackColor>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="КорпусаМассаРаздачиКонтекстноеМеню" id="123"/>
+									<ExtendedTooltip name="КорпусаМассаРаздачиРасширеннаяПодсказка" id="124"/>
+									<Events>
+										<Event name="OnChange">КорпусаМассаРаздачиПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="КорпусаСодержаниеСВ" id="125">
+									<DataPath>Объект.Корпуса.СодержаниеСВ</DataPath>
+									<UserVisible>
+										<xr:Common>false</xr:Common>
+									</UserVisible>
+									<ReadOnly>true</ReadOnly>
+									<TitleBackColor>style:NavigationColor</TitleBackColor>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="КорпусаСодержаниеСВКонтекстноеМеню" id="126"/>
+									<ExtendedTooltip name="КорпусаСодержаниеСВРасширеннаяПодсказка" id="127"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+						<InputField name="КорпусаПроцентЗагрузки" id="128">
+							<DataPath>Объект.Корпуса.ПроцентЗагрузки</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<TitleBackColor>style:NavigationColor</TitleBackColor>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="КорпусаПроцентЗагрузкиКонтекстноеМеню" id="129"/>
+							<ExtendedTooltip name="КорпусаПроцентЗагрузкиРасширеннаяПодсказка" id="130"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.ПланЗагрузки</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+			<Columns>
+				<AdditionalColumns table="Объект.Корпуса"/>
+			</Columns>
+		</Attribute>
+		<Attribute name="СкопированныйКорпус" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Скопированный корпус</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ИзмененаМасса" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменена масса</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>РаздачиЗаполненностьМиксера</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.Раздачи.ЗаполненностьМиксера</dcsset:left>
+						<dcsset:comparisonType>Greater</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">100</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="ДобавитьРаздачу" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить раздачу</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить раздачу</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьРаздачу</Action>
+		</Command>
+		<Command name="ДобавитьКорпусВРаздачу" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить корпус в раздачу</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить корпус в раздачу</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьКорпусВРаздачу</Action>
+		</Command>
+		<Command name="ПоказатьКорма" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать корма</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать корма</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.ShowData</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПоказатьКорма</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ЗаполнитьКормораздатчик" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить кормораздатчик</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить кормораздатчик</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьКормораздатчик</Action>
+		</Command>
+		<Command name="ПотребностьВМК" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Потребность в МК</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Потребность ВМК</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПотребностьВМК</Action>
+		</Command>
+		<Command name="ПерезаполнитьКорпуса" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перезаполнить корпуса</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перезаполнить корпуса</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Reread</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПерезаполнитьКорпуса</Action>
+		</Command>
+		<Command name="ЗаменитьРацион" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заменить рацион</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заменить рацион</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаменитьРацион</Action>
+		</Command>
+		<Command name="ЗаменитьТракториста" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заменить тракториста</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заменить тракториста</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаменитьТракториста</Action>
+		</Command>
+		<Command name="ЗаменитьКормораздатчик" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заменить кормораздатчик</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заменить кормораздатчик</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаменитьКормораздатчик</Action>
+		</Command>
+		<Command name="ПланРаздачи" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>План раздачи</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>План раздачи</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПланРаздачи</Action>
+		</Command>
+	</Commands>
+</Form>

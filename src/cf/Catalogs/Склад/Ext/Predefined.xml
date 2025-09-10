@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.20">
+	<Item id="586b2079-77dc-43e4-830a-990e61e208e4">
+		<Name>ОсновнойСклад</Name>
+		<Code>000000001</Code>
+		<Description>Основной склад</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="974641c9-fb37-4d23-94a9-041c8cba7bb4">
+		<Name>ОсновнойСкладПрепаратов</Name>
+		<Code>000000002</Code>
+		<Description>Основной склад препаратов</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="5349073e-917e-4c4f-bbdd-1e3417c1a262">
+		<Name>ОсновнойСкладСемени</Name>
+		<Code>000000003</Code>
+		<Description>Основной склад семени</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

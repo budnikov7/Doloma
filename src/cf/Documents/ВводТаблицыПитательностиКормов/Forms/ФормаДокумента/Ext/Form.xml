@@ -1,0 +1,522 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ОбщаяГруппа" id="49">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Общая группа</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Общая группа</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ОбщаяГруппаРасширеннаяПодсказка" id="50"/>
+			<ChildItems>
+				<UsualGroup name="ДанныеГруппа" id="53">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основные данные</v8:content>
+						</v8:item>
+					</Title>
+					<TitleFont ref="style:NormalTextFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Данные группа</v8:content>
+						</v8:item>
+					</ToolTip>
+					<VerticalStretch>false</VerticalStretch>
+					<Group>AlwaysHorizontal</Group>
+					<Behavior>Usual</Behavior>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ДанныеГруппаРасширеннаяПодсказка" id="54"/>
+					<ChildItems>
+						<InputField name="Номер" id="55">
+							<DataPath>Объект.Number</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="НомерКонтекстноеМеню" id="56"/>
+							<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="57"/>
+						</InputField>
+						<InputField name="Дата" id="58">
+							<DataPath>Объект.Date</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дата</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ДатаКонтекстноеМеню" id="59"/>
+							<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="60"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<LabelDecoration name="ДекорацияПримечание" id="175">
+					<TextColor>web:Green</TextColor>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Содержание показателей вводится на 1000 г сухого вещества</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ДекорацияПримечаниеКонтекстноеМеню" id="176"/>
+					<ExtendedTooltip name="ДекорацияПримечаниеРасширеннаяПодсказка" id="177"/>
+				</LabelDecoration>
+				<Table name="Корма" id="73">
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>Объект.Корма</DataPath>
+					<SearchStringLocation>None</SearchStringLocation>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="КормаКонтекстноеМеню" id="74"/>
+					<AutoCommandBar name="КормаКоманднаяПанель" id="75">
+						<ChildItems>
+							<Popup name="КормаГруппаЗаполнить" id="178">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Заполнить</v8:content>
+									</v8:item>
+								</Title>
+								<ToolTip>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Корма группа заполнить</v8:content>
+									</v8:item>
+								</ToolTip>
+								<ExtendedTooltip name="КормаГруппаЗаполнитьРасширеннаяПодсказка" id="179"/>
+								<ChildItems>
+									<Button name="КормаЗаполнитьТекущуюСтроку" id="180">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ЗаполнитьТекущуюСтроку</CommandName>
+										<ExtendedTooltip name="КормаЗаполнитьТекущуюСтрокуРасширеннаяПодсказка" id="181"/>
+									</Button>
+									<Button name="КормаЗаполнитьПоСправочникуНоменклатуры" id="182">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ЗаполнитьПоСправочникуНоменклатуры</CommandName>
+										<ExtendedTooltip name="КормаЗаполнитьПоСправочникуНоменклатурыРасширеннаяПодсказка" id="183"/>
+									</Button>
+								</ChildItems>
+							</Popup>
+						</ChildItems>
+					</AutoCommandBar>
+					<ExtendedTooltip name="КормаРасширеннаяПодсказка" id="76"/>
+					<SearchStringAddition name="КормаСтрокаПоиска" id="77">
+						<AdditionSource>
+							<Item>Корма</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="КормаСтрокаПоискаКонтекстноеМеню" id="78"/>
+						<ExtendedTooltip name="КормаСтрокаПоискаРасширеннаяПодсказка" id="79"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="КормаСостояниеПросмотра" id="80">
+						<AdditionSource>
+							<Item>Корма</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="КормаСостояниеПросмотраКонтекстноеМеню" id="81"/>
+						<ExtendedTooltip name="КормаСостояниеПросмотраРасширеннаяПодсказка" id="82"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="КормаУправлениеПоиском" id="83">
+						<AdditionSource>
+							<Item>Корма</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="КормаУправлениеПоискомКонтекстноеМеню" id="84"/>
+						<ExtendedTooltip name="КормаУправлениеПоискомРасширеннаяПодсказка" id="85"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<LabelField name="КормаНомерСтроки" id="86">
+							<DataPath>Объект.Корма.LineNumber</DataPath>
+							<TitleBackColor>style:NavigationColor</TitleBackColor>
+							<EditMode>EnterOnInput</EditMode>
+							<FixingInTable>Left</FixingInTable>
+							<Width>1</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="КормаНомерСтрокиКонтекстноеМеню" id="87"/>
+							<ExtendedTooltip name="КормаНомерСтрокиРасширеннаяПодсказка" id="88"/>
+						</LabelField>
+						<InputField name="КормаНоменклатура" id="89">
+							<DataPath>Объект.Корма.Номенклатура</DataPath>
+							<TitleBackColor>style:NavigationColor</TitleBackColor>
+							<EditMode>EnterOnInput</EditMode>
+							<FixingInTable>Left</FixingInTable>
+							<ContextMenu name="КормаНоменклатураКонтекстноеМеню" id="90"/>
+							<ExtendedTooltip name="КормаНоменклатураРасширеннаяПодсказка" id="91"/>
+						</InputField>
+						<InputField name="КормаСВ" id="95">
+							<DataPath>Объект.Корма.СухоеВещество</DataPath>
+							<TitleBackColor>style:NavigationColor</TitleBackColor>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Содержится в 1 кг нативного вещества</v8:content>
+								</v8:item>
+							</ToolTip>
+							<EditMode>EnterOnInput</EditMode>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<ContextMenu name="КормаСВКонтекстноеМеню" id="96"/>
+							<ExtendedTooltip name="КормаСВРасширеннаяПодсказка" id="97"/>
+						</InputField>
+						<InputField name="КормаОЭ" id="98">
+							<DataPath>Объект.Корма.ОЭ</DataPath>
+							<TitleBackColor>style:NavigationColor</TitleBackColor>
+							<EditMode>EnterOnInput</EditMode>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<ContextMenu name="КормаОЭКонтекстноеМеню" id="99"/>
+							<ExtendedTooltip name="КормаОЭРасширеннаяПодсказка" id="100"/>
+						</InputField>
+						<InputField name="КормаСПXp" id="101">
+							<DataPath>Объект.Корма.XP</DataPath>
+							<TitleBackColor>style:NavigationColor</TitleBackColor>
+							<EditMode>EnterOnInput</EditMode>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<ContextMenu name="КормаСПXpКонтекстноеМеню" id="102"/>
+							<ExtendedTooltip name="КормаСПXpРасширеннаяПодсказка" id="103"/>
+						</InputField>
+						<InputField name="КормаUDP" id="164">
+							<DataPath>Объект.Корма.UDP</DataPath>
+							<TitleBackColor>style:NavigationColor</TitleBackColor>
+							<EditMode>EnterOnInput</EditMode>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<ContextMenu name="КормаUDPКонтекстноеМеню" id="165"/>
+							<ExtendedTooltip name="КормаUDPРасширеннаяПодсказка" id="166"/>
+						</InputField>
+						<InputField name="КормаРаствСП" id="161">
+							<DataPath>Объект.Корма.РастворимыйСП</DataPath>
+							<TitleBackColor>style:NavigationColor</TitleBackColor>
+							<EditMode>EnterOnInput</EditMode>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<ContextMenu name="КормаРаствСПКонтекстноеМеню" id="162"/>
+							<ExtendedTooltip name="КормаРаствСПРасширеннаяПодсказка" id="163"/>
+						</InputField>
+						<InputField name="КормаРастворимыйВРубцеПротеин" id="202">
+							<DataPath>1/0:66136c41-4a41-4ebb-84d7-508d7665212e/0:ef3f2c87-b9b1-4904-8598-db61b0df224a</DataPath>
+							<TitleBackColor>style:NavigationColor</TitleBackColor>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="КормаРастворимыйВРубцеПротеинКонтекстноеМеню" id="203"/>
+							<ExtendedTooltip name="КормаРастворимыйВРубцеПротеинРасширеннаяПодсказка" id="204"/>
+						</InputField>
+						<InputField name="КормаНерастворимыйВРубцеПротеин" id="199">
+							<DataPath>1/0:66136c41-4a41-4ebb-84d7-508d7665212e/0:babfbddc-bc1b-4bfb-a7d9-c5aa0c7d19a3</DataPath>
+							<TitleBackColor>style:NavigationColor</TitleBackColor>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="КормаНерастворимыйВРубцеПротеинКонтекстноеМеню" id="200"/>
+							<ExtendedTooltip name="КормаНерастворимыйВРубцеПротеинРасширеннаяПодсказка" id="201"/>
+						</InputField>
+						<InputField name="КормаnXp" id="104">
+							<DataPath>Объект.Корма.nXp</DataPath>
+							<TitleBackColor>style:NavigationColor</TitleBackColor>
+							<EditMode>EnterOnInput</EditMode>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<ContextMenu name="КормаnXpКонтекстноеМеню" id="105"/>
+							<ExtendedTooltip name="КормаnXpРасширеннаяПодсказка" id="106"/>
+						</InputField>
+						<InputField name="КормаRNB" id="107">
+							<DataPath>Объект.Корма.RNB</DataPath>
+							<TitleBackColor>style:NavigationColor</TitleBackColor>
+							<EditMode>EnterOnInput</EditMode>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<ContextMenu name="КормаRNBКонтекстноеМеню" id="108"/>
+							<ExtendedTooltip name="КормаRNBРасширеннаяПодсказка" id="109"/>
+						</InputField>
+						<InputField name="КормаСК" id="110">
+							<DataPath>Объект.Корма.СК</DataPath>
+							<TitleBackColor>style:NavigationColor</TitleBackColor>
+							<EditMode>EnterOnInput</EditMode>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<ContextMenu name="КормаСККонтекстноеМеню" id="111"/>
+							<ExtendedTooltip name="КормаСКРасширеннаяПодсказка" id="112"/>
+						</InputField>
+						<InputField name="КормаСЖ" id="113">
+							<DataPath>Объект.Корма.СЖ</DataPath>
+							<TitleBackColor>style:NavigationColor</TitleBackColor>
+							<EditMode>EnterOnInput</EditMode>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<ContextMenu name="КормаСЖКонтекстноеМеню" id="114"/>
+							<ExtendedTooltip name="КормаСЖРасширеннаяПодсказка" id="115"/>
+						</InputField>
+						<InputField name="КормаСЗ" id="116">
+							<DataPath>Объект.Корма.СЗ</DataPath>
+							<TitleBackColor>style:NavigationColor</TitleBackColor>
+							<EditMode>EnterOnInput</EditMode>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<ContextMenu name="КормаСЗКонтекстноеМеню" id="117"/>
+							<ExtendedTooltip name="КормаСЗРасширеннаяПодсказка" id="118"/>
+						</InputField>
+						<InputField name="КормаКрахмал" id="119">
+							<DataPath>Объект.Корма.Крахмал</DataPath>
+							<TitleBackColor>style:NavigationColor</TitleBackColor>
+							<EditMode>EnterOnInput</EditMode>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<ContextMenu name="КормаКрахмалКонтекстноеМеню" id="120"/>
+							<ExtendedTooltip name="КормаКрахмалРасширеннаяПодсказка" id="121"/>
+						</InputField>
+						<InputField name="КормаТранзитныйКрахмал" id="184">
+							<DataPath>Объект.Корма.ТранзитныйКрахмал</DataPath>
+							<TitleBackColor>style:NavigationColor</TitleBackColor>
+							<EditMode>EnterOnInput</EditMode>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<ContextMenu name="КормаТранзитныйКрахмалКонтекстноеМеню" id="185"/>
+							<ExtendedTooltip name="КормаТранзитныйКрахмалРасширеннаяПодсказка" id="186"/>
+						</InputField>
+						<InputField name="КормаСахар" id="122">
+							<DataPath>Объект.Корма.Сахар</DataPath>
+							<TitleBackColor>style:NavigationColor</TitleBackColor>
+							<EditMode>EnterOnInput</EditMode>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<ContextMenu name="КормаСахарКонтекстноеМеню" id="123"/>
+							<ExtendedTooltip name="КормаСахарРасширеннаяПодсказка" id="124"/>
+						</InputField>
+						<InputField name="КормаNDF" id="125">
+							<DataPath>Объект.Корма.NDF</DataPath>
+							<TitleBackColor>style:NavigationColor</TitleBackColor>
+							<EditMode>EnterOnInput</EditMode>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<ContextMenu name="КормаNDFКонтекстноеМеню" id="126"/>
+							<ExtendedTooltip name="КормаNDFРасширеннаяПодсказка" id="127"/>
+						</InputField>
+						<InputField name="КормаADF" id="128">
+							<DataPath>Объект.Корма.ADF</DataPath>
+							<TitleBackColor>style:NavigationColor</TitleBackColor>
+							<EditMode>EnterOnInput</EditMode>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<ContextMenu name="КормаADFКонтекстноеМеню" id="129"/>
+							<ExtendedTooltip name="КормаADFРасширеннаяПодсказка" id="130"/>
+						</InputField>
+						<InputField name="КормаNEL" id="131">
+							<DataPath>Объект.Корма.NEL</DataPath>
+							<TitleBackColor>style:NavigationColor</TitleBackColor>
+							<EditMode>EnterOnInput</EditMode>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<ContextMenu name="КормаNELКонтекстноеМеню" id="132"/>
+							<ExtendedTooltip name="КормаNELРасширеннаяПодсказка" id="133"/>
+						</InputField>
+						<InputField name="КормаCa" id="134">
+							<DataPath>Объект.Корма.Ca</DataPath>
+							<TitleBackColor>style:NavigationColor</TitleBackColor>
+							<EditMode>EnterOnInput</EditMode>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<ContextMenu name="КормаCaКонтекстноеМеню" id="135"/>
+							<ExtendedTooltip name="КормаCaРасширеннаяПодсказка" id="136"/>
+						</InputField>
+						<InputField name="КормаNa" id="137">
+							<DataPath>Объект.Корма.Na</DataPath>
+							<TitleBackColor>style:NavigationColor</TitleBackColor>
+							<EditMode>EnterOnInput</EditMode>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<ContextMenu name="КормаNaКонтекстноеМеню" id="138"/>
+							<ExtendedTooltip name="КормаNaРасширеннаяПодсказка" id="139"/>
+						</InputField>
+						<InputField name="КормаMg" id="140">
+							<DataPath>Объект.Корма.Mg</DataPath>
+							<TitleBackColor>style:NavigationColor</TitleBackColor>
+							<EditMode>EnterOnInput</EditMode>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<ContextMenu name="КормаMgКонтекстноеМеню" id="141"/>
+							<ExtendedTooltip name="КормаMgРасширеннаяПодсказка" id="142"/>
+						</InputField>
+						<InputField name="КормаK" id="143">
+							<DataPath>Объект.Корма.K</DataPath>
+							<TitleBackColor>style:NavigationColor</TitleBackColor>
+							<EditMode>EnterOnInput</EditMode>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<ContextMenu name="КормаKКонтекстноеМеню" id="144"/>
+							<ExtendedTooltip name="КормаKРасширеннаяПодсказка" id="145"/>
+						</InputField>
+						<InputField name="КормаCl" id="146">
+							<DataPath>Объект.Корма.Cl</DataPath>
+							<TitleBackColor>style:NavigationColor</TitleBackColor>
+							<EditMode>EnterOnInput</EditMode>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<ContextMenu name="КормаClКонтекстноеМеню" id="147"/>
+							<ExtendedTooltip name="КормаClРасширеннаяПодсказка" id="148"/>
+						</InputField>
+						<InputField name="КормаS" id="149">
+							<DataPath>Объект.Корма.S</DataPath>
+							<TitleBackColor>style:NavigationColor</TitleBackColor>
+							<EditMode>EnterOnInput</EditMode>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<ContextMenu name="КормаSКонтекстноеМеню" id="150"/>
+							<ExtendedTooltip name="КормаSРасширеннаяПодсказка" id="151"/>
+						</InputField>
+						<InputField name="КормаP" id="152">
+							<DataPath>Объект.Корма.P</DataPath>
+							<TitleBackColor>style:NavigationColor</TitleBackColor>
+							<EditMode>EnterOnInput</EditMode>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<ContextMenu name="КормаPКонтекстноеМеню" id="153"/>
+							<ExtendedTooltip name="КормаPРасширеннаяПодсказка" id="154"/>
+						</InputField>
+						<InputField name="КормаСтрукт" id="155">
+							<DataPath>Объект.Корма.Структ</DataPath>
+							<TitleBackColor>style:NavigationColor</TitleBackColor>
+							<EditMode>EnterOnInput</EditMode>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<ContextMenu name="КормаСтруктКонтекстноеМеню" id="156"/>
+							<ExtendedTooltip name="КормаСтруктРасширеннаяПодсказка" id="157"/>
+						</InputField>
+						<InputField name="КормаСтрКл" id="158">
+							<DataPath>Объект.Корма.СтрКл</DataPath>
+							<TitleBackColor>style:NavigationColor</TitleBackColor>
+							<EditMode>EnterOnInput</EditMode>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<ContextMenu name="КормаСтрКлКонтекстноеМеню" id="159"/>
+							<ExtendedTooltip name="КормаСтрКлРасширеннаяПодсказка" id="160"/>
+						</InputField>
+						<InputField name="КормаADL" id="167">
+							<DataPath>Объект.Корма.ADL</DataPath>
+							<TitleBackColor>style:NavigationColor</TitleBackColor>
+							<EditMode>EnterOnInput</EditMode>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<ContextMenu name="КормаADLКонтекстноеМеню" id="168"/>
+							<ExtendedTooltip name="КормаADLРасширеннаяПодсказка" id="169"/>
+						</InputField>
+						<InputField name="КормаПереваримоеОрганическоеВещество" id="187">
+							<DataPath>Объект.Корма.ПереваримоеОрганическоеВещество</DataPath>
+							<TitleBackColor>style:NavigationColor</TitleBackColor>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="КормаПереваримоеОрганическоеВеществоКонтекстноеМеню" id="188"/>
+							<ExtendedTooltip name="КормаПереваримоеОрганическоеВеществоРасширеннаяПодсказка" id="189"/>
+						</InputField>
+						<InputField name="КормаУксуснаяКислота" id="196">
+							<DataPath>Объект.Корма.УксуснаяКислота</DataPath>
+							<TitleBackColor>style:NavigationColor</TitleBackColor>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="КормаУксуснаяКислотаКонтекстноеМеню" id="197"/>
+							<ExtendedTooltip name="КормаУксуснаяКислотаРасширеннаяПодсказка" id="198"/>
+						</InputField>
+						<InputField name="КормаМолочнаяКислота" id="190">
+							<DataPath>Объект.Корма.МолочнаяКислота</DataPath>
+							<TitleBackColor>style:NavigationColor</TitleBackColor>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="КормаМолочнаяКислотаКонтекстноеМеню" id="191"/>
+							<ExtendedTooltip name="КормаМолочнаяКислотаРасширеннаяПодсказка" id="192"/>
+						</InputField>
+						<InputField name="КормаpH" id="193">
+							<DataPath>Объект.Корма.pH</DataPath>
+							<TitleBackColor>style:NavigationColor</TitleBackColor>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="КормаpHКонтекстноеМеню" id="194"/>
+							<ExtendedTooltip name="КормаpHРасширеннаяПодсказка" id="195"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+				<InputField name="Ответственный" id="70">
+					<DataPath>Объект.Автор</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Автор</v8:content>
+						</v8:item>
+					</Title>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<ContextMenu name="ОтветственныйКонтекстноеМеню" id="71"/>
+					<ExtendedTooltip name="ОтветственныйРасширеннаяПодсказка" id="72"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.ВводТаблицыПитательностиКормов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="РассчитатьЦены" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рассчитать цены</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рассчитать цены</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.AccumulationRegister</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>РассчитатьЦены</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ЗаполнитьТекущуюСтроку" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить текущую строку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить текущую строку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьТекущуюСтроку</Action>
+		</Command>
+		<Command name="ЗаполнитьПоСправочникуНоменклатуры" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить по справочнику номенклатуры</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить по справочнику номенклатуры</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьПоСправочникуНоменклатуры</Action>
+		</Command>
+	</Commands>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>InformationRegister.ИндексыБыков.StandardCommand.OpenByRecorder</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</NavigationPanel>
+	</CommandInterface>
+</Form>

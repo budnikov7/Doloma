@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Указание связи</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+	</Events>
+	<ChildItems>
+		<Table name="СписокЖивотных" id="1">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>СписокЖивотных</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="СписокЖивотныхКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="СписокЖивотныхКоманднаяПанель" id="3">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокЖивотныхРасширеннаяПодсказка" id="4"/>
+			<SearchStringAddition name="СписокЖивотныхСтрокаПоиска" id="5">
+				<Enabled>false</Enabled>
+				<AdditionSource>
+					<Item>СписокЖивотных</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокЖивотныхСтрокаПоискаКонтекстноеМеню" id="6"/>
+				<ExtendedTooltip name="СписокЖивотныхСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокЖивотныхСостояниеПросмотра" id="8">
+				<Enabled>false</Enabled>
+				<AdditionSource>
+					<Item>СписокЖивотных</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокЖивотныхСостояниеПросмотраКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="СписокЖивотныхСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокЖивотныхУправлениеПоиском" id="11">
+				<Enabled>false</Enabled>
+				<AdditionSource>
+					<Item>СписокЖивотных</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокЖивотныхУправлениеПоискомКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="СписокЖивотныхУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="Selection">СписокЖивотныхВыбор</Event>
+				<Event name="BeforeRowChange">СписокЖивотныхПередНачаломИзменения</Event>
+			</Events>
+			<ChildItems>
+				<InputField name="СписокЖивотныхКличкаЖивотного" id="14">
+					<DataPath>СписокЖивотных.Кличка</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кличка</v8:content>
+						</v8:item>
+					</Title>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокЖивотныхКличкаЖивотногоКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="СписокЖивотныхКличкаЖивотногоРасширеннаяПодсказка" id="16"/>
+				</InputField>
+				<InputField name="СписокЖивотныхНомерЖивотного" id="17">
+					<DataPath>СписокЖивотных.НомерЖивотного</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер</v8:content>
+						</v8:item>
+					</Title>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокЖивотныхНомерЖивотногоКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="СписокЖивотныхНомерЖивотногоРасширеннаяПодсказка" id="19"/>
+				</InputField>
+				<InputField name="СписокЖивотныхБиркаЖивотного" id="20">
+					<DataPath>СписокЖивотных.Бирка</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Бирка</v8:content>
+						</v8:item>
+					</Title>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокЖивотныхБиркаЖивотногоКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="СписокЖивотныхБиркаЖивотногоРасширеннаяПодсказка" id="22"/>
+				</InputField>
+				<LabelField name="СписокЖивотныхПолеСвязи" id="23">
+					<DataPath>СписокЖивотных.ПолеСвязи</DataPath>
+					<TitleBackColor>style:NavigationColor</TitleBackColor>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокЖивотныхПолеСвязиКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="СписокЖивотныхПолеСвязиРасширеннаяПодсказка" id="25"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="СписокЖивотных" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список животных</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Кличка" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кличка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="НомерЖивотного" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер животного</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>20</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Бирка" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Бирка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>20</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПолеСвязи" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поле связи</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8:UUID</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="АдресВременногоХранилища" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес временного хранилища</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+	</Attributes>
+</Form>

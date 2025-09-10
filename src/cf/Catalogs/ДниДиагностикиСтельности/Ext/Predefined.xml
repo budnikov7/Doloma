@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.20">
+	<Item id="a417a12e-8cad-4b68-bf0f-4c6e59863aab">
+		<Name>Диагностика1</Name>
+		<Code/>
+		<Description>Диагностика №1</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="0fa5a053-135a-452e-8a9e-0c39c4f1b5fc">
+		<Name>Диагностика2</Name>
+		<Code/>
+		<Description>Диагностика №2</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="7e6fd57b-08f4-41e1-8780-5af3e5ea309b">
+		<Name>Диагностика3</Name>
+		<Code/>
+		<Description>Диагностика №3</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

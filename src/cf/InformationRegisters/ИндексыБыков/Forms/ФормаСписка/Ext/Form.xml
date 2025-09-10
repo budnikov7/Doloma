@@ -1,0 +1,512 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="СписокКомпоновщикНастроекПользовательскиеНастройки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа пользовательских настроек</v8:content>
+				</v8:item>
+			</Title>
+			<VerticalStretch>false</VerticalStretch>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="СписокКомпоновщикНастроекПользовательскиеНастройкиРасширеннаяПодсказка" id="2"/>
+		</UsualGroup>
+		<Table name="Список" id="3">
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<EnableStartDrag>true</EnableStartDrag>
+			<DataPath>Список</DataPath>
+			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+			<ContextMenu name="СписокКонтекстноеМеню" id="4"/>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="5"/>
+			<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="6"/>
+			<SearchStringAddition name="СписокСтрокаПоиска" id="7">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="8"/>
+				<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="9"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокСостояниеПросмотра" id="10">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="11"/>
+				<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="12"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокУправлениеПоиском" id="13">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="14"/>
+				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="15"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="Период" id="16">
+					<DataPath>Список.Period</DataPath>
+					<ContextMenu name="ПериодКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="18"/>
+				</LabelField>
+				<LabelField name="Регистратор" id="19">
+					<DataPath>Список.Recorder</DataPath>
+					<ContextMenu name="РегистраторКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="РегистраторРасширеннаяПодсказка" id="21"/>
+				</LabelField>
+				<LabelField name="НомерСтроки" id="22">
+					<DataPath>Список.LineNumber</DataPath>
+					<ContextMenu name="НомерСтрокиКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="НомерСтрокиРасширеннаяПодсказка" id="24"/>
+				</LabelField>
+				<LabelField name="Бык" id="25">
+					<DataPath>Список.Бык</DataPath>
+					<ContextMenu name="БыкКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="БыкРасширеннаяПодсказка" id="27"/>
+				</LabelField>
+				<LabelField name="TPI" id="28">
+					<DataPath>Список.TPI</DataPath>
+					<ContextMenu name="TPIКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="TPIРасширеннаяПодсказка" id="30"/>
+				</LabelField>
+				<LabelField name="NM" id="31">
+					<DataPath>Список.NM</DataPath>
+					<ContextMenu name="NMКонтекстноеМеню" id="32"/>
+					<ExtendedTooltip name="NMРасширеннаяПодсказка" id="33"/>
+				</LabelField>
+				<LabelField name="Молоко" id="34">
+					<DataPath>Список.Молоко</DataPath>
+					<ContextMenu name="МолокоКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="МолокоРасширеннаяПодсказка" id="36"/>
+				</LabelField>
+				<LabelField name="PL" id="37">
+					<DataPath>Список.PL</DataPath>
+					<ContextMenu name="PLКонтекстноеМеню" id="38"/>
+					<ExtendedTooltip name="PLРасширеннаяПодсказка" id="39"/>
+				</LabelField>
+				<LabelField name="CCR" id="40">
+					<DataPath>Список.CCR</DataPath>
+					<ContextMenu name="CCRКонтекстноеМеню" id="41"/>
+					<ExtendedTooltip name="CCRРасширеннаяПодсказка" id="42"/>
+				</LabelField>
+				<LabelField name="HCR" id="43">
+					<DataPath>Список.HCR</DataPath>
+					<ContextMenu name="HCRКонтекстноеМеню" id="44"/>
+					<ExtendedTooltip name="HCRРасширеннаяПодсказка" id="45"/>
+				</LabelField>
+				<LabelField name="CM" id="46">
+					<DataPath>Список.CM</DataPath>
+					<ContextMenu name="CMКонтекстноеМеню" id="47"/>
+					<ExtendedTooltip name="CMРасширеннаяПодсказка" id="48"/>
+				</LabelField>
+				<LabelField name="FM" id="49">
+					<DataPath>Список.FM</DataPath>
+					<ContextMenu name="FMКонтекстноеМеню" id="50"/>
+					<ExtendedTooltip name="FMРасширеннаяПодсказка" id="51"/>
+				</LabelField>
+				<LabelField name="GM" id="52">
+					<DataPath>Список.GM</DataPath>
+					<ContextMenu name="GMКонтекстноеМеню" id="53"/>
+					<ExtendedTooltip name="GMРасширеннаяПодсказка" id="54"/>
+				</LabelField>
+				<LabelField name="Белок" id="55">
+					<DataPath>Список.Белок</DataPath>
+					<ContextMenu name="БелокКонтекстноеМеню" id="56"/>
+					<ExtendedTooltip name="БелокРасширеннаяПодсказка" id="57"/>
+				</LabelField>
+				<LabelField name="Prot" id="58">
+					<DataPath>Список.Prot</DataPath>
+					<ContextMenu name="ProtКонтекстноеМеню" id="59"/>
+					<ExtendedTooltip name="ProtРасширеннаяПодсказка" id="60"/>
+				</LabelField>
+				<LabelField name="Жир" id="61">
+					<DataPath>Список.Жир</DataPath>
+					<ContextMenu name="ЖирКонтекстноеМеню" id="62"/>
+					<ExtendedTooltip name="ЖирРасширеннаяПодсказка" id="63"/>
+				</LabelField>
+				<LabelField name="ЖирПроцент" id="64">
+					<DataPath>Список.ЖирПроцент</DataPath>
+					<ContextMenu name="ЖирПроцентКонтекстноеМеню" id="65"/>
+					<ExtendedTooltip name="ЖирПроцентРасширеннаяПодсказка" id="66"/>
+				</LabelField>
+				<LabelField name="CFP" id="67">
+					<DataPath>Список.CFP</DataPath>
+					<ContextMenu name="CFPКонтекстноеМеню" id="68"/>
+					<ExtendedTooltip name="CFPРасширеннаяПодсказка" id="69"/>
+				</LabelField>
+				<LabelField name="FE" id="70">
+					<DataPath>Список.FE</DataPath>
+					<ContextMenu name="FEКонтекстноеМеню" id="71"/>
+					<ExtendedTooltip name="FEРасширеннаяПодсказка" id="72"/>
+				</LabelField>
+				<LabelField name="FeedSaved" id="73">
+					<DataPath>Список.FeedSaved</DataPath>
+					<ContextMenu name="FeedSavedКонтекстноеМеню" id="74"/>
+					<ExtendedTooltip name="FeedSavedРасширеннаяПодсказка" id="75"/>
+				</LabelField>
+				<LabelField name="Prel" id="76">
+					<DataPath>Список.Prel</DataPath>
+					<ContextMenu name="PrelКонтекстноеМеню" id="77"/>
+					<ExtendedTooltip name="PrelРасширеннаяПодсказка" id="78"/>
+				</LabelField>
+				<LabelField name="CLIV" id="79">
+					<DataPath>Список.CLIV</DataPath>
+					<ContextMenu name="CLIVКонтекстноеМеню" id="80"/>
+					<ExtendedTooltip name="CLIVРасширеннаяПодсказка" id="81"/>
+				</LabelField>
+				<LabelField name="HLIV" id="82">
+					<DataPath>Список.HLIV</DataPath>
+					<ContextMenu name="HLIVКонтекстноеМеню" id="83"/>
+					<ExtendedTooltip name="HLIVРасширеннаяПодсказка" id="84"/>
+				</LabelField>
+				<LabelField name="DPR" id="85">
+					<DataPath>Список.DPR</DataPath>
+					<ContextMenu name="DPRКонтекстноеМеню" id="86"/>
+					<ExtendedTooltip name="DPRРасширеннаяПодсказка" id="87"/>
+				</LabelField>
+				<LabelField name="SCS" id="88">
+					<DataPath>Список.SCS</DataPath>
+					<ContextMenu name="SCSКонтекстноеМеню" id="89"/>
+					<ExtendedTooltip name="SCSРасширеннаяПодсказка" id="90"/>
+				</LabelField>
+				<LabelField name="SCE" id="91">
+					<DataPath>Список.SCE</DataPath>
+					<ContextMenu name="SCEКонтекстноеМеню" id="92"/>
+					<ExtendedTooltip name="SCEРасширеннаяПодсказка" id="93"/>
+				</LabelField>
+				<LabelField name="SCERel" id="94">
+					<DataPath>Список.SCERel</DataPath>
+					<ContextMenu name="SCERelКонтекстноеМеню" id="95"/>
+					<ExtendedTooltip name="SCERelРасширеннаяПодсказка" id="96"/>
+				</LabelField>
+				<LabelField name="SCEObs" id="97">
+					<DataPath>Список.SCEObs</DataPath>
+					<ContextMenu name="SCEObsКонтекстноеМеню" id="98"/>
+					<ExtendedTooltip name="SCEObsРасширеннаяПодсказка" id="99"/>
+				</LabelField>
+				<LabelField name="DCE" id="100">
+					<DataPath>Список.DCE</DataPath>
+					<ContextMenu name="DCEКонтекстноеМеню" id="101"/>
+					<ExtendedTooltip name="DCEРасширеннаяПодсказка" id="102"/>
+				</LabelField>
+				<LabelField name="SSD" id="103">
+					<DataPath>Список.SSD</DataPath>
+					<ContextMenu name="SSDКонтекстноеМеню" id="104"/>
+					<ExtendedTooltip name="SSDРасширеннаяПодсказка" id="105"/>
+				</LabelField>
+				<LabelField name="DSB" id="106">
+					<DataPath>Список.DSB</DataPath>
+					<ContextMenu name="DSBКонтекстноеМеню" id="107"/>
+					<ExtendedTooltip name="DSBРасширеннаяПодсказка" id="108"/>
+				</LabelField>
+				<LabelField name="EFC" id="109">
+					<DataPath>Список.EFC</DataPath>
+					<ContextMenu name="EFCКонтекстноеМеню" id="110"/>
+					<ExtendedTooltip name="EFCРасширеннаяПодсказка" id="111"/>
+				</LabelField>
+				<LabelField name="GL" id="112">
+					<DataPath>Список.GL</DataPath>
+					<ContextMenu name="GLКонтекстноеМеню" id="113"/>
+					<ExtendedTooltip name="GLРасширеннаяПодсказка" id="114"/>
+				</LabelField>
+				<LabelField name="MAST" id="115">
+					<DataPath>Список.MAST</DataPath>
+					<ContextMenu name="MASTКонтекстноеМеню" id="116"/>
+					<ExtendedTooltip name="MASTРасширеннаяПодсказка" id="117"/>
+				</LabelField>
+				<LabelField name="KET" id="118">
+					<DataPath>Список.KET</DataPath>
+					<ContextMenu name="KETКонтекстноеМеню" id="119"/>
+					<ExtendedTooltip name="KETРасширеннаяПодсказка" id="120"/>
+				</LabelField>
+				<LabelField name="RP" id="121">
+					<DataPath>Список.RP</DataPath>
+					<ContextMenu name="RPКонтекстноеМеню" id="122"/>
+					<ExtendedTooltip name="RPРасширеннаяПодсказка" id="123"/>
+				</LabelField>
+				<LabelField name="MET" id="124">
+					<DataPath>Список.MET</DataPath>
+					<ContextMenu name="METКонтекстноеМеню" id="125"/>
+					<ExtendedTooltip name="METРасширеннаяПодсказка" id="126"/>
+				</LabelField>
+				<LabelField name="DA" id="127">
+					<DataPath>Список.DA</DataPath>
+					<ContextMenu name="DAКонтекстноеМеню" id="128"/>
+					<ExtendedTooltip name="DAРасширеннаяПодсказка" id="129"/>
+				</LabelField>
+				<LabelField name="MF" id="130">
+					<DataPath>Список.MF</DataPath>
+					<ContextMenu name="MFКонтекстноеМеню" id="131"/>
+					<ExtendedTooltip name="MFРасширеннаяПодсказка" id="132"/>
+				</LabelField>
+				<LabelField name="MS" id="133">
+					<DataPath>Список.MS</DataPath>
+					<ContextMenu name="MSКонтекстноеМеню" id="134"/>
+					<ExtendedTooltip name="MSРасширеннаяПодсказка" id="135"/>
+				</LabelField>
+				<LabelField name="DWP" id="136">
+					<DataPath>Список.DWP</DataPath>
+					<ContextMenu name="DWPКонтекстноеМеню" id="137"/>
+					<ExtendedTooltip name="DWPРасширеннаяПодсказка" id="138"/>
+				</LabelField>
+				<LabelField name="WT" id="139">
+					<DataPath>Список.WT</DataPath>
+					<ContextMenu name="WTКонтекстноеМеню" id="140"/>
+					<ExtendedTooltip name="WTРасширеннаяПодсказка" id="141"/>
+				</LabelField>
+				<LabelField name="CW" id="142">
+					<DataPath>Список.CW</DataPath>
+					<ContextMenu name="CWКонтекстноеМеню" id="143"/>
+					<ExtendedTooltip name="CWРасширеннаяПодсказка" id="144"/>
+				</LabelField>
+				<LabelField name="PTAT" id="145">
+					<DataPath>Список.PTAT</DataPath>
+					<ContextMenu name="PTATКонтекстноеМеню" id="146"/>
+					<ExtendedTooltip name="PTATРасширеннаяПодсказка" id="147"/>
+				</LabelField>
+				<LabelField name="UDC" id="148">
+					<DataPath>Список.UDC</DataPath>
+					<ContextMenu name="UDCКонтекстноеМеню" id="149"/>
+					<ExtendedTooltip name="UDCРасширеннаяПодсказка" id="150"/>
+				</LabelField>
+				<LabelField name="FLC" id="151">
+					<DataPath>Список.FLC</DataPath>
+					<ContextMenu name="FLCКонтекстноеМеню" id="152"/>
+					<ExtendedTooltip name="FLCРасширеннаяПодсказка" id="153"/>
+				</LabelField>
+				<LabelField name="BC" id="154">
+					<DataPath>Список.BC</DataPath>
+					<ContextMenu name="BCКонтекстноеМеню" id="155"/>
+					<ExtendedTooltip name="BCРасширеннаяПодсказка" id="156"/>
+				</LabelField>
+				<LabelField name="DC" id="157">
+					<DataPath>Список.DC</DataPath>
+					<ContextMenu name="DCКонтекстноеМеню" id="158"/>
+					<ExtendedTooltip name="DCРасширеннаяПодсказка" id="159"/>
+				</LabelField>
+				<LabelField name="Trel" id="160">
+					<DataPath>Список.Trel</DataPath>
+					<ContextMenu name="TrelКонтекстноеМеню" id="161"/>
+					<ExtendedTooltip name="TrelРасширеннаяПодсказка" id="162"/>
+				</LabelField>
+				<LabelField name="Телосложение" id="163">
+					<DataPath>Список.Телосложение</DataPath>
+					<ContextMenu name="ТелосложениеКонтекстноеМеню" id="164"/>
+					<ExtendedTooltip name="ТелосложениеРасширеннаяПодсказка" id="165"/>
+				</LabelField>
+				<LabelField name="Сила" id="166">
+					<DataPath>Список.Сила</DataPath>
+					<ContextMenu name="СилаКонтекстноеМеню" id="167"/>
+					<ExtendedTooltip name="СилаРасширеннаяПодсказка" id="168"/>
+				</LabelField>
+				<LabelField name="ГлубинаТела" id="169">
+					<DataPath>Список.ГлубинаТела</DataPath>
+					<ContextMenu name="ГлубинаТелаКонтекстноеМеню" id="170"/>
+					<ExtendedTooltip name="ГлубинаТелаРасширеннаяПодсказка" id="171"/>
+				</LabelField>
+				<LabelField name="МолочнаяФорма" id="172">
+					<DataPath>Список.МолочнаяФорма</DataPath>
+					<ContextMenu name="МолочнаяФормаКонтекстноеМеню" id="173"/>
+					<ExtendedTooltip name="МолочнаяФормаРасширеннаяПодсказка" id="174"/>
+				</LabelField>
+				<LabelField name="УголКрестца" id="175">
+					<DataPath>Список.УголКрестца</DataPath>
+					<ContextMenu name="УголКрестцаКонтекстноеМеню" id="176"/>
+					<ExtendedTooltip name="УголКрестцаРасширеннаяПодсказка" id="177"/>
+				</LabelField>
+				<LabelField name="ШиринаТазовыхСвязок" id="178">
+					<DataPath>Список.ШиринаТазовыхСвязок</DataPath>
+					<ContextMenu name="ШиринаТазовыхСвязокКонтекстноеМеню" id="179"/>
+					<ExtendedTooltip name="ШиринаТазовыхСвязокРасширеннаяПодсказка" id="180"/>
+				</LabelField>
+				<LabelField name="RLSV" id="181">
+					<DataPath>Список.RLSV</DataPath>
+					<ContextMenu name="RLSVКонтекстноеМеню" id="182"/>
+					<ExtendedTooltip name="RLSVРасширеннаяПодсказка" id="183"/>
+				</LabelField>
+				<LabelField name="RLRV" id="184">
+					<DataPath>Список.RLRV</DataPath>
+					<ContextMenu name="RLRVКонтекстноеМеню" id="185"/>
+					<ExtendedTooltip name="RLRVРасширеннаяПодсказка" id="186"/>
+				</LabelField>
+				<LabelField name="УголКопыта" id="187">
+					<DataPath>Список.УголКопыта</DataPath>
+					<ContextMenu name="УголКопытаКонтекстноеМеню" id="188"/>
+					<ExtendedTooltip name="УголКопытаРасширеннаяПодсказка" id="189"/>
+				</LabelField>
+				<LabelField name="FLS" id="190">
+					<DataPath>Список.FLS</DataPath>
+					<ContextMenu name="FLSКонтекстноеМеню" id="191"/>
+					<ExtendedTooltip name="FLSРасширеннаяПодсказка" id="192"/>
+				</LabelField>
+				<LabelField name="ПерПрикВым" id="193">
+					<DataPath>Список.ПерПрикВым</DataPath>
+					<ContextMenu name="ПерПрикВымКонтекстноеМеню" id="194"/>
+					<ExtendedTooltip name="ПерПрикВымРасширеннаяПодсказка" id="195"/>
+				</LabelField>
+				<LabelField name="RUdderHeight" id="196">
+					<DataPath>Список.RUdderHeight</DataPath>
+					<ContextMenu name="RUdderHeightКонтекстноеМеню" id="197"/>
+					<ExtendedTooltip name="RUdderHeightРасширеннаяПодсказка" id="198"/>
+				</LabelField>
+				<LabelField name="ШиринаЗаднейЧастиВымени" id="199">
+					<DataPath>Список.ШиринаЗаднейЧастиВымени</DataPath>
+					<ContextMenu name="ШиринаЗаднейЧастиВымениКонтекстноеМеню" id="200"/>
+					<ExtendedTooltip name="ШиринаЗаднейЧастиВымениРасширеннаяПодсказка" id="201"/>
+				</LabelField>
+				<LabelField name="РасщеплениеВымени" id="202">
+					<DataPath>Список.РасщеплениеВымени</DataPath>
+					<ContextMenu name="РасщеплениеВымениКонтекстноеМеню" id="203"/>
+					<ExtendedTooltip name="РасщеплениеВымениРасширеннаяПодсказка" id="204"/>
+				</LabelField>
+				<LabelField name="ГлубинаВымени" id="205">
+					<DataPath>Список.ГлубинаВымени</DataPath>
+					<ContextMenu name="ГлубинаВымениКонтекстноеМеню" id="206"/>
+					<ExtendedTooltip name="ГлубинаВымениРасширеннаяПодсказка" id="207"/>
+				</LabelField>
+				<LabelField name="FTP" id="208">
+					<DataPath>Список.FTP</DataPath>
+					<ContextMenu name="FTPКонтекстноеМеню" id="209"/>
+					<ExtendedTooltip name="FTPРасширеннаяПодсказка" id="210"/>
+				</LabelField>
+				<LabelField name="RTP" id="211">
+					<DataPath>Список.RTP</DataPath>
+					<ContextMenu name="RTPКонтекстноеМеню" id="212"/>
+					<ExtendedTooltip name="RTPРасширеннаяПодсказка" id="213"/>
+				</LabelField>
+				<LabelField name="ДлинаСосков" id="214">
+					<DataPath>Список.ДлинаСосков</DataPath>
+					<ContextMenu name="ДлинаСосковКонтекстноеМеню" id="215"/>
+					<ExtendedTooltip name="ДлинаСосковРасширеннаяПодсказка" id="216"/>
+				</LabelField>
+				<LabelField name="aAa" id="217">
+					<DataPath>Список.aAa</DataPath>
+					<ContextMenu name="aAaКонтекстноеМеню" id="218"/>
+					<ExtendedTooltip name="aAaРасширеннаяПодсказка" id="219"/>
+				</LabelField>
+				<LabelField name="DMS" id="220">
+					<DataPath>Список.DMS</DataPath>
+					<ContextMenu name="DMSКонтекстноеМеню" id="221"/>
+					<ExtendedTooltip name="DMSРасширеннаяПодсказка" id="222"/>
+				</LabelField>
+				<LabelField name="КаппаКазеин" id="223">
+					<DataPath>Список.КаппаКазеин</DataPath>
+					<ContextMenu name="КаппаКазеинКонтекстноеМеню" id="224"/>
+					<ExtendedTooltip name="КаппаКазеинРасширеннаяПодсказка" id="225"/>
+				</LabelField>
+				<LabelField name="БетаКазеин" id="226">
+					<DataPath>Список.БетаКазеин</DataPath>
+					<ContextMenu name="БетаКазеинКонтекстноеМеню" id="227"/>
+					<ExtendedTooltip name="БетаКазеинРасширеннаяПодсказка" id="228"/>
+				</LabelField>
+				<LabelField name="BLACT" id="229">
+					<DataPath>Список.BLACT</DataPath>
+					<ContextMenu name="BLACTКонтекстноеМеню" id="230"/>
+					<ExtendedTooltip name="BLACTРасширеннаяПодсказка" id="231"/>
+				</LabelField>
+				<LabelField name="GeneticCodes" id="232">
+					<DataPath>Список.GeneticCodes</DataPath>
+					<ContextMenu name="GeneticCodesКонтекстноеМеню" id="233"/>
+					<ExtendedTooltip name="GeneticCodesРасширеннаяПодсказка" id="234"/>
+				</LabelField>
+				<LabelField name="Haplotypes" id="235">
+					<DataPath>Список.Haplotypes</DataPath>
+					<ContextMenu name="HaplotypesКонтекстноеМеню" id="236"/>
+					<ExtendedTooltip name="HaplotypesРасширеннаяПодсказка" id="237"/>
+				</LabelField>
+				<LabelField name="RHA" id="238">
+					<DataPath>Список.RHA</DataPath>
+					<ContextMenu name="RHAКонтекстноеМеню" id="239"/>
+					<ExtendedTooltip name="RHAРасширеннаяПодсказка" id="240"/>
+				</LabelField>
+				<LabelField name="EFI" id="241">
+					<DataPath>Список.EFI</DataPath>
+					<ContextMenu name="EFIКонтекстноеМеню" id="242"/>
+					<ExtendedTooltip name="EFIРасширеннаяПодсказка" id="243"/>
+				</LabelField>
+				<LabelField name="ADV" id="244">
+					<DataPath>Список.ADV</DataPath>
+					<ContextMenu name="ADVКонтекстноеМеню" id="245"/>
+					<ExtendedTooltip name="ADVРасширеннаяПодсказка" id="246"/>
+				</LabelField>
+				<LabelField name="GS" id="247">
+					<DataPath>Список.GS</DataPath>
+					<ContextMenu name="GSКонтекстноеМеню" id="248"/>
+					<ExtendedTooltip name="GSРасширеннаяПодсказка" id="249"/>
+				</LabelField>
+				<LabelField name="FS" id="250">
+					<DataPath>Список.FS</DataPath>
+					<ContextMenu name="FSКонтекстноеМеню" id="251"/>
+					<ExtendedTooltip name="FSРасширеннаяПодсказка" id="252"/>
+				</LabelField>
+				<LabelField name="_511" id="253">
+					<DataPath>Список._511</DataPath>
+					<ContextMenu name="_511КонтекстноеМеню" id="254"/>
+					<ExtendedTooltip name="_511РасширеннаяПодсказка" id="255"/>
+				</LabelField>
+				<LabelField name="EDGE" id="256">
+					<DataPath>Список.EDGE</DataPath>
+					<ContextMenu name="EDGEКонтекстноеМеню" id="257"/>
+					<ExtendedTooltip name="EDGEРасширеннаяПодсказка" id="258"/>
+				</LabelField>
+				<LabelField name="CP" id="259">
+					<DataPath>Список.CP</DataPath>
+					<ContextMenu name="CPКонтекстноеМеню" id="260"/>
+					<ExtendedTooltip name="CPРасширеннаяПодсказка" id="261"/>
+				</LabelField>
+				<LabelField name="CP511" id="262">
+					<DataPath>Список.CP511</DataPath>
+					<ContextMenu name="CP511КонтекстноеМеню" id="263"/>
+					<ExtendedTooltip name="CP511РасширеннаяПодсказка" id="264"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>InformationRegister.ИндексыБыков</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+</Form>

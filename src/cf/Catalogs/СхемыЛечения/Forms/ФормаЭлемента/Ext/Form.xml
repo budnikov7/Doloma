@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаВывестиСхемуЛечения" id="74">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ВывестиСхемуЛечения</CommandName>
+				<BackColor>style:NavigationColor</BackColor>
+				<ExtendedTooltip name="ФормаВывестиСхемуЛеченияРасширеннаяПодсказка" id="75"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<UsualGroup name="ШапкаГруппа" id="44">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка группа</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка группа</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ШапкаГруппаРасширеннаяПодсказка" id="45"/>
+			<ChildItems>
+				<InputField name="Дата" id="38">
+					<DataPath>Объект.Дата</DataPath>
+					<ContextMenu name="ДатаКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="40"/>
+				</InputField>
+				<InputField name="ПрименятьДней" id="46">
+					<DataPath>Объект.ПрименятьДней</DataPath>
+					<ContextMenu name="ПрименятьДнейКонтекстноеМеню" id="47"/>
+					<ExtendedTooltip name="ПрименятьДнейРасширеннаяПодсказка" id="48"/>
+				</InputField>
+				<InputField name="Разработал" id="41">
+					<DataPath>Объект.Разработал</DataPath>
+					<ContextMenu name="РазработалКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="РазработалРасширеннаяПодсказка" id="43"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="СтраницыГруппа" id="32">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы группа</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы группа</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="СтраницыГруппаРасширеннаяПодсказка" id="33"/>
+			<ChildItems>
+				<Page name="ОсновныеДанные" id="34">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основные данные</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основные данные</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ОсновныеДанныеРасширеннаяПодсказка" id="35"/>
+					<ChildItems>
+						<InputField name="Наименование" id="4">
+							<DataPath>Объект.Description</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+							<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+						</InputField>
+						<InputField name="ОписаниеСхемы" id="7">
+							<DataPath>Объект.ОписаниеСхемы</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<ContextMenu name="ОписаниеСхемыКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="ОписаниеСхемыРасширеннаяПодсказка" id="9"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="ПрименяемыеПрепараты" id="36">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Применяемые препараты</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Применяемые препараты</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ПрименяемыеПрепаратыРасширеннаяПодсказка" id="37"/>
+					<ChildItems>
+						<Table name="Препараты" id="49">
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.Препараты</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ПрепаратыКонтекстноеМеню" id="50"/>
+							<AutoCommandBar name="ПрепаратыКоманднаяПанель" id="51"/>
+							<ExtendedTooltip name="ПрепаратыРасширеннаяПодсказка" id="52"/>
+							<SearchStringAddition name="ПрепаратыСтрокаПоиска" id="53">
+								<AdditionSource>
+									<Item>Препараты</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПрепаратыСтрокаПоискаКонтекстноеМеню" id="54"/>
+								<ExtendedTooltip name="ПрепаратыСтрокаПоискаРасширеннаяПодсказка" id="55"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ПрепаратыСостояниеПросмотра" id="56">
+								<AdditionSource>
+									<Item>Препараты</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПрепаратыСостояниеПросмотраКонтекстноеМеню" id="57"/>
+								<ExtendedTooltip name="ПрепаратыСостояниеПросмотраРасширеннаяПодсказка" id="58"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ПрепаратыУправлениеПоиском" id="59">
+								<AdditionSource>
+									<Item>Препараты</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ПрепаратыУправлениеПоискомКонтекстноеМеню" id="60"/>
+								<ExtendedTooltip name="ПрепаратыУправлениеПоискомРасширеннаяПодсказка" id="61"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ПрепаратыНомерСтроки" id="62">
+									<DataPath>Объект.Препараты.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПрепаратыНомерСтрокиКонтекстноеМеню" id="63"/>
+									<ExtendedTooltip name="ПрепаратыНомерСтрокиРасширеннаяПодсказка" id="64"/>
+								</LabelField>
+								<InputField name="ПрепаратыПрепарат" id="65">
+									<DataPath>Объект.Препараты.Препарат</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПрепаратыПрепаратКонтекстноеМеню" id="66"/>
+									<ExtendedTooltip name="ПрепаратыПрепаратРасширеннаяПодсказка" id="67"/>
+									<Events>
+										<Event name="OnChange">ПрепаратыПрепаратПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="ПрепаратыКоличество" id="68">
+									<DataPath>Объект.Препараты.Количество</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПрепаратыКоличествоКонтекстноеМеню" id="69"/>
+									<ExtendedTooltip name="ПрепаратыКоличествоРасширеннаяПодсказка" id="70"/>
+								</InputField>
+								<InputField name="ПрепаратыЕдиницаИзмерения" id="71">
+									<DataPath>Объект.Препараты.ЕдиницаИзмерения</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПрепаратыЕдиницаИзмеренияКонтекстноеМеню" id="72"/>
+									<ExtendedTooltip name="ПрепаратыЕдиницаИзмеренияРасширеннаяПодсказка" id="73"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.СхемыЛечения</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ВывестиСхемуЛечения" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вывести схему лечения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вывести схему лечения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВывестиСхемуЛечения</Action>
+		</Command>
+	</Commands>
+</Form>

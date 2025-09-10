@@ -1,0 +1,713 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ОбщаяГруппа" id="49">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Общая группа</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Общая группа</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ОбщаяГруппаРасширеннаяПодсказка" id="50"/>
+			<ChildItems>
+				<UsualGroup name="ОсновныеДаннные" id="51">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основные даннные</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основные даннные</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>25</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<VerticalStretch>true</VerticalStretch>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ОсновныеДаннныеРасширеннаяПодсказка" id="52"/>
+					<ChildItems>
+						<UsualGroup name="ДанныеГруппа" id="53">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Основные данные</v8:content>
+								</v8:item>
+							</Title>
+							<TitleFont ref="style:NormalTextFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Данные группа</v8:content>
+								</v8:item>
+							</ToolTip>
+							<VerticalStretch>false</VerticalStretch>
+							<Behavior>Usual</Behavior>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ДанныеГруппаРасширеннаяПодсказка" id="54"/>
+							<ChildItems>
+								<InputField name="Номер" id="55">
+									<DataPath>Объект.Number</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="НомерКонтекстноеМеню" id="56"/>
+									<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="57"/>
+								</InputField>
+								<InputField name="Дата" id="58">
+									<DataPath>Объект.Date</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дата</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="ДатаКонтекстноеМеню" id="59"/>
+									<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="60"/>
+								</InputField>
+								<InputField name="Комментарий" id="77">
+									<DataPath>Объект.Комментарий</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<Height>3</Height>
+									<MultiLine>true</MultiLine>
+									<ContextMenu name="КомментарийКонтекстноеМеню" id="78"/>
+									<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="79"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="Ответственный" id="70">
+							<DataPath>Объект.Автор</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Автор</v8:content>
+								</v8:item>
+							</Title>
+							<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+							<GroupVerticalAlign>Bottom</GroupVerticalAlign>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="ОтветственныйКонтекстноеМеню" id="71"/>
+							<ExtendedTooltip name="ОтветственныйРасширеннаяПодсказка" id="72"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ТаблицаЖивотных" id="73">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Таблица животных</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Таблица животных</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Behavior>Usual</Behavior>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ТаблицаЖивотныхРасширеннаяПодсказка" id="74"/>
+					<ChildItems>
+						<Table name="ОсновныеИндексы" id="80">
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.ОсновныеИндексы</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ОсновныеИндексыКонтекстноеМеню" id="81"/>
+							<AutoCommandBar name="ОсновныеИндексыКоманднаяПанель" id="82">
+								<ChildItems>
+									<Button name="ОсновныеИндексыЗаполнитьИзФайла" id="324">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ЗаполнитьИзФайла</CommandName>
+										<ExtendedTooltip name="ОсновныеИндексыЗаполнитьИзФайлаРасширеннаяПодсказка" id="325"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ОсновныеИндексыРасширеннаяПодсказка" id="83"/>
+							<SearchStringAddition name="ОсновныеИндексыСтрокаПоиска" id="84">
+								<AdditionSource>
+									<Item>ОсновныеИндексы</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ОсновныеИндексыСтрокаПоискаКонтекстноеМеню" id="85"/>
+								<ExtendedTooltip name="ОсновныеИндексыСтрокаПоискаРасширеннаяПодсказка" id="86"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ОсновныеИндексыСостояниеПросмотра" id="87">
+								<AdditionSource>
+									<Item>ОсновныеИндексы</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ОсновныеИндексыСостояниеПросмотраКонтекстноеМеню" id="88"/>
+								<ExtendedTooltip name="ОсновныеИндексыСостояниеПросмотраРасширеннаяПодсказка" id="89"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ОсновныеИндексыУправлениеПоиском" id="90">
+								<AdditionSource>
+									<Item>ОсновныеИндексы</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ОсновныеИндексыУправлениеПоискомКонтекстноеМеню" id="91"/>
+								<ExtendedTooltip name="ОсновныеИндексыУправлениеПоискомРасширеннаяПодсказка" id="92"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ОсновныеИндексыНомерСтроки" id="93">
+									<DataPath>Объект.ОсновныеИндексы.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыНомерСтрокиКонтекстноеМеню" id="94"/>
+									<ExtendedTooltip name="ОсновныеИндексыНомерСтрокиРасширеннаяПодсказка" id="95"/>
+								</LabelField>
+								<InputField name="ОсновныеИндексыБык" id="96">
+									<DataPath>Объект.ОсновныеИндексы.Бык</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыБыкКонтекстноеМеню" id="97"/>
+									<ExtendedTooltip name="ОсновныеИндексыБыкРасширеннаяПодсказка" id="98"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыTPI" id="99">
+									<DataPath>Объект.ОсновныеИндексы.TPI</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыTPIКонтекстноеМеню" id="100"/>
+									<ExtendedTooltip name="ОсновныеИндексыTPIРасширеннаяПодсказка" id="101"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыNM" id="102">
+									<DataPath>Объект.ОсновныеИндексы.NM</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыNMКонтекстноеМеню" id="103"/>
+									<ExtendedTooltip name="ОсновныеИндексыNMРасширеннаяПодсказка" id="104"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыCM" id="105">
+									<DataPath>Объект.ОсновныеИндексы.CM</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыCMКонтекстноеМеню" id="106"/>
+									<ExtendedTooltip name="ОсновныеИндексыCMРасширеннаяПодсказка" id="107"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыFM" id="108">
+									<DataPath>Объект.ОсновныеИндексы.FM</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыFMКонтекстноеМеню" id="109"/>
+									<ExtendedTooltip name="ОсновныеИндексыFMРасширеннаяПодсказка" id="110"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыGM" id="111">
+									<DataPath>Объект.ОсновныеИндексы.GM</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыGMКонтекстноеМеню" id="112"/>
+									<ExtendedTooltip name="ОсновныеИндексыGMРасширеннаяПодсказка" id="113"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыМолоко" id="114">
+									<DataPath>Объект.ОсновныеИндексы.Молоко</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыМолокоКонтекстноеМеню" id="115"/>
+									<ExtendedTooltip name="ОсновныеИндексыМолокоРасширеннаяПодсказка" id="116"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыБелок" id="117">
+									<DataPath>Объект.ОсновныеИндексы.Белок</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыБелокКонтекстноеМеню" id="118"/>
+									<ExtendedTooltip name="ОсновныеИндексыБелокРасширеннаяПодсказка" id="119"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыProt" id="120">
+									<DataPath>Объект.ОсновныеИндексы.Prot</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыProtКонтекстноеМеню" id="121"/>
+									<ExtendedTooltip name="ОсновныеИндексыProtРасширеннаяПодсказка" id="122"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыЖир" id="123">
+									<DataPath>Объект.ОсновныеИндексы.Жир</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыЖирКонтекстноеМеню" id="124"/>
+									<ExtendedTooltip name="ОсновныеИндексыЖирРасширеннаяПодсказка" id="125"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыЖирПроцент" id="126">
+									<DataPath>Объект.ОсновныеИндексы.ЖирПроцент</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыЖирПроцентКонтекстноеМеню" id="127"/>
+									<ExtendedTooltip name="ОсновныеИндексыЖирПроцентРасширеннаяПодсказка" id="128"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыCFP" id="129">
+									<DataPath>Объект.ОсновныеИндексы.CFP</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыCFPКонтекстноеМеню" id="130"/>
+									<ExtendedTooltip name="ОсновныеИндексыCFPРасширеннаяПодсказка" id="131"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыFE" id="132">
+									<DataPath>Объект.ОсновныеИндексы.FE</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыFEКонтекстноеМеню" id="133"/>
+									<ExtendedTooltip name="ОсновныеИндексыFEРасширеннаяПодсказка" id="134"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыFeedSaved" id="135">
+									<DataPath>Объект.ОсновныеИндексы.FeedSaved</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыFeedSavedКонтекстноеМеню" id="136"/>
+									<ExtendedTooltip name="ОсновныеИндексыFeedSavedРасширеннаяПодсказка" id="137"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыPrel" id="138">
+									<DataPath>Объект.ОсновныеИндексы.Prel</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыPrelКонтекстноеМеню" id="139"/>
+									<ExtendedTooltip name="ОсновныеИндексыPrelРасширеннаяПодсказка" id="140"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыPL" id="141">
+									<DataPath>Объект.ОсновныеИндексы.PL</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыPLКонтекстноеМеню" id="142"/>
+									<ExtendedTooltip name="ОсновныеИндексыPLРасширеннаяПодсказка" id="143"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыCLIV" id="144">
+									<DataPath>Объект.ОсновныеИндексы.CLIV</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыCLIVКонтекстноеМеню" id="145"/>
+									<ExtendedTooltip name="ОсновныеИндексыCLIVРасширеннаяПодсказка" id="146"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыHLIV" id="147">
+									<DataPath>Объект.ОсновныеИндексы.HLIV</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыHLIVКонтекстноеМеню" id="148"/>
+									<ExtendedTooltip name="ОсновныеИндексыHLIVРасширеннаяПодсказка" id="149"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыDPR" id="150">
+									<DataPath>Объект.ОсновныеИндексы.DPR</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыDPRКонтекстноеМеню" id="151"/>
+									<ExtendedTooltip name="ОсновныеИндексыDPRРасширеннаяПодсказка" id="152"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыSCS" id="153">
+									<DataPath>Объект.ОсновныеИндексы.SCS</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыSCSКонтекстноеМеню" id="154"/>
+									<ExtendedTooltip name="ОсновныеИндексыSCSРасширеннаяПодсказка" id="155"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыSCE" id="156">
+									<DataPath>Объект.ОсновныеИндексы.SCE</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыSCEКонтекстноеМеню" id="157"/>
+									<ExtendedTooltip name="ОсновныеИндексыSCEРасширеннаяПодсказка" id="158"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыSCERel" id="159">
+									<DataPath>Объект.ОсновныеИндексы.SCERel</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыSCERelКонтекстноеМеню" id="160"/>
+									<ExtendedTooltip name="ОсновныеИндексыSCERelРасширеннаяПодсказка" id="161"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыSCEObs" id="162">
+									<DataPath>Объект.ОсновныеИндексы.SCEObs</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыSCEObsКонтекстноеМеню" id="163"/>
+									<ExtendedTooltip name="ОсновныеИндексыSCEObsРасширеннаяПодсказка" id="164"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыDCE" id="165">
+									<DataPath>Объект.ОсновныеИндексы.DCE</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыDCEКонтекстноеМеню" id="166"/>
+									<ExtendedTooltip name="ОсновныеИндексыDCEРасширеннаяПодсказка" id="167"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыSSD" id="168">
+									<DataPath>Объект.ОсновныеИндексы.SSD</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыSSDКонтекстноеМеню" id="169"/>
+									<ExtendedTooltip name="ОсновныеИндексыSSDРасширеннаяПодсказка" id="170"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыDSB" id="171">
+									<DataPath>Объект.ОсновныеИндексы.DSB</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыDSBКонтекстноеМеню" id="172"/>
+									<ExtendedTooltip name="ОсновныеИндексыDSBРасширеннаяПодсказка" id="173"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыCCR" id="174">
+									<DataPath>Объект.ОсновныеИндексы.CCR</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыCCRКонтекстноеМеню" id="175"/>
+									<ExtendedTooltip name="ОсновныеИндексыCCRРасширеннаяПодсказка" id="176"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыHCR" id="177">
+									<DataPath>Объект.ОсновныеИндексы.HCR</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыHCRКонтекстноеМеню" id="178"/>
+									<ExtendedTooltip name="ОсновныеИндексыHCRРасширеннаяПодсказка" id="179"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыEFC" id="180">
+									<DataPath>Объект.ОсновныеИндексы.EFC</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыEFCКонтекстноеМеню" id="181"/>
+									<ExtendedTooltip name="ОсновныеИндексыEFCРасширеннаяПодсказка" id="182"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыGL" id="183">
+									<DataPath>Объект.ОсновныеИндексы.GL</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыGLКонтекстноеМеню" id="184"/>
+									<ExtendedTooltip name="ОсновныеИндексыGLРасширеннаяПодсказка" id="185"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыMAST" id="186">
+									<DataPath>Объект.ОсновныеИндексы.MAST</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыMASTКонтекстноеМеню" id="187"/>
+									<ExtendedTooltip name="ОсновныеИндексыMASTРасширеннаяПодсказка" id="188"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыKET" id="189">
+									<DataPath>Объект.ОсновныеИндексы.KET</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыKETКонтекстноеМеню" id="190"/>
+									<ExtendedTooltip name="ОсновныеИндексыKETРасширеннаяПодсказка" id="191"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыRP" id="192">
+									<DataPath>Объект.ОсновныеИндексы.RP</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыRPКонтекстноеМеню" id="193"/>
+									<ExtendedTooltip name="ОсновныеИндексыRPРасширеннаяПодсказка" id="194"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыMET" id="195">
+									<DataPath>Объект.ОсновныеИндексы.MET</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыMETКонтекстноеМеню" id="196"/>
+									<ExtendedTooltip name="ОсновныеИндексыMETРасширеннаяПодсказка" id="197"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыDA" id="198">
+									<DataPath>Объект.ОсновныеИндексы.DA</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыDAКонтекстноеМеню" id="199"/>
+									<ExtendedTooltip name="ОсновныеИндексыDAРасширеннаяПодсказка" id="200"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыMF" id="201">
+									<DataPath>Объект.ОсновныеИндексы.MF</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыMFКонтекстноеМеню" id="202"/>
+									<ExtendedTooltip name="ОсновныеИндексыMFРасширеннаяПодсказка" id="203"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыMS" id="204">
+									<DataPath>Объект.ОсновныеИндексы.MS</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыMSКонтекстноеМеню" id="205"/>
+									<ExtendedTooltip name="ОсновныеИндексыMSРасширеннаяПодсказка" id="206"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыDWP" id="207">
+									<DataPath>Объект.ОсновныеИндексы.DWP</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыDWPКонтекстноеМеню" id="208"/>
+									<ExtendedTooltip name="ОсновныеИндексыDWPРасширеннаяПодсказка" id="209"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыWT" id="210">
+									<DataPath>Объект.ОсновныеИндексы.WT</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыWTКонтекстноеМеню" id="211"/>
+									<ExtendedTooltip name="ОсновныеИндексыWTРасширеннаяПодсказка" id="212"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыCW" id="213">
+									<DataPath>Объект.ОсновныеИндексы.CW</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыCWКонтекстноеМеню" id="214"/>
+									<ExtendedTooltip name="ОсновныеИндексыCWРасширеннаяПодсказка" id="215"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыPTAT" id="216">
+									<DataPath>Объект.ОсновныеИндексы.PTAT</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыPTATКонтекстноеМеню" id="217"/>
+									<ExtendedTooltip name="ОсновныеИндексыPTATРасширеннаяПодсказка" id="218"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыUDC" id="219">
+									<DataPath>Объект.ОсновныеИндексы.UDC</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыUDCКонтекстноеМеню" id="220"/>
+									<ExtendedTooltip name="ОсновныеИндексыUDCРасширеннаяПодсказка" id="221"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыFLC" id="222">
+									<DataPath>Объект.ОсновныеИндексы.FLC</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыFLCКонтекстноеМеню" id="223"/>
+									<ExtendedTooltip name="ОсновныеИндексыFLCРасширеннаяПодсказка" id="224"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыBC" id="225">
+									<DataPath>Объект.ОсновныеИндексы.BC</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыBCКонтекстноеМеню" id="226"/>
+									<ExtendedTooltip name="ОсновныеИндексыBCРасширеннаяПодсказка" id="227"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыDC" id="228">
+									<DataPath>Объект.ОсновныеИндексы.DC</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыDCКонтекстноеМеню" id="229"/>
+									<ExtendedTooltip name="ОсновныеИндексыDCРасширеннаяПодсказка" id="230"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыTrel" id="231">
+									<DataPath>Объект.ОсновныеИндексы.Trel</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыTrelКонтекстноеМеню" id="232"/>
+									<ExtendedTooltip name="ОсновныеИндексыTrelРасширеннаяПодсказка" id="233"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыТелосложение" id="234">
+									<DataPath>Объект.ОсновныеИндексы.Телосложение</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыТелосложениеКонтекстноеМеню" id="235"/>
+									<ExtendedTooltip name="ОсновныеИндексыТелосложениеРасширеннаяПодсказка" id="236"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыСила" id="237">
+									<DataPath>Объект.ОсновныеИндексы.Сила</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыСилаКонтекстноеМеню" id="238"/>
+									<ExtendedTooltip name="ОсновныеИндексыСилаРасширеннаяПодсказка" id="239"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыГлубинаТела" id="240">
+									<DataPath>Объект.ОсновныеИндексы.ГлубинаТела</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыГлубинаТелаКонтекстноеМеню" id="241"/>
+									<ExtendedTooltip name="ОсновныеИндексыГлубинаТелаРасширеннаяПодсказка" id="242"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыМолочнаяФорма" id="243">
+									<DataPath>Объект.ОсновныеИндексы.МолочнаяФорма</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыМолочнаяФормаКонтекстноеМеню" id="244"/>
+									<ExtendedTooltip name="ОсновныеИндексыМолочнаяФормаРасширеннаяПодсказка" id="245"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыУголКрестца" id="246">
+									<DataPath>Объект.ОсновныеИндексы.УголКрестца</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыУголКрестцаКонтекстноеМеню" id="247"/>
+									<ExtendedTooltip name="ОсновныеИндексыУголКрестцаРасширеннаяПодсказка" id="248"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыШиринаТазовыхСвязок" id="249">
+									<DataPath>Объект.ОсновныеИндексы.ШиринаТазовыхСвязок</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыШиринаТазовыхСвязокКонтекстноеМеню" id="250"/>
+									<ExtendedTooltip name="ОсновныеИндексыШиринаТазовыхСвязокРасширеннаяПодсказка" id="251"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыRLSV" id="252">
+									<DataPath>Объект.ОсновныеИндексы.RLSV</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыRLSVКонтекстноеМеню" id="253"/>
+									<ExtendedTooltip name="ОсновныеИндексыRLSVРасширеннаяПодсказка" id="254"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыRLRV" id="255">
+									<DataPath>Объект.ОсновныеИндексы.RLRV</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыRLRVКонтекстноеМеню" id="256"/>
+									<ExtendedTooltip name="ОсновныеИндексыRLRVРасширеннаяПодсказка" id="257"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыУголКопыта" id="258">
+									<DataPath>Объект.ОсновныеИндексы.УголКопыта</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыУголКопытаКонтекстноеМеню" id="259"/>
+									<ExtendedTooltip name="ОсновныеИндексыУголКопытаРасширеннаяПодсказка" id="260"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыFLS" id="261">
+									<DataPath>Объект.ОсновныеИндексы.FLS</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыFLSКонтекстноеМеню" id="262"/>
+									<ExtendedTooltip name="ОсновныеИндексыFLSРасширеннаяПодсказка" id="263"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыПерПрикВым" id="264">
+									<DataPath>Объект.ОсновныеИндексы.ПерПрикВым</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыПерПрикВымКонтекстноеМеню" id="265"/>
+									<ExtendedTooltip name="ОсновныеИндексыПерПрикВымРасширеннаяПодсказка" id="266"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыRUdderHeight" id="267">
+									<DataPath>Объект.ОсновныеИндексы.RUdderHeight</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыRUdderHeightКонтекстноеМеню" id="268"/>
+									<ExtendedTooltip name="ОсновныеИндексыRUdderHeightРасширеннаяПодсказка" id="269"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыШиринаЗаднейЧастиВымени" id="270">
+									<DataPath>Объект.ОсновныеИндексы.ШиринаЗаднейЧастиВымени</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыШиринаЗаднейЧастиВымениКонтекстноеМеню" id="271"/>
+									<ExtendedTooltip name="ОсновныеИндексыШиринаЗаднейЧастиВымениРасширеннаяПодсказка" id="272"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыРасщеплениеВымени" id="273">
+									<DataPath>Объект.ОсновныеИндексы.РасщеплениеВымени</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыРасщеплениеВымениКонтекстноеМеню" id="274"/>
+									<ExtendedTooltip name="ОсновныеИндексыРасщеплениеВымениРасширеннаяПодсказка" id="275"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыГлубинаВымени" id="276">
+									<DataPath>Объект.ОсновныеИндексы.ГлубинаВымени</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыГлубинаВымениКонтекстноеМеню" id="277"/>
+									<ExtendedTooltip name="ОсновныеИндексыГлубинаВымениРасширеннаяПодсказка" id="278"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыFTP" id="279">
+									<DataPath>Объект.ОсновныеИндексы.FTP</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыFTPКонтекстноеМеню" id="280"/>
+									<ExtendedTooltip name="ОсновныеИндексыFTPРасширеннаяПодсказка" id="281"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыRTP" id="282">
+									<DataPath>Объект.ОсновныеИндексы.RTP</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыRTPКонтекстноеМеню" id="283"/>
+									<ExtendedTooltip name="ОсновныеИндексыRTPРасширеннаяПодсказка" id="284"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыДлинаСосков" id="285">
+									<DataPath>Объект.ОсновныеИндексы.ДлинаСосков</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыДлинаСосковКонтекстноеМеню" id="286"/>
+									<ExtendedTooltip name="ОсновныеИндексыДлинаСосковРасширеннаяПодсказка" id="287"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыaAa" id="288">
+									<DataPath>Объект.ОсновныеИндексы.aAa</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыaAaКонтекстноеМеню" id="289"/>
+									<ExtendedTooltip name="ОсновныеИндексыaAaРасширеннаяПодсказка" id="290"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыDMS" id="291">
+									<DataPath>Объект.ОсновныеИндексы.DMS</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыDMSКонтекстноеМеню" id="292"/>
+									<ExtendedTooltip name="ОсновныеИндексыDMSРасширеннаяПодсказка" id="293"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыКаппаКазеин" id="326">
+									<DataPath>Объект.ОсновныеИндексы.КаппаКазеин</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыКаппаКазеинКонтекстноеМеню" id="327"/>
+									<ExtendedTooltip name="ОсновныеИндексыКаппаКазеинРасширеннаяПодсказка" id="328"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыБетаКазеин" id="329">
+									<DataPath>Объект.ОсновныеИндексы.БетаКазеин</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыБетаКазеинКонтекстноеМеню" id="330"/>
+									<ExtendedTooltip name="ОсновныеИндексыБетаКазеинРасширеннаяПодсказка" id="331"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыBLACT" id="332">
+									<DataPath>Объект.ОсновныеИндексы.BLACT</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыBLACTКонтекстноеМеню" id="333"/>
+									<ExtendedTooltip name="ОсновныеИндексыBLACTРасширеннаяПодсказка" id="334"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыGeneticCodes" id="294">
+									<DataPath>Объект.ОсновныеИндексы.GeneticCodes</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыGeneticCodesКонтекстноеМеню" id="295"/>
+									<ExtendedTooltip name="ОсновныеИндексыGeneticCodesРасширеннаяПодсказка" id="296"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыHaplotypes" id="297">
+									<DataPath>Объект.ОсновныеИндексы.Haplotypes</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыHaplotypesКонтекстноеМеню" id="298"/>
+									<ExtendedTooltip name="ОсновныеИндексыHaplotypesРасширеннаяПодсказка" id="299"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыRHA" id="300">
+									<DataPath>Объект.ОсновныеИндексы.RHA</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыRHAКонтекстноеМеню" id="301"/>
+									<ExtendedTooltip name="ОсновныеИндексыRHAРасширеннаяПодсказка" id="302"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыEFI" id="303">
+									<DataPath>Объект.ОсновныеИндексы.EFI</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыEFIКонтекстноеМеню" id="304"/>
+									<ExtendedTooltip name="ОсновныеИндексыEFIРасширеннаяПодсказка" id="305"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыADV" id="306">
+									<DataPath>Объект.ОсновныеИндексы.ADV</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыADVКонтекстноеМеню" id="307"/>
+									<ExtendedTooltip name="ОсновныеИндексыADVРасширеннаяПодсказка" id="308"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыGS" id="309">
+									<DataPath>Объект.ОсновныеИндексы.GS</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыGSКонтекстноеМеню" id="310"/>
+									<ExtendedTooltip name="ОсновныеИндексыGSРасширеннаяПодсказка" id="311"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыFS" id="312">
+									<DataPath>Объект.ОсновныеИндексы.FS</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыFSКонтекстноеМеню" id="313"/>
+									<ExtendedTooltip name="ОсновныеИндексыFSРасширеннаяПодсказка" id="314"/>
+								</InputField>
+								<InputField name="ОсновныеИндексы_511" id="335">
+									<DataPath>Объект.ОсновныеИндексы._511</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексы_511КонтекстноеМеню" id="336"/>
+									<ExtendedTooltip name="ОсновныеИндексы_511РасширеннаяПодсказка" id="337"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыEDGE" id="315">
+									<DataPath>Объект.ОсновныеИндексы.EDGE</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыEDGEКонтекстноеМеню" id="316"/>
+									<ExtendedTooltip name="ОсновныеИндексыEDGEРасширеннаяПодсказка" id="317"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыCP" id="318">
+									<DataPath>Объект.ОсновныеИндексы.CP</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыCPКонтекстноеМеню" id="319"/>
+									<ExtendedTooltip name="ОсновныеИндексыCPРасширеннаяПодсказка" id="320"/>
+								</InputField>
+								<InputField name="ОсновныеИндексыCP511" id="321">
+									<DataPath>Объект.ОсновныеИндексы.CP511</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновныеИндексыCP511КонтекстноеМеню" id="322"/>
+									<ExtendedTooltip name="ОсновныеИндексыCP511РасширеннаяПодсказка" id="323"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.ИндексыБыков</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗаполнитьИзФайла" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить из файла</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить из файла</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьИзФайла</Action>
+		</Command>
+	</Commands>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>InformationRegister.ИндексыБыков.StandardCommand.OpenByRecorder</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</NavigationPanel>
+	</CommandInterface>
+</Form>

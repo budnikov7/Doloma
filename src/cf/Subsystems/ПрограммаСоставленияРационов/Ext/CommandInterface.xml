@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<CommandsVisibility>
+		<Command name="Document.ВводТаблицыПитательностиКормов.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.ВетеринарныйВрач">false</xr:Value>
+				<xr:Value name="Role.Пользователь">false</xr:Value>
+				<xr:Value name="Role.УдалениеЖивотных">false</xr:Value>
+				<xr:Value name="Role.Кладовщик">false</xr:Value>
+				<xr:Value name="Role.ГлавныйЗоотехник">false</xr:Value>
+				<xr:Value name="Role.ДоступКоВсемФермам">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.ГруппыЖивотных.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.ВетеринарныйВрач">false</xr:Value>
+				<xr:Value name="Role.Пользователь">false</xr:Value>
+				<xr:Value name="Role.УдалениеЖивотных">false</xr:Value>
+				<xr:Value name="Role.Кладовщик">false</xr:Value>
+				<xr:Value name="Role.ГлавныйЗоотехник">false</xr:Value>
+				<xr:Value name="Role.ДоступКоВсемФермам">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Document.ПланЗагрузки.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.ВетеринарныйВрач">false</xr:Value>
+				<xr:Value name="Role.Пользователь">false</xr:Value>
+				<xr:Value name="Role.УдалениеЖивотных">false</xr:Value>
+				<xr:Value name="Role.Кладовщик">false</xr:Value>
+				<xr:Value name="Role.ГлавныйЗоотехник">false</xr:Value>
+				<xr:Value name="Role.ДоступКоВсемФермам">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.ПоказателиРационов.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.ВетеринарныйВрач">false</xr:Value>
+				<xr:Value name="Role.Пользователь">false</xr:Value>
+				<xr:Value name="Role.УдалениеЖивотных">false</xr:Value>
+				<xr:Value name="Role.Кладовщик">false</xr:Value>
+				<xr:Value name="Role.ГлавныйЗоотехник">false</xr:Value>
+				<xr:Value name="Role.ДоступКоВсемФермам">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.ТаблицаПитательностиКормов.Command.ТаблицаПитательности">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.ВетеринарныйВрач">false</xr:Value>
+				<xr:Value name="Role.Пользователь">false</xr:Value>
+				<xr:Value name="Role.УдалениеЖивотных">false</xr:Value>
+				<xr:Value name="Role.Кладовщик">false</xr:Value>
+				<xr:Value name="Role.ГлавныйЗоотехник">false</xr:Value>
+				<xr:Value name="Role.ДоступКоВсемФермам">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Report.ОтчетТаблицаПитательности.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.ВетеринарныйВрач">false</xr:Value>
+				<xr:Value name="Role.Пользователь">false</xr:Value>
+				<xr:Value name="Role.УдалениеЖивотных">false</xr:Value>
+				<xr:Value name="Role.Кладовщик">false</xr:Value>
+				<xr:Value name="Role.ГлавныйЗоотехник">false</xr:Value>
+				<xr:Value name="Role.ДоступКоВсемФермам">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.УстановкаНормативныхПоказателейРационов.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.ВетеринарныйВрач">false</xr:Value>
+				<xr:Value name="Role.Пользователь">false</xr:Value>
+				<xr:Value name="Role.УдалениеЖивотных">false</xr:Value>
+				<xr:Value name="Role.Кладовщик">false</xr:Value>
+				<xr:Value name="Role.ГлавныйЗоотехник">false</xr:Value>
+				<xr:Value name="Role.ДоступКоВсемФермам">false</xr:Value>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+</CommandInterface>

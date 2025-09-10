@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<SubsystemsOrder>
+		<Subsystem>Subsystem.ЖивотныеВНаличии</Subsystem>
+		<Subsystem>Subsystem.БыкиДляОсеменения</Subsystem>
+		<Subsystem>Subsystem.Зоотехния</Subsystem>
+		<Subsystem>Subsystem.ПроизводственнаяСводка</Subsystem>
+		<Subsystem>Subsystem.Воспроизводство</Subsystem>
+		<Subsystem>Subsystem.Ветеринария</Subsystem>
+		<Subsystem>Subsystem.Склад</Subsystem>
+		<Subsystem>Subsystem.Кормление</Subsystem>
+		<Subsystem>Subsystem.Отчеты</Subsystem>
+		<Subsystem>Subsystem.Бюджетирование</Subsystem>
+		<Subsystem>Subsystem.ПрограммаСоставленияРационов</Subsystem>
+		<Subsystem>Subsystem.РаботаСКормораздатчиками</Subsystem>
+		<Subsystem>Subsystem.Родословная</Subsystem>
+		<Subsystem>Subsystem.Администрирование</Subsystem>
+	</SubsystemsOrder>
+</CommandInterface>

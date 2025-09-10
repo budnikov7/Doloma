@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.20">
+	<Item id="dff16658-f6a8-4630-880d-ec140be69279">
+		<Name>Абцесс</Name>
+		<Code>000000005</Code>
+		<Description>Абцесс</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="9eb85920-54af-4b87-8bc4-8b4253066b9b">
+		<Name>АртритЗаболеваниеКонечностей</Name>
+		<Code>000000006</Code>
+		<Description>Артрит (заболевание конечностей)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="90c7b505-855c-4357-9f8a-92a2c82dc7d5">
+		<Name>Ацидоз</Name>
+		<Code>000000007</Code>
+		<Description>Ацидоз</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="0365ff10-5dd8-4005-832d-93a029dcd6e4">
+		<Name>БурситЦеллюлитЗаболеваниеКонечностей</Name>
+		<Code>000000008</Code>
+		<Description>Бурсит,целлюлит (заболевание конечностей)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="a1f585fa-9d1b-4ea7-a137-d9a09986ff4f">
+		<Name>ВоспалениеБелойЛинииЗаболеваниеКонечностей</Name>
+		<Code>000000009</Code>
+		<Description>Воспаление белой линии (заболевание конечностей)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="4bfbbc58-6e6d-4636-8015-21730924dd99">
+		<Name>ВоспалениеиЯзваСычуга</Name>
+		<Code>000000017</Code>
+		<Description>Воспаление и язва сычуга</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="4995b14e-0309-4f0d-a136-f6d2cf1bf4a9">
+		<Name>Гематома</Name>
+		<Code>000000018</Code>
+		<Description>Гематома</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="23aa9609-6a9c-412a-8b35-9fc095c31729">
+		<Name>ГигромаЗаболеваниеКонечностей</Name>
+		<Code>000000010</Code>
+		<Description>Гигрома (заболевание конечностей)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="c2be83c4-bb03-4710-99d7-20ce80af47d8">
+		<Name>Гипокальциемия</Name>
+		<Code>000000032</Code>
+		<Description>Гипокальциемия</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="24232504-2486-458e-807d-c7d2a3d9c9ad">
+		<Name>Диарея</Name>
+		<Code>000000019</Code>
+		<Description>Диарея</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="d72fcab2-5722-4e9c-95c0-e67826474764">
+		<Name>ЗадержаниеПоследа</Name>
+		<Code>000000020</Code>
+		<Description>Задержание последа</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="36d3c360-aa73-47a7-88b7-54bcbf350054">
+		<Name>Кетоз</Name>
+		<Code>000000003</Code>
+		<Description>Кетоз</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="d91729de-55ca-43b8-bb21-aab67c25e253">
+		<Name>ЛаминитЗаболеваниеКонечностей</Name>
+		<Code>000000011</Code>
+		<Description>Ламинит (заболевание конечностей)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="0bd186dd-d5c4-4a60-9598-0ecd68793ea1">
+		<Name>Мастит</Name>
+		<Code>000000001</Code>
+		<Description>Мастит</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="9daf509a-5035-4d54-97bc-b5f3c9f116e2">
+		<Name>МежпальцевыйДерматитЗаболеваниеКонечностей</Name>
+		<Code>000000012</Code>
+		<Description>Межпальцевый дерматит (заболевание конечностей)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="0204d86d-02dd-4631-b589-0cebef29c4ad">
+		<Name>МетаболическийАцидозГипоксияНоворожденных</Name>
+		<Code>000000021</Code>
+		<Description>Метаболический ацидоз, гипоксия новорожденных</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="43b9c952-3003-4a3e-9b0e-b39bdfc3dca7">
+		<Name>Метрит</Name>
+		<Code>000000004</Code>
+		<Description>Метрит</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="cc545084-772a-4f41-aca4-09e964c84c85">
+		<Name>НеквалифицированныеТравмыИПовреждения</Name>
+		<Code>000000022</Code>
+		<Description>Неквалифицированные травмы и повреждения</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="e46fdbdf-36cb-4c81-82cc-a4ae0155e54d">
+		<Name>Остеодистрофия</Name>
+		<Code>000000023</Code>
+		<Description>Остеодистрофия</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="f8d9a1bd-751e-442d-aa8d-07e797b08741">
+		<Name>ПальцевыйДерматитБолезньМортеллароЗаболеваниеКонечностей</Name>
+		<Code>000000013</Code>
+		<Description>Пальцевый дерматит-болезнь Мортелларо (заболевание конечностей)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="f32ea68f-f66a-42dd-b546-843a9459866f">
+		<Name>Перитонит</Name>
+		<Code>000000024</Code>
+		<Description>Перитонит</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="5832e183-3adf-43d5-8e5f-e794992d4be4">
+		<Name>Плеврит</Name>
+		<Code>000000025</Code>
+		<Description>Плеврит</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="f66aa343-e113-4d72-90af-3e6b3b1349b6">
+		<Name>Пневмония</Name>
+		<Code>000000026</Code>
+		<Description>Пневмония</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="f6fa5e82-50ac-47ed-9fbf-2be17d7c2e24">
+		<Name>РасяжениеТазобедренныхСвязокЗалёживание</Name>
+		<Code>000000027</Code>
+		<Description>Расяжение тазобедренных связок- залёживание</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="322d6482-d8c8-4db3-a896-ef5751f24a51">
+		<Name>СмещениеCычуга</Name>
+		<Code>000000033</Code>
+		<Description>Смещение cычуга</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="7cd9df3f-4e34-4587-901a-8c956af20de2">
+		<Name>СубклиническийМастит</Name>
+		<Code>000000028</Code>
+		<Description>Субклинический мастит</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="60766f23-b800-46aa-92f3-5c7ec965440c">
+		<Name>ТиломаЗаболеваниеКонечностей</Name>
+		<Code>000000014</Code>
+		<Description>Тилома (заболевание конечностей)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="2156f8bd-1ae4-48d1-ac10-c10e0798a9e2">
+		<Name>Тимпания</Name>
+		<Code>000000029</Code>
+		<Description>Тимпания</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="9c0f5c01-b9b3-4954-ac0d-dd5e10960699">
+		<Name>ТравматическийРетикулоперикардит</Name>
+		<Code>000000030</Code>
+		<Description>Травматический ретикулоперикардит</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="1a21d7c2-5d14-4e73-894e-a04c2cb75293">
+		<Name>Эндометрит</Name>
+		<Code>000000031</Code>
+		<Description>Эндометрит</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="8831bf27-b116-4158-bcb3-cc7e3dea2bf6">
+		<Name>ЯзваПодошвыЗаболеваниеКонечностей</Name>
+		<Code>000000015</Code>
+		<Description>Язва подошвы (заболевание конечностей)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="0a2c640b-6c37-4ff9-a7eb-7550963ec74d">
+		<Name>ЯзваПяткиЗаболеваниеКонечностей</Name>
+		<Code>000000016</Code>
+		<Description>Язва пятки (заболевание конечностей)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>
