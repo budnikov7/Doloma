@@ -1268,9 +1268,9 @@
 		ИНАЧЕ 0
 	КОНЕЦ КАК ЗапускБрак,
 	ВЫБОР
-		КОГДА ЕСТЬNULL(втСвернутая.ДатаОтела, ЕСТЬNULL(втСвернутая.ДатаАборта, ДАТАВРЕМЯ(1, 1, 1))) МЕЖДУ вт_ПеремещенияПоПериодам.ДатаРазмещения И вт_ПеремещенияПоПериодам.ДатаДействияРазмещения
-				И (втСвернутая.ДатаАборта ЕСТЬ NULL
-					ИЛИ ЕСТЬNULL(втСвернутая.АбортСОткрытойЛактацией, ЛОЖЬ) = ИСТИНА)
+		КОГДА (ЕСТЬNULL(втСвернутая.ДатаОтела, ДАТАВРЕМЯ(1, 1, 1)) МЕЖДУ вт_ПеремещенияПоПериодам.ДатаРазмещения И вт_ПеремещенияПоПериодам.ДатаДействияРазмещения
+				ИЛИ (ЕСТЬNULL(втСвернутая.ДатаАборта, ДАТАВРЕМЯ(1, 1, 1)) МЕЖДУ вт_ПеремещенияПоПериодам.ДатаРазмещения И вт_ПеремещенияПоПериодам.ДатаДействияРазмещения
+				И &amp;УчитыватьАбортСЛактациейКакОтел И ЕСТЬNULL(втСвернутая.АбортСОткрытойЛактацией, ЛОЖЬ) = ИСТИНА))
 				И вт_ПеремещенияПоПериодам.Месяц &lt; НАЧАЛОПЕРИОДА(ЕСТЬNULL(втСвернутая.ДатаВыбраковки, ДАТАВРЕМЯ(3000, 1, 1)), МЕСЯЦ)
 				И (вт_ПеремещенияПоПериодам.Месяц &gt; НАЧАЛОПЕРИОДА(ЕСТЬNULL(втСвернутая.ДатаПервогоОтела, ДАТАВРЕМЯ(3000, 1, 1)), МЕСЯЦ)
 					//ИЛИ вт_ПеремещенияПоПериодам.Месяц = НАЧАЛОПЕРИОДА(ЕСТЬNULL(втСвернутая.ДатаПервогоОтела, ДАТАВРЕМЯ(3000, 1, 1)), МЕСЯЦ)
@@ -1280,9 +1280,9 @@
 		ИНАЧЕ 0
 	КОНЕЦ КАК ОтёлКорова,
 	ВЫБОР
-		КОГДА ЕСТЬNULL(втСвернутая.ДатаОтела, ЕСТЬNULL(втСвернутая.ДатаАборта, ДАТАВРЕМЯ(1, 1, 1))) МЕЖДУ вт_ПеремещенияПоПериодам.ДатаРазмещения И вт_ПеремещенияПоПериодам.ДатаДействияРазмещения
-				И (втСвернутая.ДатаАборта ЕСТЬ NULL
-					ИЛИ ЕСТЬNULL(втСвернутая.АбортСОткрытойЛактацией, ЛОЖЬ) = ИСТИНА)
+		КОГДА (ЕСТЬNULL(втСвернутая.ДатаОтела, ДАТАВРЕМЯ(1, 1, 1)) МЕЖДУ вт_ПеремещенияПоПериодам.ДатаРазмещения И вт_ПеремещенияПоПериодам.ДатаДействияРазмещения
+				ИЛИ (ЕСТЬNULL(втСвернутая.ДатаАборта, ДАТАВРЕМЯ(1, 1, 1)) МЕЖДУ вт_ПеремещенияПоПериодам.ДатаРазмещения И вт_ПеремещенияПоПериодам.ДатаДействияРазмещения
+				И &amp;УчитыватьАбортСЛактациейКакОтел И ЕСТЬNULL(втСвернутая.АбортСОткрытойЛактацией, ЛОЖЬ) = ИСТИНА))
 				И вт_ПеремещенияПоПериодам.Месяц &lt; НАЧАЛОПЕРИОДА(ЕСТЬNULL(втСвернутая.ДатаВыбраковки, ДАТАВРЕМЯ(3000, 1, 1)), МЕСЯЦ)
 				И (вт_ПеремещенияПоПериодам.Месяц &lt;= НАЧАЛОПЕРИОДА(ЕСТЬNULL(втСвернутая.ДатаПервогоОтела, ДАТАВРЕМЯ(3000, 1, 1)), МЕСЯЦ)
 					//ИЛИ вт_ПеремещенияПоПериодам.Месяц = НАЧАЛОПЕРИОДА(ЕСТЬNULL(втСвернутая.ДатаПервогоОтела, ДАТАВРЕМЯ(3000, 1, 1)), МЕСЯЦ)
@@ -1292,9 +1292,9 @@
 		ИНАЧЕ 0
 	КОНЕЦ КАК ОтёлТёлка,
 	ВЫБОР
-		КОГДА ЕСТЬNULL(втСвернутая.ДатаОтела, ЕСТЬNULL(втСвернутая.ДатаАборта, ДАТАВРЕМЯ(1, 1, 1))) МЕЖДУ вт_ПеремещенияПоПериодам.ДатаРазмещения И вт_ПеремещенияПоПериодам.ДатаДействияРазмещения
-				И (втСвернутая.ДатаАборта ЕСТЬ NULL
-					ИЛИ ЕСТЬNULL(втСвернутая.АбортСОткрытойЛактацией, ЛОЖЬ) = ИСТИНА)
+		КОГДА (ЕСТЬNULL(втСвернутая.ДатаОтела, ДАТАВРЕМЯ(1, 1, 1)) МЕЖДУ вт_ПеремещенияПоПериодам.ДатаРазмещения И вт_ПеремещенияПоПериодам.ДатаДействияРазмещения
+				ИЛИ (ЕСТЬNULL(втСвернутая.ДатаАборта, ДАТАВРЕМЯ(1, 1, 1)) МЕЖДУ вт_ПеремещенияПоПериодам.ДатаРазмещения И вт_ПеремещенияПоПериодам.ДатаДействияРазмещения
+				И &amp;УчитыватьАбортСЛактациейКакОтел И ЕСТЬNULL(втСвернутая.АбортСОткрытойЛактацией, ЛОЖЬ) = ИСТИНА))
 				И вт_ПеремещенияПоПериодам.Месяц &gt;= НАЧАЛОПЕРИОДА(ЕСТЬNULL(втСвернутая.ДатаВыбраковки, ДАТАВРЕМЯ(3000, 1, 1)), МЕСЯЦ)
 			ТОГДА 1
 		ИНАЧЕ 0
@@ -1685,6 +1685,21 @@
 		</value>
 		<useRestriction>false</useRestriction>
 	</parameter>
+	<parameter>
+		<name>УчитыватьАбортСЛактациейКакОтел</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Учитывать аборт с лактацией как отел</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:boolean</v8:Type>
+		</valueType>
+		<value xsi:type="xs:boolean">false</value>
+		<useRestriction>false</useRestriction>
+		<use>Always</use>
+	</parameter>
 	<settingsVariant>
 		<dcsset:name>Основной</dcsset:name>
 		<dcsset:presentation xsi:type="v8:LocalStringType">
@@ -1966,6 +1981,12 @@
 						<v8:variant xsi:type="v8:StandardPeriodVariant">LastQuarter</v8:variant>
 					</dcscor:value>
 					<dcsset:userSettingID>62474f56-bc29-4b7a-8066-3a02a5db59f1</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>УчитыватьАбортСЛактациейКакОтел</dcscor:parameter>
+					<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					<dcsset:userSettingID>c36bec45-587a-4bdb-9fa4-74c19c402ba6</dcsset:userSettingID>
 				</dcscor:item>
 			</dcsset:dataParameters>
 			<dcsset:order>
@@ -2350,6 +2371,12 @@
 					</dcscor:value>
 					<dcsset:userSettingID>62474f56-bc29-4b7a-8066-3a02a5db59f1</dcsset:userSettingID>
 				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>УчитыватьАбортСЛактациейКакОтел</dcscor:parameter>
+					<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					<dcsset:userSettingID>5765279d-8c5a-4bf8-a8ec-04778f1bef4b</dcsset:userSettingID>
+				</dcscor:item>
 			</dcsset:dataParameters>
 			<dcsset:order>
 				<dcsset:item xsi:type="dcsset:OrderItemField">
@@ -2717,6 +2744,12 @@
 						<v8:variant xsi:type="v8:StandardPeriodVariant">LastQuarter</v8:variant>
 					</dcscor:value>
 					<dcsset:userSettingID>62474f56-bc29-4b7a-8066-3a02a5db59f1</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>УчитыватьАбортСЛактациейКакОтел</dcscor:parameter>
+					<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					<dcsset:userSettingID>95d0fb3f-de62-4713-b0cf-1956e241e9b9</dcsset:userSettingID>
 				</dcscor:item>
 			</dcsset:dataParameters>
 			<dcsset:order>
@@ -3088,6 +3121,12 @@
 						<v8:variant xsi:type="v8:StandardPeriodVariant">LastQuarter</v8:variant>
 					</dcscor:value>
 					<dcsset:userSettingID>62474f56-bc29-4b7a-8066-3a02a5db59f1</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>УчитыватьАбортСЛактациейКакОтел</dcscor:parameter>
+					<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					<dcsset:userSettingID>fe538e11-8e30-4183-830b-bcec48332df0</dcsset:userSettingID>
 				</dcscor:item>
 			</dcsset:dataParameters>
 			<dcsset:order>
@@ -3497,6 +3536,12 @@
 					</dcscor:value>
 					<dcsset:userSettingID>62474f56-bc29-4b7a-8066-3a02a5db59f1</dcsset:userSettingID>
 				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>УчитыватьАбортСЛактациейКакОтел</dcscor:parameter>
+					<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					<dcsset:userSettingID>4a2efb54-0cfa-48d4-afff-080aaf8be636</dcsset:userSettingID>
+				</dcscor:item>
 			</dcsset:dataParameters>
 			<dcsset:order>
 				<dcsset:item xsi:type="dcsset:OrderItemField">
@@ -3718,6 +3763,12 @@
 					</dcscor:value>
 					<dcsset:userSettingID>62474f56-bc29-4b7a-8066-3a02a5db59f1</dcsset:userSettingID>
 				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>УчитыватьАбортСЛактациейКакОтел</dcscor:parameter>
+					<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					<dcsset:userSettingID>62c7ecf8-f0d5-434a-b10c-a0802184e621</dcsset:userSettingID>
+				</dcscor:item>
 			</dcsset:dataParameters>
 			<dcsset:order>
 				<dcsset:viewMode>Normal</dcsset:viewMode>
@@ -3838,6 +3889,12 @@
 					</dcscor:value>
 					<dcsset:userSettingID>62474f56-bc29-4b7a-8066-3a02a5db59f1</dcsset:userSettingID>
 				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>УчитыватьАбортСЛактациейКакОтел</dcscor:parameter>
+					<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					<dcsset:userSettingID>98469c6b-64fd-49ce-845e-c49106eb8104</dcsset:userSettingID>
+				</dcscor:item>
 			</dcsset:dataParameters>
 			<dcsset:order>
 				<dcsset:viewMode>Normal</dcsset:viewMode>
@@ -3945,6 +4002,12 @@
 						<v8:variant xsi:type="v8:StandardPeriodVariant">ThisYear</v8:variant>
 					</dcscor:value>
 					<dcsset:userSettingID>62474f56-bc29-4b7a-8066-3a02a5db59f1</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>УчитыватьАбортСЛактациейКакОтел</dcscor:parameter>
+					<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					<dcsset:userSettingID>f670f2f7-1eec-4643-b033-7d36fa81bd0c</dcsset:userSettingID>
 				</dcscor:item>
 			</dcsset:dataParameters>
 			<dcsset:order>
@@ -4071,6 +4134,12 @@
 					</dcscor:value>
 					<dcsset:userSettingID>62474f56-bc29-4b7a-8066-3a02a5db59f1</dcsset:userSettingID>
 				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>УчитыватьАбортСЛактациейКакОтел</dcscor:parameter>
+					<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					<dcsset:userSettingID>96bcc4f6-3efc-4f10-bc52-33152a2ddd86</dcsset:userSettingID>
+				</dcscor:item>
 			</dcsset:dataParameters>
 			<dcsset:order>
 				<dcsset:viewMode>Normal</dcsset:viewMode>
@@ -4190,6 +4259,12 @@
 						<v8:variant xsi:type="v8:StandardPeriodVariant">LastYear</v8:variant>
 					</dcscor:value>
 					<dcsset:userSettingID>62474f56-bc29-4b7a-8066-3a02a5db59f1</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>УчитыватьАбортСЛактациейКакОтел</dcscor:parameter>
+					<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					<dcsset:userSettingID>af4af2f8-d083-4f76-954e-d0277180f831</dcsset:userSettingID>
 				</dcscor:item>
 			</dcsset:dataParameters>
 			<dcsset:order>
