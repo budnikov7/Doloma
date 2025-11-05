@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2f3ca449-ebaa-4544-af90-96cd742ee57c">
+  <producedTypes>
+    <selectionType typeId="8be54e90-c551-4aed-8fc4-0145fc189de3" valueTypeId="b065cd51-5c9e-4c97-9898-ab2a66b1fe22"/>
+    <listType typeId="43647c62-5a16-4fcb-9b64-aa2c699c8568" valueTypeId="2c465a01-cba4-4278-bb2b-da4780b07c35"/>
+    <managerType typeId="5be284ed-0303-4fd9-a15d-18a00ad7e791" valueTypeId="35509f3d-5671-4e3a-b56c-4fd5f92bd38d"/>
+    <recordSetType typeId="39237cd2-ca15-4a0c-a1c1-ecf4c1406844" valueTypeId="12c02492-1077-4207-bd2d-23d53aeb6803"/>
+    <recordKeyType typeId="635e2039-52da-4bfd-bbea-80a868c4d718" valueTypeId="f3cc131f-88e1-43cd-8446-26b08b771c48"/>
+    <recordType typeId="b5374bda-f53f-40fe-9d91-a3276da0d33b" valueTypeId="4b00caec-e6d1-4ed1-9fca-e800b5d892fa"/>
+    <recordManagerType typeId="ad846836-32a9-4110-aeb1-ffb5d9df2cf1" valueTypeId="f3c79c1a-abc0-4350-8197-61b9a364f241"/>
+  </producedTypes>
+  <name>Аборты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Аборты</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSliceFirst>true</enableTotalsSliceFirst>
+  <enableTotalsSliceLast>true</enableTotalsSliceLast>
+  <resources uuid="ff26c296-6ef5-4918-912b-0dbe7d61656f">
+    <name>ТипПрекращенияСтельности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип прекращения стельности</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ТипПрекращенияСтельности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="60f7be48-3e79-4e24-8309-e8b0a5d89a58">
+    <name>Осеменатор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Осеменатор</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="82af337a-4c9a-4dc9-b73f-72ea390914c7">
+    <name>Примечание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Примечание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="03c943a2-3294-4235-a34e-1c474d9c4e12">
+    <name>ОткрытьЛактацию</name>
+    <synonym>
+      <key>ru</key>
+      <value>Открыть лактацию</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="00fd874c-4a3e-477b-9438-d73fdafa0163">
+    <name>МежотёльныйПериод</name>
+    <synonym>
+      <key>ru</key>
+      <value>Межотёльный период</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="24930120-cc61-4b42-be10-006288042991">
+    <name>Мать</name>
+    <synonym>
+      <key>ru</key>
+      <value>Животное-мать</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Животные</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6beceebb-cf8b-4097-94d2-44ed3cdbc493">
+  <producedTypes>
+    <selectionType typeId="ec478f68-2014-4218-8562-a5ce69dd8d12" valueTypeId="3236603c-7ee5-4da1-be48-ea5ef06dbc62"/>
+    <listType typeId="cebeb06c-0c2b-4e2f-96a3-6d55334bc19a" valueTypeId="afb88cef-14f9-4071-b3ef-6a0c760ce427"/>
+    <managerType typeId="d070ea8a-2f02-4359-92e8-fb15a6a2f2e0" valueTypeId="4e965f66-2a74-4839-b0a1-9b6258cce5c1"/>
+    <recordSetType typeId="06eeb700-4b1d-46ba-8b7e-68d5a30bd430" valueTypeId="2a961b17-1d05-417e-b37f-7b20a16dc161"/>
+    <recordKeyType typeId="16cb2fd1-b7ae-406e-9095-a11d2dcc8c29" valueTypeId="c6e00ac6-f19f-4606-9b8a-1ebb39c3b456"/>
+    <recordType typeId="0d0d42a5-ea7b-455d-9c87-9d6613c1cbdd" valueTypeId="87c36652-2519-4757-9e1c-65f0da499679"/>
+    <recordManagerType typeId="30185424-0a0d-4efc-993d-3e06294359f7" valueTypeId="77429288-6e93-4a60-8adf-185ddd30141f"/>
+  </producedTypes>
+  <name>РодственныеСвязи</name>
+  <synonym>
+    <key>ru</key>
+    <value>Родственные связи</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="8e1ae6f3-f24d-45a0-9676-fa8942725637">
+    <name>Ряд</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ряд</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="e6df5003-a3f3-4174-8640-b7d44afa0f25">
+    <name>РядРимскими</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ряд римскими</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="e259b014-e9f9-4635-8199-a1b3b07e7100">
+    <name>Животное</name>
+    <synonym>
+      <key>ru</key>
+      <value>Животное</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.РодословнаяЖивотных</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="342d9982-3afb-4bee-ae4e-1b1354cd14c7">
+    <name>Предок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Предок</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.РодословнаяЖивотных</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="473fa2ac-14e1-4e73-b593-a22ea499234f">
+    <name>ТипСвязи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип связи</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

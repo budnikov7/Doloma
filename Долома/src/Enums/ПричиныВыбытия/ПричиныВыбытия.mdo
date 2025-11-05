@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8bcbadc5-bfda-444c-93a6-044d8fc172d0">
+  <producedTypes>
+    <refType typeId="2da6b17b-7294-45dd-86e2-85985bb77482" valueTypeId="bbca8459-5025-4c1f-8ddc-c777d8a32e08"/>
+    <listType typeId="cf144fe1-4be3-400b-98ea-0d33fbe0a12c" valueTypeId="33e2f024-41d1-437b-ac7c-a3c425769f16"/>
+    <managerType typeId="ba3ac352-aa7a-4e9a-b3bf-050960837aea" valueTypeId="f6180df0-0f4e-4c32-bce2-9a6401d3ee7a"/>
+  </producedTypes>
+  <name>ПричиныВыбытия</name>
+  <synonym>
+    <key>ru</key>
+    <value>Причины выбытия животных</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="3019c017-4f86-41ca-ae0b-53f9ac8817d9">
+    <name>СанБрак</name>
+    <synonym>
+      <key>ru</key>
+      <value>Санитарный брак</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="2b6bf5e7-ef5d-4709-8183-1d7fa2cca0aa">
+    <name>ЗооБрак</name>
+    <synonym>
+      <key>ru</key>
+      <value>Зоологический брак</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="97dc3db5-f252-4329-b37e-543089ac5c22">
+    <name>Падеж</name>
+    <synonym>
+      <key>ru</key>
+      <value>Падеж животного</value>
+    </synonym>
+    <comment>Смерть по естественным причинам.</comment>
+  </enumValues>
+</mdclass:Enum>

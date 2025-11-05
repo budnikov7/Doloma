@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f84121f8-4eb6-410f-9639-03dd931426a0">
+  <producedTypes>
+    <refType typeId="904da962-dc11-4bdb-9d3e-84b3f73d5a04" valueTypeId="7a5a79f8-72d8-4827-bbed-081f0a309e84"/>
+    <listType typeId="706a93b1-73f7-4f7e-87f9-8a035444aa50" valueTypeId="0c610f07-afe8-4654-a8a1-e5d4a46b25b8"/>
+    <managerType typeId="865b1a46-665a-4330-844a-27cf8e26a4bf" valueTypeId="cf8349e5-ccde-457f-99ea-ce50159a093d"/>
+  </producedTypes>
+  <name>ВетеринарныйСтатусЖивотного</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ветеринарный статус животного</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="89e2e7d7-d1a4-4f04-97e1-22feb37b7271">
+    <name>Больная</name>
+    <synonym>
+      <key>ru</key>
+      <value>Больная</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="523bb7c1-b0f3-4171-a558-5b9264eee280">
+    <name>Здоровая</name>
+    <synonym>
+      <key>ru</key>
+      <value>Здоровая</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

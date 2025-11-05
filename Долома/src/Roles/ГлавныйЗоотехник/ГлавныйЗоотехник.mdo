@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="07871666-780e-467d-ae12-90836196dc29">
+  <name>ГлавныйЗоотехник</name>
+  <synonym>
+    <key>ru</key>
+    <value>Главный зоотехник</value>
+  </synonym>
+</mdclass:Role>

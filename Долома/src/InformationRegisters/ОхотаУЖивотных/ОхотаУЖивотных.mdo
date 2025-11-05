@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d823537e-f8d2-4af9-9307-699a2f319c60">
+  <producedTypes>
+    <selectionType typeId="4eee30f1-db47-4798-b667-eb32c2fe82eb" valueTypeId="ff3fbcf4-1863-40de-8834-d1bb0f95d16a"/>
+    <listType typeId="dc89c816-7660-4dab-b2ee-c42e71336e5f" valueTypeId="acb3fbb8-35d2-4f07-ad78-488604998cfa"/>
+    <managerType typeId="f7951185-705a-44fd-8331-036264c08c9e" valueTypeId="43e49965-3c84-490e-8e07-c6818de322c3"/>
+    <recordSetType typeId="5c28062c-0399-471b-b12b-22b1d964e032" valueTypeId="98ca38ae-0902-4614-96fc-5bff7a5dda5c"/>
+    <recordKeyType typeId="0a579adb-5ae5-49ae-a837-7282c37fe7cd" valueTypeId="5bfd0611-168a-4b5a-aa0c-3bf25470ca0a"/>
+    <recordType typeId="9a68aa9c-b613-439f-a0a4-2ee079f2f0f6" valueTypeId="0861adff-a248-4914-9be4-de2363ff8597"/>
+    <recordManagerType typeId="37136148-f7ff-4845-a14b-f36d588a1fca" valueTypeId="bc9e06c9-023b-4f86-81b7-ac43226a3dc4"/>
+  </producedTypes>
+  <name>ОхотаУЖивотных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Охота у животных</value>
+  </synonym>
+  <comment>Моменты наступления охоты у животных</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSliceFirst>true</enableTotalsSliceFirst>
+  <enableTotalsSliceLast>true</enableTotalsSliceLast>
+  <attributes uuid="da632d7a-6283-4637-8e86-53905b4e3ce9">
+    <name>Примечание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Примечание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
+  <dimensions uuid="0ba1e56a-d583-48c1-a79a-8213c0913a09">
+    <name>Животное</name>
+    <synonym>
+      <key>ru</key>
+      <value>Животное</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Животные</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

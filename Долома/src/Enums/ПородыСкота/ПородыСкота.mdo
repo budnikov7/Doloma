@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1b1c5551-1b09-4b97-995d-dd551a752d39">
+  <producedTypes>
+    <refType typeId="5c0c67bc-bfaa-4ea5-8421-111ea228be7b" valueTypeId="f0ccc690-ec52-4bbb-99cd-2f1523a54002"/>
+    <listType typeId="c64d818a-c16c-425a-a912-a41ce66265d1" valueTypeId="6221bcf1-2ccd-4b27-b7cc-381f1b218dfe"/>
+    <managerType typeId="9cbc3fbe-aa58-4d5c-b61d-9143dbefb3d4" valueTypeId="114f879b-4c06-45da-aece-e1de049aad2a"/>
+  </producedTypes>
+  <name>ПородыСкота</name>
+  <synonym>
+    <key>ru</key>
+    <value>Породы скота</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="3c5ee3b3-4aa3-439f-b93c-82570258af75">
+    <name>ЧёрноПёстрая</name>
+    <synonym>
+      <key>ru</key>
+      <value>Чёрно - пёстрая</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

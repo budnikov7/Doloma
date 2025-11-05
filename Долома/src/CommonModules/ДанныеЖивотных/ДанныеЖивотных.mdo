@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a84ab2bc-f216-47f8-b91f-14d644a96426">
+  <name>ДанныеЖивотных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Данные животных</value>
+  </synonym>
+  <server>true</server>
+  <serverCall>true</serverCall>
+</mdclass:CommonModule>

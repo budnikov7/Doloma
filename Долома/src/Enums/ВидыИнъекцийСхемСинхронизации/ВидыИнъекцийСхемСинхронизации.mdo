@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7c4e9684-2e2f-4063-8192-97da6b75172e">
+  <producedTypes>
+    <refType typeId="255d97c2-cbac-4ac0-8b55-45b778def9e8" valueTypeId="fadab183-b8a4-4017-95bd-8613cbabedf3"/>
+    <listType typeId="3ab9a9b0-bb22-4806-9dc3-748623694e82" valueTypeId="36729fd7-e951-4044-850f-83535ede1b73"/>
+    <managerType typeId="df58e481-f9ff-476f-b30b-ba9c342b7dfd" valueTypeId="e7b28278-8d61-4a53-b13f-8a73421bc782"/>
+  </producedTypes>
+  <name>ВидыИнъекцийСхемСинхронизации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды инъекций схем синхронизации</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="17554d57-9443-49f3-850f-2f0f19f72c82">
+    <name>GnRH</name>
+    <synonym>
+      <key>ru</key>
+      <value>GnRH</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="e008fd96-c532-498d-b4a9-7ca7f846cb1e">
+    <name>GnRHВечер</name>
+    <synonym>
+      <key>ru</key>
+      <value>GnRH вечер</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="4a312314-248c-40c9-9a15-ba79cdc539f7">
+    <name>PGF2a</name>
+    <synonym>
+      <key>ru</key>
+      <value>PGF2a</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="77961cec-d6bb-4c4d-8c05-267cd2810649">
+    <name>ИО</name>
+    <synonym>
+      <key>ru</key>
+      <value>ИО</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="e67bf2fb-12ff-40d0-a4ce-153f320cdedc">
+    <name>ИОУтро</name>
+    <synonym>
+      <key>ru</key>
+      <value>ИО утро</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

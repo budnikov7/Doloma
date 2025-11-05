@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d76e6eb2-f8b9-44dc-9d00-d63f2253f1d7">
+  <producedTypes>
+    <objectType typeId="e92623bc-55d7-45d0-b323-e54a019a1a14" valueTypeId="3fcb5a58-febf-46a7-8cb6-18806779c7ec"/>
+    <managerType typeId="081094a8-6882-487a-bf46-938fff14274c" valueTypeId="43d67791-c2ef-493e-bec9-07de8038a8b0"/>
+  </producedTypes>
+  <name>ВакцинацияПоКалендарномуМесяцу</name>
+  <synonym>
+    <key>ru</key>
+    <value>Вакцинация по календарному месяцу</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ВакцинацияПоКалендарномуМесяцу.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.ВакцинацияПоКалендарномуМесяцу.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <forms uuid="855fd8f8-f57b-482a-bf48-68ddcd70676a">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="e0f25da6-add3-49c1-848a-9ea34d41c13a">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

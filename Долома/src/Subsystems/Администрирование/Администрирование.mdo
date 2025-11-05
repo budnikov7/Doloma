@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="070919d0-4523-4083-9a3e-f3ebbeae0090">
+  <name>Администрирование</name>
+  <synonym>
+    <key>ru</key>
+    <value>Администрирование</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.Картинка_Администрирование</picture>
+  </picture>
+  <content>Catalog.Фермы</content>
+  <content>Catalog.Корпуса</content>
+  <content>Catalog.Сотрудники</content>
+  <content>Catalog.Пользователи</content>
+  <content>Catalog.Должности</content>
+  <content>Catalog.ВидыСписанияСпермадоз</content>
+  <content>Catalog.ЕдиницыИзмерения</content>
+  <content>Catalog.ДоговорКонтрагента</content>
+  <content>Catalog.ШаблоныПрепаратов</content>
+  <content>InformationRegister.ФуражныхКоров</content>
+  <content>CommonCommand.НастройкаКонстант</content>
+  <content>InformationRegister.ЦелевыеПоказателиСтруктурыПоголовья</content>
+  <content>Catalog.СтавкиНДС</content>
+  <content>Catalog.ДниДиагностикиСтельности</content>
+  <content>Catalog.СхемыСинхронизации</content>
+  <content>InformationRegister.НормативыЗаболеванийНовотельныхКоров</content>
+  <content>DataProcessor.УдалениеПомеченныхОбъектов</content>
+  <content>DataProcessor.ПерепроведениеТоварыНаСкладах</content>
+  <content>Constant.ПоказыватьРодословную</content>
+  <content>Constant.ПроверятьЗаполнениеПрепаратов</content>
+  <content>Report.ПроцентСтельныхЖивотныхДо150ДняЛактации</content>
+  <content>Report.ВакцинацияПоКалендарномуМесяцу</content>
+  <content>Constant.ПроверятьНаличиеДокументовНачалаЛечения</content>
+  <content>Catalog.Предприятия</content>
+  <content>Catalog.Хозяйства</content>
+  <content>Report.ПланированиеВводаНетелейВСтадо</content>
+  <content>Report.ОтчетПоПроизводителю</content>
+  <content>Report.ПланированиеДойногоПоголовья</content>
+  <content>Report.ОтчетИсполнениеДоговоров</content>
+  <content>Constant.ПроверятьЦеныПоДоговору</content>
+  <content>Report.СписокВыбракованныхЖивотных</content>
+</mdclass:Subsystem>

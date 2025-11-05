@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="131ab644-05b8-482a-8c03-34d90252f679">
+  <producedTypes>
+    <selectionType typeId="298fbe28-467e-4493-b357-9e6e89a6f7d9" valueTypeId="a0e1b85c-af9d-499b-aa70-46ffdc9157f9"/>
+    <listType typeId="3d91a12e-c584-426e-93a6-05306f374a22" valueTypeId="335f9eed-8903-45b5-9a73-05d888ea9fbe"/>
+    <managerType typeId="4c4a07ac-ba13-42b4-b4a0-780389cb41ef" valueTypeId="d3dd5ec8-974e-4a98-9fca-2bbdff7471c8"/>
+    <recordSetType typeId="3882be2e-3f1d-4ae5-8bf7-14309c3c51d1" valueTypeId="a9c0dfdc-fdc7-4a26-aa06-15a1ed33cbc1"/>
+    <recordKeyType typeId="fa330477-8dbe-4737-b811-b0f1aac74a50" valueTypeId="f8259ddd-6cd0-4f6c-a543-092d68acf70e"/>
+    <recordType typeId="beab3add-e941-4626-bf93-e75d0a918925" valueTypeId="5014e095-579d-42e5-8c51-99e3cb5d86e6"/>
+    <recordManagerType typeId="2b1531d9-f2a6-48fe-8a5e-d2c7c0522c3f" valueTypeId="60457daa-cad9-4b93-a622-7b3905604a57"/>
+  </producedTypes>
+  <name>СостояниеЖивотных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Состояние животных</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="a1451796-3bda-49fa-8207-440e01f509aa">
+    <name>СостояниеЖивотного</name>
+    <synonym>
+      <key>ru</key>
+      <value>Событие с животным</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СтатусЖивотного</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="20943581-a00c-4a0e-8fdd-851eee1d57f6">
+    <name>Животное</name>
+    <synonym>
+      <key>ru</key>
+      <value>Животное</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Животные</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

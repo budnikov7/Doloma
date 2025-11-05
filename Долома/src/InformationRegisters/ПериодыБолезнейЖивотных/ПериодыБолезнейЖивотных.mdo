@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7431764b-564c-4480-9e38-71a5fe91dee7">
+  <producedTypes>
+    <selectionType typeId="6b559430-d587-4f3a-95b8-d5b8f68c9777" valueTypeId="962c3ae1-d306-496b-bab8-2b49aa5f754f"/>
+    <listType typeId="cbe25b2f-a8e4-456d-ba8b-db35b1482058" valueTypeId="8796a438-1faa-431f-ba6d-e0c1313c4641"/>
+    <managerType typeId="d1b2668e-7185-4d4b-87f0-40c3be27537c" valueTypeId="3f699e09-a9a6-453a-b881-5322927788de"/>
+    <recordSetType typeId="9f7a58a8-5fab-4bd8-8f4c-2549579f2135" valueTypeId="d758db6c-f17b-4d13-9237-eccfa01f7a53"/>
+    <recordKeyType typeId="5b31d5f2-6f72-4ea1-b532-1f2119667e2b" valueTypeId="c90228c1-8da8-49e4-9704-6c9eacabad6c"/>
+    <recordType typeId="71dc46b6-c97f-4b57-ac22-97e04ac1d3ba" valueTypeId="903caaff-474c-426b-b1df-27f30c237f1a"/>
+    <recordManagerType typeId="3c28046f-7294-41cb-b6f2-a0a0a1556a12" valueTypeId="f49c565a-f7f2-41c3-a22b-3c734a55b8d8"/>
+  </producedTypes>
+  <name>ПериодыБолезнейЖивотных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Периоды болезней животных</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultListForm>InformationRegister.ПериодыБолезнейЖивотных.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="bf874cae-9e92-420c-92c7-a622723757da">
+    <name>СписокПрепаратовПолеСвязи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список препаратов поле связи</value>
+    </synonym>
+    <type>
+      <types>UUID</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="f3c4938f-9b2d-4a03-86e4-dc8af07caff4">
+    <name>СхемаЛечения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схема лечения</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СхемыЛечения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="429a52bb-6b68-417c-ba94-cf56537710dd">
+    <name>МаститБольнаяЧасть</name>
+    <synonym>
+      <key>ru</key>
+      <value>Мастит больная часть</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>4</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="babca314-1c51-447b-a88d-6f0374b811d4">
+    <name>СтатусБолезни</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус болезни</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ПериодыЗаболеваний</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="5b583515-e84a-40d4-940c-08535943240b">
+    <name>Животное</name>
+    <synonym>
+      <key>ru</key>
+      <value>Животное</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Животные</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="47fb82bc-92ed-4b6b-9210-8a40c773cb4c">
+    <name>Заболевание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заболевание</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВетеринарныеМероприятия</types>
+      <types>CatalogRef.Заболевания</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="77465c52-1d86-4b6d-a3da-5b818b704bd2">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ab4020c5-5b3d-467c-90d1-99ce34fa51b2">
+  <producedTypes>
+    <objectType typeId="b962787d-0dce-498d-9a68-d6d01cb541fb" valueTypeId="c1fb5680-63d0-4a4a-960c-7e591dc450d2"/>
+    <managerType typeId="bf95fe15-4ffd-49d8-8edc-ffe7ae06aad4" valueTypeId="71120b94-8613-4bd6-96c3-4a374f0cd1cb"/>
+  </producedTypes>
+  <name>СтруктураСтадаВРазрезеЛактаций</name>
+  <synonym>
+    <key>ru</key>
+    <value>Структура стада в разрезе лактаций</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.СтруктураСтадаВРазрезеЛактаций.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.СтруктураСтадаВРазрезеЛактаций.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <forms uuid="a079304f-cc44-4e4a-856e-b4533f317194">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="7b97ce60-d787-4ce8-a7d8-fdc9b30a63c8">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="12792fb3-55ed-425f-9e8e-ef7a04fa5a33">
+  <producedTypes>
+    <objectType typeId="2bfd88d3-dd0f-45ce-ae68-a76212bb77a9" valueTypeId="a14ff416-835d-48a8-a266-761e06eb4133"/>
+    <managerType typeId="16404675-e591-4c3c-bb76-c779768079c8" valueTypeId="cf03ad07-7e12-436d-9244-2ba3b1be2d10"/>
+  </producedTypes>
+  <name>ПланМероприятийПоСхемамСинхронизаций</name>
+  <synonym>
+    <key>ru</key>
+    <value>План мероприятий по схемам синхронизаций</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ПланМероприятийПоСхемамСинхронизаций.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.ПланМероприятийПоСхемамСинхронизаций.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <forms uuid="b680a979-4c3c-4054-919e-84039e5db1a0">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="f47f85d1-db49-4b1d-8f75-cf87e08b2093">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

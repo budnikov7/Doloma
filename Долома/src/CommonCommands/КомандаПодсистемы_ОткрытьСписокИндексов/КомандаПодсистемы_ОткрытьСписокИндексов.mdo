@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonCommand xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="aa6e2c07-3770-42f6-9a3b-bda3b18d9865">
+  <name>КомандаПодсистемы_ОткрытьСписокИндексов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Индексов быков</value>
+  </synonym>
+  <group>NavigationPanelOrdinary</group>
+  <commandParameterType/>
+  <representation>Auto</representation>
+</mdclass:CommonCommand>

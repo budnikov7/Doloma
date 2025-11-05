@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cmi:CommandInterface xmlns:cmi="http://g5.1c.ru/v8/dt/cmi">
+  <commandsVisibility>
+    <visibilityFragments>
+      <command>InformationRegister.ФуражныхКоров.StandardCommand.Create</command>
+      <visible>
+        <common>true</common>
+      </visible>
+    </visibilityFragments>
+  </commandsVisibility>
+  <commandsOrder>
+    <orderFragments>
+      <group>NavigationPanelOrdinary</group>
+      <commands>Catalog.Предприятия.StandardCommand.OpenList</commands>
+      <commands>Catalog.Хозяйства.StandardCommand.OpenList</commands>
+      <commands>Catalog.Фермы.StandardCommand.OpenList</commands>
+      <commands>Catalog.Корпуса.StandardCommand.OpenList</commands>
+      <commands>Catalog.Сотрудники.StandardCommand.OpenList</commands>
+      <commands>Catalog.Должности.StandardCommand.OpenList</commands>
+      <commands>Catalog.Пользователи.StandardCommand.OpenList</commands>
+      <commands>Catalog.ВидыСписанияСпермадоз.StandardCommand.OpenList</commands>
+      <commands>Catalog.ДоговорКонтрагента.StandardCommand.OpenList</commands>
+      <commands>Catalog.ШаблоныПрепаратов.StandardCommand.OpenList</commands>
+      <commands>InformationRegister.ФуражныхКоров.StandardCommand.OpenList</commands>
+      <commands>CommonCommand.НастройкаКонстант</commands>
+      <commands>Catalog.ДниДиагностикиСтельности.StandardCommand.OpenList</commands>
+      <commands>InformationRegister.НормативыЗаболеванийНовотельныхКоров.StandardCommand.OpenList</commands>
+      <commands>Catalog.СтавкиНДС.StandardCommand.OpenList</commands>
+      <commands>Catalog.СхемыСинхронизации.StandardCommand.OpenList</commands>
+      <commands>InformationRegister.ЦелевыеПоказателиСтруктурыПоголовья.StandardCommand.OpenList</commands>
+    </orderFragments>
+  </commandsOrder>
+</cmi:CommandInterface>

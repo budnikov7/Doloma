@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="37d4e822-93e3-46c8-872c-8d53ca6c0305">
+  <producedTypes>
+    <objectType typeId="e471214b-d679-4df1-ba7b-4d1080963520" valueTypeId="9e4f2dfc-3545-4254-9bc5-1be31755941d"/>
+    <managerType typeId="b8cd3fc6-50fa-45be-97db-5d1ef1fd3f14" valueTypeId="f302910a-a621-4335-ab6c-4ea3652ebecf"/>
+  </producedTypes>
+  <name>ОтчетПоПотреблениюСухогоВещества</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет по потреблению сухого вещества</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ОтчетПоПотреблениюСухогоВещества.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.ОтчетПоПотреблениюСухогоВещества.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <forms uuid="4a753a5d-0885-487d-b1e3-a5602a47e2e0">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="778d6010-d868-43d3-8253-abec621c4e1d">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

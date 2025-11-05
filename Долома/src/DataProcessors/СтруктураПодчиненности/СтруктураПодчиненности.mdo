@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8999ccec-9834-42b3-b79d-9edd7cf46692">
+  <producedTypes>
+    <objectType typeId="a5854187-009b-432c-b7e3-e72ff2addd3b" valueTypeId="666bcee5-4885-4f1c-b94f-9308978bed62"/>
+    <managerType typeId="e05e136d-87aa-472a-99d4-d73ce762cd16" valueTypeId="d6f6af35-36e2-43b0-b9d1-cd63ecd59ba7"/>
+  </producedTypes>
+  <name>СтруктураПодчиненности</name>
+  <synonym>
+    <key>ru</key>
+    <value>Структура подчиненности</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.СтруктураПодчиненности.Form.Форма</defaultForm>
+  <attributes uuid="1ef53a14-09d4-462f-9b04-f9f79517c3f1">
+    <name>ОсновнойОбъект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основной объект</value>
+    </synonym>
+    <type>
+      <types>DocumentRef</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="74e8c32f-e54a-4044-bda8-a0b1ce684e29">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

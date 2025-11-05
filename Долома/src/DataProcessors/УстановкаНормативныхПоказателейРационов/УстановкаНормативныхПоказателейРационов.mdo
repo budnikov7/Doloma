@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="301ce692-0b34-4190-b92a-908d94dec4b6">
+  <producedTypes>
+    <objectType typeId="4eda1c20-f728-4aef-966a-fe80c3617c75" valueTypeId="c9854a88-a0cd-42a0-91b3-da898f15f904"/>
+    <managerType typeId="084ac60d-4c08-4a50-b101-91032f6be262" valueTypeId="a7a52b0b-5b90-43fb-8b77-722e5363b853"/>
+  </producedTypes>
+  <name>УстановкаНормативныхПоказателейРационов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Установка нормативных показателей рационов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.УстановкаНормативныхПоказателейРационов.Form.Форма</defaultForm>
+  <forms uuid="3b3f67b8-c678-4181-a6a2-d2655b852a77">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

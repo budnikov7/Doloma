@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="44c289a7-3934-4cc6-a3be-43fa1bcee808">
+  <producedTypes>
+    <selectionType typeId="377d706d-f302-418b-892f-f3219651aa6f" valueTypeId="197a7aa4-46f4-4d17-9037-c86a3e5ab280"/>
+    <listType typeId="da0717bf-4f06-4f64-9670-93c1f42ae53a" valueTypeId="470338a5-74a6-4001-94ef-ad2daa83fb22"/>
+    <managerType typeId="d4e26811-8023-4e2b-8908-db641eac7e4b" valueTypeId="8e896976-4240-4c49-93a3-624f26635e97"/>
+    <recordSetType typeId="86c46de7-d286-4ce9-85cd-b24e2cc4f31b" valueTypeId="24e537bb-da6c-4783-9736-2b61e45ff03a"/>
+    <recordKeyType typeId="2d57810d-1975-40b7-9a4f-3c35247399c4" valueTypeId="3c7effe2-60a9-4fbc-8646-ffb0072e410e"/>
+    <recordType typeId="bae33758-3003-4ad9-9d00-a61b77ed2709" valueTypeId="222a7211-f8b5-43fe-b42b-7830033d8c23"/>
+    <recordManagerType typeId="96d89b53-8964-4790-9fcd-891c83332916" valueTypeId="776699eb-2af8-4403-b080-6139893bb429"/>
+  </producedTypes>
+  <name>ОсеменятьСДаты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Осеменять с даты</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="1126b78c-9517-4714-8232-a5241055d421">
+    <name>ОсеменятьС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Осеменять с:</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="284ff673-1000-485d-8e09-e212001fafc4">
+    <name>Животное</name>
+    <synonym>
+      <key>ru</key>
+      <value>Животное</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Животные</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b6cfb4ab-a026-4443-8958-166235f3ae66">
+  <producedTypes>
+    <refType typeId="6dd7f1de-deef-4811-9203-fd6e89f30d81" valueTypeId="284eca98-295b-4622-bfb8-abcbb6a25a01"/>
+    <listType typeId="b1e62fd5-593b-4b1a-bd34-33a19efb2860" valueTypeId="60ffd180-75c2-45e1-b615-0e6ea7ae2afe"/>
+    <managerType typeId="057a944f-984a-4384-9430-872578c405c1" valueTypeId="4e44abd7-fd20-46dc-ac19-d6a4c85830c2"/>
+  </producedTypes>
+  <name>ВидыМероприятий</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды мероприятий</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="3dca48af-dbb7-4e96-8d92-de3d8796961a">
+    <name>Индивидуальные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Индивидуальные</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="b4785780-6071-4246-b462-a762b4029d0b">
+    <name>Групповые</name>
+    <synonym>
+      <key>ru</key>
+      <value>Групповые</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

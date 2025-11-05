@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="469d846c-25ec-4a11-adb6-49b3e82f8efa">
+  <producedTypes>
+    <selectionType typeId="9e6e29f8-aaea-4abd-8280-64eda81a4223" valueTypeId="c2dfd727-98bb-4f75-b7bd-3d0a66a7b507"/>
+    <listType typeId="23ddfb0d-7571-4bcd-b9fb-3d58138dd7a9" valueTypeId="fbf04045-3ebb-4445-91f8-17b29191577c"/>
+    <managerType typeId="c39632ee-9037-475d-821a-3c4320594360" valueTypeId="b8916bf6-aa53-4753-816a-7ccba397726f"/>
+    <recordSetType typeId="0dfab324-25b4-48c5-92ea-003c629d4fda" valueTypeId="cfac130a-2d42-401c-a468-993e790cbf0b"/>
+    <recordKeyType typeId="1afb4630-ff7c-44f1-977e-1ee51ba1fe98" valueTypeId="05f91a51-19df-44c0-9801-08b6dc807d1b"/>
+    <recordType typeId="65e6f45a-ceca-47f9-8e93-f1919b0dd2aa" valueTypeId="78d56871-055f-477a-b030-2b3e0099e64e"/>
+    <recordManagerType typeId="c7a6fd66-787c-40d5-94ff-83fc54c4520e" valueTypeId="32ed08cc-9b70-4176-8364-4459e1fb4eb4"/>
+  </producedTypes>
+  <name>ПоказателиКормов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Показатели кормов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="63f6a827-1e35-4547-b691-07eaf4429530">
+    <name>Корм</name>
+    <synonym>
+      <key>ru</key>
+      <value>Корм</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

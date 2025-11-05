@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b5f872ea-18fc-418b-b6c2-8b1e54a270ae">
+  <producedTypes>
+    <refType typeId="644768ce-b7ef-4eb7-bad5-73fad77bfb28" valueTypeId="b5b04b7a-6884-459a-a1f4-ffc800dd3c9d"/>
+    <listType typeId="7e08c808-1584-4995-baac-f28077d3786c" valueTypeId="d8749b0e-3005-46cc-86af-8568986b960c"/>
+    <managerType typeId="940ea1f6-011d-4223-a688-6d85f38a3f18" valueTypeId="83f418da-c790-48c3-94e8-fe5627ca3251"/>
+  </producedTypes>
+  <name>БуквенныеКодыСтран</name>
+  <synonym>
+    <key>ru</key>
+    <value>Буквенные коды стран</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="c56f2a82-47ad-4ffc-9dc6-127163045eb7">
+    <name>RU</name>
+    <synonym>
+      <key>ru</key>
+      <value>RU</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="f2cdf7b0-b280-467f-9c23-fcf1e1e3bc46">
+    <name>BY</name>
+    <synonym>
+      <key>ru</key>
+      <value>BY</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

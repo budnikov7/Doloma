@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="02a4be98-f7b8-4a40-984e-c6a34c22e58f">
+  <name>ПоказыватьРодословную</name>
+  <synonym>
+    <key>ru</key>
+    <value>Показывать родословную</value>
+  </synonym>
+  <location>Constant.ПоказыватьРодословную</location>
+  <privilegedGetMode>true</privilegedGetMode>
+  <content>Catalog.РодословнаяЖивотных</content>
+  <content>InformationRegister.РодственныеСвязи</content>
+  <content>Subsystem.Родословная</content>
+</mdclass:FunctionalOption>

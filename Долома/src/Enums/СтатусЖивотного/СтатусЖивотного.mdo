@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d9d0dc58-f2a0-4c2c-b422-6e18608576c2">
+  <producedTypes>
+    <refType typeId="62e810de-96f7-43a7-a2a7-7d31e8e6bda3" valueTypeId="e676ddac-b5be-4113-915a-0b81f7b953f1"/>
+    <listType typeId="7fc435d8-474b-42a2-9e9a-b12a7f8dd93c" valueTypeId="87ae32bb-99b0-4053-9302-f9a336859618"/>
+    <managerType typeId="527d220e-26da-4182-835e-96abc99c33ab" valueTypeId="f8f78f2c-3115-4842-a8d0-a9a507e0051f"/>
+  </producedTypes>
+  <name>СтатусЖивотного</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статус животного</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="192c500e-69e8-4eb8-9366-bd70db6b503e">
+    <name>Стельная</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стельная</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="e2de0bde-700a-42df-994e-d6535d82a9ef">
+    <name>НеСтельная</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не стельная</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="1b4d5e5a-78b7-4187-b42a-6f7886cf8f03">
+    <name>Осеменена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Осеменена</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

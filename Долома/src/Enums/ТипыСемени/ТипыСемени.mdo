@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8311ea32-b905-4fd4-bfef-8f0aa2c60ddd">
+  <producedTypes>
+    <refType typeId="23b57ee4-d614-46f6-b668-ab33a23e41a4" valueTypeId="ec9fae26-fdec-4b02-bd9b-48cd564b80c6"/>
+    <listType typeId="2507b454-0ac7-4c70-afaa-f5d438d627ac" valueTypeId="053af448-6b9f-4393-9408-1e275f6ded36"/>
+    <managerType typeId="a01c635a-f9a9-42e6-b143-9b8cfaa7bc83" valueTypeId="296c5fb7-a6a2-4d27-8eab-3216754aa41b"/>
+  </producedTypes>
+  <name>ТипыСемени</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы семени</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="8c3f25ee-3f0d-4850-b999-138a12705f94">
+    <name>Традиционное</name>
+    <synonym>
+      <key>ru</key>
+      <value>ТР</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="5731cc2b-fb31-40d4-9e3a-b30930739160">
+    <name>Сексированное</name>
+    <synonym>
+      <key>ru</key>
+      <value>СС</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

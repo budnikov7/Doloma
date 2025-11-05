@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="be5cbdcd-b5a4-4147-b67e-ec1429fdb68b">
+  <producedTypes>
+    <objectType typeId="6438ad53-7dea-418f-a18a-c51dac32420f" valueTypeId="edf47618-8df4-49bf-9a01-0ccc46eedb26"/>
+    <managerType typeId="76d2f4e6-aea0-4ffd-9e41-ca50d3de4d3a" valueTypeId="a7981e83-2c51-49b3-90a1-9257b7bac53c"/>
+  </producedTypes>
+  <name>ПерепроведениеТоварыНаСкладах</name>
+  <synonym>
+    <key>ru</key>
+    <value>Перепроведение товаров на складах</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ПерепроведениеТоварыНаСкладах.Form.Форма</defaultForm>
+  <forms uuid="b07969f5-4324-4deb-968e-ea8d942e4cdc">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

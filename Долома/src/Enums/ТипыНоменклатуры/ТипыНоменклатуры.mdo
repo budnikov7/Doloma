@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="11525100-5e9c-4bc4-a9ec-534b74aca7a3">
+  <producedTypes>
+    <refType typeId="8fdd6596-5cd6-4a84-b4ae-2f8c12c3305f" valueTypeId="aa50d9d2-29b6-4c47-845a-95287ca3bba0"/>
+    <listType typeId="25760cac-390c-471d-ac1d-3ac8f7af0b80" valueTypeId="d65bee56-ae04-4952-a6bb-189312eb847b"/>
+    <managerType typeId="30311533-b0c1-421c-bb3a-01b4c30ec794" valueTypeId="766b0f5c-b354-49bd-a92e-ecd19846a3a6"/>
+  </producedTypes>
+  <name>ТипыНоменклатуры</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы номенклатуры</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="50f2ce60-9d11-466c-a834-9688df95604a">
+    <name>Продукция</name>
+    <synonym>
+      <key>ru</key>
+      <value>Продукция</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="b611c2e2-510d-4572-b177-2a2ec82f3ede">
+    <name>Препарат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ветеринарные препараты</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="75d150c1-6a37-4863-acb3-c3f22076d1b7">
+    <name>Семя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Семя</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="3b104e6c-e0af-48ba-a43c-e45f6a405c9a">
+    <name>Корм</name>
+    <synonym>
+      <key>ru</key>
+      <value>Корм</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="227706d6-b48e-4863-b5d9-68644fcb59f7">
+    <name>ЗооТовары</name>
+    <synonym>
+      <key>ru</key>
+      <value>Зоотовары</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="003cd859-84ab-421a-9541-698ed3fb0b94">
+    <name>Услуга</name>
+    <synonym>
+      <key>ru</key>
+      <value>Услуга</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

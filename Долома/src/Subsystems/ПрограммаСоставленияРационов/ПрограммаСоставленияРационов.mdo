@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f9f41d2c-6967-42b9-a263-127959e7f26d">
+  <name>ПрограммаСоставленияРационов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Программа составления рационов</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.Картинка_РасчетРационов</picture>
+  </picture>
+  <content>Enum.ВидыКормов</content>
+  <content>InformationRegister.ТаблицаПитательностиКормов</content>
+  <content>Document.ВводТаблицыПитательностиКормов</content>
+  <content>Catalog.ПоказателиРационов</content>
+  <content>DataProcessor.УстановкаНормативныхПоказателейРационов</content>
+  <content>Catalog.Рационы</content>
+  <content>Catalog.ГруппыЖивотных</content>
+  <content>Document.ПланЗагрузки</content>
+  <content>Report.ОтчетТаблицаПитательности</content>
+</mdclass:Subsystem>

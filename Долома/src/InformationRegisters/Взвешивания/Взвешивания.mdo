@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b82fd00d-387d-49a6-b61c-812aa2c1b7c7">
+  <producedTypes>
+    <selectionType typeId="3fb9da3c-0449-43cd-a1c2-e4330491d5cd" valueTypeId="4a9df085-e805-42cc-94c0-07dad025ada9"/>
+    <listType typeId="67ba569f-4340-470b-abfc-7b8934f65904" valueTypeId="1241f179-5320-4b6d-ac7d-8a501e5240fe"/>
+    <managerType typeId="1b735c6d-3bf9-4451-8bac-1893af6abdfb" valueTypeId="f52448cc-5535-4ce9-bddb-f6932dcb028a"/>
+    <recordSetType typeId="746b2da4-9291-4fe6-bd27-fd8672216da7" valueTypeId="bcc44ecc-bd00-42a1-9d1a-dd889a1cf1f7"/>
+    <recordKeyType typeId="811315f8-e92e-4e15-a3b0-2242fe0f0dbf" valueTypeId="e0ccc709-2df6-45f0-922d-6dd0d84c4811"/>
+    <recordType typeId="be36f97e-8812-4cf6-a165-77591a2abcba" valueTypeId="b5b46f62-df93-460a-aac5-f6e3fbb92b9f"/>
+    <recordManagerType typeId="1a8c8b91-10f4-47af-9054-7f459a3fb766" valueTypeId="e4105612-eae9-4630-ac1a-d6c65ed99554"/>
+  </producedTypes>
+  <name>Взвешивания</name>
+  <synonym>
+    <key>ru</key>
+    <value>Взвешивания животных</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSliceFirst>true</enableTotalsSliceFirst>
+  <enableTotalsSliceLast>true</enableTotalsSliceLast>
+  <resources uuid="9b79ddae-ea4d-4df5-aeee-24be3256e369">
+    <name>Вес</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вес</value>
+    </synonym>
+    <comment>Вес на перевеске (в кг)</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>17</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="7ebdc67d-6339-49be-84ac-acbf108f072e">
+    <name>Рост</name>
+    <synonym>
+      <key>ru</key>
+      <value>Рост в холке</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>12</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="55800e2a-c94e-4b2d-be4c-e8f341d5ab41">
+    <name>Примечание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Примечание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="6f97486a-9696-45b5-8418-af2791bd2a41">
+    <name>СреднеСуточныйПривес</name>
+    <synonym>
+      <key>ru</key>
+      <value>Средне суточный привес</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="9b82c6f6-2319-4aa8-93f0-d390ba588e86">
+    <name>ВесТриМесяца</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вес три месяца</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>1</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="019da890-625d-440e-bd22-dc833b9e79b9">
+    <name>Животное</name>
+    <synonym>
+      <key>ru</key>
+      <value>Животное</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Животные</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

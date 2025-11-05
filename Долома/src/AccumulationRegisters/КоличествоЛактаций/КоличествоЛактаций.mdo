@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="907eb98d-2f61-4533-852c-7db122ccfb60">
+  <producedTypes>
+    <selectionType typeId="7c235188-dacb-433a-b5bd-ad649d58e0b3" valueTypeId="9c40b36b-efa3-4d3d-9e42-d08af179b055"/>
+    <listType typeId="b014077f-f85f-43c9-81ce-cde0f42c023f" valueTypeId="2e68c75c-6357-49c5-90a2-b9179bf36233"/>
+    <managerType typeId="343a69ea-f0ef-4387-84c0-817c5f4d709f" valueTypeId="f7fe1807-27d9-442a-8780-f9f90278f023"/>
+    <recordSetType typeId="ac64f554-66e0-42a2-8eae-8752e18786a0" valueTypeId="378d225a-2328-418d-8e94-3ee38df026ec"/>
+    <recordKeyType typeId="8e58fb04-31f0-41ae-843d-26d43055f8d6" valueTypeId="a6c773e2-2d2d-4390-9071-c22e689ddafc"/>
+    <recordType typeId="35ac410e-6afb-4cd4-a912-06a18f23a273" valueTypeId="4f9f018b-50e5-4f3b-966b-959d8b0c4e1b"/>
+  </producedTypes>
+  <name>КоличествоЛактаций</name>
+  <synonym>
+    <key>ru</key>
+    <value>Количество лактаций</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>RecordType</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="528acd61-067c-472f-af35-0bebfaaaf752">
+    <name>КоличествоЛактаций</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество лактаций</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="1d70f39c-c655-4348-8bf9-e32f74ba3de5">
+    <name>Мать</name>
+    <synonym>
+      <key>ru</key>
+      <value>Мать</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Животные</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="da4e5938-954e-4c18-b068-6722ff3e9b25">
+    <name>Ферма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ферма</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Фермы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

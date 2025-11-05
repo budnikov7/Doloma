@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e738f547-d2d2-410e-b5d5-c38d0d5929ca">
+  <producedTypes>
+    <objectType typeId="82c7e282-5efe-4991-8e5a-4634ed4ec808" valueTypeId="e3c53abb-616e-4d58-bf6a-3bc0f43ef194"/>
+    <refType typeId="0951181e-408e-4b2d-86a9-39fb3d4e055c" valueTypeId="96c28c9e-8d89-48ab-b7dd-88758809e9c6"/>
+    <selectionType typeId="4374a24c-ca6f-4da4-aebb-22d30cd4f1df" valueTypeId="8fe52e61-cea5-4e10-be79-7eddd8a88c81"/>
+    <listType typeId="2998fd56-f865-4a8d-9fa8-dfff7a4f3376" valueTypeId="4e856856-bb9a-4b37-83ec-6baa85438506"/>
+    <managerType typeId="1259ff41-d54e-4ca9-b67a-4602f32ce609" valueTypeId="3337340a-31b5-486d-8115-b86ad0333b40"/>
+  </producedTypes>
+  <name>ШаблоныПрепаратов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Шаблоны препаратов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ШаблоныПрепаратов.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ШаблоныПрепаратов.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ШаблоныПрепаратов.Form.ФормаЭлемента</defaultObjectForm>
+  <attributes uuid="48a1025b-77d8-4fd7-b8e9-5ebe84829959">
+    <name>АвтоматическоеЗаполнение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Автоматическое заполнение</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="24c14a06-125a-497a-8977-90d5c4a89b51">
+    <producedTypes>
+      <objectType typeId="04a308a2-3dbd-4ec4-8c9d-0d7ca6855b90" valueTypeId="bc4c73f2-6f7c-49b2-ba80-b58f1f96911e"/>
+      <rowType typeId="fb01d482-e911-4761-bed4-a4a1dfda6428" valueTypeId="eeabd54d-d7ac-4bd6-b56a-9a0184ee1945"/>
+    </producedTypes>
+    <name>СписокПрепаратов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список препаратов</value>
+    </synonym>
+    <attributes uuid="db59c3a5-900e-492a-9cac-4f7543f7e295">
+      <name>Препарат</name>
+      <synonym>
+        <key>ru</key>
+        <value>Препарат</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Номенклатура</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameters>
+        <name>Отбор.ТипТовара</name>
+        <value xsi:type="core:FixedArrayValue">
+          <values xsi:type="core:ReferenceValue">
+            <value>Enum.ТипыНоменклатуры.EnumValue.Препарат</value>
+          </values>
+          <values xsi:type="core:ReferenceValue">
+            <value>Enum.ТипыНоменклатуры.EnumValue.ЗооТовары</value>
+          </values>
+        </value>
+      </choiceParameters>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="31ae86a6-9eb2-46b7-b427-252f6e47c579">
+      <name>Количество</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="f5917690-4f25-42f4-98f8-cbf28932154f">
+      <name>ЕдиницаИзмерения</name>
+      <synonym>
+        <key>ru</key>
+        <value>Единица измерения</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ЕдиницыИзмерения</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <forms uuid="c2ec4e04-3d1a-4d45-be34-d856cb366cf3">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="310c12e5-e411-4974-b8b1-80beccae8c08">
+  <producedTypes>
+    <objectType typeId="70f99569-dfc6-4b3d-9e89-f61231433f11" valueTypeId="79414f02-d68d-4271-a677-8e46237db805"/>
+    <managerType typeId="9f33af07-e398-4b91-816c-60f4f4c5164d" valueTypeId="57c6b6ac-cabf-4e9d-81c0-6a09fcdc5409"/>
+  </producedTypes>
+  <name>ПотребностьВМолокеИКормеДляТелят</name>
+  <synonym>
+    <key>ru</key>
+    <value>Потребность в молоке и корме для телят</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ПотребностьВМолокеИКормеДляТелят.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.ПотребностьВМолокеИКормеДляТелят.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <forms uuid="8e16f1f9-f7a4-41db-a07f-c06bb3aeb552">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="1713e99f-6929-4748-8966-b777663db8ac">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="432f70d9-29fc-4b3b-94e1-044127cfeeb2">
+  <producedTypes>
+    <refType typeId="4d0d2588-eb7d-4c20-afb6-0c52aba92984" valueTypeId="e355e204-7237-4eff-9fdf-ef14a1f8965e"/>
+    <listType typeId="686c707c-4e27-4804-8bf7-4c0a0af7fdca" valueTypeId="58742853-e133-4de0-a40b-5157628dc11e"/>
+    <managerType typeId="ca75b1b8-9ea5-43e2-a5e0-dd7961b20fb1" valueTypeId="9c89728f-7849-4d8f-a871-af124fcb2143"/>
+  </producedTypes>
+  <name>ПоказателиСтруктурыВзрослогоПоголовья</name>
+  <synonym>
+    <key>ru</key>
+    <value>Показатели структуры взрослого поголовья</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="895bb7fd-c067-47d3-9fc7-b45291b1782e">
+    <name>Яловые</name>
+    <synonym>
+      <key>ru</key>
+      <value>Яловые</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="ee5103ef-e2e6-41ea-ab14-8e5bec33f975">
+    <name>Осеменённые</name>
+    <synonym>
+      <key>ru</key>
+      <value>Осеменённые</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="c3ca31f3-4194-4214-be18-8a783011e003">
+    <name>Новотёл</name>
+    <synonym>
+      <key>ru</key>
+      <value>Новотёл</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="b9049e20-ad78-4e0c-921f-749c07fcfe4c">
+    <name>Сухостой</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сухостой</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="c49586cc-892e-4c81-a5f2-5000cb4ce7fe">
+    <name>Стельные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стельные</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="44d5cca0-d837-47e8-8fc3-2100b046edfa">
+    <name>НеОсеменённые</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не осеменённые</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

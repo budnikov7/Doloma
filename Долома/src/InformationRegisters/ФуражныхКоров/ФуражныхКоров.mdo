@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="54015716-5a52-4e6e-badf-04b7545cbcd8">
+  <producedTypes>
+    <selectionType typeId="31f7471e-d004-4e49-a6d2-a45325bfdefe" valueTypeId="c51ae087-4379-4808-b347-3f7744da4099"/>
+    <listType typeId="9bd932e0-cc8f-4277-94d6-441b9722a2f1" valueTypeId="28f0822b-6b3b-463f-bdc2-7c0d845efa36"/>
+    <managerType typeId="d34db5e3-3024-4f61-8996-6748d2229b26" valueTypeId="f627e67b-413f-452a-a499-a3608d38b492"/>
+    <recordSetType typeId="19903425-7207-4ac7-bc65-a858bfdab80e" valueTypeId="f04aaa50-222b-498d-9501-c63701896983"/>
+    <recordKeyType typeId="f0d4a6b0-c59b-475a-9da8-829b43f5263a" valueTypeId="bb4c341c-d3d3-447a-a173-8580b560b48e"/>
+    <recordType typeId="1a590351-63de-43cc-8169-3a2f61c22e2d" valueTypeId="e695fc3d-92f1-44e7-bbbe-e9b1c5e0a40f"/>
+    <recordManagerType typeId="8e640e62-0c05-440e-a54f-b14a2eb5fdb6" valueTypeId="1a55e35c-5d37-4891-becd-ef7b60e219db"/>
+  </producedTypes>
+  <name>ФуражныхКоров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Фуражных коров</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ФуражныхКоров.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.ФуражныхКоров.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="412c66a7-bbd6-412c-8d39-056a4912372a">
+    <name>ФуражныхКоров</name>
+    <synonym>
+      <key>ru</key>
+      <value>Фуражных коров</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="67a39958-507c-4d9c-94c0-058461132706">
+    <name>Ферма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ферма</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Фермы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="d95f1f35-9354-4fdf-abf5-1867003b16f9">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="867dae7b-e7f1-44d3-9ac4-1fba03d42b7a">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

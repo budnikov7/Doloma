@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fcc378be-6db0-40da-881e-d738f54e9748">
+  <name>Бюджетирование</name>
+  <synonym>
+    <key>ru</key>
+    <value>Бюджетирование</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.Картинка_Бюджет</picture>
+  </picture>
+  <content>Catalog.СтатьиРасхода</content>
+  <content>InformationRegister.БюджетЗакупок</content>
+  <content>Report.ОтчетБюджетЗакупок</content>
+</mdclass:Subsystem>

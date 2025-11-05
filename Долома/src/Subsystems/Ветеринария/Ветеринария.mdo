@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ad084188-4d72-48ae-8cf6-e8c38625d020">
+  <name>Ветеринария</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ветеринария</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.Картинка_Ветеринария</picture>
+  </picture>
+  <content>Document.ЖурналЛечения</content>
+  <content>Document.ОперацииЖивотным</content>
+  <content>Catalog.СхемыЛечения</content>
+  <content>Catalog.Заболевания</content>
+  <content>Report.ПроцентКоровБольныхМаститом</content>
+  <content>Catalog.ВетеринарныеМероприятия</content>
+  <content>Report.ОтчетСписокБольныхЖивотных</content>
+  <content>Report.ОтчетПоНовотельнымЖивотным</content>
+  <content>Report.СписокРожденныхТелят</content>
+</mdclass:Subsystem>

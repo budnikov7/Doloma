@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="acbbf8db-ee4b-43bc-a43f-f8dc044fabb6">
+  <producedTypes>
+    <objectType typeId="4297b597-15c2-4232-ae6f-0907711590c5" valueTypeId="c991a58b-acfa-499e-a1ed-2a99e64af9a1"/>
+    <refType typeId="728e92b6-d706-4ba0-a6fc-12ab76b607cc" valueTypeId="7988b49b-7441-4cdd-b00f-8a6b16ce8994"/>
+    <selectionType typeId="7c27ad95-d8b0-4f4a-a14b-3eb2d17449f6" valueTypeId="6c5a99dc-d207-4952-9ef0-d75bf0de54f2"/>
+    <listType typeId="7550b10d-0ac4-41a6-b7ff-f8fbffff710b" valueTypeId="db751d36-8a95-403a-a92e-0d4825394c09"/>
+    <managerType typeId="69d55d92-5df7-49de-8f2f-ea5bb791f321" valueTypeId="68a0a4c7-26ad-4d8c-88d2-633eb56cc5ee"/>
+  </producedTypes>
+  <name>СтраныМира</name>
+  <synonym>
+    <key>ru</key>
+    <value>Страны мира</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.СтраныМира.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.СтраныМира.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>PredefinedDataName</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Predefined</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>IsFolder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Owner</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Parent</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Description</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Code</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>3</codeLength>
+  <descriptionLength>50</descriptionLength>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="23b514c1-1060-4a82-81e8-a73df13e4679">
+      <name>Болгария</name>
+      <description>Болгария</description>
+      <code xsi:type="core:NumberValue">
+        <value>18</value>
+      </code>
+    </items>
+    <items id="efa51b1d-6e0b-4c7a-ad8c-3d0b2121edd8">
+      <name>Германия</name>
+      <description>Германия</description>
+      <code xsi:type="core:NumberValue">
+        <value>30</value>
+      </code>
+    </items>
+    <items id="aa64b564-6f2a-45ae-8345-70c87207ae73">
+      <name>Италия</name>
+      <description>Италия</description>
+      <code xsi:type="core:NumberValue">
+        <value>42</value>
+      </code>
+    </items>
+    <items id="10873d3f-9143-4d2b-b71c-c748d8cc61c9">
+      <name>Канада</name>
+      <description>Канада</description>
+      <code xsi:type="core:NumberValue">
+        <value>25</value>
+      </code>
+    </items>
+    <items id="91119762-3be6-494c-90bc-c8eabea55236">
+      <name>Нидерланды</name>
+      <description>Нидерланды</description>
+      <code xsi:type="core:NumberValue">
+        <value>23</value>
+      </code>
+    </items>
+    <items id="ba0d7122-0007-4c64-9806-bab2d5846763">
+      <name>Россия</name>
+      <description>Россия</description>
+      <code xsi:type="core:NumberValue">
+        <value>1</value>
+      </code>
+    </items>
+    <items id="371e2e17-c6be-4eb9-bef8-e6793b84457c">
+      <name>США</name>
+      <description>США</description>
+      <code xsi:type="core:NumberValue">
+        <value>27</value>
+      </code>
+    </items>
+    <items id="097b4615-d5ec-45da-9851-4891719e9fd9">
+      <name>Франция</name>
+      <description>Франция</description>
+      <code xsi:type="core:NumberValue">
+        <value>29</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="91ff2cda-363c-4e89-a875-82d5d25f21a8">
+  <producedTypes>
+    <objectType typeId="f196cec0-e5bb-48e2-8562-52e10d477493" valueTypeId="a821b831-ae1f-4518-b912-c4e3ad524342"/>
+    <refType typeId="8fb5f86e-8316-4edc-bd37-320a3b9ea3db" valueTypeId="d704876c-e0bc-42be-9215-ba9e40660915"/>
+    <selectionType typeId="1e22b234-f0f4-4da8-9886-ea24523c62fd" valueTypeId="a0e83399-f64b-4b46-be77-f2f9a3363d19"/>
+    <listType typeId="42f766fc-5197-4401-b541-cf7eb6d90dd9" valueTypeId="4344420a-9455-4cf5-8375-1012eab0703a"/>
+    <managerType typeId="b266ebdd-ae58-4901-80f4-410786801def" valueTypeId="1f07e767-0101-4309-a4ec-197e7647f6bb"/>
+  </producedTypes>
+  <name>ПоказателиРационов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Показатели рационов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ПоказателиРационов.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>30</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="8306b460-35ff-4aea-85f4-7d679dedd815">
+      <name>ADF</name>
+      <description>ADF</description>
+      <code xsi:type="core:StringValue">
+        <value>000000017</value>
+      </code>
+    </items>
+    <items id="1fa4abd3-1f9e-45cc-800d-1b90b46c85d2">
+      <name>ADL</name>
+      <description>ADL</description>
+      <code xsi:type="core:StringValue">
+        <value>000000018</value>
+      </code>
+    </items>
+    <items id="5c0c12c3-cdea-464d-ad3b-a8180c86de45">
+      <name>Ca</name>
+      <description>Ca</description>
+      <code xsi:type="core:StringValue">
+        <value>000000025</value>
+      </code>
+    </items>
+    <items id="571a6e20-bcd9-4c04-8bd6-c15aec3ce5d4">
+      <name>Ca_P</name>
+      <description>Ca:P</description>
+      <code xsi:type="core:StringValue">
+        <value>000000026</value>
+      </code>
+    </items>
+    <items id="f341fb61-e591-48f1-872b-7766e6b46a0e">
+      <name>Cl</name>
+      <description>Cl</description>
+      <code xsi:type="core:StringValue">
+        <value>000000023</value>
+      </code>
+    </items>
+    <items id="e651e25f-7282-45fd-ab21-2b94910a7ce4">
+      <name>DCAD</name>
+      <description>DCAD</description>
+      <code xsi:type="core:StringValue">
+        <value>000000019</value>
+      </code>
+    </items>
+    <items id="25f197d0-7f73-40f7-97d6-a34191c82d0e">
+      <name>K</name>
+      <description>K</description>
+      <code xsi:type="core:StringValue">
+        <value>000000021</value>
+      </code>
+    </items>
+    <items id="4bfaad7f-62ca-4e45-a687-0d329d4d5279">
+      <name>Mg</name>
+      <description>Mg</description>
+      <code xsi:type="core:StringValue">
+        <value>000000020</value>
+      </code>
+    </items>
+    <items id="5517affb-583a-46eb-9c07-6109d4f9e12b">
+      <name>Na</name>
+      <description>Na</description>
+      <code xsi:type="core:StringValue">
+        <value>000000027</value>
+      </code>
+    </items>
+    <items id="74347020-7dee-4904-a6f3-77ab203ea9b7">
+      <name>NDF</name>
+      <description>NDF</description>
+      <code xsi:type="core:StringValue">
+        <value>000000015</value>
+      </code>
+    </items>
+    <items id="ae1a8437-9417-4a15-8338-0cef7ed2c947">
+      <name>NDF_ОК</name>
+      <description>NDF-ОК</description>
+      <code xsi:type="core:StringValue">
+        <value>000000016</value>
+      </code>
+    </items>
+    <items id="be1f7c9d-2a54-4bb9-aa69-e29ce13b24a0">
+      <name>P</name>
+      <description>P</description>
+      <code xsi:type="core:StringValue">
+        <value>000000022</value>
+      </code>
+    </items>
+    <items id="09e3df88-9a79-4cd1-90a4-aeb801496901">
+      <name>RNB</name>
+      <description>RNB</description>
+      <code xsi:type="core:StringValue">
+        <value>000000004</value>
+      </code>
+    </items>
+    <items id="ddc70c1b-6c2f-407f-a7ce-d953b00b5256">
+      <name>S</name>
+      <description>S</description>
+      <code xsi:type="core:StringValue">
+        <value>000000024</value>
+      </code>
+    </items>
+    <items id="36021c79-31d3-40c6-855f-7becabde600a">
+      <name>XP</name>
+      <description>XP (СП)</description>
+      <code xsi:type="core:StringValue">
+        <value>000000007</value>
+      </code>
+    </items>
+    <items id="a5a5361c-e03c-4c17-b526-8e0f8020f520">
+      <name>Влажность</name>
+      <description>Влажность</description>
+      <code xsi:type="core:StringValue">
+        <value>000000003</value>
+      </code>
+    </items>
+    <items id="db12d81f-a816-4ed3-8856-e78b0b7208e4">
+      <name>Крахмал</name>
+      <description>Крахмал</description>
+      <code xsi:type="core:StringValue">
+        <value>000000009</value>
+      </code>
+    </items>
+    <items id="82cb186c-f8f7-4018-af72-6d59295cd4f3">
+      <name>НерастворимыйВРубцеПротеин</name>
+      <description>Нерастворимый в рубце протеин</description>
+      <code xsi:type="core:StringValue">
+        <value>000000030</value>
+      </code>
+    </items>
+    <items id="fca33670-a281-41c1-9eab-dd206914435d">
+      <name>РастворимыйВРубцеПротеин</name>
+      <description>Растворимый в рубце протеин</description>
+      <code xsi:type="core:StringValue">
+        <value>000000029</value>
+      </code>
+    </items>
+    <items id="fb8ad0f3-dd84-4fc5-9310-783e03cbae2d">
+      <name>РастворимыйСП</name>
+      <description>Растворимый СП% в XP (СП)</description>
+      <code xsi:type="core:StringValue">
+        <value>000000008</value>
+      </code>
+    </items>
+    <items id="2d82410b-928e-458d-874a-98637a342784">
+      <name>Сахар</name>
+      <description>Сахар</description>
+      <code xsi:type="core:StringValue">
+        <value>000000011</value>
+      </code>
+    </items>
+    <items id="0ad2d786-c29d-4d91-a213-7b14c935dca1">
+      <name>СВВОК</name>
+      <description>СВ в ОК</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+    </items>
+    <items id="19f9236a-1cc9-4275-8c82-6f1ffd6afab9">
+      <name>СЖ</name>
+      <description>СЖ (CL)</description>
+      <code xsi:type="core:StringValue">
+        <value>000000012</value>
+      </code>
+    </items>
+    <items id="913119e9-bb39-481e-a54a-654bfa88e2c1">
+      <name>СЗ</name>
+      <description>СЗ</description>
+      <code xsi:type="core:StringValue">
+        <value>000000013</value>
+      </code>
+    </items>
+    <items id="8aad883d-88e8-4eee-9a01-e2f9dc11a904">
+      <name>СК</name>
+      <description>СК</description>
+      <code xsi:type="core:StringValue">
+        <value>000000014</value>
+      </code>
+    </items>
+    <items id="8aa23294-1ad3-4ce2-b000-debd55e4b6c7">
+      <name>СухоеВещество</name>
+      <description>Сухое вещество</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+    <items id="e71b775a-fd91-4b52-86ff-53c71b200c0f">
+      <name>ТранзитныйКрахмал</name>
+      <description>Транзитный крахмал</description>
+      <code xsi:type="core:StringValue">
+        <value>000000010</value>
+      </code>
+    </items>
+    <items id="6cd8d337-022b-420e-9e59-6f3edb3ee09d">
+      <name>Цена</name>
+      <description>Цена</description>
+      <code xsi:type="core:StringValue">
+        <value>000000028</value>
+      </code>
+    </items>
+    <items id="3614db6b-d01e-47de-b137-0381e4687366">
+      <name>NEL</name>
+      <description>ЧЭЛ (NEL)</description>
+      <code xsi:type="core:StringValue">
+        <value>000000006</value>
+      </code>
+    </items>
+    <items id="587489db-f517-46cb-bf4b-c6c67b899dfd">
+      <name>NELНаКгСВ</name>
+      <description>ЧЭЛ (NEL) /кг СВ</description>
+      <code xsi:type="core:StringValue">
+        <value>000000005</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultListForm>Catalog.ПоказателиРационов.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="5f201146-8bfc-4e79-8b55-ad5232d42287">
+    <name>НаименованиеПолное</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наименование полное</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="933616a7-01cd-4ff2-afea-1dfd2559b9d9">
+    <name>ЕдиницаИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Единица измерения</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ЕдиницыИзмерения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="8bac36d6-52cd-4b95-b8db-11b1c9f61ba5">
+    <name>ПереводитьВПроценты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Переводить в проценты</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="9ce03298-4b62-40eb-bdcd-4fe022b971db">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

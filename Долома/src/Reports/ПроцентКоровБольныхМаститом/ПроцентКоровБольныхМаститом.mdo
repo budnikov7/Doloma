@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="645c5271-c567-4a26-b7c4-ebb7df29b9c6">
+  <producedTypes>
+    <objectType typeId="6e421f26-d36a-4411-a857-60f05d012b40" valueTypeId="d673b4c8-a2e2-4964-8421-83a4ff6015f8"/>
+    <managerType typeId="ac54dd6c-6f58-4059-9914-9ccf36c70212" valueTypeId="186eeaac-bedb-45b9-bf62-f5d7c3438bc4"/>
+  </producedTypes>
+  <name>ПроцентКоровБольныхМаститом</name>
+  <synonym>
+    <key>ru</key>
+    <value>Процент коров больных маститом</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ПроцентКоровБольныхМаститом.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.ПроцентКоровБольныхМаститом.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <forms uuid="66efbfd8-fb17-45f7-b6df-9a03374fece8">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="fe96fecb-dbb7-445e-8ef4-2eca6cae271b">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9ceff440-4cd2-4d8c-906b-dc1249d341cd">
+  <producedTypes>
+    <refType typeId="c73116b7-8d15-4ac3-bef1-70c9a2055898" valueTypeId="193187d8-892d-4384-a925-151dd67234a1"/>
+    <listType typeId="537a47b0-6688-4749-88a8-99270bfb2f05" valueTypeId="3e9d5940-c847-4144-aae4-5728c8a12a0b"/>
+    <managerType typeId="5e12565f-aa2d-4684-9e8e-9b3b1715b75d" valueTypeId="2ed97110-8a66-4ee3-9e72-40c6e909777f"/>
+  </producedTypes>
+  <name>Родство</name>
+  <synonym>
+    <key>ru</key>
+    <value>Родство</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="6c29e047-3ce9-4ca7-b26e-f0442bd4c12a">
+    <name>Мать</name>
+    <synonym>
+      <key>ru</key>
+      <value>Мать</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="0b4142e3-4dd2-4337-b3c7-703fabdae389">
+    <name>Отец</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отец</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f930b478-8846-4c6d-8a63-9420a67b6c64">
+  <producedTypes>
+    <objectType typeId="49b0202d-8abc-4b19-92f4-e470a768f05b" valueTypeId="eaa404b5-29d7-4aa0-8e9a-cdd10ad78d3d"/>
+    <managerType typeId="b7a4f983-578d-470b-93a7-ad621b57f56a" valueTypeId="e68b1ffa-699d-403a-936a-494c0e5192e9"/>
+  </producedTypes>
+  <name>ПроверкаРодословных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Проверка родословных</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ПроверкаРодословных.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="e16f25a5-5b4d-4d09-a0ee-5d9714720530">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

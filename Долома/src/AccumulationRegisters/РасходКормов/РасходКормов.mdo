@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2e9ff98d-6f6d-4594-b9b3-f6f9b4ba9034">
+  <producedTypes>
+    <selectionType typeId="a721ad6e-3f05-4262-9128-fa46115d68dc" valueTypeId="282b2494-616f-4853-bf1d-bca008a358ab"/>
+    <listType typeId="dc18076d-e302-4f82-a728-5483d6c16cd8" valueTypeId="08ee0cf7-763c-4160-8a17-0b459d36388f"/>
+    <managerType typeId="8e00ada4-ec0f-49b0-a406-1c57393f2a33" valueTypeId="bb29a04a-b350-49be-a0da-90e770881cc9"/>
+    <recordSetType typeId="6e7c17b8-a7a9-41ef-a587-c5c878976a5f" valueTypeId="f092d7d0-b82b-44ae-914e-a71f39b9aff3"/>
+    <recordKeyType typeId="a372a562-db78-47f1-82eb-7f3ba6ec3fe9" valueTypeId="8b893774-b7aa-485b-a580-9961e26714ec"/>
+    <recordType typeId="557b9350-0731-45b7-b006-0e0efc3d185f" valueTypeId="796122b9-3941-43d3-9c64-f04d592a7ec6"/>
+  </producedTypes>
+  <name>РасходКормов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расход кормов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="8c9192d0-8508-448f-80cd-30b7f23b456d">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="2d5a13e5-fe6f-411e-a967-91c6e2a0db27">
+    <name>СодержаниеСВ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Содержание СВ, кг</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="b2a2d9b5-3d00-4e38-b6c8-0d166e2c8898">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="731884e6-8ac1-45f5-b530-a520582c951b">
+    <name>Склад</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склад</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Склад</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="7d16aa11-43a0-481c-963c-bc47b9c5ca34">
+    <name>Ферма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ферма</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Фермы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="82784df9-06c4-4049-9068-0d8e74ea3dc6">
+    <name>Корпус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Корпус</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КорпусаКормления</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="e909da44-d551-4f14-b43f-264c4de292bb">
+    <name>ГруппаЖивотных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группа животных</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ГруппыЖивотных</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

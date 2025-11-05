@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7cb1a337-40ce-43d8-bb70-5488fae8cdaa">
+  <name>ОбменДанными</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен данными</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.ОбменДанными</picture>
+  </picture>
+  <content>ExchangePlan.ОбменСообщениями</content>
+  <content>Catalog.НастройкиПодключенияКВнешнимСистемам</content>
+  <content>DataProcessor.ОбменДаннымиСикора</content>
+</mdclass:Subsystem>

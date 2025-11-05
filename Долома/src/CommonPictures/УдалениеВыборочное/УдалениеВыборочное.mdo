@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9bc74141-ba76-4c65-b56c-7c99b20b61f8">
+  <name>УдалениеВыборочное</name>
+  <synonym>
+    <key>ru</key>
+    <value>Удаление выборочное</value>
+  </synonym>
+</mdclass:CommonPicture>

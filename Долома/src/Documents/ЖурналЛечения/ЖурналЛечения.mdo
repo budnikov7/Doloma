@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="39fdbfed-cff5-49be-813f-719278904bcf">
+  <producedTypes>
+    <objectType typeId="a00cb5bd-1847-428e-bef9-20a66192507d" valueTypeId="2b1e9703-2c97-40a4-8674-154b162df64d"/>
+    <refType typeId="1fe11eb7-4aaf-4a8a-86fe-2a674aed373e" valueTypeId="f5a54a81-a343-4f0a-8284-a423f18828e8"/>
+    <selectionType typeId="15d185f1-8678-4f9a-b316-bd338061b4ab" valueTypeId="1eefa1b9-cc20-4346-96bd-7bcf5e597ab8"/>
+    <listType typeId="3a2fba4c-3922-4515-977a-10f7c16c1024" valueTypeId="2c9ab60c-9077-48fd-abbd-54de43000d29"/>
+    <managerType typeId="722eb89d-2c60-48af-8d09-65f779e6f96a" valueTypeId="7138e3a1-6a0c-4f75-9364-85352673ef09"/>
+  </producedTypes>
+  <name>ЖурналЛечения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Лечение животных</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ЖурналЛечения.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ЖурналЛечения.Form.ФормаДокумента</defaultObjectForm>
+  <defaultListForm>Document.ЖурналЛечения.Form.ФормаСписка</defaultListForm>
+  <registerRecords>InformationRegister.ПериодыБолезнейЖивотных</registerRecords>
+  <registerRecords>AccumulationRegister.ТоварыНаСкладах</registerRecords>
+  <attributes uuid="7a636045-4ed8-4081-8932-38c50f88e326">
+    <name>Ферма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ферма</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Фермы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="4d406a48-8e27-4c9a-8d6b-609f2a20efd9">
+    <name>ЛечащийВрач</name>
+    <synonym>
+      <key>ru</key>
+      <value>Лечащий врач</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="2c8f3afa-8fbb-4bf6-9ca4-093d46b946fc">
+    <name>ВидЗаболевания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид заболевания</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыЗаболеваний</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ead4b3c9-654d-4bd1-a956-18596f0d8fc8">
+    <name>Автор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Автор</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d9b10620-06cb-4005-9f1d-33c4c741e83f">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>500</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ab0722fd-6319-42d0-bb18-9d597e9b1f72">
+    <name>Склад</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склад</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Склад</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="082ecac7-a3ee-45fb-a033-e2aa9621de4c">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="0048e912-e263-4e84-a834-11e93b5b2b84">
+    <name>ФормаВыбораБольногоУчастка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора больного участка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="81342898-a877-4ff5-a5f0-00aec55c014e">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="2c6f9bd4-b169-4a9e-835a-9aef08d43979">
+    <producedTypes>
+      <objectType typeId="229ed553-5aa1-4878-85b1-e2b1d52aa4ef" valueTypeId="6ce782a4-e250-4cb9-8c30-2c8f764e0a31"/>
+      <rowType typeId="d6e0f7a3-e4e1-4043-a2ce-b4829a8ff94f" valueTypeId="e4510ed3-1d0e-41ff-8f0b-5ca5dddddbf5"/>
+    </producedTypes>
+    <name>ЖивотныеНаЛечении</name>
+    <synonym>
+      <key>ru</key>
+      <value>Животные на лечении</value>
+    </synonym>
+    <attributes uuid="04855078-3128-4d47-b69a-3d916cbe3777">
+      <name>Животное</name>
+      <synonym>
+        <key>ru</key>
+        <value>Животное</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Животные</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="0c7d74ba-3d65-4483-843d-77bed33771d8">
+      <name>Заболевание</name>
+      <synonym>
+        <key>ru</key>
+        <value>Заболевание</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Заболевания</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="1e556dc1-b467-4884-9887-58b310b06f7d">
+      <name>НачалоЛечения</name>
+      <synonym>
+        <key>ru</key>
+        <value>Начало лечения</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="93081916-1972-4479-87d8-ee42cc0f12c2">
+      <name>СхемаЛечения</name>
+      <synonym>
+        <key>ru</key>
+        <value>Схема лечения</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.СхемыЛечения</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="8127dd1a-92ea-4fa2-8b1a-c377e62c0745">
+      <name>СписокПрепаратовПолеСвязи</name>
+      <synonym>
+        <key>ru</key>
+        <value>Список препаратов поле связи</value>
+      </synonym>
+      <type>
+        <types>UUID</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+    </attributes>
+    <attributes uuid="26cc5edb-4349-4e25-9b39-6592db4e2b34">
+      <name>Примечание</name>
+      <synonym>
+        <key>ru</key>
+        <value>Примечание</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="a790466f-fb78-4b83-852d-d0c66dc67515">
+      <name>МаститБольнаяЧасть</name>
+      <synonym>
+        <key>ru</key>
+        <value>Мастит больная часть</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>4</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="a60fba4c-9763-450d-a676-6a33b63280c1">
+    <producedTypes>
+      <objectType typeId="a8636c35-561b-4522-a718-141879bfa504" valueTypeId="35d08d3a-8038-40df-aea3-72386fe6d023"/>
+      <rowType typeId="8d664b59-6de7-418c-a64c-49733797f4df" valueTypeId="7f69b8d2-fe54-4ba7-bddd-5576278210d4"/>
+    </producedTypes>
+    <name>ЖивотныеОжидающие</name>
+    <synonym>
+      <key>ru</key>
+      <value>Животные ожидающие</value>
+    </synonym>
+    <attributes uuid="86e9b9d9-d681-489c-98bf-72598458553e">
+      <name>Животное</name>
+      <synonym>
+        <key>ru</key>
+        <value>Животное</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Животные</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="d8b88925-d9ef-46ff-9d4a-0579acc383d9">
+      <name>НачалоЛечения</name>
+      <synonym>
+        <key>ru</key>
+        <value>Начало лечения</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="238a1e01-4ed3-4e5b-adc2-c749c040f2d4">
+      <name>Заболевание</name>
+      <synonym>
+        <key>ru</key>
+        <value>Заболевание</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Заболевания</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="d9ced8f2-bf39-456f-bf46-928c9a35a1e5">
+      <name>СписокПрепаратовПолеСвязи</name>
+      <synonym>
+        <key>ru</key>
+        <value>Список препаратов поле связи</value>
+      </synonym>
+      <type>
+        <types>UUID</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="51424d7d-cdc2-4460-8921-473c433de0fb">
+    <producedTypes>
+      <objectType typeId="3d0abfea-6ccc-4545-9a6d-67a8743d98c4" valueTypeId="80387d05-4c0c-4ef2-8dc2-a45bed578746"/>
+      <rowType typeId="467517ef-10bd-4eed-b0b8-98b19ca26928" valueTypeId="fe219afc-e19e-4372-a78d-874b6aedef7b"/>
+    </producedTypes>
+    <name>ЖивотныеВСтадо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Животные в стадо</value>
+    </synonym>
+    <attributes uuid="749ee27a-a28a-48b8-9166-eafa7a0f2c3f">
+      <name>Животное</name>
+      <synonym>
+        <key>ru</key>
+        <value>Животное</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Животные</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="66a2289a-6edb-4143-a5f8-9e8b3ce750d2">
+      <name>Заболевание</name>
+      <synonym>
+        <key>ru</key>
+        <value>Заболевание</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Заболевания</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="5c733003-4c8d-4c9a-85aa-80a6bd759c62">
+      <name>СписокПрепаратовПолеСвязи</name>
+      <synonym>
+        <key>ru</key>
+        <value>Список препаратов поле связи</value>
+      </synonym>
+      <type>
+        <types>UUID</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="b9245b48-73c9-4067-b5c5-86be78b80006">
+    <producedTypes>
+      <objectType typeId="edb8ac3b-c6d9-403a-8d06-4941f18d9fb9" valueTypeId="938f4a94-4dfc-4658-927d-421579e881e0"/>
+      <rowType typeId="847f3e82-f680-48fb-b357-6f2a113de2b6" valueTypeId="b024407e-d96e-4f69-b3dc-657c995614a9"/>
+    </producedTypes>
+    <name>СписокИспользованныхПрепаратов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список использованных препаратов</value>
+    </synonym>
+    <attributes uuid="8bc22c8c-75d0-4208-b0fd-12f5fe33e7b5">
+      <name>ПолеСвязи</name>
+      <synonym>
+        <key>ru</key>
+        <value>Поле связи</value>
+      </synonym>
+      <type>
+        <types>UUID</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+    </attributes>
+    <attributes uuid="fe412f2b-6a89-433b-b77c-b9efa901791f">
+      <name>Препарат</name>
+      <synonym>
+        <key>ru</key>
+        <value>Препарат</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Номенклатура</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="c77bab6b-65f5-4743-85a8-819ea4481a3e">
+      <name>Количество</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="57a1ed9c-f1e4-4b85-bf22-9711443479d8">
+      <name>ЕдиницаИзмерения</name>
+      <synonym>
+        <key>ru</key>
+        <value>Единица измерения</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ЕдиницыИзмерения</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

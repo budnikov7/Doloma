@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0fb72e4a-6978-4c86-b2a6-f04cfd07b9d1">
+  <producedTypes>
+    <objectType typeId="2bb22512-71c1-4a84-9b70-cd34179ca0a4" valueTypeId="c2f9540a-eaf8-4072-8696-fc7dc21e8371"/>
+    <refType typeId="35a92af8-2766-44b8-a971-e36fbac7a6f9" valueTypeId="16e01e19-8386-465a-9943-4039d9e46532"/>
+    <selectionType typeId="953f55d2-8590-4d95-9897-1b7dc56d5913" valueTypeId="160ba96d-6ecb-47f7-857f-d8a53483d7c7"/>
+    <listType typeId="1844bdc5-e521-467b-9103-675a1179fd3b" valueTypeId="29f4b701-7527-4412-a573-020a68e02c8f"/>
+    <managerType typeId="1ff3e5e9-6c23-4f4f-b1e7-fb744a28f370" valueTypeId="e77210f1-8fd9-4c1f-8d00-2b9b2f9c83ee"/>
+  </producedTypes>
+  <name>ВетеринарныеМероприятия</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ветеринарные мероприятия</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ВетеринарныеМероприятия.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ВетеринарныеМероприятия.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>PredefinedDataName</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Predefined</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>IsFolder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Owner</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Parent</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Description</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Code</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <listPresentation>
+    <key>ru</key>
+    <value>Справочник ветеринарных мероприятий</value>
+  </listPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="857f4353-18fa-446b-99f3-1c4d06a49a0e">
+      <name>ВакцинацияПротивЛептоспироза</name>
+      <description>Вакцинация против лептоспироза</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+    <items id="d89331c1-e3d3-4ef2-befb-11dc920611da">
+      <name>ВакцинацияПротивТрихофитии</name>
+      <description>Вакцинация против трихофитии</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+    </items>
+    <items id="f044e353-8858-4fc9-a848-cfd59b96d3d1">
+      <name>ОбезроживаниеДекорнуация</name>
+      <description>Обезроживание-декорнуация</description>
+      <code xsi:type="core:StringValue">
+        <value>000000003</value>
+      </code>
+    </items>
+    <items id="6b316f54-7207-4594-b36e-2e215c201bb9">
+      <name>ОбработкаНоворожденныхТёлокСКупированиемХвоста</name>
+      <description>Обработка новорожденных тёлок с купированием хвоста</description>
+      <code xsi:type="core:StringValue">
+        <value>000000004</value>
+      </code>
+    </items>
+    <items id="15b15f42-1a22-4ee6-8441-3ce13d94c03d">
+      <name>ПрофилактическаяОбрезкаКопытец</name>
+      <description>Профилактическая обрезка копытец</description>
+      <code xsi:type="core:StringValue">
+        <value>000000005</value>
+      </code>
+    </items>
+    <items id="e408bb32-4c3e-4f04-894b-ae7f7a3055cf">
+      <name>РевакцинацияПротивЛептоспироза</name>
+      <description>Ревакцинация против лептоспироза</description>
+      <code xsi:type="core:StringValue">
+        <value>000000006</value>
+      </code>
+    </items>
+    <items id="9d14d25f-211a-48ba-b447-9e1a8ee97a82">
+      <name>РевакцинацияПротивТрихофитии</name>
+      <description>Ревакцинация против трихофитии</description>
+      <code xsi:type="core:StringValue">
+        <value>000000007</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ВетеринарныеМероприятия.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.ВетеринарныеМероприятия.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="07f7dafc-58f8-43d8-9b5e-6da74a4f6e2d">
+    <name>Вакцинация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вакцинация</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="d127b9fb-9710-4e3c-9ab9-729e9fc7836f">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="1a259c7a-1d8f-4527-bbbd-ac3db3e506ed">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

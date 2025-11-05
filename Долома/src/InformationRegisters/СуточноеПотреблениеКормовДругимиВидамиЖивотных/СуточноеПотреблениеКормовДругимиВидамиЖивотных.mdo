@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d7d26b42-fd53-42f0-9cd9-92bb2c403258">
+  <producedTypes>
+    <selectionType typeId="e6c497c3-0aec-4c67-ba1f-e1be65633428" valueTypeId="1598a3cf-136e-4e03-bdc2-7c7170a024c4"/>
+    <listType typeId="c6a4b74f-9a78-4f33-9316-d9a19275680e" valueTypeId="147baf43-88b4-4747-9f21-94674c9de79e"/>
+    <managerType typeId="5cd990c5-4d0f-48fa-809c-e9ac50aa822f" valueTypeId="55e1fe74-1a27-4798-b75e-023f82c21163"/>
+    <recordSetType typeId="1baaae65-1c03-4ed8-be37-0b80b1c40872" valueTypeId="502656a4-b8da-4b6a-ac33-d96fe133dedf"/>
+    <recordKeyType typeId="f5bfa46b-6c5e-4e15-be84-d7601af113ba" valueTypeId="94352ce3-df51-4846-bfc8-5f64e6eff3a3"/>
+    <recordType typeId="5915e214-60e2-4a0c-b585-b3909660c977" valueTypeId="711a7269-c75e-4557-bb8d-faf75e7bd1ed"/>
+    <recordManagerType typeId="3ee4e199-1553-4b36-8da7-72634dd47930" valueTypeId="4af3f6cb-febb-46bd-bbb0-8f7ccafc783a"/>
+  </producedTypes>
+  <name>СуточноеПотреблениеКормовДругимиВидамиЖивотных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Суточное потребление кормов другими видами животных</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="2b754abb-9873-4af4-b328-d3cb99951f0f">
+    <name>СуточноеПотребление</name>
+    <synonym>
+      <key>ru</key>
+      <value>Суточное потребление</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>3</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="49897316-e2f3-48d0-a0cc-8ce2a67c9f1d">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Корм</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

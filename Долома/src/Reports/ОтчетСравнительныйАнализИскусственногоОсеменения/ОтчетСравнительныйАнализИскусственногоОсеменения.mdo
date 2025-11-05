@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="806f5902-b3e0-4dea-a0de-cb23a752d3dc">
+  <producedTypes>
+    <objectType typeId="fcd8c817-a606-4b82-a68e-ad55b5841a7f" valueTypeId="7aa2296e-902c-483a-8bb3-17d6ee745ee3"/>
+    <managerType typeId="8c885653-f043-4422-bb7b-1c92a8ab2106" valueTypeId="9010d732-a3f4-4797-8fff-14eb4bafc7f6"/>
+  </producedTypes>
+  <name>ОтчетСравнительныйАнализИскусственногоОсеменения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет сравнительный анализ искусственного осеменения</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ОтчетСравнительныйАнализИскусственногоОсеменения.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.ОтчетСравнительныйАнализИскусственногоОсеменения.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <forms uuid="3944cd13-cb81-43e0-a93c-1ca55fa140b6">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="24949f21-c668-416c-a179-f18c65ded9c2">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="c2071268-5dfd-4346-9bcb-08126d3822f7">
+    <name>МакетОформленияСКД</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет оформления СКД</value>
+    </synonym>
+    <templateType>DataCompositionAppearanceTemplate</templateType>
+  </templates>
+</mdclass:Report>

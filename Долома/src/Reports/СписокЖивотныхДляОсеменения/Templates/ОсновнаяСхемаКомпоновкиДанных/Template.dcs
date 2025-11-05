@@ -1,0 +1,711 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>Основной</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Животное</dataPath>
+			<field>Животное</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+				<dcscom:required>true</dcscom:required>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаРождения</dataPath>
+			<field>ДатаРождения</field>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ДЛФ=D</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Ферма</dataPath>
+			<field>Ферма</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Осеменатор</dataPath>
+			<field>Осеменатор</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоОсеменений</dataPath>
+			<field>КоличествоОсеменений</field>
+			<valueType>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>0</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</valueType>
+			<availableValue>
+				<value xsi:type="xs:decimal">1</value>
+				<presentation xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>1</v8:content>
+					</v8:item>
+				</presentation>
+			</availableValue>
+			<availableValue>
+				<value xsi:type="xs:decimal">2</value>
+				<presentation xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>2</v8:content>
+					</v8:item>
+				</presentation>
+			</availableValue>
+			<availableValue>
+				<value xsi:type="xs:decimal">3</value>
+				<presentation xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>3</v8:content>
+					</v8:item>
+				</presentation>
+			</availableValue>
+			<availableValue>
+				<value xsi:type="xs:decimal">4</value>
+				<presentation xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>4</v8:content>
+					</v8:item>
+				</presentation>
+			</availableValue>
+			<availableValue>
+				<value xsi:type="xs:decimal">5</value>
+				<presentation xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>5</v8:content>
+					</v8:item>
+				</presentation>
+			</availableValue>
+			<availableValue>
+				<value xsi:type="xs:decimal">6</value>
+				<presentation xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>6</v8:content>
+					</v8:item>
+				</presentation>
+			</availableValue>
+			<availableValue>
+				<value xsi:type="xs:decimal">7</value>
+				<presentation xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>7</v8:content>
+					</v8:item>
+				</presentation>
+			</availableValue>
+			<availableValue>
+				<value xsi:type="xs:decimal">8</value>
+				<presentation xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>8</v8:content>
+					</v8:item>
+				</presentation>
+			</availableValue>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПроизводственнаяГруппа</dataPath>
+			<field>ПроизводственнаяГруппа</field>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>10</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+			<availableValue>
+				<value xsi:type="xs:string">Тёлка</value>
+				<presentation xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Тёлка</v8:content>
+					</v8:item>
+				</presentation>
+			</availableValue>
+			<availableValue>
+				<value xsi:type="xs:string">Корова</value>
+				<presentation xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Корова</v8:content>
+					</v8:item>
+				</presentation>
+			</availableValue>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Возраст</dataPath>
+			<field>Возраст</field>
+			<presentationExpression>Выбор когда КоличествоЛактаций=0Тогда Строка(Возраст) + " дней"
+иначе Строка(ЦЕЛ(РазностьДат(ДатаРождения, &amp;ДатаОкончания,"МЕСЯЦ") / 12)) + " г. " + Строка(РазностьДат(ДатаРождения, &amp;ДатаОкончания,"МЕСЯЦ") - ЦЕЛ(РазностьДат(ДатаРождения, &amp;ДатаОкончания, "МЕСЯЦ") / 12) * 12) + " мес. " 
+ Конец</presentationExpression>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДойныхДней</dataPath>
+			<field>ДойныхДней</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаВыбытия</dataPath>
+			<field>ДатаВыбытия</field>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ДЛФ=D</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаПоследнегоОтёла</dataPath>
+			<field>ДатаПоследнегоОтёла</field>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ДЛФ=D</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаПоследнегоОсеменения</dataPath>
+			<field>ДатаПоследнегоОсеменения</field>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ДЛФ=D</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Брак</dataPath>
+			<field>Брак</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаПоследнейОхоты</dataPath>
+			<field>ДатаПоследнейОхоты</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата последней охоты</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ДЛФ=D</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаПредполагаемойОхоты</dataPath>
+			<field>ДатаПредполагаемойОхоты</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата предполагаемой охоты</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ДЛФ=D</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоЛактаций</dataPath>
+			<field>КоличествоЛактаций</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество лактаций</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>0</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</valueType>
+			<availableValue>
+				<value xsi:nil="true"/>
+				<presentation xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>0</v8:content>
+					</v8:item>
+				</presentation>
+			</availableValue>
+			<availableValue>
+				<value xsi:type="xs:decimal">1</value>
+				<presentation xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>1</v8:content>
+					</v8:item>
+				</presentation>
+			</availableValue>
+			<availableValue>
+				<value xsi:type="xs:decimal">2</value>
+				<presentation xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>2</v8:content>
+					</v8:item>
+				</presentation>
+			</availableValue>
+			<availableValue>
+				<value xsi:type="xs:decimal">3</value>
+				<presentation xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>3</v8:content>
+					</v8:item>
+				</presentation>
+			</availableValue>
+			<availableValue>
+				<value xsi:type="xs:decimal">4</value>
+				<presentation xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>4</v8:content>
+					</v8:item>
+				</presentation>
+			</availableValue>
+			<availableValue>
+				<value xsi:type="xs:decimal">5</value>
+				<presentation xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>5</v8:content>
+					</v8:item>
+				</presentation>
+			</availableValue>
+			<availableValue>
+				<value xsi:type="xs:decimal">6</value>
+				<presentation xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>6</v8:content>
+					</v8:item>
+				</presentation>
+			</availableValue>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СхемаСинхронизации</dataPath>
+			<field>СхемаСинхронизации</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СхемаСинхронизацииВТ</dataPath>
+			<field>СхемаСинхронизацииВТ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Схема синхронизации ВТ</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ФермаРазмещение</dataPath>
+			<field>ФермаРазмещение</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ферма размещение</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	СостояниеЖивотныхСрезПоследних.Животное КАК Животное,
+	ИнформацияОРождении.Период КАК ДатаРождения,
+	РАЗНОСТЬДАТ(ИнформацияОРождении.Период, &amp;ДатаОкончания, ДЕНЬ) КАК Возраст
+ПОМЕСТИТЬ вт_НеСтельныеЖивотные
+ИЗ
+	РегистрСведений.СостояниеЖивотных.СрезПоследних(&amp;ДатаОкончания {(&amp;ДатаОкончания)}, ) КАК СостояниеЖивотныхСрезПоследних
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.ИнформацияОРождении КАК ИнформацияОРождении
+		ПО СостояниеЖивотныхСрезПоследних.Животное = ИнформацияОРождении.Животное
+ГДЕ
+	СостояниеЖивотныхСрезПоследних.СостояниеЖивотного = ЗНАЧЕНИЕ(Перечисление.СтатусЖивотного.НеСтельная)
+	И РАЗНОСТЬДАТ(ИнформацияОРождении.Период, &amp;ДатаОкончания, ДЕНЬ) &gt;= ИнформацияОРождении.ФермаРождения.ПериодДобровольногоОжиданияТёлок
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	МАКСИМУМ(ВложенныйЗапрос.ДатаОтёла) КАК ДатаПоследнегоОтёла,
+	ВложенныйЗапрос.Животное КАК Животное,
+	СУММА(ВложенныйЗапрос.КоличествоОтёлов) КАК КоличествоОтёлов
+ПОМЕСТИТЬ вт_Отёлы
+ИЗ
+	(ВЫБРАТЬ
+		МАКСИМУМ(Отелы.Период) КАК ДатаОтёла,
+		Отелы.Мать КАК Животное,
+		КОЛИЧЕСТВО(РАЗЛИЧНЫЕ ВЫБОР
+				КОГДА Отелы.Регистратор ССЫЛКА Документ.ДобавлениеЖивотного
+					ТОГДА ДОБАВИТЬКДАТЕ(Отелы.Период, СЕКУНДА, Отелы.НомерСтроки)
+				ИНАЧЕ Отелы.Регистратор
+			КОНЕЦ) КАК КоличествоОтёлов
+	ИЗ
+		вт_НеСтельныеЖивотные КАК вт_НеСтельныеЖивотные
+			ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.Отелы КАК Отелы
+			ПО вт_НеСтельныеЖивотные.Животное = Отелы.Мать
+	ГДЕ
+		Отелы.Период &lt;= &amp;ДатаОкончания
+	
+	СГРУППИРОВАТЬ ПО
+		Отелы.Мать
+	
+	ОБЪЕДИНИТЬ ВСЕ
+	
+	ВЫБРАТЬ
+		МАКСИМУМ(Аборты.Период),
+		Аборты.Мать,
+		СУММА(1)
+	ИЗ
+		вт_НеСтельныеЖивотные КАК вт_НеСтельныеЖивотные
+			ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.Аборты КАК Аборты
+			ПО вт_НеСтельныеЖивотные.Животное = Аборты.Мать
+	ГДЕ
+		Аборты.Период &lt;= &amp;ДатаОкончания
+		И Аборты.ОткрытьЛактацию = ИСТИНА
+	
+	СГРУППИРОВАТЬ ПО
+		Аборты.Мать) КАК ВложенныйЗапрос
+
+СГРУППИРОВАТЬ ПО
+	ВложенныйЗапрос.Животное
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ОхотаУЖивотных.Животное КАК Животное,
+	МАКСИМУМ(ОхотаУЖивотных.Период) КАК ДатаПоследнейОхоты,
+	вт_Отёлы.ДатаПоследнегоОтёла КАК ДатаПоследнегоОтёла
+ПОМЕСТИТЬ вт_Охота
+ИЗ
+	вт_НеСтельныеЖивотные КАК вт_НеСтельныеЖивотные
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.ОхотаУЖивотных КАК ОхотаУЖивотных
+		ПО вт_НеСтельныеЖивотные.Животное = ОхотаУЖивотных.Животное
+		ЛЕВОЕ СОЕДИНЕНИЕ вт_Отёлы КАК вт_Отёлы
+		ПО (ОхотаУЖивотных.Животное = вт_Отёлы.Животное)
+			И (ОхотаУЖивотных.Период &gt; вт_Отёлы.ДатаПоследнегоОтёла)
+ГДЕ
+	ОхотаУЖивотных.Период &lt;= &amp;ДатаОкончания
+
+СГРУППИРОВАТЬ ПО
+	ОхотаУЖивотных.Животное,
+	вт_Отёлы.ДатаПоследнегоОтёла
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗЛИЧНЫЕ
+	МАКСИМУМ(Осеменения.Период) КАК ДатаПоследнегоОсеменения,
+	вт_НеСтельныеЖивотные.Животное КАК Животное,
+	КОЛИЧЕСТВО(Осеменения.Период) КАК КоличествоОсеменений
+ПОМЕСТИТЬ вт_ДатыОсеменений
+ИЗ
+	вт_НеСтельныеЖивотные КАК вт_НеСтельныеЖивотные
+		ЛЕВОЕ СОЕДИНЕНИЕ вт_Отёлы КАК вт_Отёлы
+		ПО вт_НеСтельныеЖивотные.Животное = вт_Отёлы.Животное
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.Осеменения КАК Осеменения
+		ПО вт_НеСтельныеЖивотные.Животное = Осеменения.Животное
+			И (Осеменения.Период &gt; ЕСТЬNULL(вт_Отёлы.ДатаПоследнегоОтёла, ДАТАВРЕМЯ(1, 1, 1)))
+
+СГРУППИРОВАТЬ ПО
+	вт_НеСтельныеЖивотные.Животное
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВыбытияСрезПоследних.Животное КАК Животное,
+	ВыбытияСрезПоследних.Период КАК ДатаВыбытия
+ПОМЕСТИТЬ вт_Выбытия
+ИЗ
+	вт_НеСтельныеЖивотные КАК вт_НеСтельныеЖивотные
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.Выбытия.СрезПоследних(&amp;ДатаОкончания {(&amp;ДатаОкончания)}, ) КАК ВыбытияСрезПоследних
+		ПО вт_НеСтельныеЖивотные.Животное = ВыбытияСрезПоследних.Животное
+ГДЕ
+	ВыбытияСрезПоследних.Период &lt;= &amp;ДатаОкончания
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ЖивотныеНаСхемеСинхронизацииСрезПоследних.Животное КАК Животное,
+	ЖивотныеНаСхемеСинхронизацииСрезПоследних.СхемаСинхронизации КАК СхемаСинхронизацииВТ
+ПОМЕСТИТЬ вт_ЖивотныеНаСинхронизации
+ИЗ
+	вт_НеСтельныеЖивотные КАК вт_НеСтельныеЖивотные
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.ЖивотныеНаСхемеСинхронизации.СрезПоследних(&amp;ДатаОкончания {(&amp;ДатаОкончания)}, {(СхемаСинхронизации) КАК СхемаСинхронизацииВТ}) КАК ЖивотныеНаСхемеСинхронизацииСрезПоследних
+		ПО вт_НеСтельныеЖивотные.Животное = ЖивотныеНаСхемеСинхронизацииСрезПоследних.Животное
+ГДЕ
+	ЖивотныеНаСхемеСинхронизацииСрезПоследних.Событие = ЗНАЧЕНИЕ(Перечисление.СобытияСхемСинхронизации.Начало)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗЛИЧНЫЕ
+	вт_НеСтельныеЖивотные.Животное КАК Животное,
+	вт_НеСтельныеЖивотные.ДатаРождения КАК ДатаРождения,
+	РазмещениеЖивотныхСрезПоследних.Ферма КАК Ферма,
+	вт_НеСтельныеЖивотные.Возраст КАК Возраст,
+	вт_Выбытия.ДатаВыбытия КАК ДатаВыбытия,
+	вт_ДатыОсеменений.ДатаПоследнегоОсеменения КАК ДатаПоследнегоОсеменения,
+	вт_Отёлы.ДатаПоследнегоОтёла КАК ДатаПоследнегоОтёла,
+	ЕСТЬNULL(вт_Отёлы.КоличествоОтёлов, 0) КАК КоличествоЛактаций,
+	Осеменения.Осеменатор КАК Осеменатор,
+	вт_ДатыОсеменений.КоличествоОсеменений КАК КоличествоОсеменений,
+	ВЫБОР
+		КОГДА вт_Отёлы.КоличествоОтёлов ЕСТЬ NULL
+			ТОГДА "Тёлка"
+		ИНАЧЕ "Корова"
+	КОНЕЦ КАК ПроизводственнаяГруппа,
+	ЕСТЬNULL(ВыбраковкаЖивотных.Брак, ЛОЖЬ) КАК Брак,
+	РАЗНОСТЬДАТ(вт_Отёлы.ДатаПоследнегоОтёла, &amp;ДатаОкончания, ДЕНЬ) КАК ДойныхДней,
+	вт_Охота.ДатаПоследнейОхоты КАК ДатаПоследнейОхоты,
+	ДОБАВИТЬКДАТЕ(вт_Охота.ДатаПоследнейОхоты, ДЕНЬ, 21) КАК ДатаПредполагаемойОхоты,
+	вт_ЖивотныеНаСинхронизации.СхемаСинхронизацииВТ КАК СхемаСинхронизации
+ИЗ
+	вт_НеСтельныеЖивотные КАК вт_НеСтельныеЖивотные
+		ЛЕВОЕ СОЕДИНЕНИЕ вт_Отёлы КАК вт_Отёлы
+		ПО вт_НеСтельныеЖивотные.Животное = вт_Отёлы.Животное
+		ЛЕВОЕ СОЕДИНЕНИЕ вт_ДатыОсеменений КАК вт_ДатыОсеменений
+			ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.Осеменения КАК Осеменения
+			ПО вт_ДатыОсеменений.Животное = Осеменения.Животное
+				И вт_ДатыОсеменений.ДатаПоследнегоОсеменения = Осеменения.Период
+		ПО вт_НеСтельныеЖивотные.Животное = вт_ДатыОсеменений.Животное
+		ЛЕВОЕ СОЕДИНЕНИЕ вт_Выбытия КАК вт_Выбытия
+		ПО вт_НеСтельныеЖивотные.Животное = вт_Выбытия.Животное
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ВыбраковкаЖивотных КАК ВыбраковкаЖивотных
+		ПО вт_НеСтельныеЖивотные.Животное = ВыбраковкаЖивотных.Животное
+		ЛЕВОЕ СОЕДИНЕНИЕ вт_Охота КАК вт_Охота
+		ПО вт_НеСтельныеЖивотные.Животное = вт_Охота.Животное
+			И (ЕСТЬNULL(вт_ДатыОсеменений.ДатаПоследнегоОсеменения, ДАТАВРЕМЯ(1, 1, 1)) &lt; вт_Охота.ДатаПоследнейОхоты)
+		ЛЕВОЕ СОЕДИНЕНИЕ вт_ЖивотныеНаСинхронизации КАК вт_ЖивотныеНаСинхронизации
+		ПО вт_НеСтельныеЖивотные.Животное = вт_ЖивотныеНаСинхронизации.Животное
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.РазмещениеЖивотных.СрезПоследних(&amp;ДатаОкончания {(&amp;ДатаОкончания)}, Ферма &lt;&gt; ЗНАЧЕНИЕ(Справочник.Фермы.ПустаяСсылка) {(Ферма) КАК ФермаРазмещение}) КАК РазмещениеЖивотныхСрезПоследних
+		ПО вт_НеСтельныеЖивотные.Животное = РазмещениеЖивотныхСрезПоследних.Животное
+ГДЕ
+	вт_Выбытия.ДатаВыбытия ЕСТЬ NULL</query>
+	</dataSet>
+	<parameter>
+		<name>ДатаОкончания</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата окончания</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>Date</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+		<expression>КонецПериода(&amp;ДатаОкончания,"День")</expression>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Основной</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СистемныеПоля.НомерПоПорядку</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Ферма</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Животное</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Возраст</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПроизводственнаяГруппа</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СхемаСинхронизации</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДатаПоследнегоОтёла</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КоличествоЛактаций</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДойныхДней</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДатаПоследнегоОсеменения</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Осеменатор</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КоличествоОсеменений</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДатаПоследнейОхоты</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДатаПредполагаемойОхоты</dcsset:field>
+				</dcsset:item>
+				<dcsset:viewMode>Normal</dcsset:viewMode>
+				<dcsset:userSettingID>d87b0e7a-0423-4063-a9f1-d48ed2a6d0fc</dcsset:userSettingID>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Ферма</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>aa6a6265-efcc-4500-937b-b9af9d659ba9</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">ПроизводственнаяГруппа</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:right xsi:type="xs:string">Тёлка</dcsset:right>
+					<dcsset:userSettingID>c7899087-6b05-41df-b5a9-8f4b38c5a4f2</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">КоличествоЛактаций</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+					<dcsset:userSettingID>9bdeca2d-1e2c-4d6f-9134-071ac65ecf44</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Брак</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					<dcsset:userSettingID>01e93ed6-0c43-489d-987a-8bba34f7aeef</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">СхемаСинхронизации</dcsset:left>
+					<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+					<dcsset:presentation xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Не показывать животных на схеме синхронизации</v8:content>
+						</v8:item>
+					</dcsset:presentation>
+					<dcsset:userSettingID>27eb2f33-c748-4907-bae3-d6ce68b4d892</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:viewMode>Normal</dcsset:viewMode>
+				<dcsset:userSettingID>c332c718-3dda-4a35-9f60-c5b8cc95a4ce</dcsset:userSettingID>
+			</dcsset:filter>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ДатаОкончания</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardBeginningDate">
+						<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfThisDay</v8:variant>
+					</dcscor:value>
+					<dcsset:userSettingID>863d0715-c3d9-4309-9397-1c2908090ddd</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Животное</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:viewMode>Normal</dcsset:viewMode>
+				<dcsset:userSettingID>257fb850-9384-4227-91fc-a8ff5bd121ab</dcsset:userSettingID>
+			</dcsset:order>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МакетОформления</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">Античный</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>РасположениеРеквизитов</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionAttributesPlacement">Separately</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ГоризонтальноеРасположениеОбщихИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ВертикальноеРасположениеОбщихИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьПараметрыДанных</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:filter>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+				</dcsset:filter>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+				</dcsset:selection>
+				<dcsset:viewMode>Normal</dcsset:viewMode>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

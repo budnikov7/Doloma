@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f7d64aef-909a-4ee2-9583-0073cdc6c6eb">
+  <producedTypes>
+    <refType typeId="035bbdb0-c917-4321-85f5-87e94ef1342a" valueTypeId="2599a12d-5fc6-48b3-8949-568cc627f32a"/>
+    <listType typeId="22137ba1-cf12-460a-aa57-4801b8e75aab" valueTypeId="16cf2789-1e4b-4a73-94aa-fe352a0308fe"/>
+    <managerType typeId="6d57b4f7-4ed6-4080-a5f4-f0f3a667a687" valueTypeId="70f02bdf-99dd-4080-a190-ea0ef24331e3"/>
+  </producedTypes>
+  <name>ВидОперацииПеремещение</name>
+  <synonym>
+    <key>ru</key>
+    <value>Вид операции перемещение</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="9e536291-ca9a-4046-8f94-6d0c03c0e1bf">
+    <name>ПеремещениеМеждуФермами</name>
+    <synonym>
+      <key>ru</key>
+      <value>Перемещение между фермами</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="6204a9c4-69bc-427d-b163-7a6357b88741">
+    <name>ПеремещениеМеждуКорпусами</name>
+    <synonym>
+      <key>ru</key>
+      <value>Перемещение между корпусами</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="52408527-da90-4ec7-86f0-0a0af4867828">
+    <name>Запуск</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запуск</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

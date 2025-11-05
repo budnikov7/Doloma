@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4c7373ed-ff62-4019-8461-1aa715723097">
+  <producedTypes>
+    <objectType typeId="18b27321-84e6-4257-9e0a-31d5068b4c80" valueTypeId="3d5be620-ed31-45c3-ba0f-c6aabd855f43"/>
+    <refType typeId="7b3140d8-25f6-43ce-b45c-b7375d019cf1" valueTypeId="20eae1a4-2baf-4d0d-a740-e90c425dd551"/>
+    <selectionType typeId="42343b5e-8773-4431-8afd-032bb7b800e8" valueTypeId="6e8c2d73-b154-4c6b-a6fa-55bf1103368b"/>
+    <listType typeId="c43fb716-d3ed-49e7-9ac6-2f19d922faac" valueTypeId="dc01f92b-80d5-4bd4-8440-c68d71fa230f"/>
+    <managerType typeId="520b6f11-ed53-4805-94db-d5e325f6f5fb" valueTypeId="58f0bf9c-1b96-4092-b9da-22b408711a9a"/>
+  </producedTypes>
+  <name>СхемыСинхронизации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Схемы синхронизации</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.СхемыСинхронизации.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.СхемыСинхронизации.Form.ФормаЭлемента</defaultObjectForm>
+  <attributes uuid="cc11f103-4b87-40a2-a4b7-3e237288db15">
+    <name>Длительность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Длительность</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="ff782e31-fae3-4e27-8d01-6ba956f07399">
+    <producedTypes>
+      <objectType typeId="0b6f5571-f685-4f06-a316-dcd174dd677e" valueTypeId="fde7864a-63b4-4740-adbf-c5ef2c7ad2f1"/>
+      <rowType typeId="670a55ac-548a-4d15-b779-60557adddb5b" valueTypeId="ba16e6be-f0df-4aea-86a7-193bec801588"/>
+    </producedTypes>
+    <name>Инъекции</name>
+    <synonym>
+      <key>ru</key>
+      <value>Инъекции</value>
+    </synonym>
+    <attributes uuid="a09d3f8d-ba2a-49d7-bea0-113b612567e1">
+      <name>День</name>
+      <synonym>
+        <key>ru</key>
+        <value>День</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="c42017dd-ff51-4963-8c2a-b3a56607e4da">
+      <name>Инъекция</name>
+      <synonym>
+        <key>ru</key>
+        <value>Инъекция</value>
+      </synonym>
+      <type>
+        <types>EnumRef.ВидыИнъекцийСхемСинхронизации</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <forms uuid="eff42165-b58e-4624-b3bd-acc9f0263a4c">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

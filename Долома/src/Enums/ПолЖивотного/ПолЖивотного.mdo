@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2407de9c-a7a5-4b38-9ed7-89d2e506f069">
+  <producedTypes>
+    <refType typeId="7add09b3-e8a2-435f-b950-919b511062d2" valueTypeId="c796f1a0-08a6-4367-9f86-277f8eefd18c"/>
+    <listType typeId="4adc9fed-7fdd-4fad-b9bf-1d0ad71ac6ef" valueTypeId="1440bfc9-589a-4229-9a99-5290c4a19871"/>
+    <managerType typeId="873d037e-a52a-472d-8b96-faa56ad5574b" valueTypeId="610532c8-3488-4337-9496-d004e075c065"/>
+  </producedTypes>
+  <name>ПолЖивотного</name>
+  <synonym>
+    <key>ru</key>
+    <value>Пол животного</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="4df7fd1d-736d-4191-bd56-e361408954b4">
+    <name>Корова</name>
+    <synonym>
+      <key>ru</key>
+      <value>Корова</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="74f636cc-af0b-4d12-bcf5-19116c029b5d">
+    <name>Бык</name>
+    <synonym>
+      <key>ru</key>
+      <value>Бык</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

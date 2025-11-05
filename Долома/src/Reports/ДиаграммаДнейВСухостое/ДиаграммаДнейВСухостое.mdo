@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="98f68189-8cfe-4657-951d-92543cfe5ceb">
+  <producedTypes>
+    <objectType typeId="918dbc8d-1ffa-49f0-b0e8-7ab4196ab108" valueTypeId="5bbdef01-1e7c-4fe9-97ca-8feb45820058"/>
+    <managerType typeId="72f5f449-4850-4a8a-abe5-d74719a5e697" valueTypeId="6a76182b-f56b-4498-8660-a8979b89c3f7"/>
+  </producedTypes>
+  <name>ДиаграммаДнейВСухостое</name>
+  <synonym>
+    <key>ru</key>
+    <value>Диаграмма дней в сухостое</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ДиаграммаДнейВСухостое.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.ДиаграммаДнейВСухостое.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <forms uuid="431f0dac-9699-4f1d-a361-2576bbe1d5cf">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="fc868758-fa03-4343-9ba4-438cbcb07869">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

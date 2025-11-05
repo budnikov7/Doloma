@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonCommand xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="23de0a75-6fa9-4bb2-8992-f434209d81ba">
+  <name>НастройкаКонстант</name>
+  <synonym>
+    <key>ru</key>
+    <value>Закрытие периода</value>
+  </synonym>
+  <group>NavigationPanelOrdinary</group>
+  <commandParameterType/>
+  <representation>Auto</representation>
+</mdclass:CommonCommand>

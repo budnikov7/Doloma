@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dc5807a4-4a92-4f2b-82c7-f7229b602db3">
+  <producedTypes>
+    <selectionType typeId="2b0c3016-7abe-411d-8a6a-bad8d6038c67" valueTypeId="ab99a35b-c448-438a-b05d-554c9c378701"/>
+    <listType typeId="cdfeec23-7ab2-4678-9505-201b0e26d673" valueTypeId="1fd4ba84-b486-461d-80a6-5bbc4130d535"/>
+    <managerType typeId="2c0b75a9-cb8a-4b8b-bacc-6b2203840e16" valueTypeId="48f02fcd-c528-4286-8488-9f63a28970e6"/>
+    <recordSetType typeId="7a8a4b51-243f-4efa-8e84-dcc44743fc2e" valueTypeId="652f0b91-96f3-42c3-8276-112db9c829fa"/>
+    <recordKeyType typeId="a67fe341-c076-4299-bbc7-6601af29526c" valueTypeId="10331678-8f58-4c7e-8303-8e9d8331e0aa"/>
+    <recordType typeId="79575dcd-db93-48e5-9883-35587f3d8a2a" valueTypeId="99660d33-e776-493d-a6a1-f993fc6da1e1"/>
+    <recordManagerType typeId="23427165-37ac-4ae8-8bd4-271fc46a133d" valueTypeId="5c1e225a-924d-4385-9304-401c643b1a5a"/>
+  </producedTypes>
+  <name>РазмещениеЖивотных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Размещение животных</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <updateDataHistoryImmediatelyAfterWrite>true</updateDataHistoryImmediatelyAfterWrite>
+  <executeAfterWriteDataHistoryVersionProcessing>true</executeAfterWriteDataHistoryVersionProcessing>
+  <resources uuid="1646cc3c-c1cf-46a2-88c4-37f56966deec">
+    <name>Корпус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Корпус размещения</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Корпуса</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="266ab951-2401-4c97-b9b0-fae999b86f31">
+    <name>Ферма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ферма</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Фермы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="b6b53b1f-9b17-44be-b419-99b702a9a0db">
+    <name>Животное</name>
+    <synonym>
+      <key>ru</key>
+      <value>Животное</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Животные</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

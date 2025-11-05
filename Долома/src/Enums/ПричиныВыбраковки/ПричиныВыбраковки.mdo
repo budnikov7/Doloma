@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="aec7de15-8b35-4f56-a6d6-8909970a0d21">
+  <producedTypes>
+    <refType typeId="c1d9a764-3517-4460-9381-a5dd100f0d8c" valueTypeId="7a77a6d7-8994-489d-a056-500d2f39439e"/>
+    <listType typeId="9624acc3-03e6-47fc-8df4-9e657314afbb" valueTypeId="d46b15d1-93b1-4e95-9d3c-de9d2e553a9f"/>
+    <managerType typeId="9ebef867-c292-4a21-8c97-4bc64aafe888" valueTypeId="80359499-46b6-44ef-9e83-5808a299d8f2"/>
+  </producedTypes>
+  <name>ПричиныВыбраковки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Причины выбраковки животных</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="421563e3-6a8c-43e7-9e0c-6b71241ad900">
+    <name>Аборт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Аборт</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="8ccf3c76-4b4d-48d8-8d97-dee1ddbceefe">
+    <name>АгрессивноеЖивотное</name>
+    <synonym>
+      <key>ru</key>
+      <value>Агрессивное животное</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="c673ad24-a98e-4d18-9778-01d0c0474966">
+    <name>Возраст</name>
+    <synonym>
+      <key>ru</key>
+      <value>Возраст</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="06556bbb-a768-4be7-ae02-d15edb57bce3">
+    <name>Микроаборт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Микроаборт</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="3443580f-068e-46a3-a97b-85d4afad87d0">
+    <name>МногократноеОсеменение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Многократное осеменение</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="1c451884-2c5a-41c3-a3a8-5404afde18f8">
+    <name>НеПриходитВОхоту</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не приходит в охоту</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="759b0087-698f-4b0a-8e26-2f6121591aa3">
+    <name>НизкаяПродуктивность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Низкая продуктивность</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="8a1c27d1-9f6e-4f9d-a2bc-62fd5b176852">
+    <name>ОтставаниеВРазвитии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отставание в развитии</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="1ef13814-2146-4404-955c-865d126291d3">
+    <name>Травма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Травма</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="1e712d1a-6de1-49c0-9a5a-38d702024eda">
+    <name>Фримартинизм</name>
+    <synonym>
+      <key>ru</key>
+      <value>Фримартинизм</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

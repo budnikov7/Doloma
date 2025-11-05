@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2015316c-5223-4fd3-8246-0e5cc2bdbf79">
+  <name>Родословная</name>
+  <synonym>
+    <key>ru</key>
+    <value>Родословная</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.ГенеалогическоеДрево</picture>
+  </picture>
+  <content>Catalog.РодословнаяЖивотных</content>
+  <content>FunctionalOption.ПоказыватьРодословную</content>
+  <content>Catalog.Линии</content>
+  <content>Catalog.Породы</content>
+  <content>Catalog.СтраныМира</content>
+  <content>Catalog.КомплексныеКлассы</content>
+  <content>Catalog.Масти</content>
+  <content>Report.ПроверкаРодословных</content>
+  <content>Report.СписокОтцовМаточногоПоголовья</content>
+</mdclass:Subsystem>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cmi:CommandInterface xmlns:cmi="http://g5.1c.ru/v8/dt/cmi">
+  <subsystemsOrder>
+    <subsystems>Subsystem.ЖивотныеВНаличии</subsystems>
+    <subsystems>Subsystem.БыкиДляОсеменения</subsystems>
+    <subsystems>Subsystem.Зоотехния</subsystems>
+    <subsystems>Subsystem.ПроизводственнаяСводка</subsystems>
+    <subsystems>Subsystem.Воспроизводство</subsystems>
+    <subsystems>Subsystem.Ветеринария</subsystems>
+    <subsystems>Subsystem.Склад</subsystems>
+    <subsystems>Subsystem.Кормление</subsystems>
+    <subsystems>Subsystem.Отчеты</subsystems>
+    <subsystems>Subsystem.Бюджетирование</subsystems>
+    <subsystems>Subsystem.ПрограммаСоставленияРационов</subsystems>
+    <subsystems>Subsystem.РаботаСКормораздатчиками</subsystems>
+    <subsystems>Subsystem.Родословная</subsystems>
+    <subsystems>Subsystem.Администрирование</subsystems>
+  </subsystemsOrder>
+</cmi:CommandInterface>

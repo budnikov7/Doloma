@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b194a7c1-3ed9-4fc8-b553-55b61cb72a58">
+  <producedTypes>
+    <selectionType typeId="b79bea31-fc10-4d91-bfb3-a8127fe0ccd2" valueTypeId="c5bd726b-5531-4ba0-b8b0-89558da2092a"/>
+    <listType typeId="c1033686-200f-4e5f-b837-4fa7eac0f533" valueTypeId="4cc91758-389b-4d75-954d-75300a15940a"/>
+    <managerType typeId="c77dd3ef-cead-4f1f-b189-7cd6fda92d4d" valueTypeId="bc83d443-235f-47a5-bbe9-a525453ba86d"/>
+    <recordSetType typeId="31194cab-b672-4ea2-b31f-c876ff26a64b" valueTypeId="4c901079-197c-4d8b-8e6a-b08cc1d41c4d"/>
+    <recordKeyType typeId="62de57c0-444f-43d4-901a-014d00283f61" valueTypeId="0c9e1b12-0257-42ce-9067-d6ad7ac46594"/>
+    <recordType typeId="0a177819-41f7-42f5-870e-7b3e8ce0dc8d" valueTypeId="c65dc39e-ee5f-4940-aaac-74f08b655e21"/>
+    <recordManagerType typeId="de2266fd-b7c0-4d12-a55c-fd18d9daa693" valueTypeId="42ba7318-a794-4397-b345-e82562a63b64"/>
+  </producedTypes>
+  <name>ПоказателиПлеменныхБыков</name>
+  <synonym>
+    <key>ru</key>
+    <value>Показатели племенных быков</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSliceFirst>true</enableTotalsSliceFirst>
+  <enableTotalsSliceLast>true</enableTotalsSliceLast>
+  <resources uuid="9af64f5e-8a19-47a9-a722-6ee997e9e41b">
+    <name>TPI</name>
+    <synonym>
+      <key>ru</key>
+      <value>TPI</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>8</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="0d09dc5b-8256-43c5-8f5b-4a11f7859b65">
+    <name>NMS</name>
+    <synonym>
+      <key>ru</key>
+      <value>NMS</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>8</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="6a3d07ed-a503-4ff8-aaf4-ffdb8918144b">
+    <name>LBS</name>
+    <synonym>
+      <key>ru</key>
+      <value>LBS</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>8</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="fa218590-c71e-446b-9230-4c4ef745a361">
+    <name>Бык</name>
+    <synonym>
+      <key>ru</key>
+      <value>Бык</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.БыкиПлеменные</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

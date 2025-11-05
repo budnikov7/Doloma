@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2149a0c3-dbcf-4495-a6ad-786c517e6b8e">
+  <producedTypes>
+    <refType typeId="c9c16607-5ddc-4ef7-ad3c-e84e66711496" valueTypeId="a323f549-65f8-4c72-97f2-aee7dd2bf8f3"/>
+    <listType typeId="b97f7c1e-87cc-4f86-80f2-2759c59bb32e" valueTypeId="8696c97b-e967-4a00-a501-e0f115f793cd"/>
+    <managerType typeId="8b7875ef-ff5d-4055-b5dd-a1e5e0b1c9d1" valueTypeId="7621f00f-3ad1-4280-a395-93ed71640b38"/>
+  </producedTypes>
+  <name>ТипыСкладов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы складов</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="cc3bc930-dc89-4c46-9b7a-3ab303736fef">
+    <name>СкладОсеменения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склад осеменения</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="5939c577-b238-48f4-a7e1-29156597101a">
+    <name>СкладГлавногоЗоотехника</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склад главного зоотехника</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

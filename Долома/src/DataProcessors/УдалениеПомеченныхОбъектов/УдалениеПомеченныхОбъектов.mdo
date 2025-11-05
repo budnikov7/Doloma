@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="76854d19-fedc-4ee3-b185-c236267bd065">
+  <producedTypes>
+    <objectType typeId="210071dd-a7bb-4811-b350-bcfb50220aee" valueTypeId="95e143cf-e39e-46c1-ae40-5e5ac771d1c2"/>
+    <managerType typeId="f779eab0-4ecc-4e1c-ac73-9c84da6a411a" valueTypeId="4558f88f-20b2-4790-b375-aa5ce44054e5"/>
+  </producedTypes>
+  <name>УдалениеПомеченныхОбъектов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Удаление помеченных объектов</value>
+  </synonym>
+  <comment>Поиск и удаление объектов, помеченных на удаление</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.УдалениеПомеченныхОбъектов.Form.ОсновнаяФорма</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <forms uuid="4852a53b-28ea-4d5a-a5df-e5682a95a74a">
+    <name>ОсновнаяФорма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удаление помеченных объектов</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

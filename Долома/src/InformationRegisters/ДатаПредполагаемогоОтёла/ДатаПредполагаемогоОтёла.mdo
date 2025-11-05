@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4450ad35-5b9b-43e4-95f4-a385c69668ca">
+  <producedTypes>
+    <selectionType typeId="fb67b4fd-72b5-4f5e-9e45-6c2930b57a06" valueTypeId="fb039519-94d0-4526-aa26-1ab4857a1bf6"/>
+    <listType typeId="cb2dc127-34d9-4b0f-aeea-24c1393b0538" valueTypeId="95231040-0e90-4fb8-b8f1-46bfc25b0a08"/>
+    <managerType typeId="f4e70641-5425-4cca-92ee-dbc383560d9f" valueTypeId="ceca581a-07e0-4f39-b012-3c13f8c673a3"/>
+    <recordSetType typeId="89c4649b-62ff-41d9-b896-8ab2e7fbaf98" valueTypeId="35663c22-dde3-4c31-a524-b209588c234b"/>
+    <recordKeyType typeId="fd54a961-a830-472e-bec3-aabe118186c8" valueTypeId="e7f1961b-0d6f-49cc-ae39-a8b93b1a4360"/>
+    <recordType typeId="c025088e-91d9-49da-bb83-c52ef980064d" valueTypeId="d8ac01e5-8927-44d7-8ad5-6ea58ae574cf"/>
+    <recordManagerType typeId="a6ff4faa-7122-46e5-a2ba-f7a48a3e58fe" valueTypeId="fa0fff46-0907-489d-a279-910b8a11b1b1"/>
+  </producedTypes>
+  <name>ДатаПредполагаемогоОтёла</name>
+  <synonym>
+    <key>ru</key>
+    <value>Дата предполагаемого отёла</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="819a42b8-08d5-47ef-bb17-aa35f507b8aa">
+    <name>ДатаПредполагаемогоОтёла</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата предполагаемого отёла</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="8d39622f-9ee3-4d4d-829b-9cee00555d40">
+    <name>Животное</name>
+    <synonym>
+      <key>ru</key>
+      <value>Животное</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Животные</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

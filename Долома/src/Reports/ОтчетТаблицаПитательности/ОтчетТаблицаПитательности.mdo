@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e5e7787c-ac25-416e-aef9-8d55c2412df4">
+  <producedTypes>
+    <objectType typeId="b38140fa-e74b-422e-bddf-ffa4d54cc331" valueTypeId="8d8c4654-87fe-441a-a672-0e8e4fe1cee4"/>
+    <managerType typeId="e441db2e-4630-45fe-a87f-850418fb020a" valueTypeId="a70ad03f-f217-4fce-8a50-5ae8c929b84f"/>
+  </producedTypes>
+  <name>ОтчетТаблицаПитательности</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет таблица питательности</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ОтчетТаблицаПитательности.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="5ed34a40-e8e7-4bad-ad26-7ff45fb4943e">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

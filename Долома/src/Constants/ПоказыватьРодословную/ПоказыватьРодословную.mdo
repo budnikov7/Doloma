@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1e8bb5d9-5315-40d3-ad28-37a5fd764210">
+  <producedTypes>
+    <managerType typeId="556fcbcf-df77-4529-987c-27e500782ff5" valueTypeId="9cbedf8d-a471-487a-948e-18ad6ad3d612"/>
+    <valueManagerType typeId="479d72b5-bcb5-4b9e-bf21-7265f9ca7d5f" valueTypeId="03f84574-4a38-4483-ad59-ed9990434afc"/>
+    <valueKeyType typeId="d2bd9ba5-f654-48b9-b3a9-681dc8cb4949" valueTypeId="61baff1d-7e73-4736-913f-49e52bbbdc3d"/>
+  </producedTypes>
+  <name>ПоказыватьРодословную</name>
+  <synonym>
+    <key>ru</key>
+    <value>Показывать родословную</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

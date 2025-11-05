@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bc9e6aca-2357-4354-94f8-d032b81a8611">
+  <producedTypes>
+    <objectType typeId="d977535a-070c-48c1-8ff2-499e81e13e8c" valueTypeId="f0d9b962-f28f-4af1-a5cc-7c9983302b17"/>
+    <managerType typeId="2c91437b-4d23-44aa-922e-5670d900aa02" valueTypeId="1610a32e-1a1f-4006-adce-51a051659a63"/>
+  </producedTypes>
+  <name>СписокРожденныхТелят</name>
+  <synonym>
+    <key>ru</key>
+    <value>Список рожденных телят</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.СписокРожденныхТелят.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.СписокРожденныхТелят.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <forms uuid="aa189b23-4e5c-4f7e-99db-d96554a0701b">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="dffee80c-a9ef-42ef-b25d-ef63fe8e3464">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="d4786b12-40eb-4893-866a-b86bf4b59670">
+    <name>КарточкаТелёнка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Карточка телёнка</value>
+    </synonym>
+  </templates>
+</mdclass:Report>

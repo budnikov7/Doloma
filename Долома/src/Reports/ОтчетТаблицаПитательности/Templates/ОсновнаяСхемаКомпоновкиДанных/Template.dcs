@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СК</dataPath>
+			<field>СК</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Номенклатура</dataPath>
+			<field>Номенклатура</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтрКл</dataPath>
+			<field>СтрКл</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>XP</dataPath>
+			<field>XP</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СухоеВещество</dataPath>
+			<field>СухоеВещество</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СЖ</dataPath>
+			<field>СЖ</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>NEL</dataPath>
+			<field>NEL</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОЭ</dataPath>
+			<field>ОЭ</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>nXp</dataPath>
+			<field>nXp</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>RNB</dataPath>
+			<field>RNB</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СЗ</dataPath>
+			<field>СЗ</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Крахмал</dataPath>
+			<field>Крахмал</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТранзитныйКрахмал</dataPath>
+			<field>ТранзитныйКрахмал</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Сахар</dataPath>
+			<field>Сахар</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>NDF</dataPath>
+			<field>NDF</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РастворимыйСП</dataPath>
+			<field>РастворимыйСП</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ADF</dataPath>
+			<field>ADF</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>P</dataPath>
+			<field>P</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Ca</dataPath>
+			<field>Ca</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Na</dataPath>
+			<field>Na</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Mg</dataPath>
+			<field>Mg</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>K</dataPath>
+			<field>K</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Cl</dataPath>
+			<field>Cl</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>S</dataPath>
+			<field>S</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Структ</dataPath>
+			<field>Структ</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>UDP</dataPath>
+			<field>UDP</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ADL</dataPath>
+			<field>ADL</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПереваримоеОрганическоеВещество</dataPath>
+			<field>ПереваримоеОрганическоеВещество</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>pH</dataPath>
+			<field>pH</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>УксуснаяКислота</dataPath>
+			<field>УксуснаяКислота</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>МолочнаяКислота</dataPath>
+			<field>МолочнаяКислота</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НДКПпереваримость</dataPath>
+			<field>НДКПпереваримость</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЛабораторныйАнализ</dataPath>
+			<field>ЛабораторныйАнализ</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	ТаблицаПитательностиКормовСрезПоследних.Номенклатура КАК Номенклатура,
+	ТаблицаПитательностиКормовСрезПоследних.СухоеВещество КАК СухоеВещество,
+	ТаблицаПитательностиКормовСрезПоследних.ОЭ КАК ОЭ,
+	ТаблицаПитательностиКормовСрезПоследних.XP КАК XP,
+	ТаблицаПитательностиКормовСрезПоследних.nXp КАК nXp,
+	ТаблицаПитательностиКормовСрезПоследних.RNB КАК RNB,
+	ТаблицаПитательностиКормовСрезПоследних.СК КАК СК,
+	ТаблицаПитательностиКормовСрезПоследних.СЖ КАК СЖ,
+	ТаблицаПитательностиКормовСрезПоследних.СЗ КАК СЗ,
+	ТаблицаПитательностиКормовСрезПоследних.Крахмал КАК Крахмал,
+	ТаблицаПитательностиКормовСрезПоследних.ТранзитныйКрахмал КАК ТранзитныйКрахмал,
+	ТаблицаПитательностиКормовСрезПоследних.Сахар КАК Сахар,
+	ТаблицаПитательностиКормовСрезПоследних.NDF КАК NDF,
+	ТаблицаПитательностиКормовСрезПоследних.ADF КАК ADF,
+	ТаблицаПитательностиКормовСрезПоследних.NEL КАК NEL,
+	ТаблицаПитательностиКормовСрезПоследних.Ca КАК Ca,
+	ТаблицаПитательностиКормовСрезПоследних.Na КАК Na,
+	ТаблицаПитательностиКормовСрезПоследних.Mg КАК Mg,
+	ТаблицаПитательностиКормовСрезПоследних.K КАК K,
+	ТаблицаПитательностиКормовСрезПоследних.Cl КАК Cl,
+	ТаблицаПитательностиКормовСрезПоследних.S КАК S,
+	ТаблицаПитательностиКормовСрезПоследних.P КАК P,
+	ТаблицаПитательностиКормовСрезПоследних.Структ КАК Структ,
+	ТаблицаПитательностиКормовСрезПоследних.СтрКл КАК СтрКл,
+	ТаблицаПитательностиКормовСрезПоследних.РастворимыйСП КАК РастворимыйСП,
+	ТаблицаПитательностиКормовСрезПоследних.UDP КАК UDP,
+	ТаблицаПитательностиКормовСрезПоследних.ADL КАК ADL,
+	ТаблицаПитательностиКормовСрезПоследних.ПереваримоеОрганическоеВещество КАК ПереваримоеОрганическоеВещество,
+	ТаблицаПитательностиКормовСрезПоследних.УксуснаяКислота КАК УксуснаяКислота,
+	ТаблицаПитательностиКормовСрезПоследних.МолочнаяКислота КАК МолочнаяКислота,
+	ТаблицаПитательностиКормовСрезПоследних.pH КАК pH,
+	ТаблицаПитательностиКормовСрезПоследних.НДКПпереваримость КАК НДКПпереваримость,
+	ТаблицаПитательностиКормовСрезПоследних.ЛабораторныйАнализ КАК ЛабораторныйАнализ
+ИЗ
+	РегистрСведений.ТаблицаПитательностиКормов.СрезПоследних КАК ТаблицаПитательностиКормовСрезПоследних</query>
+	</dataSet>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+		<expression>КонецПериода(&amp;Период, "День")</expression>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Основной</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СистемныеПоля.НомерПоПорядку</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Номенклатура</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:field>ЛабораторныйАнализ</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СухоеВещество</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОЭ</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>XP</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>UDP</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>РастворимыйСП</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>nXp</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>RNB</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СК</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СЖ</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СЗ</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Крахмал</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ТранзитныйКрахмал</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Сахар</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>NDF</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ADF</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>NEL</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Ca</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Na</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Mg</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>K</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Cl</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>S</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>P</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Структ</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СтрКл</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ADL</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПереваримоеОрганическоеВещество</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НДКПпереваримость</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>УксуснаяКислота</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>МолочнаяКислота</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>pH</dcsset:field>
+				</dcsset:item>
+				<dcsset:viewMode>Normal</dcsset:viewMode>
+				<dcsset:userSettingID>d87b0e7a-0423-4063-a9f1-d48ed2a6d0fc</dcsset:userSettingID>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Ферма</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>aa6a6265-efcc-4500-937b-b9af9d659ba9</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:viewMode>Normal</dcsset:viewMode>
+				<dcsset:userSettingID>c332c718-3dda-4a35-9f60-c5b8cc95a4ce</dcsset:userSettingID>
+			</dcsset:filter>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Период</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardBeginningDate">
+						<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfThisDay</v8:variant>
+					</dcscor:value>
+					<dcsset:userSettingID>82911a8e-ef16-4e7e-99cb-890f0cf081b2</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Номенклатура</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:viewMode>Normal</dcsset:viewMode>
+				<dcsset:userSettingID>257fb850-9384-4227-91fc-a8ff5bd121ab</dcsset:userSettingID>
+			</dcsset:order>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МакетОформления</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">Античный</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>РасположениеРеквизитов</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionAttributesPlacement">Separately</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ГоризонтальноеРасположениеОбщихИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ВертикальноеРасположениеОбщихИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьПараметрыДанных</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:filter>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+					<dcsset:userSettingID>00021b82-7862-4ccc-adab-a93cdd02e0a6</dcsset:userSettingID>
+				</dcsset:filter>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+					<dcsset:userSettingID>b7cdf233-7987-4d09-86a3-44cf19e118a4</dcsset:userSettingID>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+					<dcsset:userSettingID>72743098-550e-4fe9-a556-1455b267d929</dcsset:userSettingID>
+				</dcsset:selection>
+				<dcsset:viewMode>Normal</dcsset:viewMode>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

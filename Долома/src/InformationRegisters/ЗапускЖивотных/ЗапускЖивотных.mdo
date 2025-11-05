@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d1b5a74f-8c2e-4188-a314-d6e871a9e017">
+  <producedTypes>
+    <selectionType typeId="fbd83e9b-7bcd-45ef-a049-d0620ecfc90e" valueTypeId="59e4bd01-2471-4ae1-8514-61bc95f51257"/>
+    <listType typeId="1928efcc-3405-45f1-83ec-58cd6d785b3a" valueTypeId="23ccdda7-5005-4306-8ee8-2319312b3343"/>
+    <managerType typeId="b11aae65-1d77-486f-a192-7f72b93d740b" valueTypeId="b23ab062-54fe-496b-9875-249f525b0baa"/>
+    <recordSetType typeId="37c7448f-6138-48e5-9ec7-d8b36241078a" valueTypeId="79c8b752-3790-471d-81b1-8f3f7bba8d27"/>
+    <recordKeyType typeId="a3209bff-2cf5-4478-96b4-1517f4310ffd" valueTypeId="00aab740-94c5-40a9-9226-72be1d000687"/>
+    <recordType typeId="aa868ced-5733-40b8-8a24-b53773a8b788" valueTypeId="57a0ca51-8db4-447c-b084-55d45083dddf"/>
+    <recordManagerType typeId="159a9e85-a7f9-4e72-86eb-967ee9e73e95" valueTypeId="abf85b77-c1ba-4d08-ae26-af07658eb6f1"/>
+  </producedTypes>
+  <name>ЗапускЖивотных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Запуск животных</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="e7af3798-ccec-413a-96a1-525a2661da07">
+    <name>ДатаЗапуска</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата запуска</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="1618cdb5-ff9a-4cdf-bbf0-1e8e70850aa8">
+    <name>Животное</name>
+    <synonym>
+      <key>ru</key>
+      <value>Животное</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Животные</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

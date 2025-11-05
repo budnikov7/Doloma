@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="02129e4b-112a-4443-8a75-4c4c7e1d5a63">
+  <producedTypes>
+    <objectType typeId="5ccc494d-4d20-4529-b42f-6b4c12044d59" valueTypeId="7eba34b8-c906-4412-9d32-df6424052842"/>
+    <managerType typeId="16c52dac-b315-4cd3-bd88-b6a7a2ce4ba3" valueTypeId="618a8575-101d-4ccb-aae9-ed1415062382"/>
+  </producedTypes>
+  <name>ОтчетЛимитыКормов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет лимиты кормов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ОтчетЛимитыКормов.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="98ed3631-d91b-4284-a99e-2fe939570664">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

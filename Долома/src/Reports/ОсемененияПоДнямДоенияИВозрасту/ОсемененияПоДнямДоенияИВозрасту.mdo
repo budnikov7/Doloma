@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0bb1568d-941e-42ed-8118-b94fed50f23a">
+  <producedTypes>
+    <objectType typeId="322fedb2-f3a7-409d-83a7-3e8b6e440584" valueTypeId="e10f2a83-1c33-465d-9d21-55d420521cc5"/>
+    <managerType typeId="54bd2f95-a4b9-4e23-b788-775a03fb7a7b" valueTypeId="064926d5-0ac1-4ace-991b-dba443dd6d8e"/>
+  </producedTypes>
+  <name>ОсемененияПоДнямДоенияИВозрасту</name>
+  <synonym>
+    <key>ru</key>
+    <value>Осеменение по дням доения/осеменение тёлок</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ОсемененияПоДнямДоенияИВозрасту.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.ОсемененияПоДнямДоенияИВозрасту.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <forms uuid="9919e9d1-650c-451f-88db-81a0ae5c317b">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="80c32bc6-b61a-4bb3-b907-b961a45f1984">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8bb702e0-690b-42f7-96d3-47dd9a144e07">
+  <producedTypes>
+    <refType typeId="4c6abc25-9da0-4308-9ba2-b98dbb8b8b0f" valueTypeId="ae494865-2186-40af-8f81-7847be449859"/>
+    <listType typeId="1f0172c4-d229-46f2-a48c-2949d7c4542e" valueTypeId="46e53530-72da-400b-8f26-dfd32dda8e38"/>
+    <managerType typeId="d5a52423-09c7-46ba-bd14-5cf318ce1c48" valueTypeId="39b05cfb-6911-4e44-89e8-0390e5d74bee"/>
+  </producedTypes>
+  <name>ПроизводственныеГруппы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Производственные группы</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="60595a1b-8c9c-4310-95fb-7b3c811c0633">
+    <name>Корова</name>
+    <synonym>
+      <key>ru</key>
+      <value>Корова</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="099bcdcc-a9b0-47ec-a8e2-f9a1ad05f49d">
+    <name>Тёлка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тёлка</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="ebd73866-18d2-4c8b-8a02-5a17dc4aa3ac">
+    <name>Брак</name>
+    <synonym>
+      <key>ru</key>
+      <value>Брак</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

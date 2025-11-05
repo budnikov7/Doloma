@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d2e1019e-2831-405a-af39-8c7cc1983934">
+  <producedTypes>
+    <selectionType typeId="c4d6001e-179f-4e55-88a5-f29c6ba2aaa4" valueTypeId="caac93d1-2cd5-44c3-b4d8-8cd339f4a954"/>
+    <listType typeId="0876e9ff-e8c3-41d7-9854-2dec23c5fe1b" valueTypeId="7ebf6086-0d31-4d71-b0df-34f3b4662275"/>
+    <managerType typeId="d11cd427-98d3-45c7-824c-ac05bbc8ca0c" valueTypeId="f46eddea-1823-468c-a53a-4db397cc6bf6"/>
+    <recordSetType typeId="0381d069-f511-4765-ae97-843aee4660c6" valueTypeId="c78217dd-b9b3-49bc-8d1a-38f9f841f75c"/>
+    <recordKeyType typeId="083e3a46-22f7-427e-af74-07eb07d70e35" valueTypeId="0e79941a-beaa-46f4-9968-f22456d96052"/>
+    <recordType typeId="f724d307-9a07-45db-994d-c98d03347871" valueTypeId="a42d0433-5a9c-4fbb-ab75-1122469e197a"/>
+    <recordManagerType typeId="820bcde2-58f8-435d-84e9-bdf4267ae9da" valueTypeId="30ed7c13-dc42-477e-be87-f834bf887b34"/>
+  </producedTypes>
+  <name>КонтрольныеНадои</name>
+  <synonym>
+    <key>ru</key>
+    <value>Надои на контрольных дойках</value>
+  </synonym>
+  <comment>Надои на контрольных дойках животных</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSliceFirst>true</enableTotalsSliceFirst>
+  <enableTotalsSliceLast>true</enableTotalsSliceLast>
+  <resources uuid="06ed6d5e-5902-4054-b646-9a769f2aeaf0">
+    <name>УдойУтро</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удой (утро)</value>
+    </synonym>
+    <comment>Удой на контрольной дойке (в кг)</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>17</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="ce237dc1-417e-496a-a6de-a4115084f52f">
+    <name>УдойОбед</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удой (обед)</value>
+    </synonym>
+    <comment>Удой на контрольной дойке (в кг)</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>17</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="10290383-8cb9-4ba1-94d5-8e6ff21b3b85">
+    <name>УдойВечер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удой (вечер)</value>
+    </synonym>
+    <comment>Удой на контрольной дойке (в кг)</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>17</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="eab8657c-1417-489f-895c-dc26d09310fb">
+    <name>УдойСуточный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удой (суточный)</value>
+    </synonym>
+    <comment>Удой на контрольной дойке (в кг)</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>17</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="676fe245-d15a-4d98-8b00-2c177fcf67a2">
+    <name>ТипНадоев</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип надоев</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ТипНадоев</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="3cfe93eb-8d35-495e-aefa-d3450ec54768">
+    <name>НомерЛактации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер лактации</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="46fbbe0f-90f8-49a6-a441-775a697fc914">
+    <name>ДойныйДень</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дойный день</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>4</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="ae216ffd-1310-4139-8caa-346f7f73f1ae">
+    <name>Примечание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Примечание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
+  <dimensions uuid="d72fb90e-8a4e-48da-8051-ea7a82130d33">
+    <name>Животное</name>
+    <synonym>
+      <key>ru</key>
+      <value>Животное</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Животные</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

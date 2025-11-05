@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c2cb07fc-eaf4-4e7c-a8c1-bd46879be641">
+  <producedTypes>
+    <objectType typeId="df137736-74b1-4a5d-a335-402022bb46a0" valueTypeId="8c1fe250-9c90-4e19-b8aa-509d30410fdc"/>
+    <managerType typeId="f764e3d3-ef43-4584-b440-5fc9c9b5d0e1" valueTypeId="c5295c73-874a-44aa-bdbc-0d7eb42a5585"/>
+  </producedTypes>
+  <name>СписокОтцовМаточногоПоголовья</name>
+  <synonym>
+    <key>ru</key>
+    <value>Список отцов маточного поголовья</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.СписокОтцовМаточногоПоголовья.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.СписокОтцовМаточногоПоголовья.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <forms uuid="8d78e9b9-eb6d-415e-9c21-4440c984284d">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="a680247c-5b88-4aff-8b57-aed7c214dd61">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

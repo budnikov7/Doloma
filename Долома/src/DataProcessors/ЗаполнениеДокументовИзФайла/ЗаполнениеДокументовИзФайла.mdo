@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bcd52f3c-8c53-4996-b7ed-d61468322a18">
+  <producedTypes>
+    <objectType typeId="802f8aab-c0c3-41bc-899a-22210f49e70f" valueTypeId="37a3771a-67b0-4566-b26b-6200f9bb6c5e"/>
+    <managerType typeId="85bc3da3-5dff-4d60-a7f9-ac1767a6f613" valueTypeId="7791ee6f-1f07-4570-ab45-7b2b42f121c2"/>
+  </producedTypes>
+  <name>ЗаполнениеДокументовИзФайла</name>
+  <synonym>
+    <key>ru</key>
+    <value>Заполнение документов из файла</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ЗаполнениеДокументовИзФайла.Form.Форма</defaultForm>
+  <attributes uuid="36e65460-a619-4360-bdda-42ead08268a1">
+    <name>ОбъектЗаполнения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект заполнения</value>
+    </synonym>
+    <type>
+      <types>AnyRef</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="d781520f-5c4e-463e-b3b0-7607b63025c1">
+    <name>РазделУчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Раздел учета</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="36054916-66db-4187-8cb0-d4eebcfc08da">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="7d4af519-b1ce-49a6-9b7f-27d9b369e3d8">
+    <name>МакетТабличногоПоля</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет табличного поля</value>
+    </synonym>
+  </templates>
+</mdclass:DataProcessor>

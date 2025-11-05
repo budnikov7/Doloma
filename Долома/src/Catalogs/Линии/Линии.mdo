@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f8bd1686-9f71-4480-bb91-8a706ebf736f">
+  <producedTypes>
+    <objectType typeId="fcfa5325-8268-432d-a898-9aef75dfe470" valueTypeId="2fe8e0c9-4db3-4498-9819-2f5ebb2746e8"/>
+    <refType typeId="a8a9d0da-061a-46f6-bd56-13362c95b047" valueTypeId="45adfe8d-6793-4e22-aa56-7c99cb87ae4c"/>
+    <selectionType typeId="911a6e9e-ec27-4e5d-adc6-250cdc93d2c3" valueTypeId="b1f6d00e-7bd1-4ed3-b6a5-d140d472fe4d"/>
+    <listType typeId="e94e2357-9dfd-4648-ad38-5adbd912332d" valueTypeId="660c2d9b-8b04-4e70-8129-4fe785d41c98"/>
+    <managerType typeId="b8ac67f8-ee96-4f76-bab2-06b20dea3a30" valueTypeId="8f036b03-0007-4c07-ab9a-666773b03433"/>
+  </producedTypes>
+  <name>Линии</name>
+  <synonym>
+    <key>ru</key>
+    <value>Линии</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Линии.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Линии.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>PredefinedDataName</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Predefined</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>IsFolder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Owner</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Parent</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Description</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Code</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>3</codeLength>
+  <descriptionLength>50</descriptionLength>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="300acfad-e1ca-4ac7-96ec-aac6942bb5de">
+      <name>ВисБэкАйдиал1013415</name>
+      <description>Вис Бэк Айдиал 1013415</description>
+      <code xsi:type="core:NumberValue">
+        <value>656</value>
+      </code>
+    </items>
+    <items id="09428698-4b11-4f4c-bacf-5dfe9190639f">
+      <name>МонтвикЧифтейн95679</name>
+      <description>Монтвик Чифтейн 95679</description>
+      <code xsi:type="core:NumberValue">
+        <value>660</value>
+      </code>
+    </items>
+    <items id="be6b9c1b-cbdb-47bd-934b-f009408ccdef">
+      <name>ПабстГовернер</name>
+      <description>Пабст Говернер</description>
+      <code xsi:type="core:NumberValue">
+        <value>705</value>
+      </code>
+    </items>
+    <items id="fd7ae7ff-6dc7-425e-8da7-a72b43dee565">
+      <name>РефлекшнСоверинг198998</name>
+      <description>Рефлекшн Соверинг 198998</description>
+      <code xsi:type="core:NumberValue">
+        <value>661</value>
+      </code>
+    </items>
+    <items id="cfe55c8e-cf5f-4829-9fb0-434ee4ba0ec9">
+      <name>РозейфСитейшн267150</name>
+      <description>Розейф Ситейшн 267150</description>
+      <code xsi:type="core:NumberValue">
+        <value>662</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

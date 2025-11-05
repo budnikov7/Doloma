@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d8979ad3-4d18-4466-9182-6d57e303c147">
+  <producedTypes>
+    <selectionType typeId="9fb822d1-9c4f-440c-9834-8155c44abb47" valueTypeId="ec94c06e-cf5f-46c4-9f8a-0a9bd531ce09"/>
+    <listType typeId="50f9addf-3b20-4ada-8845-c5dbd7655920" valueTypeId="8d841646-0352-4c7d-a06d-c8cc83348e02"/>
+    <managerType typeId="edd02aa7-e52c-431a-b30d-0e090caf5978" valueTypeId="560c6531-1878-4f78-b8f1-8b9c8373dda6"/>
+    <recordSetType typeId="f08a3cac-84be-4cf8-9865-63fde5ff244f" valueTypeId="9d8fdf8b-77d8-4481-9a2b-6db94f876a20"/>
+    <recordKeyType typeId="ad7dd5b1-1fe7-4a98-98fc-444670f8c686" valueTypeId="d052625f-1f92-478e-b708-e33603930b31"/>
+    <recordType typeId="6a1086eb-0383-41ad-9565-26d801ccb0a5" valueTypeId="76d86402-7376-4573-a218-37e8caa67f26"/>
+    <recordManagerType typeId="f80b25ad-b3cd-45f5-97b7-918c03832db8" valueTypeId="4e5fcb62-1f7b-4ce4-b962-d37679d3b125"/>
+  </producedTypes>
+  <name>УЗИисследования</name>
+  <synonym>
+    <key>ru</key>
+    <value>УЗИ-исследования животных</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSliceFirst>true</enableTotalsSliceFirst>
+  <enableTotalsSliceLast>true</enableTotalsSliceLast>
+  <resources uuid="40645521-4779-4463-a69d-4aaa40514a8f">
+    <name>Акушер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Акушер, принимавший отел</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="97d91ad8-a3f2-43be-af5f-13ed116dcf3b">
+    <name>Статус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СтатусЖивотного</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="0bd2fded-991c-4987-8d6a-f9f5b4cacd84">
+    <name>Примечание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Примечание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="38913c17-ade0-4ce4-bc35-295923dd5706">
+    <name>НомерУЗИ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер УЗИ</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="2cccab6e-7e97-4018-a657-e617e5c5dc30">
+    <name>ДеньУЗИ</name>
+    <synonym>
+      <key>ru</key>
+      <value>День УЗИ</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="c0b18341-4443-4a5c-8a81-3bbcf2b645e8">
+    <name>Мать</name>
+    <synonym>
+      <key>ru</key>
+      <value>Животное-мать</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Животные</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

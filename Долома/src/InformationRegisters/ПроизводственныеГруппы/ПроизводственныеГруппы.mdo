@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="95dab3be-3b44-47f0-a924-4bb3153dc750">
+  <producedTypes>
+    <selectionType typeId="65b77ee2-6567-4234-bea3-2beaef0fee72" valueTypeId="0f13af89-d77c-43c2-a9ad-2a4b3c9a4590"/>
+    <listType typeId="4f6eab26-f7cb-4df6-804f-0a8450bd0d97" valueTypeId="a7bc6808-226b-4079-8b55-941294b6abb6"/>
+    <managerType typeId="08510fd3-ee22-462b-923b-94d580390e49" valueTypeId="afaecc2e-8bf1-49a3-9400-819155adfd92"/>
+    <recordSetType typeId="e7107832-4028-4b2a-9be9-ccff128f4af4" valueTypeId="fc152c64-9354-4af4-a7a5-d0838a4e14e3"/>
+    <recordKeyType typeId="6955453e-4da0-41d7-bf28-d23f6fd108fa" valueTypeId="1f81993a-86a9-4604-9dd6-82c380051272"/>
+    <recordType typeId="df35d7c1-7964-4010-9f40-a5c1ba421b3d" valueTypeId="c2d0ae44-33d4-4567-95ba-d215c7055c91"/>
+    <recordManagerType typeId="56309c8c-c8a8-443c-ad80-a9d5249c6af8" valueTypeId="db6f1894-3136-43d5-a372-c0f472504426"/>
+  </producedTypes>
+  <name>ПроизводственныеГруппы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Производственные группы</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="f52908a7-11bc-4398-8448-1c1c9012c548">
+    <name>ПроизводственнаяГруппа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Производственная группа</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ПроизводственныеГруппы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="b96a60aa-6ac6-4f87-b5d2-a4528130c751">
+    <name>Животное</name>
+    <synonym>
+      <key>ru</key>
+      <value>Животное</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Животные</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

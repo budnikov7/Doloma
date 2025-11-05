@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cdcc3757-4836-43d1-b763-7109ca51601f">
+  <producedTypes>
+    <objectType typeId="96c38e9b-6b26-42ad-bd32-cf42bb727e56" valueTypeId="95debad0-c1b1-409c-a24a-bd07bf5e7e2d"/>
+    <refType typeId="275e9b6a-b44f-4785-909f-27a98379ef18" valueTypeId="891494f5-f6f6-4ca2-8cac-e1f9ca3dcfe3"/>
+    <selectionType typeId="e2ae0aca-476c-4a82-b85f-ecf222c8440a" valueTypeId="bb0f3d5c-aa7a-4e6c-932a-59cf9dad7552"/>
+    <listType typeId="2b2ed938-f11c-478d-b492-5d51256890ea" valueTypeId="a6662631-f08a-4424-a9fb-24fc43370c29"/>
+    <managerType typeId="be76fb90-23d6-40f1-ad93-38e9a78fdb9b" valueTypeId="171ccbaf-c25d-4037-a844-6a6db1c456ed"/>
+  </producedTypes>
+  <name>Корпуса</name>
+  <synonym>
+    <key>ru</key>
+    <value>Корпуса</value>
+  </synonym>
+  <comment>Корпуса размещения животных</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Корпуса.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Корпуса.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="87d0921e-e50d-4406-9218-fe45f6043ec6">
+      <name>Бычки</name>
+      <description>Бычки</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+    <items id="15e5a9b7-aa6e-44ec-a01a-96a465d63f9a">
+      <name>ДойныеИзолятор</name>
+      <description>Дойные ( Изолятор)</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+    </items>
+    <items id="e5f6da86-e0bf-499d-aea0-4555e6c25c32">
+      <name>Дойные1</name>
+      <description>Дойные1</description>
+      <code xsi:type="core:StringValue">
+        <value>000000003</value>
+      </code>
+    </items>
+    <items id="30a3fa3a-4d3c-48d1-9ff7-59c12b6b735c">
+      <name>Дойные2</name>
+      <description>Дойные2</description>
+      <code xsi:type="core:StringValue">
+        <value>000000004</value>
+      </code>
+    </items>
+    <items id="cd9e40d3-e4d9-4ec3-86ce-5ab66d1506d3">
+      <name>Нетели</name>
+      <description>Нетели</description>
+      <code xsi:type="core:StringValue">
+        <value>000000005</value>
+      </code>
+    </items>
+    <items id="bd63cc78-681c-4f72-9d16-bf79087038ec">
+      <name>Сухостой1</name>
+      <description>Сухостой1</description>
+      <code xsi:type="core:StringValue">
+        <value>000000006</value>
+      </code>
+    </items>
+    <items id="951f12b4-dc70-45c5-ae67-78305d82ab83">
+      <name>Сухостой2</name>
+      <description>Сухостой2</description>
+      <code xsi:type="core:StringValue">
+        <value>000000007</value>
+      </code>
+    </items>
+    <items id="eeb1b63c-ecff-410d-b051-31cfca40d11a">
+      <name>Тёлки03</name>
+      <description>Тёлки 0-3</description>
+      <code xsi:type="core:StringValue">
+        <value>000000008</value>
+      </code>
+    </items>
+    <items id="ebf5d02d-8edf-4322-949e-5e4d44f37071">
+      <name>Тёлки1218</name>
+      <description>Тёлки 12-18</description>
+      <code xsi:type="core:StringValue">
+        <value>000000009</value>
+      </code>
+    </items>
+    <items id="0e9763da-ae72-49c6-92fe-21a9ae684007">
+      <name>Тёлки36</name>
+      <description>Тёлки 3-6</description>
+      <code xsi:type="core:StringValue">
+        <value>000000010</value>
+      </code>
+    </items>
+    <items id="0a3fe6e2-3e3c-4e01-b922-a18261166dd1">
+      <name>Тёлки612</name>
+      <description>Тёлки 6-12</description>
+      <code xsi:type="core:StringValue">
+        <value>000000011</value>
+      </code>
+    </items>
+  </predefined>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.Корпуса.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.Корпуса.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.Корпуса.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="bab32537-7227-4b0b-9d4e-c7e924080b93">
+    <name>ДойныйКорпус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дойный корпус</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="9f4d7bf2-886e-4869-925c-7eab5dff4944">
+    <name>КорпусДляСухостойногоСодержания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Корпус для сухостойного содержания</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="7024e776-9ffd-457f-9410-62373812362d">
+    <name>КорпусИзоляторДляДойных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Корпус изолятор для дойных</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="a8bb3133-794f-4fe0-b8a2-fce21e1a2c54">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="36f4ec1f-33c7-48ea-9751-949b0eed5a34">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="b65ffbb8-e0ba-4c24-86d9-4d43144e36b7">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

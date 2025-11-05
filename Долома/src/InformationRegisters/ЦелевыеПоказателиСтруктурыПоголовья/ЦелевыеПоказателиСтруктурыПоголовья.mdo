@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="031c6a19-6b34-41f3-b0d1-641fe3a94e16">
+  <producedTypes>
+    <selectionType typeId="bc72f925-4191-4f7b-8af2-774ba3a98578" valueTypeId="1bee73d7-8d33-4ef9-a530-c4a7bd18155c"/>
+    <listType typeId="61e3281c-df7e-4eaf-9c92-a2d025973166" valueTypeId="c6af5a38-3d6f-4154-9a12-484ab8151271"/>
+    <managerType typeId="6d0fef9b-b4f5-4fc8-be16-f9678cc510f6" valueTypeId="36cfe5d1-6400-4793-81dd-b4430c3cd7ff"/>
+    <recordSetType typeId="ad612b77-7bd7-43ee-aada-e2f6171196e3" valueTypeId="36618bfd-3eef-4e57-904b-01b773f4b210"/>
+    <recordKeyType typeId="cbd19404-0477-48b9-afca-7f7ca7c76452" valueTypeId="54e75f9f-6fe5-4d30-93a5-81d7ea4ba5fa"/>
+    <recordType typeId="f90e3d6e-eb8f-498d-a167-2e7456854326" valueTypeId="34886297-a91c-4736-810a-ba3e86d0f910"/>
+    <recordManagerType typeId="886af409-44a2-4d52-a067-85167f7b284f" valueTypeId="a80e976c-a1a1-46c6-bfac-e1a776f41014"/>
+  </producedTypes>
+  <name>ЦелевыеПоказателиСтруктурыПоголовья</name>
+  <synonym>
+    <key>ru</key>
+    <value>Целевые показатели структуры поголовья</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="ef23d555-a6c7-4a79-af08-ba9e058fc3a7">
+    <name>НижняяГраница</name>
+    <synonym>
+      <key>ru</key>
+      <value>Нижняя граница</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="214b4213-de73-48c7-8b78-bd3776261f2f">
+    <name>ВерхняяГраница</name>
+    <synonym>
+      <key>ru</key>
+      <value>Верхняя граница</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="208ca935-f778-4fc7-8858-65af4f264c0f">
+    <name>Показатель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатель</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ПоказателиСтруктурыВзрослогоПоголовья</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

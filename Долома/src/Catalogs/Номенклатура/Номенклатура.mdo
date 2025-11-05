@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ccd4f108-6aa0-4f8b-a44a-6338a8ea2abb">
+  <producedTypes>
+    <objectType typeId="d899ab4c-4564-4c8f-92ba-7598839f3c65" valueTypeId="a49783d1-cbeb-4774-aac4-a51e40278402"/>
+    <refType typeId="76f480a4-e079-4210-9bbb-c248edde8291" valueTypeId="864d1136-686b-4806-9cf1-fdcede95e005"/>
+    <selectionType typeId="749747db-0eb5-4f8e-9f3b-e3947bea3efe" valueTypeId="18af3e01-a3a4-4a40-9498-730e4b22b47c"/>
+    <listType typeId="8f777e33-6f55-48fb-8653-194d6cf4abaa" valueTypeId="b5f2ee7e-8dcd-41dd-ab60-969b93d74dda"/>
+    <managerType typeId="0ea2499d-64ef-49b0-9b88-ac2e6d840c0f" valueTypeId="dec39c02-cf7c-44ac-b506-96773a4bf607"/>
+  </producedTypes>
+  <name>Номенклатура</name>
+  <synonym>
+    <key>ru</key>
+    <value>Номенклатура</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Номенклатура.StandardAttribute.Description</inputByString>
+  <searchStringModeOnInputByString>AnyPart</searchStringModeOnInputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="80235367-5b8c-4da6-8b43-b33920824c7f">
+      <name>Животное</name>
+      <description>Животное</description>
+      <code xsi:type="core:StringValue">
+        <value>Животное</value>
+      </code>
+    </items>
+    <items id="b2e92e8a-bab7-45a7-9400-1936d06bc77f">
+      <name>Молоко</name>
+      <description>Молоко</description>
+      <code xsi:type="core:StringValue">
+        <value>Молоко</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.Номенклатура.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.Номенклатура.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.Номенклатура.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="19312515-420a-49ab-83ca-eb543bd83c7f">
+    <name>ЕдиницаИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Единица измерения</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ЕдиницыИзмерения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e6682184-6c96-4d73-b4c5-9c8ecce6fb86">
+    <name>Бык</name>
+    <synonym>
+      <key>ru</key>
+      <value>Бык</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.БыкиПлеменные</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c7849908-5817-4c70-8668-f2caa324f1cc">
+    <name>ТипСемени</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип семени</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ТипыСемени</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b60f6da6-9fc2-42a3-ba23-583cd8f0557c">
+    <name>ВидНоменклатуры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид номенклатуры</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыНоменклатуры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ea6d81aa-854c-45a8-9289-4ff37a9bbb93">
+    <name>Услуга</name>
+    <synonym>
+      <key>ru</key>
+      <value>Услуга</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="8fd383ad-d7c2-4777-b6ec-370792868530">
+    <name>СтавкаНДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ставка НДС</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтавкиНДС</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Определяется ставка НДС товара или услуги</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameters>
+      <name>НалогообложениеНДС</name>
+      <value xsi:type="core:ReferenceValue"/>
+    </choiceParameters>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="25927489-99e8-437a-89cd-0fd0aa30ef82">
+    <name>ВидКорма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид корма</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыКормов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="ce58e41a-036d-4741-af7b-6a97cf69c305">
+    <name>ТипНоменклатуры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип номенклатуры</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ТипыНоменклатуры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="46ed76d3-d5d2-4963-882b-94d97369e8e5">
+    <name>ГруппаКорма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группа корма</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ГруппыКормов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="4bed4ff4-3da7-4a0c-a56c-cfad925b352a">
+    <producedTypes>
+      <objectType typeId="67046e0c-64c0-4423-83ff-be2afbc53efe" valueTypeId="65be309a-d1df-4190-b3fc-ba5347256ef3"/>
+      <rowType typeId="2f415890-6fbf-4d9c-bc90-f897523373cd" valueTypeId="1c377e3c-0be1-483a-8af8-50f0daf22cc0"/>
+    </producedTypes>
+    <name>ЕдиницыИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Единицы измерения</value>
+    </synonym>
+    <attributes uuid="bf9d4684-5c78-4406-8335-93593d0335f1">
+      <name>ЕдиницаИзмерения</name>
+      <synonym>
+        <key>ru</key>
+        <value>Единица измерения</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ЕдиницыИзмерения</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="afc9c364-8ad8-47c1-b1ba-2d57287e0bed">
+      <name>Основная</name>
+      <synonym>
+        <key>ru</key>
+        <value>Основная</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="25879828-13fc-4628-8cb1-45e8b686a985">
+      <name>Коэффициент</name>
+      <synonym>
+        <key>ru</key>
+        <value>Коэффициент</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <forms uuid="571717e5-222a-4a35-b27a-8e3584f2ca4d">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="97631faa-c14d-405d-8a1d-db700a6efb9c">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="5c24e590-404a-40e2-8a49-2d77ee648326">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

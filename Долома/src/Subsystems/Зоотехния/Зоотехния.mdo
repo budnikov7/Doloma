@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4dc6d450-85b9-4286-94bd-91b576d8f320">
+  <name>Зоотехния</name>
+  <synonym>
+    <key>ru</key>
+    <value>Зоотехния</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.Картинка_Зоотехния</picture>
+  </picture>
+  <content>Document.КонтрольнаяДойка</content>
+  <content>Document.РождениеТеленка</content>
+  <content>Document.Отъём</content>
+  <content>Document.Взвешивание</content>
+  <content>Document.ПеремещениеЖивотных</content>
+  <content>Document.Выбраковка</content>
+  <content>Document.Выбытие</content>
+  <content>Document.ДобавлениеЖивотного</content>
+  <content>Report.СтруктураСтадаВРазрезеЛактаций</content>
+  <content>Report.ВоспроизводствоОбщий</content>
+  <content>Report.ОтчетПоОтъёму</content>
+  <content>Report.СписокОсеменённыхЖивотных</content>
+  <content>Report.ПроцентКоровБольныхМаститом</content>
+  <content>Report.СтатистикаПоОтёлам</content>
+  <content>Report.ДиаграммаЗапусков</content>
+  <content>Report.ДиаграммаДнейВСухостое</content>
+  <content>Report.ОтчетПоВыбытию</content>
+  <content>Document.ПрисвоениеБирокХорриот</content>
+</mdclass:Subsystem>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4492c5c7-9565-4a5f-a4d6-737d9fe4abe3">
+  <producedTypes>
+    <objectType typeId="24f0385a-a34e-410d-b674-afbbff1edcb1" valueTypeId="85078696-638c-4de9-a3e0-a36ee8dc5ce7"/>
+    <managerType typeId="044850ec-89a7-4cbb-9159-fb0d3ed7d640" valueTypeId="ba65e66f-99bb-4642-823d-4b413b2f7856"/>
+  </producedTypes>
+  <name>ОтчетВыращиваниеТёлок</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет выращивание тёлок</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ОтчетВыращиваниеТёлок.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.ОтчетВыращиваниеТёлок.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <forms uuid="268bb3c3-36db-4fd1-8c9c-09199118c84c">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="27ca2000-1f14-47c3-9403-9649a80204c7">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

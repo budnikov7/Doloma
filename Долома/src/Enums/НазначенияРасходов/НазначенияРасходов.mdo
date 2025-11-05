@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c3b0e266-273d-44d8-ba42-440730047a29">
+  <producedTypes>
+    <refType typeId="b1c26791-479b-4659-88e5-b556dfac2ce5" valueTypeId="608d7ac2-3412-4953-a4f1-5d1e8f877048"/>
+    <listType typeId="dc0fdf1c-457e-4d41-a0aa-cd86bb89cb7f" valueTypeId="71cf5598-17fe-4af4-ae3b-e01410064e51"/>
+    <managerType typeId="fa3ee84c-df1c-42ff-9b89-d6cd43324979" valueTypeId="35267d63-b1a7-4941-add2-b2c60459edf5"/>
+  </producedTypes>
+  <name>НазначенияРасходов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Назначения расходов</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="edb14f02-0ddb-4f5a-802c-473150717dcf">
+    <name>КРС</name>
+    <synonym>
+      <key>ru</key>
+      <value>КРС</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="b55299d8-03a9-4141-b1e0-330816b10234">
+    <name>Лошади</name>
+    <synonym>
+      <key>ru</key>
+      <value>Лошади</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="6510bb5b-658d-4988-8041-2e0cb84ed405">
+    <name>Свиньи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Свиньи</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="84695329-3588-4300-9d29-c8dfc15ec10b">
+    <name>Птица</name>
+    <synonym>
+      <key>ru</key>
+      <value>Птица</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

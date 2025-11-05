@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b13695a7-1e4e-4008-9c15-dd681fee82f4">
+  <producedTypes>
+    <objectType typeId="9fe4f930-90cd-4721-8693-815f0bd54020" valueTypeId="3944492c-8ae3-46e6-8ae6-704fbf628fe3"/>
+    <managerType typeId="5da7797c-4b85-477d-98f0-37991bb03dcc" valueTypeId="ad574ba5-2fbc-45fb-9eeb-f5af819948b5"/>
+  </producedTypes>
+  <name>ПланированиеВводаНетелейВСтадо</name>
+  <synonym>
+    <key>ru</key>
+    <value>Планирование ввода нетелей в стадо</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ПланированиеВводаНетелейВСтадо.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.ПланированиеВводаНетелейВСтадо.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <forms uuid="de929f6a-b249-4c11-8c00-82ea3b8947e6">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="ae15382c-2de0-468b-9d4d-45632e4a5fef">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

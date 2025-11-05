@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3db165c8-ed41-4e6d-9b92-1be691c8f651">
+  <producedTypes>
+    <objectType typeId="a1b83ae9-b5ec-43dd-a6fc-796e8679ddbe" valueTypeId="a394536e-ffb5-485d-a248-16562c94e4f6"/>
+    <refType typeId="50e593c2-b12a-43c0-b85e-d3fe2892de3c" valueTypeId="65b56711-5088-4ca5-afb6-6fc0551cc746"/>
+    <selectionType typeId="fcc76e76-34e9-4748-993d-e3ed64821422" valueTypeId="88dd8bfd-1d28-44a9-9b4d-f255f9cb900f"/>
+    <listType typeId="daee901c-6bde-4838-b8fe-69a4793a04f3" valueTypeId="e78acc95-7b91-4875-9c3c-4a07f53b0d4f"/>
+    <managerType typeId="334ceb14-864c-4f8f-83ef-05baddc696a0" valueTypeId="895d2ff8-dc4a-47fa-805f-9ec00fe6245f"/>
+  </producedTypes>
+  <name>ГруппыЖивотных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Группы животных</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ГруппыЖивотных.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ГруппыЖивотных.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="eb0e1d35-ec19-4b48-b660-713d24fb3838">
+      <name>Дойные</name>
+      <description>Дойные</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+    <items id="121a8a32-fe3c-4979-9c97-09f84ed1c2c4">
+      <name>Нетели</name>
+      <description>Нетели</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+    </items>
+    <items id="df77d6d1-8ab6-4f7d-8539-378b89fd1fd0">
+      <name>СХ1</name>
+      <description>СХ 1</description>
+      <code xsi:type="core:StringValue">
+        <value>000000003</value>
+      </code>
+    </items>
+    <items id="1993b748-daf4-4c9f-919e-50a66cbb8c08">
+      <name>СХ2</name>
+      <description>СХ 2</description>
+      <code xsi:type="core:StringValue">
+        <value>000000004</value>
+      </code>
+    </items>
+    <items id="a11cfc41-614e-4411-a1d6-8dd066ce9e28">
+      <name>Тёлки12_18</name>
+      <description>Тёлки 12-18 мес</description>
+      <code xsi:type="core:StringValue">
+        <value>000000005</value>
+      </code>
+    </items>
+    <items id="93fe9a8f-d921-4f43-bb99-70335253ca2f">
+      <name>Тёлки6_12</name>
+      <description>Тёлки 6-12 мес</description>
+      <code xsi:type="core:StringValue">
+        <value>000000006</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

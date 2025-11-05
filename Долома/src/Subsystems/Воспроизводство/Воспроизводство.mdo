@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="394e2379-2b20-410a-9eb3-69fec5e66c5b">
+  <name>Воспроизводство</name>
+  <synonym>
+    <key>ru</key>
+    <value>Воспроизводство</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.Картинка_Воспроизводство</picture>
+  </picture>
+  <content>Document.ЖивотныеВОхоте</content>
+  <content>Document.УЗД</content>
+  <content>Document.Аборт</content>
+  <content>Document.Осеменение</content>
+  <content>Report.ОсемененияПоДнямДоенияИВозрасту</content>
+  <content>Document.Выбраковка</content>
+  <content>Report.ВоспроизводствоОбщий</content>
+  <content>Report.СписокОсеменённыхЖивотных</content>
+  <content>Report.НаКакойДеньПроисходитПроверкаСтельностиУКоров</content>
+  <content>Report.СтатистикаПоОтёлам</content>
+  <content>Report.СписокЖивотныхДляДиагностикиСтельности</content>
+  <content>Report.СписокРожденныхТелят</content>
+  <content>Report.ОтчетСравнительныйАнализИскусственногоОсеменения</content>
+  <content>Report.СписокЖивотныхДляОсеменения</content>
+  <content>Report.ОтчетПоАбортам</content>
+  <content>Document.СинхронизацияПоловойОхоты</content>
+  <content>Enum.ВидыИнъекцийСхемСинхронизации</content>
+  <content>Report.ПланМероприятийПоСхемамСинхронизаций</content>
+  <content>Report.ОтчетУЗИДиагностика</content>
+</mdclass:Subsystem>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="30781797-dc9d-4b8b-b6a9-2cc29ad2f9f0">
+  <name>ГенеалогическоеДрево</name>
+  <synonym>
+    <key>ru</key>
+    <value>Генеалогическое древо</value>
+  </synonym>
+</mdclass:CommonPicture>

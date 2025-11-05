@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b6a4f8f3-cc2c-448d-85ea-a3d7cd31a55b">
+  <producedTypes>
+    <objectType typeId="f3ee5feb-ceb2-4d0a-9969-06f44d535087" valueTypeId="a4d5ce96-8b7a-4f95-b565-2911e818696d"/>
+    <managerType typeId="c1b00c65-9013-4643-ad56-708b1a7eb1c9" valueTypeId="99337c94-3989-4cd3-b169-41f00301f0fc"/>
+  </producedTypes>
+  <name>СписокЖивотныхДляДиагностикиСтельности</name>
+  <synonym>
+    <key>ru</key>
+    <value>Список животных для диагностики стельности</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.СписокЖивотныхДляДиагностикиСтельности.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.СписокЖивотныхДляДиагностикиСтельности.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <forms uuid="5907f602-bfbb-4ab0-968e-c5e1815bea09">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="225b6980-56dc-4537-8190-2d07d4f89c93">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

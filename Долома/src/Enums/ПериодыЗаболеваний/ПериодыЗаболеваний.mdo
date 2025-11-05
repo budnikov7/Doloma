@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3c80bde7-72be-45d1-a156-dee1d836e6d1">
+  <producedTypes>
+    <refType typeId="57469bb6-0298-465c-9e3d-a5824675bf40" valueTypeId="4ec5f533-d868-4add-9be6-ea7195e9946e"/>
+    <listType typeId="e37d30d4-6a30-4a80-aefb-cbb60c591b6f" valueTypeId="47795b0c-3986-4d4a-bb36-363ba918fa02"/>
+    <managerType typeId="f9fe916e-452e-40f1-ae9d-03acfddc4998" valueTypeId="e51e1a1b-41b2-42fe-9a46-36c6972b8f3b"/>
+  </producedTypes>
+  <name>ПериодыЗаболеваний</name>
+  <synonym>
+    <key>ru</key>
+    <value>Периоды заболеваний</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="11bb39ca-35d6-4b4b-aaac-6efa1268a65a">
+    <name>НачалоЛечения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начало лечения</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="04cdf059-46f3-460c-82b3-5536d7ae8349">
+    <name>ОжиданиеТеста</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ожидание теста</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="9ecd6c29-1b47-444d-b836-f9d1bcafca0a">
+    <name>КонецЛечения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Конец лечения</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

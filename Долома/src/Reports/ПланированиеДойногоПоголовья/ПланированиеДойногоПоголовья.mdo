@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="92ff890f-228f-48fd-862a-bb184e371bf4">
+  <producedTypes>
+    <objectType typeId="563e914b-3260-451c-940e-0c1c53b01031" valueTypeId="107fcd29-fed3-46ab-b796-3afae3244058"/>
+    <managerType typeId="60c0e016-0a14-4c76-857a-8e245898c134" valueTypeId="f7bc0d02-b1d1-4b87-a623-4d4953957e01"/>
+  </producedTypes>
+  <name>ПланированиеДойногоПоголовья</name>
+  <synonym>
+    <key>ru</key>
+    <value>Планирование дойного поголовья</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ПланированиеДойногоПоголовья.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.ПланированиеДойногоПоголовья.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <forms uuid="81ec8aef-d0da-4a24-81cc-3b94e7466228">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="2db8e913-f152-4289-b227-db7c0400c7d2">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

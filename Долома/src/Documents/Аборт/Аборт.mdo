@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e5b6aff7-a2fd-4c93-ad8e-c64ad508dfe6">
+  <producedTypes>
+    <objectType typeId="76f7dd95-865c-48e7-8c8e-c003992bc9af" valueTypeId="75858c29-f06f-4f39-937a-0a6a0d84253e"/>
+    <refType typeId="6dfff128-8190-4d04-b0c5-0e280e05aa61" valueTypeId="e60fe5cc-2c63-4495-b5d3-8b4faa1e9a75"/>
+    <selectionType typeId="e08fe287-9ae8-429e-b916-e0953f6f622f" valueTypeId="718aa3de-ec5a-43e7-b28b-6a3d3eeea38c"/>
+    <listType typeId="7aed07a7-252a-4878-9ad3-e9fb59ec972b" valueTypeId="4ed0cb0a-88ca-455e-860d-24d759178d13"/>
+    <managerType typeId="7a7f0e43-fe8d-4578-a752-0db6ecd4a87b" valueTypeId="94cd03e6-46be-40e4-9753-135e121d8597"/>
+  </producedTypes>
+  <name>Аборт</name>
+  <synonym>
+    <key>ru</key>
+    <value>Прерывание стельности</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.Аборт.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <basedOn>Document.УЗД</basedOn>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.Аборт.Form.ФормаДокумента</defaultObjectForm>
+  <defaultListForm>Document.Аборт.Form.ФормаСписка</defaultListForm>
+  <registerRecords>InformationRegister.СостояниеЖивотных</registerRecords>
+  <registerRecords>InformationRegister.Аборты</registerRecords>
+  <registerRecords>AccumulationRegister.КоличествоЛактаций</registerRecords>
+  <registerRecords>InformationRegister.ПроизводственныеГруппы</registerRecords>
+  <registerRecords>InformationRegister.ВыбраковкаЖивотных</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="1b8a23f0-c42a-4170-9a38-d3bd834dc7cf">
+    <name>Автор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Автор документа</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="9ba374aa-a258-4b12-8d69-e94d5cb52f0d">
+    <name>Ферма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ферма</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Фермы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="dac997d0-12ea-46b9-9780-7751f618a87c">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a8560fd6-1d66-4373-be78-3eb10834c301">
+    <name>ДокументОснование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ-основание</value>
+    </synonym>
+    <comment>Документ, на основании которого был создан этот (как правило, &quot;Осеменение&quot;)</comment>
+    <type>
+      <types>DocumentRef.УЗД</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="165e63bc-f466-4358-9352-a43a57ce431d">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="5f8fd25f-c8d1-4104-874d-dfbe1cec305f">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="93ca7f3b-afc3-4887-87c7-ae7af16994ff">
+    <producedTypes>
+      <objectType typeId="0d574002-3a80-44c5-8486-e7fa15f9d973" valueTypeId="ec0c65c4-d2d9-4a2d-be4d-3560dd89c93a"/>
+      <rowType typeId="effa528c-99a5-4f59-99fb-da5844b568ba" valueTypeId="ef05d113-9d57-40b0-9071-afa4e78eee50"/>
+    </producedTypes>
+    <name>Животные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Животные</value>
+    </synonym>
+    <attributes uuid="4365ae1b-7380-4886-b669-c7dc35ac82af">
+      <name>Мать</name>
+      <synonym>
+        <key>ru</key>
+        <value>Животное-мать</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Животные</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameters>
+        <name>Отбор.Состояние</name>
+        <value xsi:type="core:ReferenceValue">
+          <value>Enum.СтатусЖивотного.EnumValue.Стельная</value>
+        </value>
+      </choiceParameters>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="15ac180a-8f32-4bf4-948b-a8a764581d7c">
+      <name>ТипПрекращенияСтельности</name>
+      <synonym>
+        <key>ru</key>
+        <value>Тип прекращения стельности</value>
+      </synonym>
+      <type>
+        <types>EnumRef.ТипПрекращенияСтельности</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="81207175-13e6-4a3e-a68f-8c073b4f2e03">
+      <name>Осеменатор</name>
+      <synonym>
+        <key>ru</key>
+        <value>Осеменатор</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Сотрудники</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="1c41680c-4a07-4e7d-95bb-c8e1834b5f3f">
+      <name>Примечание</name>
+      <synonym>
+        <key>ru</key>
+        <value>Примечание</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="82918911-fd6a-44a2-a7e0-47a50314298a">
+      <name>ОткрытьЛактацию</name>
+      <synonym>
+        <key>ru</key>
+        <value>Открыть лактацию</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0129ea0c-e224-47e5-b6f9-9c476c20fdd8">
+  <producedTypes>
+    <refType typeId="aae2452d-c809-41c7-9466-2fd7966083bd" valueTypeId="70f6d5e3-fef0-4bc6-9827-66092aba9bae"/>
+    <listType typeId="ad75afbe-0a4d-4009-a817-9c757d7620ed" valueTypeId="9a38a8c6-274f-4664-93cd-0732264ba07e"/>
+    <managerType typeId="dc626ec2-9734-42b8-a7b0-6dd1ef82e688" valueTypeId="7c186e62-afaf-4d15-abed-f84358c4113d"/>
+  </producedTypes>
+  <name>ВидыКормов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды кормов</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="234cec8d-263a-434d-b817-bcbe1a23c00a">
+    <name>ОК</name>
+    <synonym>
+      <key>ru</key>
+      <value>ОК</value>
+    </synonym>
+    <comment>Основной корм</comment>
+  </enumValues>
+  <enumValues uuid="4c46f65d-b959-4497-a183-05e4bd9b2e90">
+    <name>МК</name>
+    <synonym>
+      <key>ru</key>
+      <value>МК</value>
+    </synonym>
+    <comment>Минеральный корм</comment>
+  </enumValues>
+  <enumValues uuid="e2d01085-6b2d-47a1-b1de-10d2a0c4503d">
+    <name>КК</name>
+    <synonym>
+      <key>ru</key>
+      <value>КК</value>
+    </synonym>
+    <comment>Концентрированный корм</comment>
+  </enumValues>
+  <enumValues uuid="e646cb10-d43f-4225-8eea-8907c3b75d61">
+    <name>Прочее</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прочее</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

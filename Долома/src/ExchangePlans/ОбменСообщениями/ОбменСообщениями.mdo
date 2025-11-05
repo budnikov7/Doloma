@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ExchangePlan xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ed550955-3087-4107-80d3-f6c84e056540" thisNode="74ea0e28-5b0d-4a6c-890f-bae8c67cfc2b">
+  <producedTypes>
+    <objectType typeId="6088cf36-4938-424e-a947-29a12570c931" valueTypeId="c3ac860e-1736-4437-a874-5885d9bba645"/>
+    <refType typeId="af41631a-b1e7-4bf8-8caa-c2e2ac89707e" valueTypeId="e36f0864-fda3-4d13-8ca9-5283ec31a24c"/>
+    <selectionType typeId="07a1d603-17a5-4bdb-a3c4-1b2be84f0ede" valueTypeId="142a246e-36d5-4f01-9508-402a4fc8c4a6"/>
+    <listType typeId="2a0544d9-a117-47ba-be8e-939f3fc99e1d" valueTypeId="cf0ced8b-bbe9-49e6-9d5c-255fe610274c"/>
+    <managerType typeId="bcbe1763-3c05-4099-a4fd-68f03c82806d" valueTypeId="8e45bfea-267e-4981-b474-15f03542a00b"/>
+  </producedTypes>
+  <name>ОбменСообщениями</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен сообщениями</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>ExchangePlan.ОбменСообщениями.StandardAttribute.Description</inputByString>
+  <inputByString>ExchangePlan.ОбменСообщениями.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>DontUse</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <codeLength>9</codeLength>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <descriptionLength>25</descriptionLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:ExchangePlan>

@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fc9dff5e-3f1a-42ff-aea4-f3ebd6d3ce76">
+  <producedTypes>
+    <objectType typeId="5b1d6346-b6be-4948-9097-e5a9c1ff4352" valueTypeId="45cdf315-f629-44d3-8f2f-18de96185eae"/>
+    <refType typeId="6993ba41-df4b-46bc-b6c2-278fc6db6615" valueTypeId="633ed73a-a410-4cf8-9bf5-7eab41a29436"/>
+    <selectionType typeId="4c0cf6da-5131-4ca9-be46-e1216fb26edd" valueTypeId="efff36fd-135d-4b7b-9e70-77f588f54d2b"/>
+    <listType typeId="8f7adac0-ef0e-42fd-a45e-8c81c6a21655" valueTypeId="b12d2efa-a99d-4046-8f00-a7668909ce69"/>
+    <managerType typeId="fe18de11-2b85-47ee-b2f2-559de2f86633" valueTypeId="e032915e-2bb8-4c16-9a62-1177b4388d59"/>
+  </producedTypes>
+  <name>Заболевания</name>
+  <synonym>
+    <key>ru</key>
+    <value>Заболевания</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Заболевания.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Заболевания.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="dff16658-f6a8-4630-880d-ec140be69279">
+      <name>Абцесс</name>
+      <description>Абцесс</description>
+      <code xsi:type="core:StringValue">
+        <value>000000005</value>
+      </code>
+    </items>
+    <items id="9eb85920-54af-4b87-8bc4-8b4253066b9b">
+      <name>АртритЗаболеваниеКонечностей</name>
+      <description>Артрит (заболевание конечностей)</description>
+      <code xsi:type="core:StringValue">
+        <value>000000006</value>
+      </code>
+    </items>
+    <items id="90c7b505-855c-4357-9f8a-92a2c82dc7d5">
+      <name>Ацидоз</name>
+      <description>Ацидоз</description>
+      <code xsi:type="core:StringValue">
+        <value>000000007</value>
+      </code>
+    </items>
+    <items id="0365ff10-5dd8-4005-832d-93a029dcd6e4">
+      <name>БурситЦеллюлитЗаболеваниеКонечностей</name>
+      <description>Бурсит,целлюлит (заболевание конечностей)</description>
+      <code xsi:type="core:StringValue">
+        <value>000000008</value>
+      </code>
+    </items>
+    <items id="a1f585fa-9d1b-4ea7-a137-d9a09986ff4f">
+      <name>ВоспалениеБелойЛинииЗаболеваниеКонечностей</name>
+      <description>Воспаление белой линии (заболевание конечностей)</description>
+      <code xsi:type="core:StringValue">
+        <value>000000009</value>
+      </code>
+    </items>
+    <items id="4bfbbc58-6e6d-4636-8015-21730924dd99">
+      <name>ВоспалениеиЯзваСычуга</name>
+      <description>Воспаление и язва сычуга</description>
+      <code xsi:type="core:StringValue">
+        <value>000000017</value>
+      </code>
+    </items>
+    <items id="4995b14e-0309-4f0d-a136-f6d2cf1bf4a9">
+      <name>Гематома</name>
+      <description>Гематома</description>
+      <code xsi:type="core:StringValue">
+        <value>000000018</value>
+      </code>
+    </items>
+    <items id="23aa9609-6a9c-412a-8b35-9fc095c31729">
+      <name>ГигромаЗаболеваниеКонечностей</name>
+      <description>Гигрома (заболевание конечностей)</description>
+      <code xsi:type="core:StringValue">
+        <value>000000010</value>
+      </code>
+    </items>
+    <items id="c2be83c4-bb03-4710-99d7-20ce80af47d8">
+      <name>Гипокальциемия</name>
+      <description>Гипокальциемия</description>
+      <code xsi:type="core:StringValue">
+        <value>000000032</value>
+      </code>
+    </items>
+    <items id="24232504-2486-458e-807d-c7d2a3d9c9ad">
+      <name>Диарея</name>
+      <description>Диарея</description>
+      <code xsi:type="core:StringValue">
+        <value>000000019</value>
+      </code>
+    </items>
+    <items id="d72fcab2-5722-4e9c-95c0-e67826474764">
+      <name>ЗадержаниеПоследа</name>
+      <description>Задержание последа</description>
+      <code xsi:type="core:StringValue">
+        <value>000000020</value>
+      </code>
+    </items>
+    <items id="36d3c360-aa73-47a7-88b7-54bcbf350054">
+      <name>Кетоз</name>
+      <description>Кетоз</description>
+      <code xsi:type="core:StringValue">
+        <value>000000003</value>
+      </code>
+    </items>
+    <items id="d91729de-55ca-43b8-bb21-aab67c25e253">
+      <name>ЛаминитЗаболеваниеКонечностей</name>
+      <description>Ламинит (заболевание конечностей)</description>
+      <code xsi:type="core:StringValue">
+        <value>000000011</value>
+      </code>
+    </items>
+    <items id="0bd186dd-d5c4-4a60-9598-0ecd68793ea1">
+      <name>Мастит</name>
+      <description>Мастит</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+    <items id="9daf509a-5035-4d54-97bc-b5f3c9f116e2">
+      <name>МежпальцевыйДерматитЗаболеваниеКонечностей</name>
+      <description>Межпальцевый дерматит (заболевание конечностей)</description>
+      <code xsi:type="core:StringValue">
+        <value>000000012</value>
+      </code>
+    </items>
+    <items id="0204d86d-02dd-4631-b589-0cebef29c4ad">
+      <name>МетаболическийАцидозГипоксияНоворожденных</name>
+      <description>Метаболический ацидоз, гипоксия новорожденных</description>
+      <code xsi:type="core:StringValue">
+        <value>000000021</value>
+      </code>
+    </items>
+    <items id="43b9c952-3003-4a3e-9b0e-b39bdfc3dca7">
+      <name>Метрит</name>
+      <description>Метрит</description>
+      <code xsi:type="core:StringValue">
+        <value>000000004</value>
+      </code>
+    </items>
+    <items id="cc545084-772a-4f41-aca4-09e964c84c85">
+      <name>НеквалифицированныеТравмыИПовреждения</name>
+      <description>Неквалифицированные травмы и повреждения</description>
+      <code xsi:type="core:StringValue">
+        <value>000000022</value>
+      </code>
+    </items>
+    <items id="e46fdbdf-36cb-4c81-82cc-a4ae0155e54d">
+      <name>Остеодистрофия</name>
+      <description>Остеодистрофия</description>
+      <code xsi:type="core:StringValue">
+        <value>000000023</value>
+      </code>
+    </items>
+    <items id="f8d9a1bd-751e-442d-aa8d-07e797b08741">
+      <name>ПальцевыйДерматитБолезньМортеллароЗаболеваниеКонечностей</name>
+      <description>Пальцевый дерматит-болезнь Мортелларо (заболевание конечностей)</description>
+      <code xsi:type="core:StringValue">
+        <value>000000013</value>
+      </code>
+    </items>
+    <items id="f32ea68f-f66a-42dd-b546-843a9459866f">
+      <name>Перитонит</name>
+      <description>Перитонит</description>
+      <code xsi:type="core:StringValue">
+        <value>000000024</value>
+      </code>
+    </items>
+    <items id="5832e183-3adf-43d5-8e5f-e794992d4be4">
+      <name>Плеврит</name>
+      <description>Плеврит</description>
+      <code xsi:type="core:StringValue">
+        <value>000000025</value>
+      </code>
+    </items>
+    <items id="f66aa343-e113-4d72-90af-3e6b3b1349b6">
+      <name>Пневмония</name>
+      <description>Пневмония</description>
+      <code xsi:type="core:StringValue">
+        <value>000000026</value>
+      </code>
+    </items>
+    <items id="f6fa5e82-50ac-47ed-9fbf-2be17d7c2e24">
+      <name>РасяжениеТазобедренныхСвязокЗалёживание</name>
+      <description>Расяжение тазобедренных связок- залёживание</description>
+      <code xsi:type="core:StringValue">
+        <value>000000027</value>
+      </code>
+    </items>
+    <items id="322d6482-d8c8-4db3-a896-ef5751f24a51">
+      <name>СмещениеCычуга</name>
+      <description>Смещение cычуга</description>
+      <code xsi:type="core:StringValue">
+        <value>000000033</value>
+      </code>
+    </items>
+    <items id="7cd9df3f-4e34-4587-901a-8c956af20de2">
+      <name>СубклиническийМастит</name>
+      <description>Субклинический мастит</description>
+      <code xsi:type="core:StringValue">
+        <value>000000028</value>
+      </code>
+    </items>
+    <items id="60766f23-b800-46aa-92f3-5c7ec965440c">
+      <name>ТиломаЗаболеваниеКонечностей</name>
+      <description>Тилома (заболевание конечностей)</description>
+      <code xsi:type="core:StringValue">
+        <value>000000014</value>
+      </code>
+    </items>
+    <items id="2156f8bd-1ae4-48d1-ac10-c10e0798a9e2">
+      <name>Тимпания</name>
+      <description>Тимпания</description>
+      <code xsi:type="core:StringValue">
+        <value>000000029</value>
+      </code>
+    </items>
+    <items id="9c0f5c01-b9b3-4954-ac0d-dd5e10960699">
+      <name>ТравматическийРетикулоперикардит</name>
+      <description>Травматический ретикулоперикардит</description>
+      <code xsi:type="core:StringValue">
+        <value>000000030</value>
+      </code>
+    </items>
+    <items id="1a21d7c2-5d14-4e73-894e-a04c2cb75293">
+      <name>Эндометрит</name>
+      <description>Эндометрит</description>
+      <code xsi:type="core:StringValue">
+        <value>000000031</value>
+      </code>
+    </items>
+    <items id="8831bf27-b116-4158-bcb3-cc7e3dea2bf6">
+      <name>ЯзваПодошвыЗаболеваниеКонечностей</name>
+      <description>Язва подошвы (заболевание конечностей)</description>
+      <code xsi:type="core:StringValue">
+        <value>000000015</value>
+      </code>
+    </items>
+    <items id="0a2c640b-6c37-4ff9-a7eb-7550963ec74d">
+      <name>ЯзваПяткиЗаболеваниеКонечностей</name>
+      <description>Язва пятки (заболевание конечностей)</description>
+      <code xsi:type="core:StringValue">
+        <value>000000016</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.Заболевания.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.Заболевания.Form.ФормаСписка</defaultListForm>
+  <forms uuid="2b7bedbc-df49-47a5-8635-c31116431dcc">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="c1519b9d-0fc8-4120-b28c-422a73600dd7">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

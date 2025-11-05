@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b1a921f9-500d-4349-acbc-9ebed920b7bc">
+  <producedTypes>
+    <selectionType typeId="1059f601-6239-4ece-a57e-a843c524789b" valueTypeId="ddadacab-f52e-42a1-92e0-907c219ff1ef"/>
+    <listType typeId="a90c6be9-fe8d-4731-bdcf-e345f6d2499c" valueTypeId="caa34b22-a124-40fd-a294-90a59f1129de"/>
+    <managerType typeId="9315fb13-5f54-4dc2-8d57-59c925649efc" valueTypeId="fc82982f-305c-47e7-b22b-b03bb8b57d55"/>
+    <recordSetType typeId="7ac5f7a1-61c6-4dc8-9f6f-664adba99bd3" valueTypeId="ed1c422d-2424-4731-bd99-c282412f98cd"/>
+    <recordKeyType typeId="63cf2adf-bb65-4ef4-8469-1172ec46afd2" valueTypeId="e5bcfb51-faef-46d8-897e-c6508185a309"/>
+    <recordType typeId="f15b6c14-fd56-4dcf-8f4e-60677d5ce1c0" valueTypeId="201bae81-c74d-4f53-895b-144041860314"/>
+    <recordManagerType typeId="3156dbc5-42cc-4155-a09b-f0e4c5603977" valueTypeId="b32418ad-e9f3-4dec-b3ab-a4ff5995a354"/>
+  </producedTypes>
+  <name>ОчередьОбменаСообщенийДляСклада</name>
+  <synonym>
+    <key>ru</key>
+    <value>Очередь обмена сообщений для склада (MTL)</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="e8b7dd88-646f-4ba0-8032-25dc33f0ce00">
+    <name>Ответ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответ</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>1024</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="ae863e56-81e3-4d94-ba28-760940f4f7ba">
+    <name>Документ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ПланЗагрузки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="a47c4276-fc32-4e2d-b6bb-a0b93c69fafd">
+    <name>Операция</name>
+    <synonym>
+      <key>ru</key>
+      <value>Операция</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>75</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <commands uuid="5def2467-304f-419a-b734-c016a950e1bb">
+    <name>ОткрытьОчередьСообщенийДляСклада</name>
+    <synonym>
+      <key>ru</key>
+      <value>Открыть очередь сообщений для склада</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:InformationRegister>

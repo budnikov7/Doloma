@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a2db9e47-d755-440d-ad36-ca3eef5e7134">
+  <producedTypes>
+    <selectionType typeId="802b6e1c-74b0-4f90-be92-825296c5f46d" valueTypeId="9a95026a-f37f-4159-8279-3bb99fa6ed63"/>
+    <listType typeId="1533912c-5558-4c34-af8b-0c1390f9c713" valueTypeId="1609ff76-3135-42c8-aec2-bffd67c1cee2"/>
+    <managerType typeId="ffcff0c9-96f6-440b-a6a0-055d50b1fbab" valueTypeId="9dbc9ac6-d1a8-4079-9df7-881ee63b6bc1"/>
+    <recordSetType typeId="bd3bc48e-cec3-4592-ade2-6fba99d82858" valueTypeId="fa230753-6a23-4709-b04f-fb882e84230d"/>
+    <recordKeyType typeId="233875e9-cb93-49b0-9da9-0e6a21ad5a53" valueTypeId="234b3c1c-b2cc-4b95-8cce-4bd8dd3fc000"/>
+    <recordType typeId="d79cf589-dd9f-48dc-9165-9f31114c02b9" valueTypeId="c61e90ee-f70e-45b2-be6c-e70dfe8b4fff"/>
+  </producedTypes>
+  <name>РасчетыПоДоговорам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расчеты по договорам</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="3a1cac19-8ada-4831-b4d6-4bdcc6d37017">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="c712b08a-570b-473e-a07b-dbec647776d3">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="a233a48a-80e5-401f-8692-e5aae500df16">
+    <name>Цена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цена</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="dc76ca73-dc37-4de5-8a39-a929a6a15313">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="2f69b026-3533-43ff-a10b-f3d0ed8e6ee4">
+    <name>Договор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Договор</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ДоговорКонтрагента</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="49aa43aa-e5f8-49a5-b6bf-510aa8354e18">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

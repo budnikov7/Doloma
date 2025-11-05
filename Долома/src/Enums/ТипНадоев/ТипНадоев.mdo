@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="af7df297-8baa-4a5c-86f0-c553c36259c0">
+  <producedTypes>
+    <refType typeId="8f1ed2a7-d3f0-406e-b5a8-1b2a7f54888f" valueTypeId="d74989bf-14d8-426d-9f81-bb607b0cc8eb"/>
+    <listType typeId="23b1bac6-aa4b-4ebc-aead-e9a99a6b5069" valueTypeId="6c554d82-a064-46a4-bb9b-7757765e3645"/>
+    <managerType typeId="71214e0b-0d4b-4e79-9d2e-c3df0f955b1a" valueTypeId="c23a93f5-b106-4ba8-93e2-083dda1ec96b"/>
+  </producedTypes>
+  <name>ТипНадоев</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тип надоев</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="33b8d3df-cc97-49e7-872c-7661381bb5ef">
+    <name>ПриОтеле</name>
+    <synonym>
+      <key>ru</key>
+      <value>При отеле</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="32c9e5f9-d30d-407a-9783-ed631e753173">
+    <name>Контрольные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрольные</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="701ea154-6742-40c6-a851-84efb559765a">
+    <name>Запуск</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запуск</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

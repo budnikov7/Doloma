@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9d301a8e-6891-44b6-8756-f901f93448a5">
+  <producedTypes>
+    <selectionType typeId="a44c55b5-991f-40fe-bf7a-97ba3ef6bc14" valueTypeId="de69ad8f-055a-409d-af9b-7ddc4e57ef7c"/>
+    <listType typeId="6810eced-ebaf-4630-8f54-7731485ccd73" valueTypeId="94d83059-fc83-44f6-9ab6-834a034331f4"/>
+    <managerType typeId="4535089d-5be6-4069-8efe-9dedf6d02c81" valueTypeId="1b0205e3-9d26-42e5-97a4-f3243f15d7b2"/>
+    <recordSetType typeId="7b6f0f7e-4a85-41d5-b0e1-cd6d94f6c86b" valueTypeId="afadfd74-d569-4782-8323-f050d6915cf2"/>
+    <recordKeyType typeId="110eac74-4e1e-439c-9166-327d7795ef25" valueTypeId="0f05b6b3-4b32-4a5f-a296-caaca42549da"/>
+    <recordType typeId="8d1c0d30-70fe-4a1d-8b5a-12ce72874e3a" valueTypeId="5e4bd322-85b8-421b-86fb-82db8bdb3f84"/>
+    <recordManagerType typeId="aeae5212-e334-4358-b3a3-28b0ec2c831d" valueTypeId="c9b8695d-acc3-4fc8-8b87-c1b0f708d027"/>
+  </producedTypes>
+  <name>ИнформацияОРождении</name>
+  <synonym>
+    <key>ru</key>
+    <value>Информация о рождении</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="4ef97641-5e6f-414d-a2d8-ce4543e8a313">
+    <name>Пол</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пол</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ПолЖивотного</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="01729004-6330-43e8-a0be-0e02434469c6">
+    <name>Вес</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вес</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="5e9a854d-3ea9-47a2-9e6b-3523c26b2838">
+    <name>ФермаРождения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ферма рождения</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Фермы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="eef4c2f4-ec69-4f85-bdbe-7cca6e9889e8">
+    <name>Животное</name>
+    <synonym>
+      <key>ru</key>
+      <value>Животное</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Животные</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

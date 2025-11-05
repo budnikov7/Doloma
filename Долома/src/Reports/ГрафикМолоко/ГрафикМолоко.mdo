@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b32be99c-cc1c-4ec5-9aa5-f9938c31b9c8">
+  <producedTypes>
+    <objectType typeId="9285f8d8-f0ed-4fa4-873f-f52a93665f8f" valueTypeId="fbd4eae1-a910-4e8f-be2e-f104656a6663"/>
+    <managerType typeId="6741bc13-d1ff-427a-a939-ac92fa0f4788" valueTypeId="fd7ea6d9-fa78-4486-aa9d-bb350388eb1c"/>
+  </producedTypes>
+  <name>ГрафикМолоко</name>
+  <synonym>
+    <key>ru</key>
+    <value>График молоко</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ГрафикМолоко.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="cf037cba-9bed-4895-9cd7-ec014182010d">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

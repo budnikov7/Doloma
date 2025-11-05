@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e4d8ffd6-9181-4a08-9c91-ce847fb67791">
+  <producedTypes>
+    <refType typeId="077ea0b2-dcee-439a-9b63-b17fdebe3a3d" valueTypeId="f30f636f-0dcd-4d2e-a37b-9d072e12c067"/>
+    <listType typeId="d86f7995-f5da-489f-ad3f-d7951f82608f" valueTypeId="5af65ec3-d591-4b15-8a78-f4445c333158"/>
+    <managerType typeId="1a2840c3-8b5f-4d47-95e7-a561dd3ce2a1" valueTypeId="bce7bd24-c7ef-4ad9-8aac-dd2fbbdd138b"/>
+  </producedTypes>
+  <name>ВидыЗаболеваний</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды заболеваний</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="591fb24f-4c1c-46c4-93c3-39504b9299c1">
+    <name>Мастит</name>
+    <synonym>
+      <key>ru</key>
+      <value>Мастит</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="88162e98-70f5-46e0-af77-c6e1c1f3529e">
+    <name>ПрочиеЗаболевания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прочие заболевания</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

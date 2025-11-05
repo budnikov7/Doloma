@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3ace57e5-cdbb-42e9-a430-864355a7f292">
+  <producedTypes>
+    <selectionType typeId="a4bb619f-08a4-4b4b-8627-b4fec91dc3ca" valueTypeId="115ed141-e6b1-479e-947f-a0b0a8d1e58d"/>
+    <listType typeId="ef54c947-2fbc-4b22-ae54-27b591843460" valueTypeId="8ded64a0-5bfa-4384-9b5a-ef84fa34e6eb"/>
+    <managerType typeId="2134b44b-b1bb-4b6e-a36a-792213c75fb3" valueTypeId="07289403-1882-4d1a-80f3-b15516aed7d0"/>
+    <recordSetType typeId="9cceca3e-1d0e-4e89-b836-c9f3436cebf6" valueTypeId="7462f665-b794-4027-b54c-792af3e6c693"/>
+    <recordKeyType typeId="7221b5f5-73c1-41e6-aa24-8ed8eb0b674e" valueTypeId="7406e457-3fac-44a9-9b99-41b888bf80b0"/>
+    <recordType typeId="fc7f486b-23f7-4df9-98ba-bc25393a5d3b" valueTypeId="4db30426-cf25-4d77-a59b-f6caab9291f9"/>
+    <recordManagerType typeId="925d780d-17ed-46a4-a5fa-0c55d25fb890" valueTypeId="d65b84af-e91a-403d-bf8a-ffa128759d70"/>
+  </producedTypes>
+  <name>РодителиЖивотных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Родители животных</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="4e6df86f-1a20-4d97-9129-5b7c0949c204">
+    <name>Мать</name>
+    <synonym>
+      <key>ru</key>
+      <value>Мать</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Животные</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="00650b8d-91a6-4d64-9b68-25e2576de836">
+    <name>Отец</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отец</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.БыкиПлеменные</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="cd094cb3-b8ba-4477-9b5d-9e62b8869c4d">
+    <name>Животное</name>
+    <synonym>
+      <key>ru</key>
+      <value>Животное</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Животные</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

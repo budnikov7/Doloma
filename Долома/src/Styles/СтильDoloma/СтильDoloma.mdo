@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Style xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5f102e7d-6432-4884-adff-c0cbafe9e28c">
+  <name>СтильDoloma</name>
+  <synonym>
+    <key>ru</key>
+    <value>Стиль doloma</value>
+  </synonym>
+</mdclass:Style>

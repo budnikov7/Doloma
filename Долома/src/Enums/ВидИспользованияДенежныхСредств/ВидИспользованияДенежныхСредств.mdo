@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bc16881d-9d8f-4b54-b8de-972192e36a96">
+  <producedTypes>
+    <refType typeId="42aea5c2-0d57-47e4-b468-3747565514ff" valueTypeId="5beca7df-3f1f-4c30-93c7-42fb14c00fae"/>
+    <listType typeId="87928a22-d6ab-46ca-a2e4-178e75a82725" valueTypeId="88bca099-43f2-4062-b212-454fa7c08d11"/>
+    <managerType typeId="b8c4379d-01aa-478f-b5e8-70c54bdd1ea3" valueTypeId="de415300-d8d7-4e16-bc0d-f6c721a2fa08"/>
+  </producedTypes>
+  <name>ВидИспользованияДенежныхСредств</name>
+  <synonym>
+    <key>ru</key>
+    <value>Вид использования денежных средств</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="8ec12f56-288d-494a-9415-5facc53a0bdd">
+    <name>Зоотехния</name>
+    <synonym>
+      <key>ru</key>
+      <value>Зоотехния</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="29c5ef6c-b176-4a9a-94b3-43c0397f904f">
+    <name>Ветеринария</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ветеринария</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="b97beecb-75d8-42ff-bd02-07773af97f70">
+    <name>Корма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Корма</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

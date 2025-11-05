@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bcb9eecd-31a6-4659-a434-c6bf153e6537">
+  <producedTypes>
+    <containerType typeId="1674c2f5-bd25-417e-be39-b2070d73bd7f" valueTypeId="e60854f4-1259-4ba2-bd6d-31c08afebe89"/>
+  </producedTypes>
+  <name>ДенежнаяСуммаНеотрицательная</name>
+  <synonym>
+    <key>ru</key>
+    <value>Денежная сумма неотрицательная</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>15</precision>
+      <scale>2</scale>
+      <nonNegative>true</nonNegative>
+    </numberQualifiers>
+  </type>
+</mdclass:DefinedType>

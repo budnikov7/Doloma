@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e02e51a6-0eea-4d6d-8d65-100cced8e928">
+  <producedTypes>
+    <managerType typeId="24178afc-a08a-4f12-901c-0d89d72ab26e" valueTypeId="3bb99a89-f41e-406b-8434-63b7b3abc2ad"/>
+    <valueManagerType typeId="df9a30ef-c427-4e32-af02-71e16e69ebf6" valueTypeId="98b9577b-aa85-439a-a707-1a0571e973de"/>
+    <valueKeyType typeId="ed0e8442-3f58-4bdf-a778-b288edeba195" valueTypeId="2909cc9f-a0df-486a-badb-96c3477d40fa"/>
+  </producedTypes>
+  <name>ДатаЗакрытияПериода</name>
+  <synonym>
+    <key>ru</key>
+    <value>Дата закрытия периода</value>
+  </synonym>
+  <type>
+    <types>Date</types>
+    <dateQualifiers>
+      <dateFractions>Date</dateFractions>
+    </dateQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

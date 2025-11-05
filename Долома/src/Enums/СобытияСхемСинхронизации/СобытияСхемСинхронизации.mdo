@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cf4a51b4-0647-449c-a9ea-090401faea11">
+  <producedTypes>
+    <refType typeId="ccfabb36-5949-4579-aefa-888c25690c51" valueTypeId="d2de2480-50ec-44bc-b988-cfc1cebc05e4"/>
+    <listType typeId="4bbf9093-9581-4f40-9e75-2a6adf35f372" valueTypeId="70ce35a2-c6d6-4b1c-abcb-75285010a6e6"/>
+    <managerType typeId="630ba096-dceb-46c2-8e86-102c2faf3771" valueTypeId="514ba5a6-6e23-4001-9541-038ce2b0d023"/>
+  </producedTypes>
+  <name>СобытияСхемСинхронизации</name>
+  <synonym>
+    <key>ru</key>
+    <value>События схем синхронизации</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="84b1934f-acc2-4d1f-bea5-ab72b55c9aa3">
+    <name>Начало</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начало</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="9bb35850-7e98-4993-be67-98e3e5e975f1">
+    <name>Завершение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Завершение</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

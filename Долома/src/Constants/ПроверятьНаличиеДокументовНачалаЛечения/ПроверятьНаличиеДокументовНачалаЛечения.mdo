@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ef681413-5364-4422-97cd-09bfc756ea60">
+  <producedTypes>
+    <managerType typeId="072095df-0725-4258-a8a6-03394cfd2a63" valueTypeId="5ff1640c-6229-4cd8-98f5-cd94763cbff4"/>
+    <valueManagerType typeId="178820d9-71ec-4688-a110-9fc514d9c224" valueTypeId="3463a080-dde0-4612-a34b-40801a106aa4"/>
+    <valueKeyType typeId="ff3399ac-f086-4264-aac5-be36706eea80" valueTypeId="8f149229-421a-4b85-bea2-191cfa1a9258"/>
+  </producedTypes>
+  <name>ПроверятьНаличиеДокументовНачалаЛечения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Проверять наличие документов начала лечения</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

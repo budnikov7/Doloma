@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="59ab7531-2122-4ae5-95b0-6c71476040a8">
+  <producedTypes>
+    <selectionType typeId="a2819115-4b2b-4fbb-88a7-89247162de6b" valueTypeId="df52ba99-0c9b-4d9f-b05a-c98adfd9aa54"/>
+    <listType typeId="4cad5ee9-2fca-4020-b652-76030ecaae9b" valueTypeId="81c86156-5f60-41ae-8185-9e4235a3cf15"/>
+    <managerType typeId="ede00bf3-d262-4ebc-8e15-dac7e31bddd1" valueTypeId="412ded68-fa8f-438f-b7fb-eb1b3815bae8"/>
+    <recordSetType typeId="7008172c-cab6-432b-95f2-385ba9cb348c" valueTypeId="1e8faa40-7d1a-4554-afcb-9874e4abef99"/>
+    <recordKeyType typeId="435d4e3d-54f5-41f2-b3e2-b71b1d7462f1" valueTypeId="0ef2e41c-1372-479c-b66d-8ee9f91242f6"/>
+    <recordType typeId="c33bceee-0ece-416a-82bd-2d66092ffc62" valueTypeId="83229a17-2267-4f15-b08c-743995500890"/>
+    <recordManagerType typeId="629a18da-1ccd-4317-82b8-6278f97aeff5" valueTypeId="543c5b56-5288-4b46-a3b9-1c9628371fba"/>
+  </producedTypes>
+  <name>ЖивотныеНаСхемеСинхронизации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Животные на схеме синхронизации</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="1e487c56-8e94-4bf9-b757-32b7ef57f5a3">
+    <name>СхемаСинхронизации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схема синхронизации</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СхемыСинхронизации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="e15ff92a-22dd-4a71-a571-1f2cc33f5ca4">
+    <name>Событие</name>
+    <synonym>
+      <key>ru</key>
+      <value>Событие</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СобытияСхемСинхронизации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="cefb96a5-f1ab-4250-8cb4-a84c4d8283a7">
+    <name>КоличествоДней</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество дней</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="df2f8769-9fd9-4fdf-a3a2-149819cc8743">
+    <name>ОсеменениеВнутриСхемы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Осеменение внутри схемы</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="d628910b-b2ef-4e72-8fc8-52c23b753035">
+    <name>Животное</name>
+    <synonym>
+      <key>ru</key>
+      <value>Животное</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Животные</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

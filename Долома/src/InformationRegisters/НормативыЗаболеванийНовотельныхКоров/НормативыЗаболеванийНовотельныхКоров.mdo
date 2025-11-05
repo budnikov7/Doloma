@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c540cd5a-656c-4e1f-8f67-b89830656aa0">
+  <producedTypes>
+    <selectionType typeId="46340e91-3d65-448d-84af-cf8ff1a99fa9" valueTypeId="e526f5d9-482a-4a56-883e-ed3c7ad5f5fc"/>
+    <listType typeId="7e3eb307-f7e3-425c-9754-2abcfc79b59c" valueTypeId="2e99c7e4-eaad-436e-b8f7-78d10617a6c0"/>
+    <managerType typeId="9aee6919-611b-4254-8488-639c35d70fb4" valueTypeId="7862aa94-7504-47c1-a78e-0d64f14220bb"/>
+    <recordSetType typeId="fa9fc3d2-a9ba-4988-b156-e84ed8774d23" valueTypeId="03b1aa36-65bb-4c74-b9d1-570ac1c89993"/>
+    <recordKeyType typeId="d407ad1f-a6cd-43bc-8863-ba48f56eae18" valueTypeId="c65b595d-aa30-4936-8f21-42a5203f0410"/>
+    <recordType typeId="456202ac-cac5-435a-b8e2-b4e3f1855534" valueTypeId="7656b255-15ae-48d0-988f-3192629c368b"/>
+    <recordManagerType typeId="c20cf35e-57af-4b24-8a77-41e123e64025" valueTypeId="b16de8ee-db7d-4b68-8fb3-c996856c8721"/>
+  </producedTypes>
+  <name>НормативыЗаболеванийНовотельныхКоров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Нормативы заболеваний новотельных коров</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="af9afbd8-fdd4-46e6-a842-91ca4396a949">
+    <name>ПроцентЗаболеваний</name>
+    <synonym>
+      <key>ru</key>
+      <value>Процент заболеваний</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="11172aa6-79b4-4a48-8dfc-2e5d4d0e6834">
+    <name>Заболевание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заболевание</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Заболевания</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

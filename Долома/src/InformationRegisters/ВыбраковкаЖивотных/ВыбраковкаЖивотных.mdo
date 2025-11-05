@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fc92bdc4-9b97-43db-bbe0-c7fe515ac6b9">
+  <producedTypes>
+    <selectionType typeId="42cceee3-d2bf-4ed3-82bb-e63eaec259b7" valueTypeId="91a75e61-6db0-4c37-bc89-c4498c17e495"/>
+    <listType typeId="487c02a0-3572-4ae5-a176-b8409d426a0a" valueTypeId="a7713848-5399-4d12-80e0-1307293539f2"/>
+    <managerType typeId="3980a6b6-a5c8-42a9-b4f3-e75190b37071" valueTypeId="d26c5cea-d506-47ec-b338-60027af7dc6e"/>
+    <recordSetType typeId="625a15d8-91a6-4054-a899-468e5f09de44" valueTypeId="75ae80e7-6d1f-48bd-8830-b0d1303c0da7"/>
+    <recordKeyType typeId="ffde99ec-4979-4740-a88a-3a47dcd3dfdf" valueTypeId="9d102c09-7007-429b-86c7-65175c5b9b88"/>
+    <recordType typeId="e2985fd4-4498-4ae4-9b8f-a49b95a18ac9" valueTypeId="9cb41ae8-8444-4401-ac8c-800ac977d51f"/>
+    <recordManagerType typeId="593c0382-b2fe-4faa-8349-fc2d801b8b24" valueTypeId="b048cc7e-eb21-4390-85c5-1904731ee8f2"/>
+  </producedTypes>
+  <name>ВыбраковкаЖивотных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Перемещение животных в брак (выбраковка)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <updateDataHistoryImmediatelyAfterWrite>true</updateDataHistoryImmediatelyAfterWrite>
+  <executeAfterWriteDataHistoryVersionProcessing>true</executeAfterWriteDataHistoryVersionProcessing>
+  <resources uuid="9f5a44f3-f3c9-4807-a118-9659859c804d">
+    <name>Брак</name>
+    <synonym>
+      <key>ru</key>
+      <value>Животное выбраковано</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="6176c557-88a4-4066-b3e5-d60218bac95a">
+    <name>ПричинаВыбраковки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Причина выбраковки</value>
+    </synonym>
+    <comment>Причина выбраковки животного</comment>
+    <type>
+      <types>EnumRef.ПричиныВыбраковки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="40118ec4-8784-4215-87f0-40f687dfc9d3">
+    <name>Животное</name>
+    <synonym>
+      <key>ru</key>
+      <value>Животное</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Животные</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

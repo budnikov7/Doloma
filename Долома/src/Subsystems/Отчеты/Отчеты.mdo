@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="22056d27-4288-4616-8188-21bb36e57dda">
+  <name>Отчеты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчеты</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.Картинка_Отчет</picture>
+  </picture>
+  <content>Report.ОтчетКонтрольнаяДойка</content>
+  <content>Report.ГрафикМолоко</content>
+  <content>Report.ПроизводственнаяСводкаОтчёт</content>
+  <content>Report.ГрафикОтелов</content>
+  <content>Report.ОсемененияПоДнямДоенияИВозрасту</content>
+  <content>Report.СтруктураСтадаВРазрезеЛактаций</content>
+  <content>Report.ВоспроизводствоОбщий</content>
+  <content>Report.СтруктураВзрослогоПоголовья</content>
+  <content>Report.ОтчетПоОтъёму</content>
+  <content>Report.СписокОсеменённыхЖивотных</content>
+  <content>Report.ПроцентКоровБольныхМаститом</content>
+  <content>Report.ВедомостьПоТоварамНаСкладах</content>
+  <content>Report.ПотребностьВМолокеИКормеДляТелят</content>
+  <content>Report.НаКакойДеньПроисходитПроверкаСтельностиУКоров</content>
+  <content>Report.СтатистикаПоОтёлам</content>
+  <content>Report.ДиаграммаЗапусков</content>
+  <content>Report.ДиаграммаДнейВСухостое</content>
+  <content>Report.СписокЖивотныхДляДиагностикиСтельности</content>
+  <content>Report.ИндексСтельности</content>
+  <content>Report.ОтчетПоНовотельнымЖивотным</content>
+  <content>Report.СписокРожденныхТелят</content>
+  <content>Report.ОтчетВыращиваниеТёлок</content>
+  <content>Report.ОтчетПоВыбытию</content>
+  <content>Report.ОтчетСписокБольныхЖивотных</content>
+  <content>Report.ОтчетСравнительныйАнализИскусственногоОсеменения</content>
+  <content>Report.СписокЖивотныхДляОсеменения</content>
+  <content>Report.ОтчетПоАбортам</content>
+  <content>Report.ОтчетПоПотреблениюСухогоВещества</content>
+  <content>Report.ОтчетРасходКормов</content>
+  <content>Report.ПланМероприятийПоСхемамСинхронизаций</content>
+  <content>Report.ОтчетУЗИДиагностика</content>
+</mdclass:Subsystem>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ca6d684a-5522-41e5-8ede-740d2e4e86bb">
+  <producedTypes>
+    <objectType typeId="731b6c5d-1e2a-461e-99f7-217904159363" valueTypeId="8b012916-940c-4631-b05b-313d9a9551f1"/>
+    <refType typeId="63a9f073-9c1b-410e-b9b8-6dd13dfcfe99" valueTypeId="d5560012-a9a5-49c2-b074-250d6e8efe00"/>
+    <selectionType typeId="b9d38ba8-bcc5-46ae-9483-48428a52e6ea" valueTypeId="8ffa9f5b-50da-462b-b9e3-37165f965814"/>
+    <listType typeId="5f63e98c-0c26-4e00-8f58-28674fc6c2f9" valueTypeId="485eedb4-73b0-494b-8170-c9c9c5eff0c1"/>
+    <managerType typeId="9fbbe438-2bec-43f5-84b6-1643bf503a38" valueTypeId="653c2f42-3f1d-4a8a-8a19-6944bd681cae"/>
+  </producedTypes>
+  <name>СхемыКормленияИВыпойкиТелят</name>
+  <synonym>
+    <key>ru</key>
+    <value>Схемы кормления и выпойки телят</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.СхемыКормленияИВыпойкиТелят.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.СхемыКормленияИВыпойкиТелят.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.СхемыКормленияИВыпойкиТелят.Form.ФормаЭлемента</defaultObjectForm>
+  <attributes uuid="9cfe3bf7-8529-45a0-af96-612c87f87097">
+    <name>ОписаниеСхемы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание схемы</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="77ace412-de82-45a2-9707-9ff1f5544167">
+    <producedTypes>
+      <objectType typeId="2cbf36e0-49ee-409a-b3f6-449703899c8b" valueTypeId="66776a0c-bbc1-4400-af20-d30475278226"/>
+      <rowType typeId="33c58029-481e-4dfe-b596-526a1d1ad86a" valueTypeId="3cdb656f-26a6-4294-8153-b7916f78240f"/>
+    </producedTypes>
+    <name>Схема</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схема</value>
+    </synonym>
+    <attributes uuid="0c240da7-6e64-488d-b165-3eecd531f97d">
+      <name>МолокоВДень</name>
+      <synonym>
+        <key>ru</key>
+        <value>Молоко в день</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="f8f5601a-12d9-4428-b3ba-a96f4aae22e5">
+      <name>Молоко</name>
+      <synonym>
+        <key>ru</key>
+        <value>Молоко</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="0616613d-4912-49b2-93dc-25bc8ad6bbde">
+      <name>СтартернаяСмесьВДень</name>
+      <synonym>
+        <key>ru</key>
+        <value>Стартерная смесь в день</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="489b6ce4-76b8-471a-a8ea-ef318ecf31dd">
+      <name>СтартернаяСмесь</name>
+      <synonym>
+        <key>ru</key>
+        <value>Стартерная смесь</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="ef78c9dd-0e27-4e2d-9ec0-35cfcbffa45c">
+      <name>ПСРВДень</name>
+      <synonym>
+        <key>ru</key>
+        <value>ПСР в день</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="e5c22cbc-a372-4cbb-8111-2011450f65db">
+      <name>ПСР</name>
+      <synonym>
+        <key>ru</key>
+        <value>ПСР</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <forms uuid="e844acfc-8bfc-41fd-ba20-616bf30c4b2f">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="5a7664c0-a157-4c2e-867d-ac1c9b41b0c8">
+    <name>МакетПечати</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет печати</value>
+    </synonym>
+  </templates>
+  <templates uuid="6be9d6f1-b135-4e27-b498-02351086c505">
+    <name>МакетСхемыПоУмолчанию</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет схемы по умолчанию</value>
+    </synonym>
+  </templates>
+  <templates uuid="c68abd65-07be-433f-b0ee-1af48d7b55a5">
+    <name>МакетОписанияСхемы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет описания схемы</value>
+    </synonym>
+  </templates>
+</mdclass:Catalog>

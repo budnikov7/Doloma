@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8e397f66-7984-4b1e-ae5a-3f3595224001">
+  <producedTypes>
+    <objectType typeId="37e8bbd8-c554-43f7-a113-a1316f86a580" valueTypeId="d67f0d65-9118-43f9-873d-1243b9447a32"/>
+    <refType typeId="6f8ea3eb-26de-4221-a946-22129a930894" valueTypeId="0950b0e9-645d-4d02-aafb-e4f4f5a42d13"/>
+    <selectionType typeId="8e1ea756-d270-46d5-8853-4450caa5fb33" valueTypeId="2ca04585-63f3-4a90-92ef-bcdb89934ce3"/>
+    <listType typeId="dc20cf73-3602-4327-88ff-e827f89992c8" valueTypeId="13ab5ca0-8c6b-4116-97f3-0982981f1526"/>
+    <managerType typeId="7639b268-a136-4719-9eb4-ccace8b51521" valueTypeId="c8eebff1-4dd4-465a-ab07-d43b1785c285"/>
+  </producedTypes>
+  <name>Хозяйства</name>
+  <synonym>
+    <key>ru</key>
+    <value>Хозяйства</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Хозяйства.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Хозяйства.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="fdfd72ca-99d5-4162-b3a2-a8a169ea9e24">
+    <name>Предприятие</name>
+    <synonym>
+      <key>ru</key>
+      <value>Предприятие</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Предприятия</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

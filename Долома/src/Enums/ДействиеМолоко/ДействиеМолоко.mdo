@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f0e0b8d6-a6f0-4483-8d82-1c276f803079">
+  <producedTypes>
+    <refType typeId="5161eee4-8da4-44cb-ac47-8199030a89f0" valueTypeId="81294079-fbf0-4bdf-af38-f4f22c1206c7"/>
+    <listType typeId="aa044030-3c20-47f8-ab30-e6946aaa5138" valueTypeId="965651c3-57c0-4cbb-8fbe-9e1f0c7dc0bc"/>
+    <managerType typeId="4aa6c2cd-740b-43e4-8257-3ccba985f534" valueTypeId="e4c7719e-dc55-449f-ae3f-bcd6f9761795"/>
+  </producedTypes>
+  <name>ДействиеМолоко</name>
+  <synonym>
+    <key>ru</key>
+    <value>Действие молоко</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="fc9e45a7-8b05-43fd-baa6-29a48663d7c5">
+    <name>Дойка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дойка</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="5f676e62-fd5e-4366-a257-44dc1fe76ba2">
+    <name>Выпойка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выпойка</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="4c66afc3-92e4-4907-8fbb-386c4d6fe607">
+    <name>Продажа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Продажа</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

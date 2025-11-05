@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5244b488-bf14-49d9-9112-21f1b1f65c81">
+  <producedTypes>
+    <refType typeId="8e9367e7-4159-4bef-8888-5adf30c6ace8" valueTypeId="f7282a60-0165-42d0-b150-e3c7e813165d"/>
+    <listType typeId="1eb4dd1a-79c7-4316-bdf2-03d6bb7b2534" valueTypeId="4d356a0e-abfd-46e9-95c1-39696da38c2a"/>
+    <managerType typeId="3e31d318-72e7-4385-9d6c-09b1030509f5" valueTypeId="b85f474d-ae2b-47a3-80fc-eebba0ab38cb"/>
+  </producedTypes>
+  <name>ТипыУстройств</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы устройств</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="c0ef8fe7-75aa-41e3-814c-189088f7ef14">
+    <name>tank</name>
+    <synonym>
+      <key>ru</key>
+      <value>tank</value>
+    </synonym>
+    <comment>Бункер</comment>
+  </enumValues>
+  <enumValues uuid="a7b14fd7-beaa-46da-a0cf-74a6d980e733">
+    <name>loader</name>
+    <synonym>
+      <key>ru</key>
+      <value>Погружной</value>
+    </synonym>
+    <comment>Погружной</comment>
+  </enumValues>
+  <enumValues uuid="34f59c89-89f1-4748-a4b5-56018a2c6f55">
+    <name>selfloader</name>
+    <synonym>
+      <key>ru</key>
+      <value>selfloader</value>
+    </synonym>
+    <comment>Самопогружной</comment>
+  </enumValues>
+</mdclass:Enum>

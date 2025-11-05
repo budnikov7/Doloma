@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="09cbec03-c2d7-432b-92cf-1de3446aad14">
+  <producedTypes>
+    <selectionType typeId="41c33412-e426-45a2-8afa-43575cebe23c" valueTypeId="8bbaebe0-8a9d-4c46-8367-fe8733c8e32a"/>
+    <listType typeId="29cb3f76-89e7-42e8-a208-5f03adbb48d7" valueTypeId="52ef3036-9ff8-4de2-99e0-711a3fd06a9b"/>
+    <managerType typeId="39bac25b-9d63-4701-a705-50f9cca127a9" valueTypeId="3537d91c-772f-4806-bad2-652cc8803a1f"/>
+    <recordSetType typeId="689feff0-5502-4898-befc-786e16b83d39" valueTypeId="a1568021-871b-4df6-a0b8-f4147a4896e2"/>
+    <recordKeyType typeId="5c880766-d0fa-48a8-a1d8-1b38aa852b23" valueTypeId="ac91bd57-853e-4f94-8147-e3d71f7f4849"/>
+    <recordType typeId="faccc471-a8d3-45f6-a389-8feed489ddd9" valueTypeId="b6abe8e9-32aa-403d-a632-851f961dd3f4"/>
+    <recordManagerType typeId="23286b58-64c5-480a-be5e-36388eb3e581" valueTypeId="3c16db0f-f203-41ec-921f-6238c01b672d"/>
+  </producedTypes>
+  <name>ДатаПредполагамогоЗапуска</name>
+  <synonym>
+    <key>ru</key>
+    <value>Дата предполагамого запуска</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="00a2e62f-37b1-48cf-ac15-5e99b1c0ab92">
+    <name>ДатаЗапуска</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата запуска</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="d4a675e9-7ee1-4f17-ae70-f4f08f3a9457">
+    <name>ДатаПереводаВоВторойСухостой</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата перевода во второй сухостой</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="495fdf14-0d05-47e8-8dc1-e61f30e87d36">
+    <name>Животное</name>
+    <synonym>
+      <key>ru</key>
+      <value>Животное</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Животные</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

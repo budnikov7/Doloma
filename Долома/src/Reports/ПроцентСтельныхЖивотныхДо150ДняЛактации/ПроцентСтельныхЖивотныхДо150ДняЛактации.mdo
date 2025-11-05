@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fec79366-fadd-4a93-ba30-d3301dfe27cf">
+  <producedTypes>
+    <objectType typeId="b3e5c61f-a13b-4877-9188-a8e9548bb395" valueTypeId="b057c442-8c21-49f3-9707-2304fdddf3b6"/>
+    <managerType typeId="9def17e1-b74e-4ea3-8d1f-733f53bd0062" valueTypeId="d02993ec-0c02-470d-af7a-8c7ad3454eb2"/>
+  </producedTypes>
+  <name>ПроцентСтельныхЖивотныхДо150ДняЛактации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Процент стельных животных до 150 дня лактации</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ПроцентСтельныхЖивотныхДо150ДняЛактации.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.ПроцентСтельныхЖивотныхДо150ДняЛактации.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <forms uuid="e3295ff9-8782-4db3-b6ff-93dfb4e19a44">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="03cf3285-d77f-4e77-ab75-52ebb4bcc09f">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

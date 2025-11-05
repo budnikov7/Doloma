@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f912188f-c652-4b3c-bcd0-588be9e93757">
+  <producedTypes>
+    <refType typeId="c3b01954-7c39-4079-8f89-3b1dc1d163a8" valueTypeId="ea2a58fb-3372-4b8d-a9d4-d255c9e49b2d"/>
+    <listType typeId="6de6329e-64c5-495b-b702-e2ccbd488505" valueTypeId="686ca733-2809-44ea-b13f-452a82a97314"/>
+    <managerType typeId="8d74f85c-77a7-407e-9297-23c73ff4ea46" valueTypeId="1fdbb7fb-ae29-4f86-af8b-afb5b1956101"/>
+  </producedTypes>
+  <name>ТипПрекращенияСтельности</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тип прекращения стельности</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="30c19cd9-fe39-49cf-b839-505080208812">
+    <name>ЭмбриональнаяСмертность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Эмбриональная смертность</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="e81ab72d-bf9b-4873-8afa-4f197039a1d8">
+    <name>Аборт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Аборт</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

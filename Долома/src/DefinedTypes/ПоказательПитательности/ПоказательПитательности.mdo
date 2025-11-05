@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1b5e795f-9294-4094-80a5-f3ba187b6335">
+  <producedTypes>
+    <containerType typeId="3b6d2c0c-ef84-4bcc-9e58-e0e526e5174c" valueTypeId="ac035283-ba96-4dbc-907d-b86c03da4e10"/>
+  </producedTypes>
+  <name>ПоказательПитательности</name>
+  <synonym>
+    <key>ru</key>
+    <value>Показатель питательности</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>10</precision>
+      <scale>2</scale>
+      <nonNegative>true</nonNegative>
+    </numberQualifiers>
+  </type>
+</mdclass:DefinedType>

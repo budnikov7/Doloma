@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="92b50159-eae9-4c87-afa4-382a9c0aac82">
+  <producedTypes>
+    <managerType typeId="c86de268-ed9e-4f86-ba6d-ecdcf9ebe86b" valueTypeId="48599ce5-8718-4463-ba1d-eb67be145559"/>
+    <valueManagerType typeId="34bfb028-c6d9-478b-8e76-26896988a4e9" valueTypeId="4d975f3c-572a-44cd-99b4-6a15c53c7b6d"/>
+    <valueKeyType typeId="1941b997-1852-4aff-ba47-fd75dbcd150a" valueTypeId="dfd785f7-56ee-4ce0-a0df-0dc52b8a9b49"/>
+  </producedTypes>
+  <name>ОграничиватьПолныеПрава</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ограничивать полные права</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

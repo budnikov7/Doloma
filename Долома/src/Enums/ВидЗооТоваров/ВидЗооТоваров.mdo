@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c8a29016-37d4-4bf0-8d4d-6d0e4f498439">
+  <producedTypes>
+    <refType typeId="a23a728f-d15d-4c73-ac27-81809a135615" valueTypeId="ba19c32f-5a35-4a45-af68-529d9f00a9eb"/>
+    <listType typeId="5c572bc9-dae7-49ba-9c2c-0fa3593e7363" valueTypeId="0b9e7d90-d95d-47a8-96ff-0d3fbc32128c"/>
+    <managerType typeId="58f55e04-8b02-42d7-89fd-2984e639291c" valueTypeId="04b4d3de-fced-49a4-ac88-994eec6c8f18"/>
+  </producedTypes>
+  <name>ВидЗооТоваров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Вид зоо товаров</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="3f1b4d99-859a-4544-a720-bbac0ec54792">
+    <name>ВспомогательныйМатериал</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вспомогательные материалы</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="9ba04b0b-2898-4903-8a87-7e21a945244b">
+    <name>ХозяйственныйИнвентарь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Хозяйственный инвентарь</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="d33f486d-97f6-4835-9e1f-2768ddd6dc30">
+    <name>СпецОдежда</name>
+    <synonym>
+      <key>ru</key>
+      <value>Спец. одежда</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

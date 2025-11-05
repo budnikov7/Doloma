@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5cd03473-efc5-4217-8cf4-ee5ce4913969">
+  <producedTypes>
+    <selectionType typeId="14ae6b1d-0042-4bc3-8c30-6e6c099d7092" valueTypeId="28dd24cc-5041-4e7e-ab7b-5cec0dd91405"/>
+    <listType typeId="0d905758-fe14-4310-a5ad-042b80190130" valueTypeId="89550c5f-49b8-40bc-a0e8-7d09c85487a8"/>
+    <managerType typeId="e20d4105-2500-4afa-a4c7-98a771a06e4c" valueTypeId="2344b734-d7b4-4e1e-bd13-955e6563bc5f"/>
+    <recordSetType typeId="e97fdbbe-125c-4ce3-ac72-ec342f21694f" valueTypeId="6c262a08-a3c4-484a-ba73-645ff18d3482"/>
+    <recordKeyType typeId="f018905c-57a9-45f6-88b6-748511e2ba8c" valueTypeId="c8b352c4-c00d-43fc-8c48-645eeb836ee2"/>
+    <recordType typeId="9a8431cc-eb92-40a6-8b72-7564542d455d" valueTypeId="e4eb74aa-dc1d-49d2-8019-db25c4c97b08"/>
+    <recordManagerType typeId="be31887a-aa1d-42f3-9ead-7432c359d71b" valueTypeId="53be79b5-2b8e-4742-95c5-8870a7907100"/>
+  </producedTypes>
+  <name>НормативныеПоказателиРационов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Нормативные показатели рационов</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="57fc1bcf-4bda-43ec-bfcf-963e4b83f0d6">
+    <name>Минимум</name>
+    <synonym>
+      <key>ru</key>
+      <value>Минимум</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ПоказательПитательности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="89748974-0b75-40db-ad33-067c192d8dc0">
+    <name>Максимум</name>
+    <synonym>
+      <key>ru</key>
+      <value>Максимум</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ПоказательПитательности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="0ccedec5-f99c-496c-806b-1e9ee7b5d96a">
+    <name>ПоказыватьВРационе</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показывать в рационе</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="70599cae-06e2-43a4-8e97-bff30b0e013d">
+    <name>ГруппаЖивотных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группа животных</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ГруппыЖивотных</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="4041381d-3114-4b37-ba36-61a28a09f23f">
+    <name>ПоказательРациона</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатель рациона</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПоказателиРационов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="b11978c3-6439-48be-82a9-5e6743e9b865">
+    <name>ЕдиницаИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Единица измерения</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ЕдиницыИзмерения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <commands uuid="99f8ecb1-600f-4605-9388-cb36251f93ef">
+    <name>ТаблицаПитательности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таблица питательности</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+  <commands uuid="9fe124a0-4ebe-40ec-a67a-a1e4de04c39b">
+    <name>ТаблицаПитательностиДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таблица питательности</value>
+    </synonym>
+    <group>FormNavigationPanelGoTo</group>
+    <commandParameterType>
+      <types>DocumentRef.ВводТаблицыПитательностиКормов</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:InformationRegister>

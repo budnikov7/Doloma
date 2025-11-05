@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="06f9cde6-c0f4-41df-9427-a33e41212282">
+  <producedTypes>
+    <refType typeId="6450ce97-5b12-4af8-93e5-9de49a1bc7f1" valueTypeId="18ad4b79-ba8c-4def-91aa-4541741b2040"/>
+    <listType typeId="c28285d7-5cbe-4d9f-a00b-a57fcd81861c" valueTypeId="85947d71-52f1-4b66-b85f-0359a0321ee5"/>
+    <managerType typeId="f4d8880a-dc49-45f5-a72f-f1fe87f7b9a5" valueTypeId="50216666-197b-4138-81b9-dac1cf1d220f"/>
+  </producedTypes>
+  <name>СпособыВыбытия</name>
+  <synonym>
+    <key>ru</key>
+    <value>Способы выбытия животных</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="7993faac-3da0-471a-953b-4a060985fca8">
+    <name>Забой</name>
+    <synonym>
+      <key>ru</key>
+      <value>Забой</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="a5e82932-17ca-4e07-886a-1736a4007777">
+    <name>Падеж</name>
+    <synonym>
+      <key>ru</key>
+      <value>Падёж</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="de0acc40-b77f-429b-9b0d-5010383de736">
+    <name>ПродажаНаселению</name>
+    <synonym>
+      <key>ru</key>
+      <value>Продажа населению</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="9603beda-8cca-4439-8d78-9dad3863c133">
+    <name>РеализацияОткорма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Реализация откорма</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="7fe5d76e-d061-429f-90bb-daeab8b0545a">
+    <name>РеализацияПлеменногоПоголовья</name>
+    <synonym>
+      <key>ru</key>
+      <value>Реализация племенного поголовья</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

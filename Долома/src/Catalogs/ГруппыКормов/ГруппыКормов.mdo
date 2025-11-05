@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0d8bb35a-cca9-4a34-84d3-01379d6d19c2">
+  <producedTypes>
+    <objectType typeId="c4b1e838-6d1b-4696-b074-c2115bd8238b" valueTypeId="82f0238f-539f-49c0-835c-f3e6bca69a96"/>
+    <refType typeId="4a5fe174-bace-4385-9a7a-09871e72f9fb" valueTypeId="9c703b46-3bea-48eb-bcf5-60792c50b932"/>
+    <selectionType typeId="47295991-c581-4856-bd64-9a30d0e6aecb" valueTypeId="221528c2-eac6-4733-90f0-77ec85e2417e"/>
+    <listType typeId="d49051bc-ba55-4692-9de9-4845d509d5ef" valueTypeId="d7f8380e-af9a-4643-84f6-951794cf8653"/>
+    <managerType typeId="51b7007e-fd11-4f81-9c17-290316ed5152" valueTypeId="a8847632-f222-4803-8dca-5351dc0f4f85"/>
+  </producedTypes>
+  <name>ГруппыКормов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Группы кормов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ГруппыКормов.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

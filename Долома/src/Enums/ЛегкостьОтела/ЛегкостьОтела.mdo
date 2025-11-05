@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9a08fbbd-e52d-42b7-9ef5-5d474a43ad61">
+  <producedTypes>
+    <refType typeId="314806c6-eafc-40f6-b5a2-4df5dc28566d" valueTypeId="2492b2aa-5ab4-4eb6-8892-0e3d810dd3be"/>
+    <listType typeId="b18b70cb-5955-44bc-b8df-3c0b20c0ca0c" valueTypeId="c364d995-1573-4aeb-932f-4987e5f622c1"/>
+    <managerType typeId="6b74412d-c1b7-48fa-8c1e-da2727219d15" valueTypeId="97556a87-9b35-4a6c-b109-4b43013bcc13"/>
+  </producedTypes>
+  <name>ЛегкостьОтела</name>
+  <synonym>
+    <key>ru</key>
+    <value>Легкость отела</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="04ba176d-b61a-4ca4-90a4-b6a7c809c990">
+    <name>Степень1</name>
+    <synonym>
+      <key>ru</key>
+      <value>1</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="7662f6d3-497d-4321-bd72-9b78218cd7e5">
+    <name>Степень2</name>
+    <synonym>
+      <key>ru</key>
+      <value>2</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="67ea1978-f210-4b35-83f0-0fe3b85bae77">
+    <name>Степень3</name>
+    <synonym>
+      <key>ru</key>
+      <value>3</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

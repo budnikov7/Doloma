@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0dfd7307-93c6-4224-b040-507bfc6e1eef">
+  <producedTypes>
+    <refType typeId="52c534e9-4cb1-4e2e-a1c5-bb02ae537b27" valueTypeId="2b63aed2-de92-4843-96d1-87197fd11a64"/>
+    <listType typeId="103c9090-d600-4d1d-869f-1bb7ba6129c1" valueTypeId="4113121a-d1ce-4bd7-81ad-4325e7bf6f39"/>
+    <managerType typeId="1b49f567-a7dd-4112-9242-ebb7d0b2a16c" valueTypeId="5fddcf85-3e43-4027-bd11-83fe24216af7"/>
+  </producedTypes>
+  <name>СтавкиНДС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ставки НДС</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>VAT rates</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>QuickChoice</choiceMode>
+  <listPresentation>
+    <key>ru</key>
+    <value>Ставки НДС</value>
+  </listPresentation>
+  <listPresentation>
+    <key>en</key>
+    <value>VAT rates</value>
+  </listPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Список ставок налога на добавленную стоимость.</value>
+  </explanation>
+  <explanation>
+    <key>en</key>
+    <value>List of VAT rates.</value>
+  </explanation>
+  <enumValues uuid="0f921616-c419-4020-b744-6585248bd4e9">
+    <name>НДС18</name>
+    <synonym>
+      <key>ru</key>
+      <value>18%</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>18%</value>
+    </synonym>
+    <comment>Ставка НДС 18%</comment>
+  </enumValues>
+  <enumValues uuid="c8a03516-088e-4860-a53f-c6c9b9c08599">
+    <name>НДС18_118</name>
+    <synonym>
+      <key>ru</key>
+      <value>18/118</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>18/118</value>
+    </synonym>
+    <comment>Расчетная ставка НДС 18/118</comment>
+  </enumValues>
+  <enumValues uuid="ada77051-9665-48bb-a905-18dc8ac5bb25">
+    <name>НДС10</name>
+    <synonym>
+      <key>ru</key>
+      <value>10%</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>10%</value>
+    </synonym>
+    <comment>Ставка НДС 10%</comment>
+  </enumValues>
+  <enumValues uuid="fdcf9a25-7dff-4496-b0f6-913d98ef6b16">
+    <name>НДС10_110</name>
+    <synonym>
+      <key>ru</key>
+      <value>10/110</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>10/110</value>
+    </synonym>
+    <comment>Расчетная ставка НДС 10/110</comment>
+  </enumValues>
+  <enumValues uuid="9a598514-5527-4313-be29-1cc8242d4e09">
+    <name>НДС0</name>
+    <synonym>
+      <key>ru</key>
+      <value>0%</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>0%</value>
+    </synonym>
+    <comment>Ставка НДС 0%</comment>
+  </enumValues>
+  <enumValues uuid="b80afb81-d112-43cb-9b6d-8e8c0e5bd3d2">
+    <name>БезНДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Без НДС</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Excluding VAT</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="a8da9fce-5b4c-4ea0-9334-bb130ef90f82">
+    <name>НДС20</name>
+    <synonym>
+      <key>ru</key>
+      <value>20%</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>20%</value>
+    </synonym>
+    <comment>Ставка НДС 20%</comment>
+  </enumValues>
+  <enumValues uuid="b37518af-5425-41ed-bc24-76ad6e95de2b">
+    <name>НДС20_120</name>
+    <synonym>
+      <key>ru</key>
+      <value>20/120</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>20/120</value>
+    </synonym>
+    <comment>Расчетная ставка НДС 20/120</comment>
+  </enumValues>
+</mdclass:Enum>

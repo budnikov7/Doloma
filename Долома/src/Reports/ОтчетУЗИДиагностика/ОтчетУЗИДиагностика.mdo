@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a3da4168-1d77-40bf-bf73-b2c49d6ac3c7">
+  <producedTypes>
+    <objectType typeId="8ddfe3f5-6378-4949-a39a-e14b2b565afc" valueTypeId="19e3f256-6747-413c-8db6-58f32b4e5e84"/>
+    <managerType typeId="3763fb88-0f00-46fe-9eba-680d968dafd3" valueTypeId="dbab9d5c-7c9e-4e2c-b160-dcdff69099c7"/>
+  </producedTypes>
+  <name>ОтчетУЗИДиагностика</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет УЗИ диагностика</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ОтчетУЗИДиагностика.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.ОтчетУЗИДиагностика.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <forms uuid="28d6b12d-23ec-4913-9dd6-def82786c05a">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="5db08025-4bd5-46d3-86f4-fce6d7c599c3">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

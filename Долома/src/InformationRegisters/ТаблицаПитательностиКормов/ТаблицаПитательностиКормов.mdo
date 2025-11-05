@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1bc1d876-7ea9-4a68-8115-31be8bd9c6d2">
+  <producedTypes>
+    <selectionType typeId="f17a3d68-61bf-4bc8-b7ed-a3b4da9324d2" valueTypeId="61ef2c92-d5b7-4f3e-9936-128417f9099e"/>
+    <listType typeId="1f075de7-8840-4534-8e51-9fc7fc1b9a38" valueTypeId="f45a7721-58b5-462c-8687-1a331b40cde9"/>
+    <managerType typeId="42e06513-6fad-4968-9114-9ea0b26aa045" valueTypeId="b0c6a05e-0755-4429-878b-2840b399ecc6"/>
+    <recordSetType typeId="8745d1d1-a921-4ed2-9965-1e24b2b5ebbb" valueTypeId="1ed29c14-d08f-4abf-b7cf-1baf27408f34"/>
+    <recordKeyType typeId="4baca59d-96ed-484c-92b8-2ce1f7ba4e43" valueTypeId="3a20c075-75a4-449e-8df1-139b32496331"/>
+    <recordType typeId="89821c4b-d51a-41a2-a65e-b7e95ad0752b" valueTypeId="dfe8b7a1-2f9d-4d22-b12b-8bc143744d17"/>
+    <recordManagerType typeId="4098ad77-c40c-4868-ad78-fe16a08e1a37" valueTypeId="21d2b08d-a980-4a33-be31-e0f647b14031"/>
+  </producedTypes>
+  <name>ТаблицаПитательностиКормов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Таблица питательности кормов</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <defaultListForm>InformationRegister.ТаблицаПитательностиКормов.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="02496cfb-c00c-46fd-9b48-ac56da7efccf">
+    <name>ЛабораторныйАнализ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Лабораторный анализ</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="fe9297e8-c221-4e88-9916-aa25c1b4d954">
+    <name>СухоеВещество</name>
+    <synonym>
+      <key>ru</key>
+      <value>СВ, г</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ПоказательПитательности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="e6d8891b-a577-439f-bf52-386452ab2a94">
+    <name>ОЭ</name>
+    <synonym>
+      <key>ru</key>
+      <value>ОЭ, МДж</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ПоказательПитательности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="4c357a52-360f-40b2-8620-2efc59ff436a">
+    <name>NEL</name>
+    <synonym>
+      <key>ru</key>
+      <value>NEL, МДж</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ПоказательПитательности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="565ed45e-debf-44fd-bb9d-1262bab62b2b">
+    <name>XP</name>
+    <synonym>
+      <key>ru</key>
+      <value>XP (СП), г</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ПоказательПитательности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="f962e763-ddf5-4a08-8e80-33c37d8dcd6f">
+    <name>РастворимыйСП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Раств. СП (%СП)</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ПоказательПитательности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="d4ad212c-9504-4a0a-b5a8-df723ade233e">
+    <name>РастворимыйВРубцеПротеин</name>
+    <synonym>
+      <key>ru</key>
+      <value>Растворимый в рубце протеин</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ПоказательПитательности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="0a882865-c493-481d-9dc8-b1d1f42d2e72">
+    <name>НерастворимыйВРубцеПротеин</name>
+    <synonym>
+      <key>ru</key>
+      <value>Нерастворимый в рубце протеин</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ПоказательПитательности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="86ec0730-cba1-49b1-b9da-3f6a3d5497f4">
+    <name>nXp</name>
+    <synonym>
+      <key>ru</key>
+      <value>nXp, г</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ПоказательПитательности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="8f1789da-278c-4e99-8eb0-d70e8a120bcc">
+    <name>RNB</name>
+    <synonym>
+      <key>ru</key>
+      <value>RNB, г</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="29a1f324-e7e9-4bfd-9e74-d80b0f738e89">
+    <name>UDP</name>
+    <synonym>
+      <key>ru</key>
+      <value>UDP, г</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ПоказательПитательности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="b21d37ba-4809-4ffb-95b2-13ba70303167">
+    <name>СЗ</name>
+    <synonym>
+      <key>ru</key>
+      <value>СЗ, г</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ПоказательПитательности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="2e2cb2af-911c-4f43-ab18-21cb0d60e0a1">
+    <name>СЖ</name>
+    <synonym>
+      <key>ru</key>
+      <value>СЖ, г</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ПоказательПитательности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="c7fb7c52-7f18-4b45-a845-b4ad21519b5c">
+    <name>СК</name>
+    <synonym>
+      <key>ru</key>
+      <value>СК, г</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ПоказательПитательности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="54ea7588-0f71-41a5-9dd1-c7e03eb22318">
+    <name>NDF</name>
+    <synonym>
+      <key>ru</key>
+      <value>NDF, г</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ПоказательПитательности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="104da098-a17b-48bf-ad71-08b6524dc4d0">
+    <name>ADF</name>
+    <synonym>
+      <key>ru</key>
+      <value>ADF, г</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ПоказательПитательности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="423d1d07-c7a7-409e-b53f-31fc466288e1">
+    <name>Структ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Структ.</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="be61135d-e554-407c-8342-ab78718a0e78">
+    <name>СтрКл</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стр.кл, г</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ПоказательПитательности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="93ee52ed-4bea-46d6-b44d-f4add8e590aa">
+    <name>ADL</name>
+    <synonym>
+      <key>ru</key>
+      <value>ADL, г</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ПоказательПитательности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="0cf87110-2f1d-4145-bcac-be924ef4f161">
+    <name>Крахмал</name>
+    <synonym>
+      <key>ru</key>
+      <value>Крахмал, г</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ПоказательПитательности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="1d6ec8e0-f512-4831-a5f0-2b8e1fc40a03">
+    <name>ТранзитныйКрахмал</name>
+    <synonym>
+      <key>ru</key>
+      <value>Транзитный крахмал, г</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ПоказательПитательности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="d86c5ab3-f748-4ad4-8fd7-65793141fadb">
+    <name>Сахар</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сахар, г</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ПоказательПитательности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="efb7fca5-b13a-417d-8ea0-ea30643d9dab">
+    <name>Ca</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ca, г</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ПоказательПитательности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="7ce1b78c-f848-44f1-90ee-7d6d04aecacc">
+    <name>Na</name>
+    <synonym>
+      <key>ru</key>
+      <value>Na, г</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ПоказательПитательности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="227b003e-ba3b-4c33-ace0-8389bb11a2bf">
+    <name>Mg</name>
+    <synonym>
+      <key>ru</key>
+      <value>Mg, г</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ПоказательПитательности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="e9cb06b0-4779-4999-a085-df8aad0b27c7">
+    <name>K</name>
+    <synonym>
+      <key>ru</key>
+      <value>K, г</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ПоказательПитательности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="eafdc608-6731-4d6c-919f-f2d78a3dce65">
+    <name>Cl</name>
+    <synonym>
+      <key>ru</key>
+      <value>Cl, г</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ПоказательПитательности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="69271c32-6c70-47e1-83b8-66b2853a4302">
+    <name>S</name>
+    <synonym>
+      <key>ru</key>
+      <value>S, г</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ПоказательПитательности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="8f72dbbc-b46c-4648-85be-b8ee671f9671">
+    <name>P</name>
+    <synonym>
+      <key>ru</key>
+      <value>P, г</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ПоказательПитательности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="5dfe6066-3280-402c-96ab-4d420cf6a1cb">
+    <name>ПереваримоеОрганическоеВещество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Переваримое органическое вещество,%</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ПоказательПитательности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="c1907c42-767d-4b47-8c5a-9b71cec53443">
+    <name>НДКПпереваримость</name>
+    <synonym>
+      <key>ru</key>
+      <value>НДК - переваримость, %</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ПоказательПитательности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="157713bc-6e5a-4e55-bc02-6e05c48b798b">
+    <name>УксуснаяКислота</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уксусная кислота</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ПоказательПитательности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="8e623f78-8573-4e41-afb9-43e0869df920">
+    <name>МолочнаяКислота</name>
+    <synonym>
+      <key>ru</key>
+      <value>Молочная кислота</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ПоказательПитательности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="08d25efc-df6e-4eb7-ad2d-e44c8f5e6dd1">
+    <name>pH</name>
+    <synonym>
+      <key>ru</key>
+      <value>pH</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ПоказательПитательности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="85be8923-c486-4812-957d-daddc138003b">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="f4c0682f-7e47-4067-abf1-f80a79867dad">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="a5a7dbad-0379-4d67-b615-d53595d88613">
+    <name>ТаблицаПитательности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таблица питательности</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:InformationRegister>

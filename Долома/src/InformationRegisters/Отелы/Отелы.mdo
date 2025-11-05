@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3f2c7fbe-91c2-44ae-bf4e-b39eec335616">
+  <producedTypes>
+    <selectionType typeId="76b5f6ee-797d-4d41-9a27-1423c2cca82a" valueTypeId="a1fdfa34-4273-48f0-a4d4-f41a29b773d5"/>
+    <listType typeId="5a40a530-965a-47ef-bf6d-c4902900cfd0" valueTypeId="c064ccc6-ede7-468d-8ec7-cd390c71403e"/>
+    <managerType typeId="06a1e6af-c1bf-45f6-9a80-e67a2bcb81e7" valueTypeId="9ace46a2-8e11-437b-a865-36a464967003"/>
+    <recordSetType typeId="98ce5ede-3d68-4212-890e-0b618dc166a1" valueTypeId="a5518b0e-bdb9-4404-bf78-4566124db160"/>
+    <recordKeyType typeId="3672f82f-dd34-461e-8733-3d6646ed4928" valueTypeId="7fecc39e-504c-44ac-bdde-e1a67f5aa97f"/>
+    <recordType typeId="fb87d6bd-59f9-4c4e-a185-4852f6b3cf2f" valueTypeId="7efa46c4-f24b-4762-a291-3ee467d1d010"/>
+    <recordManagerType typeId="8bff64a2-7238-4737-949b-eb36334b30c1" valueTypeId="14afa191-e335-4e91-b949-9a71f5479153"/>
+  </producedTypes>
+  <name>Отелы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отёлы животных</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSliceFirst>true</enableTotalsSliceFirst>
+  <enableTotalsSliceLast>true</enableTotalsSliceLast>
+  <resources uuid="e24d08e3-b5eb-4950-83f9-c8c50337c7a4">
+    <name>Акушер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Акушер, принимавший отел</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="849604a5-8477-4cea-bb09-42405745344c">
+    <name>ЛегкостьОтела</name>
+    <synonym>
+      <key>ru</key>
+      <value>Степень легкости отела</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ЛегкостьОтела</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="3fac04e6-3a2a-48e4-9127-0e38830106f5">
+    <name>Мертворожденный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Мертворожденный</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="9d4417a5-da5b-45c9-8084-8bef12a6ef63">
+    <name>Теленок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Животное-теленок</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Животные</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="91a25300-877d-452c-bd54-16af5708bb05">
+    <name>ПолТеленка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пол теленка</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ПолЖивотного</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="9ff1466a-7db6-4b94-be7b-dab163b41d28">
+    <name>ВесТеленка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вес теленка</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>3</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="ac07389e-7d54-4091-a35d-b8a92e030867">
+    <name>ДнейСтельности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дней стельности</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="cecdf2b8-ea88-4643-95ca-db824546bfd2">
+    <name>МежотёльныйПериод</name>
+    <synonym>
+      <key>ru</key>
+      <value>Межотёльный период</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="e7d79de9-3ca1-4b4e-bff5-5f060d4bc9a3">
+    <name>Мать</name>
+    <synonym>
+      <key>ru</key>
+      <value>Животное-мать</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Животные</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="ced962b7-a81e-4ed0-ae22-381cb9f43596">
+    <name>УИД</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уникальный идентификатор События в Моменте времени	</value>
+    </synonym>
+    <type>
+      <types>UUID</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

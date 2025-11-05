@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="df52a7fa-d7e1-4556-a063-58fb68eead4c">
+  <producedTypes>
+    <refType typeId="86127eaf-d81b-424f-986f-973c23b502e1" valueTypeId="ca05eec4-30c9-4f32-9bff-3c300715e534"/>
+    <listType typeId="8dc71c30-1f38-4460-9ea8-845582d770a5" valueTypeId="fe8ddfd0-5329-4432-9745-7919393da11b"/>
+    <managerType typeId="4e25f658-e7ea-43c6-8985-c03943d582fb" valueTypeId="afece708-d0a5-4908-a1f4-bdfb32d8d408"/>
+  </producedTypes>
+  <name>ВидВетПрепарата</name>
+  <synonym>
+    <key>ru</key>
+    <value>Вид вет препарата</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="1b82c93d-1940-46d1-b2a0-7f85fa36fa42">
+    <name>Яды</name>
+    <synonym>
+      <key>ru</key>
+      <value>Яды</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="8036a802-3b2a-4eff-a84c-f07da376caf1">
+    <name>Медикаменты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Медикаменты</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="66f2e5f0-f9fe-4cbc-896f-8df00109a51c">
+    <name>ВспомогательныеМатериалы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вспомогательные материалы</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="e73d1399-fa2e-4c4e-bc95-7a428724a5b1">
+    <name>Корма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Корма</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="d87b2d68-1450-4caf-bb1d-73915f4e3e56">
+    <name>ХозяйственныйИнвентарь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Хозяйственный инвентарь</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="0bd4d46e-4fa9-4bf7-a70b-13a6f2f3a860">
+    <name>ОсновныеСредства</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основные средства</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>
