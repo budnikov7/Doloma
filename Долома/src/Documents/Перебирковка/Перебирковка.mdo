@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8f11b289-9944-4d4b-9277-912967ab1c11">
+  <producedTypes>
+    <objectType typeId="ae91aa00-83aa-40ea-abd8-4d019f70c51c" valueTypeId="994bd0bd-8a72-41fd-a7a9-fc8b354bd8d6"/>
+    <refType typeId="850875a3-c4b6-4ffa-9f7c-9381082b20ad" valueTypeId="26cc8efa-9d40-4d47-977e-7e2298d2bc14"/>
+    <selectionType typeId="10d2c24b-0427-4a3a-a721-cbe856c7f746" valueTypeId="3490e509-6921-47bb-9b81-0d11f36533ce"/>
+    <listType typeId="13704119-0dad-4366-b1eb-2ef0af66c487" valueTypeId="05713aaa-d908-48c0-9899-8f72fab4262c"/>
+    <managerType typeId="5e23c4e4-c417-4023-9452-f3c5ca0313bf" valueTypeId="6af34ec7-9303-4fd6-a63d-6dd650605cfd"/>
+  </producedTypes>
+  <name>Перебирковка</name>
+  <synonym>
+    <key>ru</key>
+    <value>Перебирковка</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.Перебирковка.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.Перебирковка.Form.ФормаДокумента</defaultObjectForm>
+  <defaultListForm>Document.Перебирковка.Form.ФормаСписка</defaultListForm>
+  <registerRecords>InformationRegister.СостояниеЖивотных</registerRecords>
+  <registerRecords>InformationRegister.ОхотаУЖивотных</registerRecords>
+  <attributes uuid="f3cce7be-a5cf-481b-9a27-38e32802560d">
+    <name>Автор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Автор документа</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b08035c9-6a0b-44f9-af7f-7f8026a4c105">
+    <name>Ферма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ферма</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Фермы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="48502487-1b96-4ebc-be11-be826e6599b7">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="59023cb0-f275-4658-bf2b-0dd8f5eb6d59">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="082deb3f-792a-4a83-a83b-052d97c56a54">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="81cccae4-eac3-4176-a3c7-15a6a2eb5ed9">
+    <producedTypes>
+      <objectType typeId="974e5724-a90c-49d3-bf9f-9eaf20d40878" valueTypeId="e7b1b842-6012-42e5-a3e2-02d7761a3946"/>
+      <rowType typeId="dd27e316-1d20-4129-8234-0196691f3cb4" valueTypeId="9fe1c0e7-5f74-4c0b-93d3-343dba6da0f8"/>
+    </producedTypes>
+    <name>Животные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Животные</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="0e1d5673-4a30-45e4-93c8-a023be1a20da">
+      <name>Животное</name>
+      <synonym>
+        <key>ru</key>
+        <value>Животное</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Животные</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="604d68ff-f4a6-4a22-b5fe-a7c287004824">
+      <name>СтараяБирка</name>
+      <synonym>
+        <key>ru</key>
+        <value>Старая бирка</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>15</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="d7b1d10b-ad39-4028-93cf-998484304da1">
+      <name>НоваяБирка</name>
+      <synonym>
+        <key>ru</key>
+        <value>Новая бирка</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>15</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>
