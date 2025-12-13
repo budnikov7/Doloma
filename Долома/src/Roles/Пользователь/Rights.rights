@@ -2030,6 +2030,13 @@
 		</right>
 	</object>
 	<object>
+		<name>Document.ИзменениеКлички</name>
+		<right>
+			<name>InteractiveDelete</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>InformationRegister.ТаблицаПитательностиКормов.Resource.RNB</name>
 		<right>
 			<name>View</name>

@@ -30,14 +30,14 @@
       <name>Животное</name>
       <description>Животное</description>
       <code xsi:type="core:StringValue">
-        <value>Животное</value>
+        <value></value>
       </code>
     </items>
     <items id="b2e92e8a-bab7-45a7-9400-1936d06bc77f">
       <name>Молоко</name>
       <description>Молоко</description>
       <code xsi:type="core:StringValue">
-        <value>Молоко</value>
+        <value></value>
       </code>
     </items>
   </predefined>

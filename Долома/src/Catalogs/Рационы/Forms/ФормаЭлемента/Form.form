@@ -448,53 +448,6 @@
         </extInfo>
       </items>
       <items xsi:type="form:FormField">
-        <name>КормаМинимум</name>
-        <id>125</id>
-        <titleFont xsi:type="core:FontRef">
-          <font>Style.NormalTextFont</font>
-          <bold>true</bold>
-        </titleFont>
-        <visible>true</visible>
-        <enabled>true</enabled>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
-        <dataPath xsi:type="form:DataPath">
-          <segments>Объект.Корма.Минимум</segments>
-        </dataPath>
-        <titleBackColor xsi:type="core:ColorRef">
-          <color>Style.NavigationColor</color>
-        </titleBackColor>
-        <extendedTooltip>
-          <name>КормаМинимумРасширеннаяПодсказка</name>
-          <id>127</id>
-          <type>Label</type>
-          <autoMaxWidth>true</autoMaxWidth>
-          <autoMaxHeight>true</autoMaxHeight>
-          <extInfo xsi:type="form:LabelDecorationExtInfo">
-            <horizontalAlign>Left</horizontalAlign>
-          </extInfo>
-        </extendedTooltip>
-        <contextMenu>
-          <name>КормаМинимумКонтекстноеМеню</name>
-          <id>126</id>
-          <autoFill>true</autoFill>
-        </contextMenu>
-        <type>InputField</type>
-        <editMode>EnterOnInput</editMode>
-        <showInHeader>true</showInHeader>
-        <headerHorizontalAlign>Left</headerHorizontalAlign>
-        <showInFooter>true</showInFooter>
-        <extInfo xsi:type="form:InputFieldExtInfo">
-          <autoMaxWidth>true</autoMaxWidth>
-          <autoMaxHeight>true</autoMaxHeight>
-          <wrap>true</wrap>
-          <chooseType>true</chooseType>
-          <typeDomainEnabled>true</typeDomainEnabled>
-          <textEdit>true</textEdit>
-        </extInfo>
-      </items>
-      <items xsi:type="form:FormField">
         <name>КормаВес</name>
         <id>33</id>
         <titleFont xsi:type="core:FontRef">
@@ -545,53 +498,6 @@
         </footerDataPath>
         <extInfo xsi:type="form:InputFieldExtInfo">
           <width>6</width>
-          <autoMaxWidth>true</autoMaxWidth>
-          <autoMaxHeight>true</autoMaxHeight>
-          <wrap>true</wrap>
-          <chooseType>true</chooseType>
-          <typeDomainEnabled>true</typeDomainEnabled>
-          <textEdit>true</textEdit>
-        </extInfo>
-      </items>
-      <items xsi:type="form:FormField">
-        <name>КормаМаксимум</name>
-        <id>128</id>
-        <titleFont xsi:type="core:FontRef">
-          <font>Style.NormalTextFont</font>
-          <bold>true</bold>
-        </titleFont>
-        <visible>true</visible>
-        <enabled>true</enabled>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
-        <dataPath xsi:type="form:DataPath">
-          <segments>Объект.Корма.Максимум</segments>
-        </dataPath>
-        <titleBackColor xsi:type="core:ColorRef">
-          <color>Style.NavigationColor</color>
-        </titleBackColor>
-        <extendedTooltip>
-          <name>КормаМаксимумРасширеннаяПодсказка</name>
-          <id>130</id>
-          <type>Label</type>
-          <autoMaxWidth>true</autoMaxWidth>
-          <autoMaxHeight>true</autoMaxHeight>
-          <extInfo xsi:type="form:LabelDecorationExtInfo">
-            <horizontalAlign>Left</horizontalAlign>
-          </extInfo>
-        </extendedTooltip>
-        <contextMenu>
-          <name>КормаМаксимумКонтекстноеМеню</name>
-          <id>129</id>
-          <autoFill>true</autoFill>
-        </contextMenu>
-        <type>InputField</type>
-        <editMode>EnterOnInput</editMode>
-        <showInHeader>true</showInHeader>
-        <headerHorizontalAlign>Left</headerHorizontalAlign>
-        <showInFooter>true</showInFooter>
-        <extInfo xsi:type="form:InputFieldExtInfo">
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
           <wrap>true</wrap>

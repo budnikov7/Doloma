@@ -331,20 +331,6 @@
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
-    <attributes uuid="fa7dedbf-d9fc-4ecf-9209-405a64e016a5">
-      <name>Минимум</name>
-      <synonym>
-        <key>ru</key>
-        <value>Мин, кг</value>
-      </synonym>
-      <type>
-        <types>DefinedType.ПоказательПитательности</types>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
     <attributes uuid="dc76aa89-bf1f-48dd-b822-94a2cabe20f8">
       <name>Вес</name>
       <synonym>
@@ -358,20 +344,6 @@
           <scale>3</scale>
           <nonNegative>true</nonNegative>
         </numberQualifiers>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="eb391859-2b9e-4f2c-a790-858bcc1a03ff">
-      <name>Максимум</name>
-      <synonym>
-        <key>ru</key>
-        <value>Макс, кг</value>
-      </synonym>
-      <type>
-        <types>DefinedType.ПоказательПитательности</types>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>

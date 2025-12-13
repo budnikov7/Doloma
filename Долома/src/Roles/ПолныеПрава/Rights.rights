@@ -77,6 +77,13 @@
 		</right>
 	</object>
 	<object>
+		<name>Document.ИзменениеКлички</name>
+		<right>
+			<name>InteractiveDelete</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Catalog.ПоказателиРационов</name>
 		<right>
 			<name>InteractiveDelete</name>

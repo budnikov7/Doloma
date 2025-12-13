@@ -6,5 +6,4 @@
     <value>Подбор товаров клиент</value>
   </synonym>
   <clientManagedApplication>true</clientManagedApplication>
-  <clientOrdinaryApplication>true</clientOrdinaryApplication>
 </mdclass:CommonModule>
