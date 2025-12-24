@@ -28,4 +28,5 @@
   <content>Report.ДиаграммаДнейВСухостое</content>
   <content>Report.ОтчетПоВыбытию</content>
   <content>Document.ПрисвоениеБирокХорриот</content>
+  <content>Document.ИзменениеКлички</content>
 </mdclass:Subsystem>
