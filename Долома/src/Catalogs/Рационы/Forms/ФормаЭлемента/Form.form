@@ -552,7 +552,7 @@
       </items>
       <items xsi:type="form:FormField">
         <name>КормаМинВес</name>
-        <id>124</id>
+        <id>130</id>
         <titleFont xsi:type="core:FontRef">
           <font>Style.NormalTextFont</font>
           <bold>true</bold>
@@ -574,7 +574,7 @@
         </titleBackColor>
         <extendedTooltip>
           <name>КормаМинВесРасширеннаяПодсказка</name>
-          <id>125</id>
+          <id>131</id>
           <type>Label</type>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
@@ -584,7 +584,7 @@
         </extendedTooltip>
         <contextMenu>
           <name>КормаМинВесКонтекстноеМеню</name>
-          <id>126</id>
+          <id>132</id>
           <autoFill>true</autoFill>
         </contextMenu>
         <type>InputField</type>
@@ -604,7 +604,7 @@
       </items>
       <items xsi:type="form:FormField">
         <name>КормаМаксВес</name>
-        <id>127</id>
+        <id>133</id>
         <titleFont xsi:type="core:FontRef">
           <font>Style.NormalTextFont</font>
           <bold>true</bold>
@@ -626,7 +626,7 @@
         </titleBackColor>
         <extendedTooltip>
           <name>КормаМаксВесРасширеннаяПодсказка</name>
-          <id>128</id>
+          <id>134</id>
           <type>Label</type>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
@@ -636,7 +636,7 @@
         </extendedTooltip>
         <contextMenu>
           <name>КормаМаксВесКонтекстноеМеню</name>
-          <id>129</id>
+          <id>135</id>
           <autoFill>true</autoFill>
         </contextMenu>
         <type>InputField</type>
@@ -1888,7 +1888,7 @@
       <key>ru</key>
       <value>Авторасчет</value>
     </title>
-    <id>4</id>
+    <id>5</id>
     <toolTip>
       <key>ru</key>
       <value>Автоматический расчет рациона</value>
