@@ -176,6 +176,7 @@
   <documents>Document.Осеменение</documents>
   <documents>Document.Отъём</documents>
   <documents>Document.ИзменениеКлички</documents>
+  <documents>Document.ИзменениеКлички</documents>
   <documents>Document.ПеремещениеЖивотных</documents>
   <documents>Document.ПеремещениеТоваров</documents>
   <documents>Document.ПланЗагрузки</documents>
