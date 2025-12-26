@@ -1793,7 +1793,7 @@
       <common>true</common>
     </use>
     <picture xsi:type="core:PictureRef">
-      <picture>StdPicture.ExecuteReport</picture>
+      <picture>StdPicture.GenerateReport</picture>
     </picture>
     <action xsi:type="form:FormCommandHandlerContainer">
       <handler>
