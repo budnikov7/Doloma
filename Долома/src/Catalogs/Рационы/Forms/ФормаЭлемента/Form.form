@@ -552,7 +552,7 @@
       </items>
       <items xsi:type="form:FormField">
         <name>КормаМинВес</name>
-        <id>130</id>
+        <id>124</id>
         <titleFont xsi:type="core:FontRef">
           <font>Style.NormalTextFont</font>
           <bold>true</bold>
@@ -574,7 +574,7 @@
         </titleBackColor>
         <extendedTooltip>
           <name>КормаМинВесРасширеннаяПодсказка</name>
-          <id>131</id>
+          <id>125</id>
           <type>Label</type>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
@@ -584,7 +584,7 @@
         </extendedTooltip>
         <contextMenu>
           <name>КормаМинВесКонтекстноеМеню</name>
-          <id>132</id>
+          <id>126</id>
           <autoFill>true</autoFill>
         </contextMenu>
         <type>InputField</type>
@@ -604,7 +604,7 @@
       </items>
       <items xsi:type="form:FormField">
         <name>КормаМаксВес</name>
-        <id>133</id>
+        <id>127</id>
         <titleFont xsi:type="core:FontRef">
           <font>Style.NormalTextFont</font>
           <bold>true</bold>
@@ -626,7 +626,7 @@
         </titleBackColor>
         <extendedTooltip>
           <name>КормаМаксВесРасширеннаяПодсказка</name>
-          <id>134</id>
+          <id>128</id>
           <type>Label</type>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
@@ -636,7 +636,7 @@
         </extendedTooltip>
         <contextMenu>
           <name>КормаМаксВесКонтекстноеМеню</name>
-          <id>135</id>
+          <id>129</id>
           <autoFill>true</autoFill>
         </contextMenu>
         <type>InputField</type>
@@ -881,33 +881,8 @@
         <name>КормаКоманднаяПанель</name>
         <id>16</id>
         <items xsi:type="form:Button">
-          <name>КормаПерезаполнитьЦены</name>
-          <id>123</id>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
-          <extendedTooltip>
-            <name>КормаПерезаполнитьЦеныРасширеннаяПодсказка</name>
-            <id>124</id>
-            <type>Label</type>
-            <autoMaxWidth>true</autoMaxWidth>
-            <autoMaxHeight>true</autoMaxHeight>
-            <extInfo xsi:type="form:LabelDecorationExtInfo">
-              <horizontalAlign>Left</horizontalAlign>
-            </extInfo>
-          </extendedTooltip>
-          <commandName>Form.Command.ПерезаполнитьЦены</commandName>
-          <representation>Auto</representation>
-          <autoMaxWidth>true</autoMaxWidth>
-          <autoMaxHeight>true</autoMaxHeight>
-          <placementArea>UserCmds</placementArea>
-          <representationInContextMenu>Auto</representationInContextMenu>
-        </items>
-        <items xsi:type="form:Button">
           <name>КормаОткрытьКалькулятор</name>
-          <id>121</id>
+          <id>134</id>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
@@ -915,7 +890,7 @@
           </userVisible>
           <extendedTooltip>
             <name>КормаОткрытьКалькуляторРасширеннаяПодсказка</name>
-            <id>122</id>
+            <id>135</id>
             <type>Label</type>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -925,6 +900,31 @@
           </extendedTooltip>
           <commandName>Form.Command.ОткрытьКалькулятор</commandName>
           <representation>Auto</representation>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <placementArea>UserCmds</placementArea>
+          <representationInContextMenu>Auto</representationInContextMenu>
+        </items>
+        <items xsi:type="form:Button">
+          <name>КормаПерезаполнитьЦены</name>
+          <id>136</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>КормаПерезаполнитьЦеныРасширеннаяПодсказка</name>
+            <id>137</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <commandName>Form.Command.ПерезаполнитьЦены</commandName>
+          <representation>PictureAndText</representation>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
           <placementArea>UserCmds</placementArea>
@@ -1715,7 +1715,7 @@
     </items>
     <items xsi:type="form:Button">
       <name>ФормаАвторасчет</name>
-      <id>119</id>
+      <id>130</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -1723,7 +1723,7 @@
       </userVisible>
       <extendedTooltip>
         <name>ФормаАвторасчетРасширеннаяПодсказка</name>
-        <id>120</id>
+        <id>131</id>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
@@ -1888,7 +1888,7 @@
       <key>ru</key>
       <value>Авторасчет</value>
     </title>
-    <id>5</id>
+    <id>4</id>
     <toolTip>
       <key>ru</key>
       <value>Автоматический расчет рациона</value>
@@ -1959,7 +1959,7 @@
       <key>ru</key>
       <value>Перезаполнить цены</value>
     </title>
-    <id>4</id>
+    <id>5</id>
     <toolTip>
       <key>ru</key>
       <value>Перезаполнить цены</value>
