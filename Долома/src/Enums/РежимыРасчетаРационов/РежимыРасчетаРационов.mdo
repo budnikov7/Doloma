@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4d5e6f7a-8b9c-0d1e-2f3a-4b5c6d7e8f9a">
+  <producedTypes>
+    <refType typeId="5e6f7a8b-9c0d-1e2f-3a4b-5c6d7e8f9a0b" valueTypeId="6f7a8b9c-0d1e-2f3a-4b5c-6d7e8f9a0b1c"/>
+    <listType typeId="7a8b9c0d-1e2f-3a4b-5c6d-7e8f9a0b1c2d" valueTypeId="8b9c0d1e-2f3a-4b5c-6d7e-8f9a0b1c2d3e"/>
+    <managerType typeId="9c0d1e2f-3a4b-5c6d-7e8f-9a0b1c2d3e4f" valueTypeId="0d1e2f3a-4b5c-6d7e-8f9a-0b1c2d3e4f5a"/>
+  </producedTypes>
+  <name>РежимыРасчетаРационов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Режимы расчета рационов</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="1e2f3a4b-5c6d-7e8f-9a0b-1c2d3e4f5a6b">
+    <name>Ручной</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ручной</value>
+    </synonym>
+    <comment>Ручной ввод весов кормов</comment>
+  </enumValues>
+  <enumValues uuid="2f3a4b5c-6d7e-8f9a-0b1c-2d3e4f5a6b7c">
+    <name>Автоматический</name>
+    <synonym>
+      <key>ru</key>
+      <value>Автоматический</value>
+    </synonym>
+    <comment>Автоматический расчет весов кормов на основе ограничений</comment>
+  </enumValues>
+</mdclass:Enum>
