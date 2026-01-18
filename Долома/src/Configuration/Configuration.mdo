@@ -100,9 +100,11 @@
   <commonModules>CommonModule.ОтчетыКлиент</commonModules>
   <commonModules>CommonModule.ПодборТоваровКлиент</commonModules>
   <commonModules>CommonModule.ПодборТоваровСервер</commonModules>
+  <commonModules>CommonModule.РасчетАвтоРациона</commonModules>
   <commonModules>CommonModule.РасчетСебестоимостиСервер</commonModules>
   <commonModules>CommonModule.УдалениеОбъектов</commonModules>
   <commonModules>CommonModule.УдалениеОбъектовПовтИсп</commonModules>
+  <commonModules>CommonModule.РасчетРационов</commonModules>
   <exchangePlans>ExchangePlan.ОбменСообщениями</exchangePlans>
   <eventSubscriptions>EventSubscription.ПередЗаписьюДокументов</eventSubscriptions>
   <functionalOptions>FunctionalOption.ПоказыватьРодословную</functionalOptions>
@@ -175,6 +177,7 @@
   <documents>Document.Осеменение</documents>
   <documents>Document.Отъём</documents>
   <documents>Document.ИзменениеКлички</documents>
+  <documents>Document.ИзменениеКлички</documents>
   <documents>Document.ПеремещениеЖивотных</documents>
   <documents>Document.ПеремещениеТоваров</documents>
   <documents>Document.ПланЗагрузки</documents>
@@ -207,6 +210,7 @@
   <enums>Enum.ПричиныВыбраковки</enums>
   <enums>Enum.ПричиныВыбытия</enums>
   <enums>Enum.ПроизводственныеГруппы</enums>
+  <enums>Enum.РежимыРасчетаРационов</enums>
   <enums>Enum.Родство</enums>
   <enums>Enum.СпособыВыбытия</enums>
   <enums>Enum.СтавкиНДС</enums>
