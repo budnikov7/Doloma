@@ -94,6 +94,48 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
+  <resources uuid="013aba17-22f2-499c-8b6d-b0312ddeb5d2">
+    <name>НижняяГраницаОтклонения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Нижняя граница отклонения</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:NumberValue">
+      <value>-5</value>
+    </fillValue>
+  </resources>
+  <resources uuid="8fdc1e90-4e6b-452b-a865-36750a167c44">
+    <name>ВерхняяГраницаОтклонения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Верхняя граница отклонения</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:NumberValue">
+      <value>5</value>
+    </fillValue>
+  </resources>
   <dimensions uuid="70599cae-06e2-43a4-8e97-bff30b0e013d">
     <name>ГруппаЖивотных</name>
     <synonym>
