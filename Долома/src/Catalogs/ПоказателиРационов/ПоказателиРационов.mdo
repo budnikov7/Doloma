@@ -292,6 +292,27 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="56222def-0a27-4ef2-9f82-302a479775cf">
+    <name>ВесВАвторасчете</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вес в авторасчете</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:NumberValue">
+      <value>1</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <forms uuid="9ce03298-4b62-40eb-bdcd-4fe022b971db">
     <name>ФормаСписка</name>
     <synonym>

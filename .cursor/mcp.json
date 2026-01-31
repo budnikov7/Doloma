@@ -1,0 +1,7 @@
+{
+    "mcpServers": {
+      "1c-server-direct": {
+        "url": "http://localhost/Doloma/hs/mcp/"
+      }
+    }
+  }
